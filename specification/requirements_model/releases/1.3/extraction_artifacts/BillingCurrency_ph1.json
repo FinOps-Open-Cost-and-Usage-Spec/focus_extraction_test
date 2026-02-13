@@ -172,5 +172,14 @@
       }
     }
   ],
-  "warnings": []
+  "warnings": [
+    {
+      "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
+      "message": "INPUT.version MUST reflect the value under \"## Introduced (version)\"; found mismatch between INPUT.version and document value.",
+      "details": {
+        "input_version": "v1.3",
+        "introduced_version_value": "1.3"
+      }
+    }
+  ]
 }
