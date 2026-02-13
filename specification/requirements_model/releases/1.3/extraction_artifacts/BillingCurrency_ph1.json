@@ -2,7 +2,7 @@
   "phase": 1,
   "source": {
     "path": "specification/datasets/contract_commitment/columns/billingcurrency.md",
-    "version": "v1.3"
+    "version": "unknown"
   },
   "entity": {
     "entity_type": "Column",
@@ -20,23 +20,23 @@
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "BillingCurrency MUST be present in a Contract Commitment [*FOCUS dataset*](#glossary:FOCUS-dataset).",
+      "text": "The BillingCurrency column MUST adhere to the following requirements:",
       "keyword": "MUST",
       "section_path": [
         "Billing Currency",
         "Requirements"
       ],
       "block": {
-        "block_type": "list_item",
+        "block_type": "paragraph",
         "indent_level": 0,
-        "bullet": "*"
+        "bullet": null
       },
       "lead_in": {
-        "ends_with_colon": false
+        "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 9,
-        "line_end": 9
+        "line_start": 7,
+        "line_end": 7
       }
     },
     {
@@ -57,14 +57,36 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 10,
-        "line_end": 10
+        "line_start": 9,
+        "line_end": 9
       }
     },
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "BillingCurrency MUST conform to [StringHandling](#stringhandling) requirements.",
+      "text": "BillingCurrency MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
+      "section_path": [
+        "Billing Currency",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      }
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "BillingCurrency MUST conform to [CurrencyFormat](#attributes.currencyformat) requirements.",
       "keyword": "MUST",
       "section_path": [
         "Billing Currency",
@@ -84,10 +106,10 @@
       }
     },
     {
-      "temp_id": "R004",
-      "order": 4,
-      "text": "BillingCurrency MUST conform to [CurrencyFormat](#currencyformat) requirements.",
-      "keyword": "MUST",
+      "temp_id": "R005",
+      "order": 5,
+      "text": "BillingCurrency MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \"Spend\".",
+      "keyword": "MUST NOT",
       "section_path": [
         "Billing Currency",
         "Requirements"
@@ -103,28 +125,6 @@
       "provenance": {
         "line_start": 12,
         "line_end": 12
-      }
-    },
-    {
-      "temp_id": "R005",
-      "order": 5,
-      "text": "BillingCurrency MUST NOT be null when [ContractCommitmentCategory](#contractcommitmentcategory) is \"Spend\".",
-      "keyword": "MUST NOT",
-      "section_path": [
-        "Billing Currency",
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 13,
-        "line_end": 13
       }
     },
     {
@@ -145,8 +145,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 14,
-        "line_end": 14
+        "line_start": 13,
+        "line_end": 13
       }
     },
     {
@@ -167,10 +167,22 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 15,
-        "line_end": 15
+        "line_start": 14,
+        "line_end": 14
       }
     }
   ],
-  "warnings": []
+  "warnings": [
+    {
+      "code": "W_ENTITY_NAME_CONFLICT",
+      "message": "Both a name heading and a display name heading were found for the same entity type; captured the value under the name heading as entity_name per rules.",
+      "details": {
+        "entity_type": "Column",
+        "name_heading_expected": "## Column Name",
+        "display_name_heading_found": "## Display Name",
+        "column_name_heading_present": false,
+        "display_name_value": "Billing Currency"
+      }
+    }
+  ]
 }
