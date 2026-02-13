@@ -35,8 +35,8 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 7,
-        "line_end": 7
+        "line_start": 6,
+        "line_end": 6
       }
     },
     {
@@ -57,8 +57,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 9,
-        "line_end": 9
+        "line_start": 8,
+        "line_end": 8
       }
     },
     {
@@ -79,15 +79,59 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 10,
-        "line_end": 10
+        "line_start": 9,
+        "line_end": 9
       }
     },
     {
       "temp_id": "R004",
       "order": 4,
+      "text": "ContractCommitmentCost MUST adhere to the following nullability requirements:",
+      "keyword": "MUST",
+      "section_path": [
+        "Contract Commitment Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      }
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
       "text": "ContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \"Spend\".",
       "keyword": "MUST NOT",
+      "section_path": [
+        "Contract Commitment Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      }
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "ContractCommitmentCost MAY be null when ContractCommitmentCategory is \"Usage\".",
+      "keyword": "MAY",
       "section_path": [
         "Contract Commitment Cost",
         "Requirements"
@@ -106,17 +150,17 @@
       }
     },
     {
-      "temp_id": "R005",
-      "order": 5,
-      "text": "ContractCommitmentCost MAY be null when ContractCommitmentCategory is \"Usage\".",
-      "keyword": "MAY",
+      "temp_id": "R007",
+      "order": 7,
+      "text": "ContractCommitmentCost MUST be a valid decimal value.",
+      "keyword": "MUST",
       "section_path": [
         "Contract Commitment Cost",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -128,9 +172,9 @@
       }
     },
     {
-      "temp_id": "R006",
-      "order": 6,
-      "text": "ContractCommitmentCost MUST be a valid decimal value.",
+      "temp_id": "R008",
+      "order": 8,
+      "text": "ContractCommitmentCost MUST be denominated in the [BillingCurrency](#datasets.contractcommitment.billingcurrency).",
       "keyword": "MUST",
       "section_path": [
         "Contract Commitment Cost",
@@ -148,29 +192,24 @@
         "line_start": 14,
         "line_end": 14
       }
-    },
-    {
-      "temp_id": "R007",
-      "order": 7,
-      "text": "ContractCommitmentCost MUST be denominated in the [BillingCurrency](#datasets.contractcommitment.billingcurrency).",
-      "keyword": "MUST",
-      "section_path": [
-        "Contract Commitment Cost",
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 15,
-        "line_end": 15
-      }
     }
   ],
-  "warnings": []
+  "warnings": [
+    {
+      "code": "W_ENTITY_NAME_CONFLICT",
+      "message": "Both a specific Name heading and a Display Name heading are present for the same entity type.",
+      "details": {
+        "entity_type": "Column",
+        "name_heading_expected": "## Column Name",
+        "name_heading_present": true,
+        "display_name_heading_expected": "## Display Name",
+        "display_name_heading_present": true
+      }
+    },
+    {
+      "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
+      "message": "The heading \"## Introduced (version)\" is missing, empty, or its value is not a simple version token.",
+      "details": {}
+    }
+  ]
 }
