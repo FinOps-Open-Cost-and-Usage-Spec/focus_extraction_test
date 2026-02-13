@@ -2,7 +2,7 @@
   "phase": 1,
   "source": {
     "path": "specification/datasets/contract_commitment/columns/billingcurrency.md",
-    "version": "unknown"
+    "version": "v1.3"
   },
   "entity": {
     "entity_type": "Column",
@@ -172,17 +172,5 @@
       }
     }
   ],
-  "warnings": [
-    {
-      "code": "W_ENTITY_NAME_CONFLICT",
-      "message": "Both a name heading and a display name heading were found for the same entity type; captured the value under the name heading as entity_name per rules.",
-      "details": {
-        "entity_type": "Column",
-        "name_heading_expected": "## Column Name",
-        "display_name_heading_found": "## Display Name",
-        "column_name_heading_present": false,
-        "display_name_value": "Billing Currency"
-      }
-    }
-  ]
+  "warnings": []
 }
