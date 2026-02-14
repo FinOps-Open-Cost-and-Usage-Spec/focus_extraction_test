@@ -14,8 +14,9 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "paragraph",
@@ -26,8 +27,8 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 17,
-        "line_end": 17
+        "line_start": 20,
+        "line_end": 20
       }
     },
     {
@@ -37,8 +38,9 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -49,8 +51,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 19,
-        "line_end": 19
+        "line_start": 22,
+        "line_end": 22
       }
     },
     {
@@ -60,81 +62,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 20,
-        "line_end": 20
-      }
-    },
-    {
-      "temp_id": "R004",
-      "order": 4,
-      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "## Requirements",
-        "### Column Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 21,
-        "line_end": 21
-      }
-    },
-    {
-      "temp_id": "R005",
-      "order": 5,
-      "text": "AllocatedMethodDetails MUST adhere to the following nullability requirements:",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "## Requirements",
-        "### Column Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": true
-      },
-      "provenance": {
-        "line_start": 22,
-        "line_end": 22
-      }
-    },
-    {
-      "temp_id": "R006",
-      "order": 6,
-      "text": "AllocatedMethodDetails MUST be null when a charge is not related to a data generator-calculated split cost allocation.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "## Requirements",
-        "### Column Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -146,18 +80,19 @@
       }
     },
     {
-      "temp_id": "R007",
-      "order": 7,
-      "text": "AllocatedMethodDetails SHOULD NOT be null when a charge is related to a data generator-calculated split cost allocation.",
-      "keyword": "SHOULD NOT",
+      "temp_id": "R004",
+      "order": 4,
+      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -169,83 +104,39 @@
       }
     },
     {
-      "temp_id": "R008",
-      "order": 8,
-      "text": "When AllocatedMethodDetails is not null, the JsonObjectFormat for AllocatedMethodDetails adheres to the following requirements:",
-      "keyword": null,
-      "role": "lead_in",
+      "temp_id": "R005",
+      "order": 5,
+      "text": "AllocatedMethodDetails MUST adhere to the following nullability requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 30,
-        "line_end": 30
+        "line_start": 25,
+        "line_end": 25
       }
     },
     {
-      "temp_id": "R009",
-      "order": 9,
-      "text": "AllocatedMethodDetails MUST have a top-level key \"Elements\" which contains an array.",
+      "temp_id": "R006",
+      "order": 6,
+      "text": "AllocatedMethodDetails MUST be null when a charge is not related to a data generator-calculated split cost allocation.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 32,
-        "line_end": 32
-      }
-    },
-    {
-      "temp_id": "R010",
-      "order": 10,
-      "text": "Each item in \"Elements\" MUST be an object.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 33,
-        "line_end": 33
-      }
-    },
-    {
-      "temp_id": "R011",
-      "order": 11,
-      "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -256,46 +147,72 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 34,
-        "line_end": 34
+        "line_start": 26,
+        "line_end": 26
       }
     },
     {
-      "temp_id": "R012",
-      "order": 12,
-      "text": "Allocation property key MUST match the spelling and casing specified for the FOCUS-defined property.",
-      "keyword": "MUST",
+      "temp_id": "R007",
+      "order": 7,
+      "text": "AllocatedMethodDetails SHOULD NOT be null when a charge is related to a data generator-calculated split cost allocation.",
+      "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 36,
-        "line_end": 36
+        "line_start": 27,
+        "line_end": 27
       }
     },
     {
-      "temp_id": "R013",
-      "order": 13,
-      "text": "Allocation property value MUST be of the type specified for that property.",
+      "temp_id": "R008",
+      "order": 8,
+      "text": "When AllocatedMethodDetails is not null, the JsonObjectFormat for AllocatedMethodDetails adheres to the following requirements:",
+      "keyword": null,
+      "role": "lead_in",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 35,
+        "line_end": 35
+      }
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "AllocatedMethodDetails MUST have a top-level key \"Elements\" which contains an array.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -307,18 +224,19 @@
       }
     },
     {
-      "temp_id": "R014",
-      "order": 14,
-      "text": "Allocation properties MUST adhere to additional normative requirements specific to that property.",
+      "temp_id": "R010",
+      "order": 10,
+      "text": "Each item in \"Elements\" MUST be an object.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -330,18 +248,19 @@
       }
     },
     {
-      "temp_id": "R015",
-      "order": 15,
-      "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
-      "keyword": "MAY",
+      "temp_id": "R011",
+      "order": 11,
+      "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -353,14 +272,15 @@
       }
     },
     {
-      "temp_id": "R016",
-      "order": 16,
-      "text": "Allocation property keys MUST begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
+      "temp_id": "R012",
+      "order": 12,
+      "text": "Allocation property key MUST match the spelling and casing specified for the FOCUS-defined property.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -371,8 +291,104 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 40,
-        "line_end": 40
+        "line_start": 41,
+        "line_end": 41
+      }
+    },
+    {
+      "temp_id": "R013",
+      "order": 13,
+      "text": "Allocation property value MUST be of the type specified for that property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 3,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 42,
+        "line_end": 42
+      }
+    },
+    {
+      "temp_id": "R014",
+      "order": 14,
+      "text": "Allocation properties MUST adhere to additional normative requirements specific to that property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 3,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 43,
+        "line_end": 43
+      }
+    },
+    {
+      "temp_id": "R015",
+      "order": 15,
+      "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 44,
+        "line_end": 44
+      }
+    },
+    {
+      "temp_id": "R016",
+      "order": 16,
+      "text": "Allocation property keys MUST begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 3,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 45,
+        "line_end": 45
       }
     },
     {
@@ -382,8 +398,9 @@
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Allocated Method Details",
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -394,8 +411,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 41,
-        "line_end": 41
+        "line_start": 46,
+        "line_end": 46
       }
     }
   ],
@@ -417,13 +434,14 @@
       "details": {
         "temp_id": "R008",
         "order": 8,
-        "line_start": 30,
-        "line_end": 30,
+        "line_start": 35,
+        "line_end": 35,
         "indent_level": 0,
         "ends_with_colon": true,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Allocated Method Details",
+          "Requirements",
+          "Object Schema Requirements"
         ]
       }
     },
@@ -435,39 +453,42 @@
       "details": {
         "temp_id": "R001",
         "order": 1,
-        "line_start": 17,
-        "line_end": 17,
+        "line_start": 20,
+        "line_end": 20,
         "indent_level": 0,
         "ends_with_colon": true,
         "section_path": [
-          "## Requirements",
-          "### Column Requirements"
+          "Allocated Method Details",
+          "Requirements",
+          "Column Requirements"
         ],
-        "section_path_key": "## Requirements > ### Column Requirements"
+        "section_path_key": "Allocated Method Details > Requirements > Column Requirements"
       }
     },
     {
       "code": "W_ROOT_PARENT_MISSING_COLON",
-      "severity": "CRITICAL",
+      "severity": "MEDIUM",
       "message": "Root structural parent has children but is missing trailing colon (:).",
       "text": "Each item in \"Elements\" MUST be an object.",
       "details": {
         "temp_id": "R010",
         "order": 10,
-        "line_start": 33,
-        "line_end": 33,
+        "line_start": 38,
+        "line_end": 38,
         "indent_level": 0,
         "ends_with_colon": false,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Allocated Method Details",
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_temp_id": "R011",
         "next_order": 11,
-        "next_line_start": 34,
-        "next_line_end": 34,
+        "next_line_start": 39,
+        "next_line_end": 39,
         "next_indent_level": 1,
-        "next_ends_with_colon": false
+        "next_ends_with_colon": false,
+        "high_confidence_root": false
       }
     },
     {
@@ -478,18 +499,19 @@
       "details": {
         "temp_id": "R011",
         "order": 11,
-        "line_start": 34,
-        "line_end": 34,
+        "line_start": 39,
+        "line_end": 39,
         "indent_level": 1,
         "ends_with_colon": false,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Allocated Method Details",
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_temp_id": "R012",
         "next_order": 12,
-        "next_line_start": 36,
-        "next_line_end": 36,
+        "next_line_start": 41,
+        "next_line_end": 41,
         "next_indent_level": 3,
         "next_ends_with_colon": false,
         "expected_max_child_indent": 2
@@ -497,48 +519,50 @@
     },
     {
       "code": "W_COMPOSITE_PARENT_MISSING_COLON",
-      "severity": "HIGH",
+      "severity": "LOW",
       "message": "Structural parent has children but is missing trailing colon (:).",
       "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "details": {
         "temp_id": "R011",
         "order": 11,
-        "line_start": 34,
-        "line_end": 34,
+        "line_start": 39,
+        "line_end": 39,
         "indent_level": 1,
         "ends_with_colon": false,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Allocated Method Details",
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_temp_id": "R012",
         "next_order": 12,
-        "next_line_start": 36,
-        "next_line_end": 36,
+        "next_line_start": 41,
+        "next_line_end": 41,
         "next_indent_level": 3,
         "next_ends_with_colon": false
       }
     },
     {
       "code": "W_COMPOSITE_PARENT_MISSING_COLON",
-      "severity": "HIGH",
+      "severity": "LOW",
       "message": "Structural parent has children but is missing trailing colon (:).",
       "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
       "details": {
         "temp_id": "R015",
         "order": 15,
-        "line_start": 39,
-        "line_end": 39,
+        "line_start": 44,
+        "line_end": 44,
         "indent_level": 2,
         "ends_with_colon": false,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Allocated Method Details",
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_temp_id": "R016",
         "next_order": 16,
-        "next_line_start": 40,
-        "next_line_end": 40,
+        "next_line_start": 45,
+        "next_line_end": 45,
         "next_indent_level": 3,
         "next_ends_with_colon": false
       }
