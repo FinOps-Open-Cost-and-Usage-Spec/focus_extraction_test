@@ -187,8 +187,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 35,
-        "line_end": 35
+        "line_start": 33,
+        "line_end": 33
       }
     },
     {
@@ -210,8 +210,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 36,
-        "line_end": 36
+        "line_start": 34,
+        "line_end": 34
       }
     },
     {
@@ -233,8 +233,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 37,
-        "line_end": 37
+        "line_start": 35,
+        "line_end": 35
       }
     },
     {
@@ -256,8 +256,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 39,
-        "line_end": 39
+        "line_start": 37,
+        "line_end": 37
       }
     },
     {
@@ -279,8 +279,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 40,
-        "line_end": 40
+        "line_start": 38,
+        "line_end": 38
       }
     },
     {
@@ -302,8 +302,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 41,
-        "line_end": 41
+        "line_start": 39,
+        "line_end": 39
       }
     },
     {
@@ -325,8 +325,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 42,
-        "line_end": 42
+        "line_start": 40,
+        "line_end": 40
       }
     },
     {
@@ -348,8 +348,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 43,
-        "line_end": 43
+        "line_start": 41,
+        "line_end": 41
       }
     },
     {
@@ -371,8 +371,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 44,
-        "line_end": 44
+        "line_start": 42,
+        "line_end": 42
       }
     }
   ],
@@ -390,6 +390,7 @@
       "code": "W_ORPHAN_COLON",
       "severity": "LOW",
       "message": "Line ends with colon (:) but no indented child items were detected.",
+      "text": "The AllocatedMethodDetails column MUST adhere to the following requirements:",
       "details": {
         "temp_id": "R001",
         "order": 1,
@@ -414,11 +415,12 @@
       "code": "W_ROOT_PARENT_MISSING_COLON",
       "severity": "CRITICAL",
       "message": "Root structural parent has children but is missing trailing colon (:).",
+      "text": "Each item in \"Elements\" MUST be an object.",
       "details": {
         "temp_id": "R009",
         "order": 9,
-        "line_start": 36,
-        "line_end": 36,
+        "line_start": 34,
+        "line_end": 34,
         "indent_level": 0,
         "ends_with_colon": false,
         "section_path": [
@@ -428,8 +430,8 @@
         ],
         "next_temp_id": "R010",
         "next_order": 10,
-        "next_line_start": 37,
-        "next_line_end": 37,
+        "next_line_start": 35,
+        "next_line_end": 35,
         "next_indent_level": 1,
         "next_ends_with_colon": false
       }
@@ -438,11 +440,12 @@
       "code": "W_INDENT_JUMP",
       "severity": "MEDIUM",
       "message": "Indentation jump suggests ambiguous nesting (child indent > parent indent + 1).",
+      "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "details": {
         "temp_id": "R010",
         "order": 10,
-        "line_start": 37,
-        "line_end": 37,
+        "line_start": 35,
+        "line_end": 35,
         "indent_level": 1,
         "ends_with_colon": false,
         "section_path": [
@@ -452,8 +455,8 @@
         ],
         "next_temp_id": "R011",
         "next_order": 11,
-        "next_line_start": 39,
-        "next_line_end": 39,
+        "next_line_start": 37,
+        "next_line_end": 37,
         "next_indent_level": 3,
         "next_ends_with_colon": false,
         "expected_max_child_indent": 2
@@ -463,11 +466,12 @@
       "code": "W_COMPOSITE_PARENT_MISSING_COLON",
       "severity": "HIGH",
       "message": "Structural parent has children but is missing trailing colon (:).",
+      "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "details": {
         "temp_id": "R010",
         "order": 10,
-        "line_start": 37,
-        "line_end": 37,
+        "line_start": 35,
+        "line_end": 35,
         "indent_level": 1,
         "ends_with_colon": false,
         "section_path": [
@@ -477,8 +481,8 @@
         ],
         "next_temp_id": "R011",
         "next_order": 11,
-        "next_line_start": 39,
-        "next_line_end": 39,
+        "next_line_start": 37,
+        "next_line_end": 37,
         "next_indent_level": 3,
         "next_ends_with_colon": false
       }
@@ -487,11 +491,12 @@
       "code": "W_COMPOSITE_PARENT_MISSING_COLON",
       "severity": "HIGH",
       "message": "Structural parent has children but is missing trailing colon (:).",
+      "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
       "details": {
         "temp_id": "R014",
         "order": 14,
-        "line_start": 42,
-        "line_end": 42,
+        "line_start": 40,
+        "line_end": 40,
         "indent_level": 2,
         "ends_with_colon": false,
         "section_path": [
@@ -501,8 +506,8 @@
         ],
         "next_temp_id": "R015",
         "next_order": 15,
-        "next_line_start": 43,
-        "next_line_end": 43,
+        "next_line_start": 41,
+        "next_line_end": 41,
         "next_indent_level": 3,
         "next_ends_with_colon": false
       }
