@@ -195,8 +195,8 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 35,
-        "line_end": 35
+        "line_start": 33,
+        "line_end": 33
       }
     },
     {
@@ -219,8 +219,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 37,
-        "line_end": 37
+        "line_start": 35,
+        "line_end": 35
       }
     },
     {
@@ -243,8 +243,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 38,
-        "line_end": 38
+        "line_start": 36,
+        "line_end": 36
       }
     },
     {
@@ -267,8 +267,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 39,
-        "line_end": 39
+        "line_start": 37,
+        "line_end": 37
       }
     },
     {
@@ -291,8 +291,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 41,
-        "line_end": 41
+        "line_start": 39,
+        "line_end": 39
       }
     },
     {
@@ -315,8 +315,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 42,
-        "line_end": 42
+        "line_start": 40,
+        "line_end": 40
       }
     },
     {
@@ -339,8 +339,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 43,
-        "line_end": 43
+        "line_start": 41,
+        "line_end": 41
       }
     },
     {
@@ -363,8 +363,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 44,
-        "line_end": 44
+        "line_start": 42,
+        "line_end": 42
       }
     },
     {
@@ -387,8 +387,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 45,
-        "line_end": 45
+        "line_start": 43,
+        "line_end": 43
       }
     },
     {
@@ -411,8 +411,8 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 46,
-        "line_end": 46
+        "line_start": 44,
+        "line_end": 44
       }
     }
   ],
@@ -434,8 +434,8 @@
       "details": {
         "temp_id": "R008",
         "order": 8,
-        "line_start": 35,
-        "line_end": 35,
+        "line_start": 33,
+        "line_end": 33,
         "indent_level": 0,
         "ends_with_colon": true,
         "section_path": [
@@ -473,8 +473,8 @@
       "details": {
         "temp_id": "R010",
         "order": 10,
-        "line_start": 38,
-        "line_end": 38,
+        "line_start": 36,
+        "line_end": 36,
         "indent_level": 0,
         "ends_with_colon": false,
         "section_path": [
@@ -484,8 +484,8 @@
         ],
         "next_temp_id": "R011",
         "next_order": 11,
-        "next_line_start": 39,
-        "next_line_end": 39,
+        "next_line_start": 37,
+        "next_line_end": 37,
         "next_indent_level": 1,
         "next_ends_with_colon": false,
         "high_confidence_root": false
@@ -499,8 +499,8 @@
       "details": {
         "temp_id": "R011",
         "order": 11,
-        "line_start": 39,
-        "line_end": 39,
+        "line_start": 37,
+        "line_end": 37,
         "indent_level": 1,
         "ends_with_colon": false,
         "section_path": [
@@ -510,8 +510,8 @@
         ],
         "next_temp_id": "R012",
         "next_order": 12,
-        "next_line_start": 41,
-        "next_line_end": 41,
+        "next_line_start": 39,
+        "next_line_end": 39,
         "next_indent_level": 3,
         "next_ends_with_colon": false,
         "expected_max_child_indent": 2
@@ -525,8 +525,8 @@
       "details": {
         "temp_id": "R011",
         "order": 11,
-        "line_start": 39,
-        "line_end": 39,
+        "line_start": 37,
+        "line_end": 37,
         "indent_level": 1,
         "ends_with_colon": false,
         "section_path": [
@@ -536,8 +536,8 @@
         ],
         "next_temp_id": "R012",
         "next_order": 12,
-        "next_line_start": 41,
-        "next_line_end": 41,
+        "next_line_start": 39,
+        "next_line_end": 39,
         "next_indent_level": 3,
         "next_ends_with_colon": false
       }
@@ -550,8 +550,8 @@
       "details": {
         "temp_id": "R015",
         "order": 15,
-        "line_start": 44,
-        "line_end": 44,
+        "line_start": 42,
+        "line_end": 42,
         "indent_level": 2,
         "ends_with_colon": false,
         "section_path": [
@@ -561,8 +561,8 @@
         ],
         "next_temp_id": "R016",
         "next_order": 16,
-        "next_line_start": 45,
-        "next_line_end": 45,
+        "next_line_start": 43,
+        "next_line_end": 43,
         "next_indent_level": 3,
         "next_ends_with_colon": false
       }
