@@ -442,6 +442,18 @@
   ],
   "warnings": [
     {
+      "code": "W_MULTIPLE_BCP14_IN_BLOCK",
+      "message": "More than one BCP-14 statement extracted from the same source line or bullet.",
+      "details": {
+        "line": 26,
+        "text": "AllocatedMethodDetails SHOULD NOT be null when a charge is related to a data generator-calculated split cost allocation.",
+        "keywords_found": [
+          "SHOULD NOT",
+          "SHOULD"
+        ]
+      }
+    },
+    {
       "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
       "message": "Missing \"## Introduced (version)\" section; version set to \"unknown\".",
       "details": {
@@ -466,6 +478,37 @@
           "Allocated Method Details",
           "Requirements",
           "Object Schema Requirements"
+        ]
+      }
+    },
+    {
+      "code": "W_MULTIPLE_ROOT_CANDIDATES",
+      "severity": "MEDIUM",
+      "message": "Multiple root composite lead-in candidates detected in this section_path; Phase-2 grouping may be ambiguous.",
+      "text": "When AllocatedMethodDetails is not null, the JsonObjectFormat for AllocatedMethodDetails adheres to the following requirements:",
+      "details": {
+        "temp_id": "R008",
+        "order": 8,
+        "line_start": 32,
+        "line_end": 32,
+        "indent_level": 0,
+        "ends_with_colon": true,
+        "section_path": [
+          "Allocated Method Details",
+          "Requirements",
+          "Object Schema Requirements"
+        ],
+        "next_temp_id": "R009",
+        "next_order": 9,
+        "next_line_start": 34,
+        "next_line_end": 34,
+        "next_indent_level": 0,
+        "next_ends_with_colon": false,
+        "section_path_key": "Allocated Method Details > Requirements > Object Schema Requirements",
+        "candidate_count": 2,
+        "candidate_temp_ids": [
+          "R008",
+          "R012"
         ]
       }
     },
