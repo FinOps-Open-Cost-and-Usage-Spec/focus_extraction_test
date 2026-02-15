@@ -14,8 +14,8 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "paragraph",
@@ -38,8 +38,8 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -62,8 +62,8 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -86,8 +86,8 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -110,8 +110,8 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -134,8 +134,8 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -158,8 +158,8 @@
       "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Column Requirements"
+        "Requirements",
+        "Column Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -178,36 +178,12 @@
     {
       "temp_id": "R008",
       "order": 8,
-      "text": "When AllocatedMethodDetails is not null, the JsonObjectFormat for AllocatedMethodDetails adheres to the following requirements:",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "paragraph",
-        "indent_level": 0,
-        "bullet": null
-      },
-      "lead_in": {
-        "ends_with_colon": true
-      },
-      "provenance": {
-        "line_start": 33,
-        "line_end": 33
-      },
-      "ref": "L033"
-    },
-    {
-      "temp_id": "R009",
-      "order": 9,
       "text": "AllocatedMethodDetails MUST have a top-level key \"Elements\" which contains an array.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -224,14 +200,14 @@
       "ref": "L035"
     },
     {
-      "temp_id": "R010",
-      "order": 10,
+      "temp_id": "R009",
+      "order": 9,
       "text": "Each item in \"Elements\" MUST be an object.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -248,14 +224,14 @@
       "ref": "L036"
     },
     {
-      "temp_id": "R011",
-      "order": 11,
+      "temp_id": "R010",
+      "order": 10,
       "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -272,14 +248,14 @@
       "ref": "L037"
     },
     {
-      "temp_id": "R012",
-      "order": 12,
+      "temp_id": "R011",
+      "order": 11,
       "text": "Allocation property key MUST match the spelling and casing specified for the FOCUS-defined property.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -296,14 +272,14 @@
       "ref": "L039"
     },
     {
-      "temp_id": "R013",
-      "order": 13,
+      "temp_id": "R012",
+      "order": 12,
       "text": "Allocation property value MUST be of the type specified for that property.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -320,14 +296,14 @@
       "ref": "L040"
     },
     {
-      "temp_id": "R014",
-      "order": 14,
+      "temp_id": "R013",
+      "order": 13,
       "text": "Allocation properties MUST adhere to additional normative requirements specific to that property.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -344,14 +320,14 @@
       "ref": "L041"
     },
     {
-      "temp_id": "R015",
-      "order": 15,
+      "temp_id": "R014",
+      "order": 14,
       "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -368,14 +344,14 @@
       "ref": "L042"
     },
     {
-      "temp_id": "R016",
-      "order": 16,
+      "temp_id": "R015",
+      "order": 15,
       "text": "Allocation property keys MUST begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -392,14 +368,14 @@
       "ref": "L043"
     },
     {
-      "temp_id": "R017",
-      "order": 17,
+      "temp_id": "R016",
+      "order": 16,
       "text": "AllocatedMethodDetails root object MAY contain additional data generator-defined items, in addition to \"Elements\".",
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
-        "## Requirements",
-        "### Object Schema Requirements"
+        "Requirements",
+        "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
@@ -434,16 +410,16 @@
       "text": "Each item in \"Elements\" MUST be an object.",
       "details": {
         "ref": "L036",
-        "temp_id": "R010",
-        "order": 10,
+        "temp_id": "R009",
+        "order": 9,
         "indent_level": 0,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_ref": "L037",
-        "next_temp_id": "R011",
-        "next_order": 11,
+        "next_temp_id": "R010",
+        "next_order": 10,
         "next_indent_level": 1
       }
     },
@@ -454,16 +430,16 @@
       "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "details": {
         "ref": "L037",
-        "temp_id": "R011",
-        "order": 11,
+        "temp_id": "R010",
+        "order": 10,
         "indent_level": 1,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_ref": "L039",
-        "next_temp_id": "R012",
-        "next_order": 12,
+        "next_temp_id": "R011",
+        "next_order": 11,
         "next_indent_level": 3,
         "expected_max_child_indent": 2
       }
@@ -475,16 +451,16 @@
       "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "details": {
         "ref": "L037",
-        "temp_id": "R011",
-        "order": 11,
+        "temp_id": "R010",
+        "order": 10,
         "indent_level": 1,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_ref": "L039",
-        "next_temp_id": "R012",
-        "next_order": 12,
+        "next_temp_id": "R011",
+        "next_order": 11,
         "next_indent_level": 3
       }
     },
@@ -495,16 +471,16 @@
       "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
       "details": {
         "ref": "L042",
-        "temp_id": "R015",
-        "order": 15,
+        "temp_id": "R014",
+        "order": 14,
         "indent_level": 2,
         "section_path": [
-          "## Requirements",
-          "### Object Schema Requirements"
+          "Requirements",
+          "Object Schema Requirements"
         ],
         "next_ref": "L043",
-        "next_temp_id": "R016",
-        "next_order": 16,
+        "next_temp_id": "R015",
+        "next_order": 15,
         "next_indent_level": 3
       }
     }
@@ -516,7 +492,6 @@
         "class": "requirements_list_intro",
         "confidence": "high",
         "section_path": [
-          "Allocated Method Details",
           "Requirements",
           "Object Schema Requirements"
         ],
@@ -532,15 +507,18 @@
           "line_start": 32,
           "line_end": 32
         },
-        "ref": "L032",
-        "next_normative_refs": []
+        "ref": "LI032",
+        "next_normative_refs": [
+          "L035",
+          "L036",
+          "L044"
+        ]
       },
       {
         "text": "FOCUS-defined allocation properties adhere to the following additional requirements:",
         "class": "requirements_list_intro",
         "confidence": "high",
         "section_path": [
-          "Allocated Method Details",
           "Requirements",
           "Object Schema Requirements"
         ],
@@ -556,23 +534,27 @@
           "line_start": 37,
           "line_end": 37
         },
-        "ref": "L037",
-        "next_normative_refs": []
+        "ref": "LI037",
+        "next_normative_refs": [
+          "L039",
+          "L040",
+          "L041"
+        ]
       }
     ],
     "index": {
       "by_section_path": {
-        "Allocated Method Details > Requirements > Object Schema Requirements": [
-          "L032",
-          "L037"
+        "Requirements > Object Schema Requirements": [
+          "LI032",
+          "LI037"
         ]
       },
       "by_line": {
         "32": [
-          "L032"
+          "LI032"
         ],
         "37": [
-          "L037"
+          "LI037"
         ]
       }
     }
