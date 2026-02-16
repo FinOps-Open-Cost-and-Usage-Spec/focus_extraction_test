@@ -40,4 +40,5 @@ The monetary value of the *contract commitment*.
 
 ## Introduced (version)
 
-1.3
+1.4
+
