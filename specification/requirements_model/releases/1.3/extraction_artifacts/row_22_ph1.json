@@ -26,15 +26,39 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 20,
-        "line_end": 20
+        "line_start": 19,
+        "line_end": 19
       },
-      "ref": "L020"
+      "ref": "L019"
     },
     {
       "temp_id": "R002",
       "order": 2,
       "text": "AllocatedMethodDetails MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Column Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 21,
+        "line_end": 21
+      },
+      "ref": "L021"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "AllocatedMethodDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -56,9 +80,9 @@
       "ref": "L022"
     },
     {
-      "temp_id": "R003",
-      "order": 3,
-      "text": "AllocatedMethodDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "temp_id": "R004",
+      "order": 4,
+      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -80,30 +104,6 @@
       "ref": "L023"
     },
     {
-      "temp_id": "R004",
-      "order": 4,
-      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Column Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 24,
-        "line_end": 24
-      },
-      "ref": "L024"
-    },
-    {
       "temp_id": "R005",
       "order": 5,
       "text": "AllocatedMethodDetails MUST adhere to the following nullability requirements:",
@@ -122,10 +122,10 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 25,
-        "line_end": 25
+        "line_start": 24,
+        "line_end": 24
       },
-      "ref": "L025"
+      "ref": "L024"
     },
     {
       "temp_id": "R006",
@@ -139,17 +139,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 26,
-        "line_end": 26
+        "line_start": 25,
+        "line_end": 25
       },
-      "ref": "L026"
+      "ref": "L025"
     },
     {
       "temp_id": "R007",
@@ -163,22 +163,46 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 27,
-        "line_end": 27
+        "line_start": 26,
+        "line_end": 26
       },
-      "ref": "L027"
+      "ref": "L026"
     },
     {
       "temp_id": "R008",
       "order": 8,
       "text": "AllocatedMethodDetails MUST have a top-level key \"Elements\" which contains an array.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 35,
+        "line_end": 35
+      },
+      "ref": "L035"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "Each item in \"Elements\" MUST be an object.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -200,9 +224,9 @@
       "ref": "L036"
     },
     {
-      "temp_id": "R009",
-      "order": 9,
-      "text": "Each item in \"Elements\" MUST be an object.",
+      "temp_id": "R010",
+      "order": 10,
+      "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -224,30 +248,6 @@
       "ref": "L037"
     },
     {
-      "temp_id": "R010",
-      "order": 10,
-      "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 1,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 38,
-        "line_end": 38
-      },
-      "ref": "L038"
-    },
-    {
       "temp_id": "R011",
       "order": 11,
       "text": "Allocation property key MUST match the spelling and casing specified for the FOCUS-defined property.",
@@ -259,17 +259,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 40,
-        "line_end": 40
+        "line_start": 39,
+        "line_end": 39
       },
-      "ref": "L040"
+      "ref": "L039"
     },
     {
       "temp_id": "R012",
@@ -283,17 +283,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 41,
-        "line_end": 41
+        "line_start": 40,
+        "line_end": 40
       },
-      "ref": "L041"
+      "ref": "L040"
     },
     {
       "temp_id": "R013",
@@ -307,17 +307,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 42,
-        "line_end": 42
+        "line_start": 41,
+        "line_end": 41
       },
-      "ref": "L042"
+      "ref": "L041"
     },
     {
       "temp_id": "R014",
@@ -331,17 +331,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 43,
-        "line_end": 43
+        "line_start": 42,
+        "line_end": 42
       },
-      "ref": "L043"
+      "ref": "L042"
     },
     {
       "temp_id": "R015",
@@ -355,17 +355,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 44,
-        "line_end": 44
+        "line_start": 43,
+        "line_end": 43
       },
-      "ref": "L044"
+      "ref": "L043"
     },
     {
       "temp_id": "R016",
@@ -386,10 +386,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 45,
-        "line_end": 45
+        "line_start": 44,
+        "line_end": 44
       },
-      "ref": "L045"
+      "ref": "L044"
     }
   ],
   "warnings": [
@@ -404,24 +404,23 @@
       "text": "(document-level)"
     },
     {
-      "code": "W_INDENT_JUMP",
-      "severity": "MEDIUM",
-      "message": "Indentation jump suggests ambiguous nesting (child indent > parent indent + 1).",
-      "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
+      "code": "W_ORPHAN_COLON",
+      "severity": "LOW",
+      "message": "Line ends with colon (:) but no child list items were detected.",
+      "text": "AllocatedMethodDetails MUST adhere to the following nullability requirements:",
       "details": {
-        "ref": "L038",
-        "temp_id": "R010",
-        "order": 10,
-        "indent_level": 1,
+        "ref": "L024",
+        "temp_id": "R005",
+        "order": 5,
+        "indent_level": 0,
         "section_path": [
           "Requirements",
-          "Object Schema Requirements"
+          "Column Requirements"
         ],
-        "next_ref": "L040",
-        "next_temp_id": "R011",
-        "next_order": 11,
-        "next_indent_level": 3,
-        "expected_max_child_indent": 2
+        "next_ref": "L025",
+        "next_temp_id": "R006",
+        "next_order": 6,
+        "next_indent_level": 0
       }
     }
   ],
@@ -448,11 +447,7 @@
           "line_end": 32
         },
         "ref": "LI032",
-        "next_normative_refs": [
-          "L036",
-          "L037",
-          "L045"
-        ]
+        "next_normative_refs": []
       },
       {
         "text": "FOCUS-defined allocation properties adhere to the following additional requirements:",
@@ -475,10 +470,7 @@
           "line_end": 37
         },
         "ref": "LI037",
-        "next_normative_refs": [
-          "L037",
-          "L045"
-        ]
+        "next_normative_refs": []
       }
     ],
     "index": {
