@@ -355,7 +355,7 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 3,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -463,26 +463,6 @@
         "next_order": 11,
         "next_indent_level": 3
       }
-    },
-    {
-      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
-      "severity": "MEDIUM",
-      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
-      "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
-      "details": {
-        "ref": "L041",
-        "temp_id": "R014",
-        "order": 14,
-        "indent_level": 2,
-        "section_path": [
-          "Requirements",
-          "Object Schema Requirements"
-        ],
-        "next_ref": "L044",
-        "next_temp_id": "R015",
-        "next_order": 15,
-        "next_indent_level": 3
-      }
     }
   ],
   "structural": {
@@ -508,7 +488,12 @@
           "line_end": 32
         },
         "ref": "LI032",
-        "next_normative_refs": []
+        "next_normative_refs": [
+          "L034",
+          "L035",
+          "L044",
+          "L045"
+        ]
       },
       {
         "text": "FOCUS-defined allocation properties adhere to the following additional requirements:",
