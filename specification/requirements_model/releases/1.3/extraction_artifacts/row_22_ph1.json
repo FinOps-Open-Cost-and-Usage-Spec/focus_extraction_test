@@ -14,6 +14,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Column Requirements"
       ],
@@ -38,6 +39,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Column Requirements"
       ],
@@ -62,6 +64,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Column Requirements"
       ],
@@ -86,6 +89,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Column Requirements"
       ],
@@ -110,6 +114,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Column Requirements"
       ],
@@ -134,6 +139,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Column Requirements"
       ],
@@ -158,6 +164,7 @@
       "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Column Requirements"
       ],
@@ -182,6 +189,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
@@ -206,6 +214,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
@@ -230,6 +239,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
@@ -254,6 +264,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
@@ -278,6 +289,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
@@ -302,6 +314,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
@@ -326,22 +339,23 @@
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 2,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 44,
-        "line_end": 44
+        "line_start": 41,
+        "line_end": 41
       },
-      "ref": "L044"
+      "ref": "L041"
     },
     {
       "temp_id": "R015",
@@ -350,22 +364,23 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 3,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 45,
-        "line_end": 45
+        "line_start": 42,
+        "line_end": 42
       },
-      "ref": "L045"
+      "ref": "L042"
     },
     {
       "temp_id": "R016",
@@ -374,6 +389,7 @@
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
+        "Allocated Method Details",
         "Requirements",
         "Object Schema Requirements"
       ],
@@ -386,10 +402,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 46,
-        "line_end": 46
+        "line_start": 43,
+        "line_end": 43
       },
-      "ref": "L046"
+      "ref": "L043"
     }
   ],
   "warnings": [
@@ -414,6 +430,7 @@
         "order": 9,
         "indent_level": 0,
         "section_path": [
+          "Allocated Method Details",
           "Requirements",
           "Object Schema Requirements"
         ],
@@ -434,6 +451,7 @@
         "order": 10,
         "indent_level": 1,
         "section_path": [
+          "Allocated Method Details",
           "Requirements",
           "Object Schema Requirements"
         ],
@@ -455,12 +473,34 @@
         "order": 10,
         "indent_level": 1,
         "section_path": [
+          "Allocated Method Details",
           "Requirements",
           "Object Schema Requirements"
         ],
         "next_ref": "L038",
         "next_temp_id": "R011",
         "next_order": 11,
+        "next_indent_level": 3
+      }
+    },
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
+      "details": {
+        "ref": "L041",
+        "temp_id": "R014",
+        "order": 14,
+        "indent_level": 2,
+        "section_path": [
+          "Allocated Method Details",
+          "Requirements",
+          "Object Schema Requirements"
+        ],
+        "next_ref": "L042",
+        "next_temp_id": "R015",
+        "next_order": 15,
         "next_indent_level": 3
       }
     }
@@ -488,13 +528,7 @@
           "line_end": 32
         },
         "ref": "LI032",
-        "next_normative_refs": [
-          "L034",
-          "L035",
-          "L044",
-          "L045",
-          "L046"
-        ]
+        "next_normative_refs": []
       },
       {
         "text": "FOCUS-defined allocation properties adhere to the following additional requirements:",
@@ -517,11 +551,7 @@
           "line_end": 37
         },
         "ref": "LI037",
-        "next_normative_refs": [
-          "L038",
-          "L039",
-          "L040"
-        ]
+        "next_normative_refs": []
       }
     ],
     "index": {
