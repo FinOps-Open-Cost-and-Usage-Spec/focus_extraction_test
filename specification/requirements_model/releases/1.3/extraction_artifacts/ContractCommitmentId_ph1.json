@@ -22,6 +22,7 @@
       "order": 1,
       "text": "The ContractCommitmentId column MUST adhere to the following requirements:",
       "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -37,13 +38,15 @@
       "provenance": {
         "line_start": 7,
         "line_end": 7
-      }
+      },
+      "ref": "L007"
     },
     {
       "temp_id": "R002",
       "order": 2,
       "text": "ContractCommitmentId MUST be of type String.",
       "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -59,13 +62,15 @@
       "provenance": {
         "line_start": 9,
         "line_end": 9
-      }
+      },
+      "ref": "L009"
     },
     {
       "temp_id": "R003",
       "order": 3,
       "text": "ContractCommitmentId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
       "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -81,13 +86,15 @@
       "provenance": {
         "line_start": 10,
         "line_end": 10
-      }
+      },
+      "ref": "L010"
     },
     {
       "temp_id": "R004",
       "order": 4,
       "text": "ContractCommitmentId MUST NOT be null.",
       "keyword": "MUST NOT",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -103,13 +110,15 @@
       "provenance": {
         "line_start": 11,
         "line_end": 11
-      }
+      },
+      "ref": "L011"
     },
     {
       "temp_id": "R005",
       "order": 5,
       "text": "When ContractCommitmentId is not null, ContractCommitmentId MUST adhere to the following additional requirements:",
       "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -125,13 +134,15 @@
       "provenance": {
         "line_start": 12,
         "line_end": 12
-      }
+      },
+      "ref": "L012"
     },
     {
       "temp_id": "R006",
       "order": 6,
       "text": "ContractCommitmentId MUST be a unique identifier within the service provider.",
       "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -147,13 +158,15 @@
       "provenance": {
         "line_start": 13,
         "line_end": 13
-      }
+      },
+      "ref": "L013"
     },
     {
       "temp_id": "R007",
       "order": 7,
       "text": "ContractCommitmentId SHOULD be a fully-qualified identifier.",
       "keyword": "SHOULD",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -169,13 +182,15 @@
       "provenance": {
         "line_start": 14,
         "line_end": 14
-      }
+      },
+      "ref": "L014"
     },
     {
       "temp_id": "R008",
       "order": 8,
       "text": "ContractCommitmentId MUST have one and only one parent [ContractId](#datasets.contractcommitment.contractid).",
       "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -191,13 +206,15 @@
       "provenance": {
         "line_start": 15,
         "line_end": 15
-      }
+      },
+      "ref": "L015"
     },
     {
       "temp_id": "R009",
       "order": 9,
       "text": "ContractCommitmentId MAY be equal to ContractId.",
       "keyword": "MAY",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -213,13 +230,15 @@
       "provenance": {
         "line_start": 16,
         "line_end": 16
-      }
+      },
+      "ref": "L016"
     },
     {
       "temp_id": "R010",
       "order": 10,
       "text": "ContractCommitmentId MUST be unique across the Contract Commitment dataset.",
       "keyword": "MUST",
+      "role": "requirement",
       "section_path": [
         "Contract Commitment ID",
         "Requirements"
@@ -235,8 +254,29 @@
       "provenance": {
         "line_start": 17,
         "line_end": 17
-      }
+      },
+      "ref": "L017"
     }
   ],
-  "warnings": []
+  "warnings": [
+    {
+      "code": "W_ENTITY_NAME_CONFLICT",
+      "message": "Both a specific entity name heading and a Display Name heading are present for the same entity type.",
+      "details": {
+        "entity_type": "Column",
+        "name_heading_expected": "## Column Name",
+        "name_heading_present": true,
+        "display_name_heading_expected": "## Display Name",
+        "display_name_heading_present": true
+      },
+      "text": "(document-level)"
+    }
+  ],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
 }
