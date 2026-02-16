@@ -364,18 +364,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 60,
-        "line_end": 60
+        "line_start": 55,
+        "line_end": 55
       },
-      "ref": "L060"
+      "ref": "L055"
     },
     {
       "temp_id": "R016",
@@ -388,18 +388,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 61,
-        "line_end": 61
+        "line_start": 56,
+        "line_end": 56
       },
-      "ref": "L061"
+      "ref": "L056"
     },
     {
       "temp_id": "R017",
@@ -412,18 +412,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 62,
-        "line_end": 62
+        "line_start": 57,
+        "line_end": 57
       },
-      "ref": "L062"
+      "ref": "L057"
     },
     {
       "temp_id": "R018",
@@ -436,18 +436,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 72,
-        "line_end": 72
+        "line_start": 65,
+        "line_end": 65
       },
-      "ref": "L072"
+      "ref": "L065"
     },
     {
       "temp_id": "R019",
@@ -460,18 +460,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 72,
-        "line_end": 72
+        "line_start": 65,
+        "line_end": 65
       },
-      "ref": "L072"
+      "ref": "L065"
     },
     {
       "temp_id": "R020",
@@ -484,18 +484,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 73,
-        "line_end": 73
+        "line_start": 66,
+        "line_end": 66
       },
-      "ref": "L073"
+      "ref": "L066"
     },
     {
       "temp_id": "R021",
@@ -508,18 +508,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 74,
-        "line_end": 74
+        "line_start": 67,
+        "line_end": 67
       },
-      "ref": "L074"
+      "ref": "L067"
     },
     {
       "temp_id": "R022",
@@ -532,18 +532,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 82,
-        "line_end": 82
+        "line_start": 75,
+        "line_end": 75
       },
-      "ref": "L082"
+      "ref": "L075"
     },
     {
       "temp_id": "R023",
@@ -556,18 +556,18 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 83,
-        "line_end": 83
+        "line_start": 76,
+        "line_end": 76
       },
-      "ref": "L083"
+      "ref": "L076"
     },
     {
       "temp_id": "R024",
@@ -580,31 +580,31 @@
         "Content Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 84,
-        "line_end": 84
+        "line_start": 77,
+        "line_end": 77
       },
-      "ref": "L084"
+      "ref": "L077"
     }
   ],
   "warnings": [
     {
       "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "More than one BCP-14 keyword occurrence found in the same source block; atoms were split.",
+      "message": "A single source block contains more than one BCP-14 keyword occurrence.",
       "details": {
-        "line": 72,
+        "line": 68,
         "text": "\"UsageUnit\" MUST be included inside an \"Elements\" object if \"UsageQuantity\" allocation property is included in that \"Elements\" object, otherwise \"UsageUnit\" MAY be included in each \"Elements\" object.",
         "total_occurrences": 2,
         "unique_keywords": [
-          "MAY",
-          "MUST"
+          "MUST",
+          "MAY"
         ]
       },
       "text": "(document-level)"
@@ -763,7 +763,8 @@
         "ref": "LI032",
         "next_normative_refs": [
           "L034",
-          "L035"
+          "L035",
+          "L043"
         ]
       },
       {
@@ -815,9 +816,9 @@
         },
         "ref": "LI053",
         "next_normative_refs": [
-          "L060",
-          "L061",
-          "L062"
+          "L055",
+          "L056",
+          "L057"
         ]
       },
       {
@@ -842,7 +843,9 @@
         },
         "ref": "LI063",
         "next_normative_refs": [
-          "L072"
+          "L065",
+          "L066",
+          "L067"
         ]
       },
       {
@@ -867,10 +870,9 @@
         },
         "ref": "LI073",
         "next_normative_refs": [
-          "L074",
-          "L082",
-          "L083",
-          "L084"
+          "L075",
+          "L076",
+          "L077"
         ]
       }
     ],
