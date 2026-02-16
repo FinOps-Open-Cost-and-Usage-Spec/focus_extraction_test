@@ -24,6 +24,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -47,6 +48,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -70,6 +72,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -93,6 +96,7 @@
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -116,6 +120,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -139,6 +144,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -156,29 +162,7 @@
       "ref": "L014"
     }
   ],
-  "warnings": [
-    {
-      "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
-      "message": "Heading \"## Introduced (version)\" is missing, empty, or invalid.",
-      "details": {
-        "line": null,
-        "text": null
-      },
-      "text": "(document-level)"
-    },
-    {
-      "code": "W_ENTITY_NAME_CONFLICT",
-      "message": "Both a specific entity name heading and \"## Display Name\" are present for the same entity type.",
-      "details": {
-        "entity_type": "Column",
-        "name_heading_expected": "## Column Name",
-        "name_heading_present": true,
-        "display_name_heading_expected": "## Display Name",
-        "display_name_heading_present": true
-      },
-      "text": "(document-level)"
-    }
-  ],
+  "warnings": [],
   "structural": {
     "lead_ins": [
       {
