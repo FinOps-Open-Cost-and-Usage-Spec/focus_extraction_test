@@ -331,17 +331,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 41,
-        "line_end": 41
+        "line_start": 44,
+        "line_end": 44
       },
-      "ref": "L041"
+      "ref": "L044"
     },
     {
       "temp_id": "R015",
@@ -362,10 +362,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 44,
-        "line_end": 44
+        "line_start": 45,
+        "line_end": 45
       },
-      "ref": "L044"
+      "ref": "L045"
     },
     {
       "temp_id": "R016",
@@ -386,10 +386,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 45,
-        "line_end": 45
+        "line_start": 46,
+        "line_end": 46
       },
-      "ref": "L045"
+      "ref": "L046"
     }
   ],
   "warnings": [
@@ -492,7 +492,8 @@
           "L034",
           "L035",
           "L044",
-          "L045"
+          "L045",
+          "L046"
         ]
       },
       {
