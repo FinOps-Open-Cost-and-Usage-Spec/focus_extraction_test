@@ -26,15 +26,63 @@
         "ends_with_colon": true
       },
       "provenance": {
+        "line_start": 18,
+        "line_end": 18
+      },
+      "ref": "L018"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "AllocatedMethodDetails MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Column Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
         "line_start": 20,
         "line_end": 20
       },
       "ref": "L020"
     },
     {
-      "temp_id": "R002",
-      "order": 2,
-      "text": "AllocatedMethodDetails MUST be of type String.",
+      "temp_id": "R003",
+      "order": 3,
+      "text": "AllocatedMethodDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Column Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 21,
+        "line_end": 21
+      },
+      "ref": "L021"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -56,54 +104,6 @@
       "ref": "L022"
     },
     {
-      "temp_id": "R003",
-      "order": 3,
-      "text": "AllocatedMethodDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Column Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 23,
-        "line_end": 23
-      },
-      "ref": "L023"
-    },
-    {
-      "temp_id": "R004",
-      "order": 4,
-      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Column Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 24,
-        "line_end": 24
-      },
-      "ref": "L024"
-    },
-    {
       "temp_id": "R005",
       "order": 5,
       "text": "AllocatedMethodDetails MUST adhere to the following nullability requirements:",
@@ -122,10 +122,10 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 25,
-        "line_end": 25
+        "line_start": 23,
+        "line_end": 23
       },
-      "ref": "L025"
+      "ref": "L023"
     },
     {
       "temp_id": "R006",
@@ -146,10 +146,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 26,
-        "line_end": 26
+        "line_start": 24,
+        "line_end": 24
       },
-      "ref": "L026"
+      "ref": "L024"
     },
     {
       "temp_id": "R007",
@@ -170,38 +170,14 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 27,
-        "line_end": 27
+        "line_start": 25,
+        "line_end": 25
       },
-      "ref": "L027"
+      "ref": "L025"
     },
     {
       "temp_id": "R008",
       "order": 8,
-      "text": "When AllocatedMethodDetails is not null, the JsonObjectFormat for AllocatedMethodDetails adheres to the following requirements:",
-      "keyword": "NOT",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "paragraph",
-        "indent_level": 0,
-        "bullet": null
-      },
-      "lead_in": {
-        "ends_with_colon": true
-      },
-      "provenance": {
-        "line_start": 34,
-        "line_end": 34
-      },
-      "ref": "L034"
-    },
-    {
-      "temp_id": "R009",
-      "order": 9,
       "text": "AllocatedMethodDetails MUST have a top-level key \"Elements\" which contains an array.",
       "keyword": "MUST",
       "role": "requirement",
@@ -218,14 +194,14 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 36,
-        "line_end": 36
+        "line_start": 33,
+        "line_end": 33
       },
-      "ref": "L036"
+      "ref": "L033"
     },
     {
-      "temp_id": "R010",
-      "order": 10,
+      "temp_id": "R009",
+      "order": 9,
       "text": "Each item in \"Elements\" MUST be an object.",
       "keyword": "MUST",
       "role": "requirement",
@@ -242,14 +218,14 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 37,
-        "line_end": 37
+        "line_start": 34,
+        "line_end": 34
       },
-      "ref": "L037"
+      "ref": "L034"
     },
     {
-      "temp_id": "R011",
-      "order": 11,
+      "temp_id": "R010",
+      "order": 10,
       "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
@@ -266,14 +242,14 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 38,
-        "line_end": 38
+        "line_start": 35,
+        "line_end": 35
       },
-      "ref": "L038"
+      "ref": "L035"
     },
     {
-      "temp_id": "R012",
-      "order": 12,
+      "temp_id": "R011",
+      "order": 11,
       "text": "Allocation property key MUST match the spelling and casing specified for the FOCUS-defined property.",
       "keyword": "MUST",
       "role": "requirement",
@@ -290,15 +266,87 @@
         "ends_with_colon": false
       },
       "provenance": {
+        "line_start": 37,
+        "line_end": 37
+      },
+      "ref": "L037"
+    },
+    {
+      "temp_id": "R012",
+      "order": 12,
+      "text": "Allocation property value MUST be of the type specified for that property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 3,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 38,
+        "line_end": 38
+      },
+      "ref": "L038"
+    },
+    {
+      "temp_id": "R013",
+      "order": 13,
+      "text": "Allocation properties MUST adhere to additional normative requirements specific to that property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 3,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 39,
+        "line_end": 39
+      },
+      "ref": "L039"
+    },
+    {
+      "temp_id": "R014",
+      "order": 14,
+      "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
         "line_start": 40,
         "line_end": 40
       },
       "ref": "L040"
     },
     {
-      "temp_id": "R013",
-      "order": 13,
-      "text": "Allocation property value MUST be of the type specified for that property.",
+      "temp_id": "R015",
+      "order": 15,
+      "text": "Allocation property keys MUST begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -320,80 +368,8 @@
       "ref": "L041"
     },
     {
-      "temp_id": "R014",
-      "order": 14,
-      "text": "Allocation properties MUST adhere to additional normative requirements specific to that property.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 3,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 42,
-        "line_end": 42
-      },
-      "ref": "L042"
-    },
-    {
-      "temp_id": "R015",
-      "order": 15,
-      "text": "Data generator-defined allocation properties MAY be included in \"Elements\".",
-      "keyword": "MAY",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 43,
-        "line_end": 43
-      },
-      "ref": "L043"
-    },
-    {
       "temp_id": "R016",
       "order": 16,
-      "text": "Allocation property keys MUST begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements",
-        "Object Schema Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 3,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 44,
-        "line_end": 44
-      },
-      "ref": "L044"
-    },
-    {
-      "temp_id": "R017",
-      "order": 17,
       "text": "AllocatedMethodDetails root object MAY contain additional data generator-defined items, in addition to \"Elements\".",
       "keyword": "MAY",
       "role": "requirement",
@@ -410,10 +386,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 45,
-        "line_end": 45
+        "line_start": 42,
+        "line_end": 42
       },
-      "ref": "L045"
+      "ref": "L042"
     }
   ],
   "warnings": [
@@ -433,17 +409,17 @@
       "message": "Indentation jump suggests ambiguous nesting (child indent > parent indent + 1).",
       "text": "Objects inside \"Elements\" MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "details": {
-        "ref": "L038",
-        "temp_id": "R011",
-        "order": 11,
+        "ref": "L035",
+        "temp_id": "R010",
+        "order": 10,
         "indent_level": 1,
         "section_path": [
           "Requirements",
           "Object Schema Requirements"
         ],
-        "next_ref": "L040",
-        "next_temp_id": "R012",
-        "next_order": 12,
+        "next_ref": "L037",
+        "next_temp_id": "R011",
+        "next_order": 11,
         "next_indent_level": 3,
         "expected_max_child_indent": 2
       }
@@ -472,7 +448,11 @@
           "line_end": 32
         },
         "ref": "LI032",
-        "next_normative_refs": []
+        "next_normative_refs": [
+          "L033",
+          "L034",
+          "L042"
+        ]
       },
       {
         "text": "FOCUS-defined allocation properties adhere to the following additional requirements:",
@@ -496,7 +476,8 @@
         },
         "ref": "LI037",
         "next_normative_refs": [
-          "L038"
+          "L038",
+          "L039"
         ]
       }
     ],
