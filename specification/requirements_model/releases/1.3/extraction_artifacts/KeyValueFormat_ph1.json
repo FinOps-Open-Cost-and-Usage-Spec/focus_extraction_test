@@ -36,10 +36,10 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 15,
-        "line_end": 15
+        "line_start": 19,
+        "line_end": 19
       },
-      "ref": "L015"
+      "ref": "L019"
     },
     {
       "temp_id": "R002",
@@ -52,18 +52,18 @@
         "Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 17,
-        "line_end": 17
+        "line_start": 21,
+        "line_end": 21
       },
-      "ref": "L017"
+      "ref": "L021"
     },
     {
       "temp_id": "R003",
@@ -76,18 +76,18 @@
         "Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 18,
-        "line_end": 18
+        "line_start": 22,
+        "line_end": 22
       },
-      "ref": "L018"
+      "ref": "L022"
     },
     {
       "temp_id": "R004",
@@ -100,18 +100,18 @@
         "Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 19,
-        "line_end": 19
+        "line_start": 23,
+        "line_end": 23
       },
-      "ref": "L019"
+      "ref": "L023"
     },
     {
       "temp_id": "R005",
@@ -124,18 +124,18 @@
         "Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 20,
-        "line_end": 20
+        "line_start": 24,
+        "line_end": 24
       },
-      "ref": "L020"
+      "ref": "L024"
     }
   ],
   "warnings": [
@@ -148,26 +148,6 @@
         "found_version": null
       },
       "text": "(document-level)"
-    },
-    {
-      "code": "W_ORPHAN_COLON",
-      "severity": "LOW",
-      "message": "Line ends with colon (:) but no child list items were detected.",
-      "text": "KeyValueFormat MUST adhere to the following requirements:",
-      "details": {
-        "ref": "L015",
-        "temp_id": "R001",
-        "order": 1,
-        "indent_level": 0,
-        "section_path": [
-          "Key-Value Format",
-          "Requirements"
-        ],
-        "next_ref": "L017",
-        "next_temp_id": "R002",
-        "next_order": 2,
-        "next_indent_level": 0
-      }
     }
   ],
   "structural": {
