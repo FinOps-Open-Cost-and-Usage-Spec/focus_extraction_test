@@ -239,31 +239,6 @@
     {
       "temp_id": "R010",
       "order": 10,
-      "text": "AllocatedMethodDetailsObject.Elements MUST adhere to the following requirements:",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Allocated Method Details",
-        "Allocated Method Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": true
-      },
-      "provenance": {
-        "line_start": 38,
-        "line_end": 38
-      },
-      "ref": "L038"
-    },
-    {
-      "temp_id": "R011",
-      "order": 11,
       "text": "AllocatedMethodDetailsObject.Elements MUST be of type Array.",
       "keyword": "MUST",
       "role": "requirement",
@@ -287,8 +262,8 @@
       "ref": "L039"
     },
     {
-      "temp_id": "R012",
-      "order": 12,
+      "temp_id": "R011",
+      "order": 11,
       "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST be of type JSON object.",
       "keyword": "MUST",
       "role": "requirement",
@@ -312,8 +287,8 @@
       "ref": "L040"
     },
     {
-      "temp_id": "R013",
-      "order": 13,
+      "temp_id": "R012",
+      "order": 12,
       "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
@@ -337,8 +312,8 @@
       "ref": "L041"
     },
     {
-      "temp_id": "R014",
-      "order": 14,
+      "temp_id": "R013",
+      "order": 13,
       "text": "AllocatedMethodDetailsObject.Elements[\\*] MAY contain data generator-defined allocation properties.",
       "keyword": "MAY",
       "role": "requirement",
@@ -362,8 +337,8 @@
       "ref": "L042"
     },
     {
-      "temp_id": "R015",
-      "order": 15,
+      "temp_id": "R014",
+      "order": 14,
       "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST have property keys that begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
       "keyword": "MUST",
       "role": "requirement",
@@ -387,8 +362,8 @@
       "ref": "L043"
     },
     {
-      "temp_id": "R016",
-      "order": 16,
+      "temp_id": "R015",
+      "order": 15,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST be present inside each AllocatedMethodDetailsObject.Elements object.",
       "keyword": "MUST",
       "role": "requirement",
@@ -412,8 +387,8 @@
       "ref": "L045"
     },
     {
-      "temp_id": "R017",
-      "order": 17,
+      "temp_id": "R016",
+      "order": 16,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST be of type Decimal.",
       "keyword": "MUST",
       "role": "requirement",
@@ -437,8 +412,8 @@
       "ref": "L046"
     },
     {
-      "temp_id": "R018",
-      "order": 18,
+      "temp_id": "R017",
+      "order": 17,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
@@ -462,8 +437,8 @@
       "ref": "L047"
     },
     {
-      "temp_id": "R019",
-      "order": 19,
+      "temp_id": "R018",
+      "order": 18,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST represent the allocated charge's percentage of the origin charge.",
       "keyword": "MUST",
       "role": "requirement",
@@ -487,8 +462,8 @@
       "ref": "L048"
     },
     {
-      "temp_id": "R020",
-      "order": 20,
+      "temp_id": "R019",
+      "order": 19,
       "text": "Values for all AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio properties across all allocated charges related to a single origin charge MUST sum up to 1 (100%).",
       "keyword": "MUST",
       "role": "requirement",
@@ -512,8 +487,8 @@
       "ref": "L049"
     },
     {
-      "temp_id": "R021",
-      "order": 21,
+      "temp_id": "R020",
+      "order": 20,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST be present inside an AllocatedMethodDetailsObject.Elements object if AllocatedMethodDetailsObject.Elements[*].UsageQuantity allocation property is present in that AllocatedMethodDetailsObject.Elements object",
       "keyword": "MUST",
       "role": "requirement",
@@ -537,8 +512,8 @@
       "ref": "L051"
     },
     {
-      "temp_id": "R022",
-      "order": 22,
+      "temp_id": "R021",
+      "order": 21,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MAY be present inside an AllocatedMethodDetailsObject.Elements object if AllocatedMethodDetailsObject.Elements[*].UsageQuantity allocation property is not present in that AllocatedMethodDetailsObject.Elements object",
       "keyword": "MAY",
       "role": "requirement",
@@ -562,8 +537,8 @@
       "ref": "L052"
     },
     {
-      "temp_id": "R023",
-      "order": 23,
+      "temp_id": "R022",
+      "order": 22,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST be of type String.",
       "keyword": "MUST",
       "role": "requirement",
@@ -587,8 +562,8 @@
       "ref": "L053"
     },
     {
-      "temp_id": "R024",
-      "order": 24,
+      "temp_id": "R023",
+      "order": 23,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST conform to StringHandling requirements.",
       "keyword": "MUST",
       "role": "requirement",
@@ -612,8 +587,8 @@
       "ref": "L054"
     },
     {
-      "temp_id": "R025",
-      "order": 25,
+      "temp_id": "R024",
+      "order": 24,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
       "keyword": "SHOULD",
       "role": "requirement",
@@ -637,8 +612,8 @@
       "ref": "L055"
     },
     {
-      "temp_id": "R026",
-      "order": 26,
+      "temp_id": "R025",
+      "order": 25,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST represent the unit or component of data generator's documented [AllocationMethod](#datasets.costandusage.allocatedmethodid) which was used to determine the AllocatedMethodDetailsObject.Elements[*].AllocatedRatio value.",
       "keyword": "MUST",
       "role": "requirement",
@@ -662,8 +637,8 @@
       "ref": "L056"
     },
     {
-      "temp_id": "R027",
-      "order": 27,
+      "temp_id": "R026",
+      "order": 26,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity MUST be present inside an AllocatedMethodDetailsObject.Elements object if AllocatedMethodDetailsObject.Elements[*].UsageUnit allocation property is present in that AllocatedMethodDetailsObject.Elements object",
       "keyword": "MUST",
       "role": "requirement",
@@ -687,8 +662,8 @@
       "ref": "L058"
     },
     {
-      "temp_id": "R028",
-      "order": 28,
+      "temp_id": "R027",
+      "order": 27,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity MUST be of type Decimal.",
       "keyword": "MUST",
       "role": "requirement",
@@ -712,8 +687,8 @@
       "ref": "L059"
     },
     {
-      "temp_id": "R029",
-      "order": 29,
+      "temp_id": "R028",
+      "order": 28,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
@@ -737,8 +712,8 @@
       "ref": "L060"
     },
     {
-      "temp_id": "R030",
-      "order": 30,
+      "temp_id": "R029",
+      "order": 29,
       "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity SHOULD capture the quantity or volume of the AllocatedMethodDetailsObject.Elements[\\*].UsageUnit measured by the data generator that was used to determine the AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio value.",
       "keyword": "SHOULD",
       "role": "requirement",
@@ -787,11 +762,32 @@
       "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
       "severity": "MEDIUM",
       "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "AllocatedMethodDetailsObject MUST have property keys that begin with the string \"x_\" unless it is the top-level property key \"Elements\".",
+      "details": {
+        "ref": "L037",
+        "temp_id": "R009",
+        "order": 9,
+        "indent_level": 0,
+        "section_path": [
+          "Allocated Method Details",
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "next_ref": "L039",
+        "next_temp_id": "R010",
+        "next_order": 10,
+        "next_indent_level": 1
+      }
+    },
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
       "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST have property keys that begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
       "details": {
         "ref": "L043",
-        "temp_id": "R015",
-        "order": 15,
+        "temp_id": "R014",
+        "order": 14,
         "indent_level": 1,
         "section_path": [
           "Allocated Method Details",
@@ -799,8 +795,8 @@
           "Object Requirements"
         ],
         "next_ref": "L045",
-        "next_temp_id": "R016",
-        "next_order": 16,
+        "next_temp_id": "R015",
+        "next_order": 15,
         "next_indent_level": 2
       }
     }
@@ -834,8 +830,7 @@
           "L017",
           "L035",
           "L036",
-          "L037",
-          "L038"
+          "L037"
         ]
       },
       {
@@ -862,8 +857,7 @@
         "next_normative_refs": [
           "L035",
           "L036",
-          "L037",
-          "L038"
+          "L037"
         ]
       },
       {
