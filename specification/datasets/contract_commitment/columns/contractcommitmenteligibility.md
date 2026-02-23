@@ -6,7 +6,7 @@ Contract Commitment Eligibility is a structured definition of the specific entit
 
 ### Column Requirements
 
-The ContractCommitmentEligibility column adheres to the following requirements:
+The ContractCommitmentEligibility MUST adhere to the following requirements:
 
 * ContractCommitmentEligibility MUST be of type String.
 * ContractCommitmentEligibility MUST conform to [StringHandling](#attributes.stringhandling) requirements.
@@ -22,7 +22,7 @@ The following section details the normative requirements for the ContractCommitm
 
 ### Object Requirements
 
-The ContractCommitmentEligibilityObject adheres to the following requirements:
+The ContractCommitmentEligibilityObject MUST adhere to the following requirements:
 
 * ContractCommitmentEligibilityObject MUST conform to the [ContractCommitmentEligibilityObjectSchema](#schemas.datasets.contractcommitment.contractcommitmenteligibilityobjectschema) JSON Schema.
 * ContractCommitmentEligibilityObject.IsGlobalScope MUST be `true` if the *contract commitment* applies to all resources.
