@@ -20,6 +20,30 @@
     {
       "temp_id": "R001",
       "order": 1,
+      "text": "The AllocatedMethodDetails column MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 9,
+        "line_end": 9
+      },
+      "ref": "L009"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
       "text": "AllocatedMethodDetails MUST be of type String.",
       "keyword": "MUST",
       "role": "requirement",
@@ -42,8 +66,8 @@
       "ref": "L011"
     },
     {
-      "temp_id": "R002",
-      "order": 2,
+      "temp_id": "R003",
+      "order": 3,
       "text": "AllocatedMethodDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
@@ -66,8 +90,8 @@
       "ref": "L012"
     },
     {
-      "temp_id": "R003",
-      "order": 3,
+      "temp_id": "R004",
+      "order": 4,
       "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
@@ -90,8 +114,32 @@
       "ref": "L013"
     },
     {
-      "temp_id": "R004",
-      "order": 4,
+      "temp_id": "R005",
+      "order": 5,
+      "text": "AllocatedMethodDetails MUST adhere to the following nullability requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 14,
+        "line_end": 14
+      },
+      "ref": "L014"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
       "text": "AllocatedMethodDetails MUST be null when a charge is not related to a data generator-calculated split cost allocation.",
       "keyword": "MUST",
       "role": "requirement",
@@ -114,8 +162,8 @@
       "ref": "L015"
     },
     {
-      "temp_id": "R005",
-      "order": 5,
+      "temp_id": "R007",
+      "order": 7,
       "text": "AllocatedMethodDetails SHOULD NOT be null when a charge is related to a data generator-calculated split cost allocation.",
       "keyword": "SHOULD NOT",
       "role": "requirement",
@@ -138,8 +186,8 @@
       "ref": "L016"
     },
     {
-      "temp_id": "R006",
-      "order": 6,
+      "temp_id": "R008",
+      "order": 8,
       "text": "AllocatedMethodDetails MUST conform to [AllocatedMethodDetailsObject](#datasets.costandusage.allocatedmethoddetails.allocatedmethoddetailsobject) requirements when AllocatedMethodDetails is not null.",
       "keyword": "MUST",
       "role": "requirement",
@@ -162,8 +210,33 @@
       "ref": "L017"
     },
     {
-      "temp_id": "R007",
-      "order": 7,
+      "temp_id": "R009",
+      "order": 9,
+      "text": "The AllocatedMethodDetailsObject MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 33,
+        "line_end": 33
+      },
+      "ref": "L033"
+    },
+    {
+      "temp_id": "R010",
+      "order": 10,
       "text": "AllocatedMethodDetailsObject MUST conform to the [AllocatedMethodDetailsObjectSchema](#schemas.datasets.costandusage.allocatedmethoddetailsobjectschema) JSON Schema.",
       "keyword": "MUST",
       "role": "requirement",
@@ -187,9 +260,9 @@
       "ref": "L035"
     },
     {
-      "temp_id": "R008",
-      "order": 8,
-      "text": "AllocatedMethodDetailsObject.Elements[*].AllocatedRatio MUST represent the allocated charge's percentage of the origin charge.",
+      "temp_id": "R011",
+      "order": 11,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST represent the allocated charge's percentage of the origin charge.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -212,9 +285,9 @@
       "ref": "L036"
     },
     {
-      "temp_id": "R009",
-      "order": 9,
-      "text": "Values for all AllocatedMethodDetailsObject.Elements[*].AllocatedRatio properties across all allocated charges related to a single origin charge MUST sum up to 1 (100%).",
+      "temp_id": "R012",
+      "order": 12,
+      "text": "Values for all AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio properties across all allocated charges related to a single origin charge MUST sum up to 1 (100%).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -237,9 +310,9 @@
       "ref": "L037"
     },
     {
-      "temp_id": "R010",
-      "order": 10,
-      "text": "AllocatedMethodDetailsObject.Elements[*].UsageUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
+      "temp_id": "R013",
+      "order": 13,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -262,9 +335,9 @@
       "ref": "L038"
     },
     {
-      "temp_id": "R011",
-      "order": 11,
-      "text": "AllocatedMethodDetailsObject.Elements[*].UsageUnit MUST represent the unit or component of data generator's documented [AllocationMethod](#datasets.costandusage.allocatedmethodid) which was used to determine the AllocatedMethodDetailsObject.Elements[*].AllocatedRatio value.",
+      "temp_id": "R014",
+      "order": 14,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST represent the unit or component of data generator's documented [AllocationMethod](#datasets.costandusage.allocatedmethodid) which was used to determine the AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio value.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -287,9 +360,9 @@
       "ref": "L039"
     },
     {
-      "temp_id": "R012",
-      "order": 12,
-      "text": "AllocatedMethodDetailsObject.Elements[*].UsageQuantity SHOULD capture the quantity or volume of the AllocatedMethodDetailsObject.Elements[*].UsageUnit measured by the data generator that was used to determine the AllocatedMethodDetailsObject.Elements[*].AllocatedRatio value.",
+      "temp_id": "R015",
+      "order": 15,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity SHOULD capture the quantity or volume of the AllocatedMethodDetailsObject.Elements[\\*].UsageUnit measured by the data generator that was used to determine the AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio value.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -312,111 +385,12 @@
       "ref": "L040"
     }
   ],
-  "warnings": [
-    {
-      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
-      "severity": "MEDIUM",
-      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
-      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
-      "details": {
-        "ref": "L013",
-        "temp_id": "R003",
-        "order": 3,
-        "indent_level": 0,
-        "section_path": [
-          "Allocated Method Details",
-          "Requirements"
-        ],
-        "next_ref": "L015",
-        "next_temp_id": "R004",
-        "next_order": 4,
-        "next_indent_level": 1
-      }
-    }
-  ],
+  "warnings": [],
   "structural": {
-    "lead_ins": [
-      {
-        "text": "The AllocatedMethodDetails column adheres to the following requirements:",
-        "class": "requirements_list_intro",
-        "confidence": "high",
-        "section_path": [
-          "Requirements"
-        ],
-        "block": {
-          "block_type": "paragraph",
-          "indent_level": 0,
-          "bullet": null
-        },
-        "lead_in": {
-          "ends_with_colon": true
-        },
-        "provenance": {
-          "line_start": 9,
-          "line_end": 9
-        },
-        "ref": "LI009",
-        "next_normative_refs": [
-          "L011",
-          "L012",
-          "L013",
-          "L017",
-          "L035",
-          "L036",
-          "L037",
-          "L038",
-          "L039",
-          "L040"
-        ]
-      },
-      {
-        "text": "The AllocatedMethodDetailsObject adheres to the following requirements:",
-        "class": "requirements_list_intro",
-        "confidence": "high",
-        "section_path": [
-          "Allocated Method Details Object",
-          "Object Requirements"
-        ],
-        "block": {
-          "block_type": "paragraph",
-          "indent_level": 0,
-          "bullet": null
-        },
-        "lead_in": {
-          "ends_with_colon": true
-        },
-        "provenance": {
-          "line_start": 33,
-          "line_end": 33
-        },
-        "ref": "LI033",
-        "next_normative_refs": [
-          "L035",
-          "L036",
-          "L037",
-          "L038",
-          "L039",
-          "L040"
-        ]
-      }
-    ],
+    "lead_ins": [],
     "index": {
-      "by_section_path": {
-        "Requirements": [
-          "LI009"
-        ],
-        "Allocated Method Details Object > Object Requirements": [
-          "LI033"
-        ]
-      },
-      "by_line": {
-        "9": [
-          "LI009"
-        ],
-        "33": [
-          "LI033"
-        ]
-      }
+      "by_section_path": {},
+      "by_line": {}
     }
   }
 }
