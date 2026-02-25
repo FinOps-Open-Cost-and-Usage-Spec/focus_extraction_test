@@ -19,6 +19,42 @@
     ],
     "atoms_in_scope_count": 8
   },
+  "0_outline_root": "ROOT: Contract Commitment Cost > Requirements",
+  "0_outline_lines": [
+    "L007: \"The ContractCommitmentCost column MUST adhere to the following requirements:\"",
+    "  L009: \"ContractCommitmentCost MUST be of type Decimal.\"",
+    "  L010: \"ContractCommitmentCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
+    "  L011: \"ContractCommitmentCost MUST adhere to the following nullability requirements:\"",
+    "    L012: \"ContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \\\"Spend\\\".\"",
+    "    L013: \"ContractCommitmentCost MAY be null when ContractCommitmentCategory is \\\"Usage\\\".\"",
+    "  L014: \"ContractCommitmentCost MUST be a valid decimal value.\"",
+    "  L015: \"ContractCommitmentCost MUST be denominated in the [BillingCurrency](#datasets.contractcommitment.billingcurrency).\""
+  ],
+  "0_outline_summary": {
+    "node_count": 8,
+    "leaf_count": 6,
+    "lead_in_count": 2,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 6,
+      "MUST NOT": 1,
+      "MAY": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L007",
+        "text_preview": "The ContractCommitmentCost column MUST adhere to the following requirements:",
+        "children": 5
+      },
+      {
+        "ref": "L011",
+        "text_preview": "ContractCommitmentCost MUST adhere to the following nullability requirements:",
+        "children": 2
+      }
+    ]
+  },
   "structure": {
     "root": {
       "node_id": "R000",
