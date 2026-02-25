@@ -46,56 +46,55 @@
               "ends_with_colon": true
             }
           },
-          "children": [
-            {
-              "node_id": "R002",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R002",
-                "order": 2,
-                "ref": "L009",
-                "text": "ContractCommitmentCost MUST be of type Decimal.",
-                "keyword": "MUST",
-                "section_path": [
-                  "Contract Commitment Cost",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
+          "children": []
+        },
+        {
+          "node_id": "R002",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R002",
+            "order": 2,
+            "ref": "L009",
+            "text": "ContractCommitmentCost MUST be of type Decimal.",
+            "keyword": "MUST",
+            "section_path": [
+              "Contract Commitment Cost",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
             },
-            {
-              "node_id": "R003",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R003",
-                "order": 3,
-                "ref": "L010",
-                "text": "ContractCommitmentCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
-                "keyword": "MUST",
-                "section_path": [
-                  "Contract Commitment Cost",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
+            "lead_in": {
+              "ends_with_colon": false
             }
-          ]
+          },
+          "children": []
+        },
+        {
+          "node_id": "R003",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R003",
+            "order": 3,
+            "ref": "L010",
+            "text": "ContractCommitmentCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+            "keyword": "MUST",
+            "section_path": [
+              "Contract Commitment Cost",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
         },
         {
           "node_id": "R004",
@@ -167,56 +166,56 @@
                 }
               },
               "children": []
-            },
-            {
-              "node_id": "R007",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R007",
-                "order": 7,
-                "ref": "L014",
-                "text": "ContractCommitmentCost MUST be a valid decimal value.",
-                "keyword": "MUST",
-                "section_path": [
-                  "Contract Commitment Cost",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
-            },
-            {
-              "node_id": "R008",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R008",
-                "order": 8,
-                "ref": "L015",
-                "text": "ContractCommitmentCost MUST be denominated in the [BillingCurrency](#datasets.contractcommitment.billingcurrency).",
-                "keyword": "MUST",
-                "section_path": [
-                  "Contract Commitment Cost",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
             }
           ]
+        },
+        {
+          "node_id": "R007",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R007",
+            "order": 7,
+            "ref": "L014",
+            "text": "ContractCommitmentCost MUST be a valid decimal value.",
+            "keyword": "MUST",
+            "section_path": [
+              "Contract Commitment Cost",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R008",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R008",
+            "order": 8,
+            "ref": "L015",
+            "text": "ContractCommitmentCost MUST be denominated in the [BillingCurrency](#datasets.contractcommitment.billingcurrency).",
+            "keyword": "MUST",
+            "section_path": [
+              "Contract Commitment Cost",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
         }
       ]
     }
@@ -228,6 +227,15 @@
       "lead_in_colon",
       "indent_level"
     ],
-    "warnings": []
+    "warnings": [
+      {
+        "code": "LEADIN_NO_CHILDREN",
+        "at": {
+          "temp_id": "R001",
+          "order": null
+        },
+        "text": "Lead-in ends with ':' but no children were attached."
+      }
+    ]
   }
 }
