@@ -1,0 +1,123 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/attributes/currency_format.md",
+    "version": "0.5"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "CurrencyFormat",
+    "entity_name": "Currency Format"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Attribute",
+      "entity_id": "CurrencyFormat",
+      "entity_name": "Currency Format"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "All columns capturing a currency value, defined in the FOCUS specification, MUST follow the requirements listed below.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Currency Format"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      },
+      "ref": "L010"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "Custom currency-related columns SHOULD also follow the same formatting requirements.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Currency Format"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      },
+      "ref": "L011"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "Currency-related columns MUST be represented as a three-letter alphabetic code as dictated in the governing document [ISO 4217:2015](https://www.iso.org/standard/64758.html) when the value is presented in national currency (e.g., USD, EUR).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Currency Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 26,
+        "line_end": 26
+      },
+      "ref": "L026"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "Currency-related columns MUST conform to [StringHandling](#attributes.stringhandling) requirements when the value is presented in virtual currency (e.g., credits, tokens).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Currency Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 27,
+        "line_end": 27
+      },
+      "ref": "L027"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}
