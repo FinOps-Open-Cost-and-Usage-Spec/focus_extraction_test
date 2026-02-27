@@ -4,7 +4,11 @@
     "path": "specification/datasets/cost_and_usage/columns/allocatedmethoddetails.md",
     "version": "1.3"
   },
-  "entity": null,
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "AllocatedMethodDetails",
+    "entity_name": "Allocated Method Details"
+  },
   "entities_found": [
     {
       "entity_type": "Column",
