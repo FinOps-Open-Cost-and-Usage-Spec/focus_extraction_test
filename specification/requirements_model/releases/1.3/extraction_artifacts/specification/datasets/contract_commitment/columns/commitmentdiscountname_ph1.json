@@ -2,7 +2,7 @@
   "phase": 1,
   "source": {
     "path": "specification/datasets/contract_commitment/columns/commitmentdiscountname.md",
-    "version": "unknown"
+    "version": "1.0"
   },
   "entity": {
     "entity_type": "Column",
