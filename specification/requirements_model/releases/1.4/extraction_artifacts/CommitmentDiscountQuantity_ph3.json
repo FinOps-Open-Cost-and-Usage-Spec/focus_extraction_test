@@ -1,0 +1,232 @@
+{
+  "ModelRules": {
+    "CCT-CommitmentDiscountQuantity-C-000-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-000-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L009",
+      "Keyword": "MUST",
+      "Order": 0,
+      "Statement": "CommitmentDiscountQuantity MUST adhere to the following requirements:",
+      "Dependencies": [
+        "CCT-CommitmentDiscountQuantity-C-001-M",
+        "CCT-CommitmentDiscountQuantity-C-002-M",
+        "CCT-CommitmentDiscountQuantity-C-003-M",
+        "CCT-CommitmentDiscountQuantity-C-009-M",
+        "CCT-CommitmentDiscountQuantity-C-010-M",
+        "CCT-CommitmentDiscountQuantity-C-013-M"
+      ]
+    },
+    "CCT-CommitmentDiscountQuantity-C-001-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-001-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L011",
+      "Keyword": "MUST",
+      "Order": 10,
+      "Statement": "CommitmentDiscountQuantity MUST be of type Decimal.",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-002-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-002-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L012",
+      "Keyword": "MUST",
+      "Order": 20,
+      "Statement": "CommitmentDiscountQuantity MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-003-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-003-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L013",
+      "Keyword": "MUST",
+      "Order": 30,
+      "Statement": "CommitmentDiscountQuantity MUST adhere to the following nullability requirements:",
+      "Dependencies": [
+        "CCT-CommitmentDiscountQuantity-C-004-M",
+        "CCT-CommitmentDiscountQuantity-C-005-M",
+        "CCT-CommitmentDiscountQuantity-C-008-M"
+      ]
+    },
+    "CCT-CommitmentDiscountQuantity-C-004-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-004-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L014",
+      "Keyword": "MUST",
+      "Order": 40,
+      "Statement": "CommitmentDiscountQuantity MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-005-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-005-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L015",
+      "Keyword": "MUST",
+      "Order": 50,
+      "Statement": "When ChargeCategory is \"Usage\" or \"Purchase\" and CommitmentDiscountId is not null, CommitmentDiscountQuantity MUST adhere to the following requirements:",
+      "Dependencies": [
+        "CCT-CommitmentDiscountQuantity-C-006-M",
+        "CCT-CommitmentDiscountQuantity-C-007-C"
+      ]
+    },
+    "CCT-CommitmentDiscountQuantity-C-006-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-006-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L016",
+      "Keyword": "MUST NOT",
+      "Order": 60,
+      "Statement": "CommitmentDiscountQuantity MUST NOT be null when [ChargeClass](#datasets.costandusage.chargeclass) is not \"Correction\".",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-007-C": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-007-C",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L017",
+      "Keyword": "MAY",
+      "Order": 70,
+      "Statement": "CommitmentDiscountQuantity MAY be null when ChargeClass is \"Correction\".",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-008-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-008-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L018",
+      "Keyword": "MUST",
+      "Order": 80,
+      "Statement": "CommitmentDiscountQuantity MUST be null in all other cases.",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-009-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-009-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L019",
+      "Keyword": "MUST",
+      "Order": 90,
+      "Statement": "CommitmentDiscountQuantity MUST be a valid decimal value when not null.",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-010-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-010-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L020",
+      "Keyword": "MUST",
+      "Order": 100,
+      "Statement": "When CommitmentDiscountQuantity is not null and ChargeCategory is \"Purchase\", CommitmentDiscountQuantity MUST adhere to the following requirements:",
+      "Dependencies": [
+        "CCT-CommitmentDiscountQuantity-C-011-M",
+        "CCT-CommitmentDiscountQuantity-C-012-M"
+      ]
+    },
+    "CCT-CommitmentDiscountQuantity-C-011-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-011-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L021",
+      "Keyword": "MUST",
+      "Order": 110,
+      "Statement": "CommitmentDiscountQuantity MUST be the quantity of CommitmentDiscountUnit, paid fully or partially upfront, that is eligible for consumption over the *commitment discount's* *term* when [ChargeFrequency](#datasets.costandusage.chargefrequency) is \"One-Time\".",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-012-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-012-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L022",
+      "Keyword": "MUST",
+      "Order": 120,
+      "Statement": "CommitmentDiscountQuantity MUST be the quantity of CommitmentDiscountUnit that is eligible for consumption for each *charge period* that corresponds with the purchase when ChargeFrequency is \"Recurring\".",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-013-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-013-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L023",
+      "Keyword": "MUST",
+      "Order": 130,
+      "Statement": "When CommitmentDiscountQuantity is not null and ChargeCategory is \"Usage\", CommitmentDiscountQuantity MUST adhere to the following additional requirements:",
+      "Dependencies": [
+        "CCT-CommitmentDiscountQuantity-C-014-M",
+        "CCT-CommitmentDiscountQuantity-C-015-M"
+      ]
+    },
+    "CCT-CommitmentDiscountQuantity-C-014-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-014-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L024",
+      "Keyword": "MUST",
+      "Order": 140,
+      "Statement": "CommitmentDiscountQuantity MUST be the metered quantity of CommitmentDiscountUnit that is consumed in a given *charge period* when [CommitmentDiscountStatus](#datasets.costandusage.commitmentdiscountstatus) is \"Used\".",
+      "Dependencies": []
+    },
+    "CCT-CommitmentDiscountQuantity-C-015-M": {
+      "RMID": "CCT-CommitmentDiscountQuantity-C-015-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "CommitmentDiscountQuantity",
+      "Ref": "L025",
+      "Keyword": "MUST",
+      "Order": 150,
+      "Statement": "CommitmentDiscountQuantity MUST be the remaining, unused quantity of CommitmentDiscountUnit in a given *charge period* when CommitmentDiscountStatus is \"Unused\".",
+      "Dependencies": []
+    }
+  }
+}
