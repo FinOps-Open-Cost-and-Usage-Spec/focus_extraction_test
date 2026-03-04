@@ -20,10 +20,35 @@
     {
       "temp_id": "R001",
       "order": 1,
+      "text": "BillingPeriodCreated MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billing Period Created",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 7,
+        "line_end": 7
+      },
+      "ref": "L007"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
       "text": "BillingPeriodCreated MUST be of type Date/Time.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Period Created",
         "Requirements"
       ],
       "block": {
@@ -41,12 +66,13 @@
       "ref": "L009"
     },
     {
-      "temp_id": "R002",
-      "order": 2,
+      "temp_id": "R003",
+      "order": 3,
       "text": "BillingPeriodCreated MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Period Created",
         "Requirements"
       ],
       "block": {
@@ -64,12 +90,13 @@
       "ref": "L010"
     },
     {
-      "temp_id": "R003",
-      "order": 3,
+      "temp_id": "R004",
+      "order": 4,
       "text": "BillingPeriodCreated MUST NOT be null.",
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Billing Period Created",
         "Requirements"
       ],
       "block": {
@@ -87,12 +114,13 @@
       "ref": "L011"
     },
     {
-      "temp_id": "R004",
-      "order": 4,
+      "temp_id": "R005",
+      "order": 5,
       "text": "BillingPeriodCreated MUST represent the moment in time the [Billing Period](#datasets.billingperiod) record was instantiated.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Billing Period Created",
         "Requirements"
       ],
       "block": {
@@ -112,46 +140,10 @@
   ],
   "warnings": [],
   "structural": {
-    "lead_ins": [
-      {
-        "text": "BillingPeriodCreated adheres to the following requirements:",
-        "class": "requirements_list_intro",
-        "confidence": "high",
-        "section_path": [
-          "Requirements"
-        ],
-        "block": {
-          "block_type": "paragraph",
-          "indent_level": 0,
-          "bullet": null
-        },
-        "lead_in": {
-          "ends_with_colon": true
-        },
-        "provenance": {
-          "line_start": 7,
-          "line_end": 7
-        },
-        "ref": "LI007",
-        "next_normative_refs": [
-          "L009",
-          "L010",
-          "L011",
-          "L012"
-        ]
-      }
-    ],
+    "lead_ins": [],
     "index": {
-      "by_section_path": {
-        "Requirements": [
-          "LI007"
-        ]
-      },
-      "by_line": {
-        "7": [
-          "LI007"
-        ]
-      }
+      "by_section_path": {},
+      "by_line": {}
     }
   }
 }
