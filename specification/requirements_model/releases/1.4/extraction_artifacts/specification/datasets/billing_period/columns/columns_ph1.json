@@ -1,0 +1,29 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/billing_period/columns/columns.mdpp",
+    "version": "unknown"
+  },
+  "entity": null,
+  "entities_found": [],
+  "atoms": [],
+  "warnings": [
+    {
+      "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
+      "severity": "MEDIUM",
+      "message": "Heading \"## Introduced (version)\" is missing, empty, or invalid.",
+      "details": {
+        "found_heading": false,
+        "found_version": null
+      },
+      "text": "(document-level)"
+    }
+  ],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}
