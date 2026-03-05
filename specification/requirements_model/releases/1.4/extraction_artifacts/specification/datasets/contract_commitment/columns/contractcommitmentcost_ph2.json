@@ -64,6 +64,7 @@
             "text": "ContractCommitmentCost MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
+              "Contract Commitment Cost",
               "Requirements"
             ],
             "block": {
@@ -86,6 +87,7 @@
                 "text": "ContractCommitmentCost MUST be of type Decimal.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Contract Commitment Cost",
                   "Requirements"
                 ],
                 "block": {
@@ -109,6 +111,7 @@
                 "text": "ContractCommitmentCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Contract Commitment Cost",
                   "Requirements"
                 ],
                 "block": {
@@ -132,6 +135,7 @@
                 "text": "ContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \"Spend\".",
                 "keyword": "MUST NOT",
                 "section_path": [
+                  "Contract Commitment Cost",
                   "Requirements"
                 ],
                 "block": {
@@ -155,6 +159,7 @@
                 "text": "ContractCommitmentCost MAY be null when ContractCommitmentCategory is \"Usage\".",
                 "keyword": "MAY",
                 "section_path": [
+                  "Contract Commitment Cost",
                   "Requirements"
                 ],
                 "block": {
@@ -178,6 +183,7 @@
                 "text": "ContractCommitmentCost MUST be a valid decimal value.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Contract Commitment Cost",
                   "Requirements"
                 ],
                 "block": {
@@ -201,6 +207,7 @@
                 "text": "ContractCommitmentCost MUST be denominated in the [BillingCurrency](#datasets.contractcommitment.billingcurrency).",
                 "keyword": "MUST",
                 "section_path": [
+                  "Contract Commitment Cost",
                   "Requirements"
                 ],
                 "block": {
