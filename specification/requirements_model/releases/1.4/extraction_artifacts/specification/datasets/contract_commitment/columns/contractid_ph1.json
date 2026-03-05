@@ -1,0 +1,228 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/contract_commitment/columns/contractid.md",
+    "version": "1.3"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "ContractId",
+    "entity_name": "Contract ID"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "ContractId",
+      "entity_name": "Contract ID"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "ContractId MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 7,
+        "line_end": 7
+      },
+      "ref": "L007"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "ContractId MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 9,
+        "line_end": 9
+      },
+      "ref": "L009"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "ContractId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      },
+      "ref": "L010"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "ContractId MUST NOT be null.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Contract ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      },
+      "ref": "L011"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "ContractId MUST be a unique identifier within the service provider.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 13,
+        "line_end": 13
+      },
+      "ref": "L013"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "ContractId SHOULD be a fully-qualified identifier.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Contract ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 14,
+        "line_end": 14
+      },
+      "ref": "L014"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "ContractId MUST NOT be null.",
+      "details": {
+        "ref": "L011",
+        "temp_id": "R004",
+        "order": 4,
+        "indent_level": 0,
+        "section_path": [
+          "Contract ID",
+          "Requirements"
+        ],
+        "next_ref": "L013",
+        "next_temp_id": "R005",
+        "next_order": 5,
+        "next_indent_level": 1
+      }
+    }
+  ],
+  "structural": {
+    "lead_ins": [
+      {
+        "text": "When ContractId is not null, ContractId adheres to the following additional requirements:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [
+          "Requirements"
+        ],
+        "block": {
+          "block_type": "list_item",
+          "indent_level": 0,
+          "bullet": "*"
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 12,
+          "line_end": 12
+        },
+        "ref": "LI012",
+        "next_normative_refs": [
+          "L013",
+          "L014"
+        ]
+      }
+    ],
+    "index": {
+      "by_section_path": {
+        "Requirements": [
+          "LI012"
+        ]
+      },
+      "by_line": {
+        "12": [
+          "LI012"
+        ]
+      }
+    }
+  }
+}
