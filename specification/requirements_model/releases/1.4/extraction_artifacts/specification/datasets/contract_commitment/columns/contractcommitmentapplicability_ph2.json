@@ -1,0 +1,528 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/contract_commitment/columns/contractcommitmentapplicability.md",
+    "version": "1.4"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "ContractCommitmentApplicability",
+    "entity_name": "Contract Commitment Applicability"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 18
+  },
+  "0_outline_root": "ROOT: Contract Commitment Applicability > Requirements",
+  "0_outline_lines": [
+    "L009: \"The ContractCommitmentApplicability column MUST adhere to the following requirements:\"",
+    "  L011: \"ContractCommitmentApplicability MUST be of type JSON Object (serialized as a String where necessary).\"",
+    "  L012: \"ContractCommitmentApplicability MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L013: \"ContractCommitmentApplicability MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.\"",
+    "  L014: \"ContractCommitmentApplicability MUST conform to [ContractCommitmentApplicabilityObject](#datasets.contractcommitment.contractcommitmentapplicability.contractcommitmentapplicabilityobject) requirements.\"",
+    "  L015: \"ContractCommitmentApplicability MUST NOT be null.\"",
+    "L025: \"The ContractCommitmentApplicabilityObject MUST adhere to the following requirements:\"",
+    "  L027: \"ContractCommitmentApplicabilityObject MUST conform to the [ContractCommitmentApplicabilityObjectSchema](#schemas.datasets.contractcommitment.contractcommitmentapplicabilityobjectschema) JSON Schema.\"",
+    "  L028: \"ContractCommitmentApplicabilityObject.IsGlobalScope MUST be `true` if the *contract commitment* applies to all entities.\"",
+    "  L029: \"ContractCommitmentApplicabilityObject.IsComplexScope MUST be `true` if the *contract commitment's* applicability logic exceeds schema capabilities.\"",
+    "  L030: \"ContractCommitmentApplicabilityObject.Applicability.Cost MUST represent the fraction of the charge's cost eligible for the commitment (0.0 to 1.0).\"",
+    "  L031: \"ContractCommitmentApplicabilityObject.Applicability.Usage MUST represent the fraction of the charge's usage quantity eligible for the commitment (0.0 to 1.0).\"",
+    "  L032: \"ContractCommitmentApplicabilityObject.Inclusions[\\\\*].Applicability.Cost MUST represent the fraction of the charge's cost eligible for the commitment (0.0 to 1.0).\"",
+    "  L033: \"ContractCommitmentApplicabilityObject.Inclusions[\\\\*].Applicability.Usage MUST represent the fraction of the charge's usage quantity eligible for the commitment (0.0 to 1.0).\"",
+    "  L034: \"ContractCommitmentApplicabilityObject.Inclusions[\\\\*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).\"",
+    "  L035: \"ContractCommitmentApplicabilityObject.Exclusions[\\\\*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).\"",
+    "  L036: \"ContractCommitmentApplicabilityObject.Inclusions[\\\\*].Values MUST contain only the single string \\\"*\\\" if the wildcard is present.\"",
+    "  L037: \"ContractCommitmentApplicabilityObject.Exclusions[\\\\*].Values MUST contain only the single string \\\"*\\\" if the wildcard is present.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 18,
+    "leaf_count": 16,
+    "lead_in_count": 2,
+    "max_depth": 1,
+    "max_indent_level": 0,
+    "root_children_count": 2,
+    "keyword_distribution": {
+      "MUST": 15,
+      "MUST NOT": 1,
+      "SHOULD": 2
+    },
+    "lead_ins": [
+      {
+        "ref": "L009",
+        "text_preview": "The ContractCommitmentApplicability column MUST adhere to the following requirements:",
+        "children": 5
+      },
+      {
+        "ref": "L025",
+        "text_preview": "The ContractCommitmentApplicabilityObject MUST adhere to the following requirements:",
+        "children": 11
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L009",
+            "text": "The ContractCommitmentApplicability column MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Requirements",
+              "Column Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L011",
+                "text": "ContractCommitmentApplicability MUST be of type JSON Object (serialized as a String where necessary).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L012",
+                "text": "ContractCommitmentApplicability MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L013",
+                "text": "ContractCommitmentApplicability MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L014",
+                "text": "ContractCommitmentApplicability MUST conform to [ContractCommitmentApplicabilityObject](#datasets.contractcommitment.contractcommitmentapplicability.contractcommitmentapplicabilityobject) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R006",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R006",
+                "order": 6,
+                "ref": "L015",
+                "text": "ContractCommitmentApplicability MUST NOT be null.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "node_id": "R007",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R007",
+            "order": 7,
+            "ref": "L025",
+            "text": "The ContractCommitmentApplicabilityObject MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Contract Commitment Applicability Object",
+              "Object Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R008",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R008",
+                "order": 8,
+                "ref": "L027",
+                "text": "ContractCommitmentApplicabilityObject MUST conform to the [ContractCommitmentApplicabilityObjectSchema](#schemas.datasets.contractcommitment.contractcommitmentapplicabilityobjectschema) JSON Schema.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R009",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R009",
+                "order": 9,
+                "ref": "L028",
+                "text": "ContractCommitmentApplicabilityObject.IsGlobalScope MUST be `true` if the *contract commitment* applies to all entities.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R010",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R010",
+                "order": 10,
+                "ref": "L029",
+                "text": "ContractCommitmentApplicabilityObject.IsComplexScope MUST be `true` if the *contract commitment's* applicability logic exceeds schema capabilities.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R011",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R011",
+                "order": 11,
+                "ref": "L030",
+                "text": "ContractCommitmentApplicabilityObject.Applicability.Cost MUST represent the fraction of the charge's cost eligible for the commitment (0.0 to 1.0).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R012",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R012",
+                "order": 12,
+                "ref": "L031",
+                "text": "ContractCommitmentApplicabilityObject.Applicability.Usage MUST represent the fraction of the charge's usage quantity eligible for the commitment (0.0 to 1.0).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R013",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R013",
+                "order": 13,
+                "ref": "L032",
+                "text": "ContractCommitmentApplicabilityObject.Inclusions[\\*].Applicability.Cost MUST represent the fraction of the charge's cost eligible for the commitment (0.0 to 1.0).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R014",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R014",
+                "order": 14,
+                "ref": "L033",
+                "text": "ContractCommitmentApplicabilityObject.Inclusions[\\*].Applicability.Usage MUST represent the fraction of the charge's usage quantity eligible for the commitment (0.0 to 1.0).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R015",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R015",
+                "order": 15,
+                "ref": "L034",
+                "text": "ContractCommitmentApplicabilityObject.Inclusions[\\*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R016",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R016",
+                "order": 16,
+                "ref": "L035",
+                "text": "ContractCommitmentApplicabilityObject.Exclusions[\\*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R017",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R017",
+                "order": 17,
+                "ref": "L036",
+                "text": "ContractCommitmentApplicabilityObject.Inclusions[\\*].Values MUST contain only the single string \"*\" if the wildcard is present.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R018",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R018",
+                "order": 18,
+                "ref": "L037",
+                "text": "ContractCommitmentApplicabilityObject.Exclusions[\\*].Values MUST contain only the single string \"*\" if the wildcard is present.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment Applicability Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": [
+      {
+        "code": "SECTION_CHANGED_WITH_OPEN_LEADIN",
+        "at": {
+          "temp_id": "R007",
+          "order": 7
+        },
+        "text": "Section changed while a lead-in was open; stacks were reset."
+      }
+    ]
+  }
+}
