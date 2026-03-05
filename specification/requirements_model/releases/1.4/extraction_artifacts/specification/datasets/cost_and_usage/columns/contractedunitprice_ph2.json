@@ -17,34 +17,33 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 14
+    "atoms_in_scope_count": 13
   },
   "0_outline_root": "ROOT: Contracted Unit Price > Requirements",
   "0_outline_lines": [
     "L007: \"ContractedUnitPrice MUST adhere to the following requirements:\"",
-    "  L009: \"ContractedUnitPrice MUST adhere to the following requirements:\"",
-    "  L010: \"ContractedUnitPrice MUST be of type Decimal.\"",
-    "  L011: \"ContractedUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
-    "  L012: \"ContractedUnitPrice MUST adhere to the following nullability requirements:\"",
-    "    L013: \"ContractedUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.\"",
-    "    L014: \"ContractedUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is \\\"Tax\\\".\"",
-    "    L015: \"ContractedUnitPrice MUST NOT be null when [SkuPriceId](#datasets.costandusage.skupriceid) is not null.\"",
-    "    L016: \"ContractedUnitPrice MUST NOT be null when ChargeCategory is \\\"Usage\\\" or \\\"Purchase\\\" and [ChargeClass](#datasets.costandusage.chargeclass) is not \\\"Correction\\\".\"",
-    "    L017: \"ContractedUnitPrice MAY be null in all other cases.\"",
-    "  L018: \"When ContractedUnitPrice is not null, ContractedUnitPrice MUST adhere to the following requirements:\"",
-    "    L019: \"ContractedUnitPrice MUST be a non-negative decimal value.\"",
-    "    L020: \"ContractedUnitPrice MUST be denominated in the BillingCurrency.\"",
-    "  L021: \"[ContractedCost](#datasets.costandusage.contractedcost) MUST equal the product of ContractedUnitPrice and [PricingQuantity](#datasets.costandusage.pricingquantity) when ContractedUnitPrice is not null and PricingQuantity is not null.\""
+    "  L009: \"ContractedUnitPrice MUST be of type Decimal.\"",
+    "  L010: \"ContractedUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
+    "  L011: \"ContractedUnitPrice MUST adhere to the following nullability requirements:\"",
+    "    L012: \"ContractedUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.\"",
+    "    L013: \"ContractedUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is \\\"Tax\\\".\"",
+    "    L014: \"ContractedUnitPrice MUST NOT be null when [SkuPriceId](#datasets.costandusage.skupriceid) is not null.\"",
+    "    L015: \"ContractedUnitPrice MUST NOT be null when ChargeCategory is \\\"Usage\\\" or \\\"Purchase\\\" and [ChargeClass](#datasets.costandusage.chargeclass) is not \\\"Correction\\\".\"",
+    "    L016: \"ContractedUnitPrice MAY be null in all other cases.\"",
+    "  L017: \"When ContractedUnitPrice is not null, ContractedUnitPrice MUST adhere to the following requirements:\"",
+    "    L018: \"ContractedUnitPrice MUST be a non-negative decimal value.\"",
+    "    L019: \"ContractedUnitPrice MUST be denominated in the BillingCurrency.\"",
+    "  L020: \"[ContractedCost](#datasets.costandusage.contractedcost) MUST equal the product of ContractedUnitPrice and [PricingQuantity](#datasets.costandusage.pricingquantity) when ContractedUnitPrice is not null and PricingQuantity is not null.\""
   ],
   "0_outline_summary": {
-    "node_count": 14,
-    "leaf_count": 11,
-    "lead_in_count": 4,
+    "node_count": 13,
+    "leaf_count": 10,
+    "lead_in_count": 3,
     "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 11,
+      "MUST": 10,
       "MUST NOT": 2,
       "MAY": 1
     },
@@ -52,20 +51,15 @@
       {
         "ref": "L007",
         "text_preview": "ContractedUnitPrice MUST adhere to the following requirements:",
-        "children": 6
+        "children": 5
       },
       {
-        "ref": "L009",
-        "text_preview": "ContractedUnitPrice MUST adhere to the following requirements:",
-        "children": 0
-      },
-      {
-        "ref": "L012",
+        "ref": "L011",
         "text_preview": "ContractedUnitPrice MUST adhere to the following nullability requirements:",
         "children": 5
       },
       {
-        "ref": "L018",
+        "ref": "L017",
         "text_preview": "When ContractedUnitPrice is not null, ContractedUnitPrice MUST adhere to the following requirements:",
         "children": 2
       }
@@ -105,7 +99,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "ContractedUnitPrice MUST adhere to the following requirements:",
+                "text": "ContractedUnitPrice MUST be of type Decimal.",
                 "keyword": "MUST",
                 "section_path": [
                   "Requirements"
@@ -116,7 +110,7 @@
                   "bullet": "*"
                 },
                 "lead_in": {
-                  "ends_with_colon": true
+                  "ends_with_colon": false
                 }
               },
               "children": []
@@ -128,7 +122,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "ContractedUnitPrice MUST be of type Decimal.",
+                "text": "ContractedUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Requirements"
@@ -151,29 +145,6 @@
                 "temp_id": "R004",
                 "order": 4,
                 "ref": "L011",
-                "text": "ContractedUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
-                "keyword": "MUST",
-                "section_path": [
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
-            },
-            {
-              "node_id": "R005",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R005",
-                "order": 5,
-                "ref": "L012",
                 "text": "ContractedUnitPrice MUST adhere to the following nullability requirements:",
                 "keyword": "MUST",
                 "section_path": [
@@ -190,13 +161,36 @@
               },
               "children": [
                 {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L012",
+                    "text": "ContractedUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
                   "node_id": "R006",
                   "kind": "atom",
                   "atom": {
                     "temp_id": "R006",
                     "order": 6,
                     "ref": "L013",
-                    "text": "ContractedUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.",
+                    "text": "ContractedUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is \"Tax\".",
                     "keyword": "MUST",
                     "section_path": [
                       "Requirements"
@@ -219,8 +213,8 @@
                     "temp_id": "R007",
                     "order": 7,
                     "ref": "L014",
-                    "text": "ContractedUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is \"Tax\".",
-                    "keyword": "MUST",
+                    "text": "ContractedUnitPrice MUST NOT be null when [SkuPriceId](#datasets.costandusage.skupriceid) is not null.",
+                    "keyword": "MUST NOT",
                     "section_path": [
                       "Requirements"
                     ],
@@ -242,7 +236,7 @@
                     "temp_id": "R008",
                     "order": 8,
                     "ref": "L015",
-                    "text": "ContractedUnitPrice MUST NOT be null when [SkuPriceId](#datasets.costandusage.skupriceid) is not null.",
+                    "text": "ContractedUnitPrice MUST NOT be null when ChargeCategory is \"Usage\" or \"Purchase\" and [ChargeClass](#datasets.costandusage.chargeclass) is not \"Correction\".",
                     "keyword": "MUST NOT",
                     "section_path": [
                       "Requirements"
@@ -265,29 +259,6 @@
                     "temp_id": "R009",
                     "order": 9,
                     "ref": "L016",
-                    "text": "ContractedUnitPrice MUST NOT be null when ChargeCategory is \"Usage\" or \"Purchase\" and [ChargeClass](#datasets.costandusage.chargeclass) is not \"Correction\".",
-                    "keyword": "MUST NOT",
-                    "section_path": [
-                      "Requirements"
-                    ],
-                    "block": {
-                      "block_type": "list_item",
-                      "indent_level": 1,
-                      "bullet": "*"
-                    },
-                    "lead_in": {
-                      "ends_with_colon": false
-                    }
-                  },
-                  "children": []
-                },
-                {
-                  "node_id": "R010",
-                  "kind": "atom",
-                  "atom": {
-                    "temp_id": "R010",
-                    "order": 10,
-                    "ref": "L017",
                     "text": "ContractedUnitPrice MAY be null in all other cases.",
                     "keyword": "MAY",
                     "section_path": [
@@ -307,12 +278,12 @@
               ]
             },
             {
-              "node_id": "R011",
+              "node_id": "R010",
               "kind": "atom",
               "atom": {
-                "temp_id": "R011",
-                "order": 11,
-                "ref": "L018",
+                "temp_id": "R010",
+                "order": 10,
+                "ref": "L017",
                 "text": "When ContractedUnitPrice is not null, ContractedUnitPrice MUST adhere to the following requirements:",
                 "keyword": "MUST",
                 "section_path": [
@@ -329,12 +300,12 @@
               },
               "children": [
                 {
-                  "node_id": "R012",
+                  "node_id": "R011",
                   "kind": "atom",
                   "atom": {
-                    "temp_id": "R012",
-                    "order": 12,
-                    "ref": "L019",
+                    "temp_id": "R011",
+                    "order": 11,
+                    "ref": "L018",
                     "text": "ContractedUnitPrice MUST be a non-negative decimal value.",
                     "keyword": "MUST",
                     "section_path": [
@@ -352,12 +323,12 @@
                   "children": []
                 },
                 {
-                  "node_id": "R013",
+                  "node_id": "R012",
                   "kind": "atom",
                   "atom": {
-                    "temp_id": "R013",
-                    "order": 13,
-                    "ref": "L020",
+                    "temp_id": "R012",
+                    "order": 12,
+                    "ref": "L019",
                     "text": "ContractedUnitPrice MUST be denominated in the BillingCurrency.",
                     "keyword": "MUST",
                     "section_path": [
@@ -377,12 +348,12 @@
               ]
             },
             {
-              "node_id": "R014",
+              "node_id": "R013",
               "kind": "atom",
               "atom": {
-                "temp_id": "R014",
-                "order": 14,
-                "ref": "L021",
+                "temp_id": "R013",
+                "order": 13,
+                "ref": "L020",
                 "text": "[ContractedCost](#datasets.costandusage.contractedcost) MUST equal the product of ContractedUnitPrice and [PricingQuantity](#datasets.costandusage.pricingquantity) when ContractedUnitPrice is not null and PricingQuantity is not null.",
                 "keyword": "MUST",
                 "section_path": [
@@ -411,15 +382,6 @@
       "lead_in_colon",
       "indent_level"
     ],
-    "warnings": [
-      {
-        "code": "LEADIN_NO_CHILDREN",
-        "at": {
-          "temp_id": "R002",
-          "order": null
-        },
-        "text": "Lead-in ends with ':' but no children were attached."
-      }
-    ]
+    "warnings": []
   }
 }
