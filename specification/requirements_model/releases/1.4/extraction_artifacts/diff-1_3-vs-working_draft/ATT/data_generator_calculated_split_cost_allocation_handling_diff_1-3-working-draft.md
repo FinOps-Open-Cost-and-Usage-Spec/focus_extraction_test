@@ -1,11 +1,5 @@
 ## Diff
 
-diff --git a/specification/attributes/data_generator_calculated_split_cost_allocation_handling.md b/specification/attributes/data_generator_calculated_split_cost_allocation_handling.md
-index 14235c93..acc56e2f 100644
---- a/specification/attributes/data_generator_calculated_split_cost_allocation_handling.md
-+++ b/specification/attributes/data_generator_calculated_split_cost_allocation_handling.md
-@@ -17,21 +17,21 @@ An attribute that allows data generators to offer more detailed cost and usage i
-## Requirements
 
 * A FOCUS dataset MUST include the following columns when the data generator supports data generator-calculated split cost allocation:
   * [-[AllocatedMethodId](#allocatedmethodid)-]{+[AllocatedMethodId](#datasets.costandusage.allocatedmethodid)+}
@@ -24,5 +18,5 @@ index 14235c93..acc56e2f 100644
 * Allocated charge records MAY contain apportioned costs for the unused or unallocated usage from the origin charge, if it aligns to the data generator's documented allocation method.
 * Split cost allocation [-is RECOMMENDED to-]{+SHOULD+} be applied to charges on an opt-in basis.
 
-## Exceptions
+
 
