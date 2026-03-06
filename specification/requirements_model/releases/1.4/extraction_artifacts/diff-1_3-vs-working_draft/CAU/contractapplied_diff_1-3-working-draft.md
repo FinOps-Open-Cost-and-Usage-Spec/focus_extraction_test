@@ -1,13 +1,5 @@
 ## Diff
 
-diff --git a/specification/datasets/cost_and_usage/columns/contractapplied.md b/specification/datasets/cost_and_usage/columns/contractapplied.md
-index 65afbc29..bdacc12e 100644
---- a/specification/datasets/cost_and_usage/columns/contractapplied.md
-+++ b/specification/datasets/cost_and_usage/columns/contractapplied.md
-@@ -16,21 +16,20 @@ In addition to these, a data generator may include one or more custom properties
-
-### Column Requirements
-
 The ContractApplied column [-adheres-]{+MUST adhere+} to the following requirements:
 
 * ContractApplied MUST[-be present in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset) when the service provider supports *contract commitments*.-]
@@ -104,23 +96,4 @@ Contract Commitment Applied Quantity represents the quantity of the charge appli
 @@ -191,7 +190,7 @@ The `Elements` array contains one or more objects, each of which contains the fo
 }
 ```
-
-NOTE: The above JSON Type Definition (JTD) is an approximation of the expected contents of this column, but it should not be considered normative because it cannot accurately describe the normative requirements (above) for ContractApplied. Where there are discrepancies, deference will be given to the normative requirements. For example, [-[NumericFormat](#numericformat)-]{+[NumericFormat](#attributes.numericformat)+} allows for multiple numeric data types and precisions, but JTD requires both to be specified; other numeric data types and precisions allowable under NumericFormat are considered valid.
-
-## Example Scenarios
-
-@@ -310,13 +309,14 @@ A set of properties that associate a charge with one or more [*contract commitme
-
-## Content Constraints
-
-| Constraint      [-   |-]{+|+} Value[-                             |-]                                                |[-:-------------]
-| [-:----------------------------------]{+:-------------- | :----------------------------------------------------|+}
-{+| Dataset         | [Cost and Usage](#datasets.costandusage)+}             |
-| Column type     | Dimension and Metric                                 |
-| Feature level   | Conditional                                          [- |-]{+|+}
-| Allows nulls[- | True-]    {+| True+}                                                 |
-| Data type       | JSON                        [-     -]                         |
-| Value format [- |-]{+   |+} [JSON Object [-Format](#jsonobjectformat)-]{+Format](#attributes.jsonobjectformat)+}   |
-
-## Introduced (version)
 

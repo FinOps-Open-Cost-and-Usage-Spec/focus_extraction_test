@@ -1,16 +1,5 @@
 ## Diff
 
-diff --git a/specification/datasets/cost_and_usage/columns/pricingcurrencycontractedunitprice.md b/specification/datasets/cost_and_usage/columns/pricingcurrencycontractedunitprice.md
-index ceb0db82..b2245403 100644
---- a/specification/datasets/cost_and_usage/columns/pricingcurrencycontractedunitprice.md
-+++ b/specification/datasets/cost_and_usage/columns/pricingcurrencycontractedunitprice.md
-@@ -1,24 +1,23 @@
-# Pricing Currency Contracted Unit Price
-
-The Pricing Currency Contracted Unit Price represents the agreed-upon unit price for a single [Pricing [-Unit](#pricingunit)-]{+Unit](#datasets.costandusage.pricingunit)+} of the associated [*SKU*](#glossary:sku), inclusive of [*negotiated discounts*](#glossary:negotiated-discount), if present, while excluding negotiated [*commitment discounts*](#glossary:commitment-discount) or any other discounts. This price is denominated in the [Pricing [-Currency](#pricingcurrency).-]{+Currency](#datasets.costandusage.pricingcurrency).+} When negotiated discounts do not apply to unit prices and instead are applied to exchange rates, the Pricing Currency Contracted Unit Price defaults to the [Pricing Currency List Unit [-Price](#pricingcurrencylistunitprice).-]{+Price](#datasets.costandusage.pricingcurrencylistunitprice).+} The Pricing Currency Contracted Unit Price is commonly used to calculate savings based on negotiation activities.
-
-## Requirements
-
 PricingCurrencyContractedUnitPrice [-adheres-]{+MUST adhere+} to the following requirements:
 
 * PricingCurrencyContractedUnitPrice presence in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset)[-is defined as follows:-]
@@ -28,20 +17,4 @@ PricingCurrencyContractedUnitPrice [-adheres-]{+MUST adhere+} to the following r
 * When PricingCurrencyContractedUnitPrice is not null, PricingCurrencyContractedUnitPrice [-adheres-]{+MUST adhere+} to the following[-additional-] requirements:
   * PricingCurrencyContractedUnitPrice MUST be a non-negative decimal value.
   * PricingCurrencyContractedUnitPrice MUST be denominated in the PricingCurrency.
-
-@@ -40,14 +39,15 @@ The agreed-upon unit price for a single Pricing Unit of the associated SKU, incl
-
-## Content Constraints
-
-| Constraint      | Value                                                |
-[-|:----------------|:-------------------------------------|-]{+| :-------------- | :--------------------------------------------------- |+}
-{+| Dataset         | [Cost and Usage](#datasets.costandusage)             |+}
-| Column type     | Metric                                               |
-| Feature level   | Conditional                                          |
-| Allows nulls    | True                                                 |
-| Data type       | Decimal                                              |
-| Value format    | [Numeric [-Format](#numericformat)-]{+Format](#attributes.numericformat)+}          |
-| Number range    | Any valid non-negative decimal value                 |
-
-## Introduced (version)
 

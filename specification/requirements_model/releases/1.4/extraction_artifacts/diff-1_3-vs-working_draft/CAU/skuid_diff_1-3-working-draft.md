@@ -1,13 +1,5 @@
 ## Diff
 
-diff --git a/specification/datasets/cost_and_usage/columns/skuid.md b/specification/datasets/cost_and_usage/columns/skuid.md
-index 9ec55824..65275766 100644
---- a/specification/datasets/cost_and_usage/columns/skuid.md
-+++ b/specification/datasets/cost_and_usage/columns/skuid.md
-@@ -17,21 +17,20 @@ SKU ID should be consistent across pricing variations of a good or service to fa
-
-## Requirements
-
 SkuId [-adheres-]{+MUST adhere+} to the following requirements:
 
 [-* SkuId MUST be present in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset) when the service provider supports unit pricing concepts and publishes price lists, publicly or as part of contracting.-]
@@ -23,21 +15,4 @@ SkuId [-adheres-]{+MUST adhere+} to the following requirements:
   * SkuId MUST remain consistent regardless of any other factors that might impact the price but do not affect the functionality of the *SKU*.
 * SkuId MUST be associated with a given [*resource*](#glossary:resource) or [*service*](#glossary:service) when ChargeCategory is "Usage" or "Purchase".
 * SkuId MAY equal [-[SkuPriceId](#skupriceid).-]{+[SkuPriceId](#datasets.costandusage.skupriceid).+}
-
-## Column ID
-
-@@ -47,13 +46,14 @@ Service-provider-specified unique identifier that represents a specific *SKU* (e
-
-## Content constraints
-
-| Constraint      | Value                                                |
-| [-:-------------]{+:--------------+} | [-:----------------]{+:--------------------------------------------------- |+}
-{+| Dataset         | [Cost and Usage](#datasets.costandusage)+}             |
-| Column type     | Dimension                                            |
-| Feature level   | Conditional                                          |
-| Allows nulls    | True                                                 |
-| Data type       | String                                               |
-| Value format    | \<not specified>                                     |
-
-## Introduced (version)
 

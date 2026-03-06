@@ -1,16 +1,5 @@
 ## Diff
 
-diff --git a/specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md b/specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md
-index 603781a7..097395b2 100644
---- a/specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md
-+++ b/specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md
-@@ -1,21 +1,20 @@
-# Pricing Currency Effective Cost
-
-The Pricing Currency Effective Cost represents the cost of the [*charge*](#glossary:charge) after applying all reduced rates, discounts, and the applicable portion of relevant, prepaid purchases (one-time or recurring) that covered this *charge*, as denominated in [Pricing [-Currency](#pricingcurrency).-]{+Currency](#datasets.costandusage.pricingcurrency).+} This allows the practitioner to perform a conversion from either 1) a [*national currency*](#glossary:nationalcurrency) to a [*virtual currency*](#glossary:virtualcurrency) (e.g., tokens to USD), or 2) one national currency to another (e.g., EUR to USD).
-
-## Requirements
-
 PricingCurrencyEffectiveCost [-adheres-]{+MUST adhere+} to the following requirements:
 
 * PricingCurrencyEffectiveCost presence in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset)[-is defined as follows:-]
@@ -23,22 +12,4 @@ PricingCurrencyEffectiveCost [-adheres-]{+MUST adhere+} to the following require
 * PricingCurrencyEffectiveCost MUST be a valid decimal value.
 * PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.
 * PricingCurrencyEffectiveCost MUST be denominated in the [-[PricingCurrency](#pricingcurrency).-]{+[PricingCurrency](#datasets.costandusage.pricingcurrency).+}
-
-## Column ID
-
-@@ -31,14 +30,15 @@ The cost of the *charge* after applying all reduced rates, discounts, and the ap
-
-## Content Constraints
-
-| Constraint      | Value                                                |
-[-|:----------------|:------------------------|-]{+| :-------------- | :--------------------------------------------------- |+}
-{+| Dataset         | [Cost and Usage](#datasets.costandusage)             |+}
-| Column type     | Metric                                               |
-| Feature level   | Conditional                                          |
-| Allows nulls    | True                                                 |
-| Data type       | Decimal                                              |
-| Value format    | [Numeric [-Format](#numericformat)-]{+Format](#attributes.numericformat)+}          |
-| Number range    | Any valid decimal value                              |
-
-## Introduced (version)
 

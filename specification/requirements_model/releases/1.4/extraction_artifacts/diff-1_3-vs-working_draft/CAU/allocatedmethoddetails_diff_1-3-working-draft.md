@@ -1,13 +1,5 @@
 ## Diff
 
-diff --git a/specification/datasets/cost_and_usage/columns/allocatedmethoddetails.md b/specification/datasets/cost_and_usage/columns/allocatedmethoddetails.md
-index 3522731c..fd7a2935 100644
---- a/specification/datasets/cost_and_usage/columns/allocatedmethoddetails.md
-+++ b/specification/datasets/cost_and_usage/columns/allocatedmethoddetails.md
-@@ -16,13 +16,12 @@ In addition to these, a data generator may include one or more custom properties
-
-### Column Requirements
-
 [-The-]AllocatedMethodDetails [-column adheres-]{+MUST adhere+} to the following requirements:
 
 [-* AllocatedMethodDetails SHOULD be present in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset) when the data generator supports [Data Generator-Calculated Split Cost Allocation](#datagenerator-calculatedsplitcostallocationhandling).-]
@@ -68,59 +60,4 @@ Usage Quantity communicates the volume that was consumed or used, denominated in
 | UsageUnit | [-[String](#stringhandling)-]{+[String](#attributes.stringhandling)+} | Conditional | Unit being measured used to calculate allocation. |
 | UsageQuantity | Numeric | False | Volume of UsageUnit consumed or used. |
 
-### Example
-@@ -134,7 +134,7 @@ The `Elements` array contains one or more objects, each of which contains the fo
-}
-```
-
-NOTE: The above JSON Type Definition (JTD) is an approximation of the expected contents of this column, but it should not be considered normative because it cannot accurately describe the normative requirements (above) for AllocatedMethodDetails. Where there are discrepancies, deference will be given to the normative requirements. For example, [-[NumericFormat](#numericformat)-]{+[NumericFormat](#attributes.numericformat)+} allows for multiple numeric data types and precisions, but JTD requires both to be specified; other numeric data types and precisions allowable under NumericFormat are considered valid.
-
-## Example Scenarios
-
-@@ -154,6 +154,7 @@ When only a single "UsageUnit" is used to calculate the allocation.
-  ]
-}
-```
-
-### Scenario 2: Multiple "UsageUnit" values used for allocation
-
-When multiple "UsageUnit" values are used to calculate the allocation, another object is added to the "Elements" collection.
-@@ -174,6 +175,7 @@ When multiple "UsageUnit" values are used to calculate the allocation, another o
-  ]
-}
-```
-
-### Scenario 3: Data generator omits keys that are not required
-
-This data generator does not wish to supply the "UsageUnit" or "UsageQuantity" keys but still provides cost allocation with some additional allocation method details. In this case, "UsageUnit" and "UsageQuantity" are omitted, and only the "AllocatedRatio" is supplied.
-@@ -186,6 +188,7 @@ This data generator does not wish to supply the "UsageUnit" or "UsageQuantity" k
-  ]
-}
-```
-
-### Scenario 4: Additional non-FOCUS specified properties
-
-A data generator can add additional properties if they feel more context is helpful or necessary to the practitioner. In this scenario, the data generator is supplying additional context that shows only 0.5 of a unit was used. However, since 1 unit was requested by the service this allocation represents, the allocation is being charged at 1 regardless.
-@@ -204,6 +207,7 @@ A data generator can add additional properties if they feel more context is help
-  ]
-}
-```
-
-## Column ID
-
-AllocatedMethodDetails
-@@ -218,13 +222,14 @@ A set of properties describing how resources are allocated in data generator-def
-
-## Content Constraints
-
-| Constraint      | Value                                                |
-[-|:----------------|:----------------|-]{+| :-------------- | :--------------------------------------------------- |+}
-{+| Dataset         | [Cost and Usage](#datasets.costandusage)             |+}
-| Column type     | Dimension                                            |
-| Feature level   | Recommended                                          |
-| Allows nulls    | True                                                 |
-| Data type       | JSON                                                 |
-| Value format    | [JSON Object [-Format](#jsonobjectformat)-]{+Format](#attributes.jsonobjectformat)+}   |
-
-## Introduced (version)
 

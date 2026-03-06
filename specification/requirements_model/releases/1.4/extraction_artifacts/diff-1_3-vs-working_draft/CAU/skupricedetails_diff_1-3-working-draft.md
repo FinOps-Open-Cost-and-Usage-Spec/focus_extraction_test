@@ -1,20 +1,5 @@
 ## Diff
 
-diff --git a/specification/datasets/cost_and_usage/columns/skupricedetails.md b/specification/datasets/cost_and_usage/columns/skupricedetails.md
-index aeaf8799..ea6fadbd 100644
---- a/specification/datasets/cost_and_usage/columns/skupricedetails.md
-+++ b/specification/datasets/cost_and_usage/columns/skupricedetails.md
-@@ -1,6 +1,6 @@
-# SKU Price Details
-
-SKU Price Details represent a list of [*SKU Price*](#glossary:sku-price) properties (key-value pairs) associated with a specific [SKU Price [-ID](#skupriceid).-]{+ID](#datasets.costandusage.skupriceid).+} These properties include qualitative and quantitative properties of a [*SKUs*](#glossary:sku) (e.g., functionality and technical specifications), along with core stable pricing properties (e.g., pricing [*periods*](#glossary:period), tiers, etc.), excluding dynamic or negotiable pricing elements such as unit price amounts, currency (and related exchange rates), temporal validity (e.g., effective dates), and contract- or negotiation-specific factors (e.g., contract or account identifiers, and negotiable discounts).
-
-The composition of properties associated with a specific *SKU Price* may differ across service providers and across *SKUs* within the same service provider. However, the exclusion of dynamic or negotiable pricing properties should ensure that all [*charges*](#glossary:charge) with the same SKU Price ID share the same SKU Price Details, i.e., that SKU Price Details remains consistent across different [*billing periods*](#glossary:billing-period) and [*billing accounts*](#glossary:billing-account) within a service provider.
-
-@@ -8,29 +8,28 @@ SKU Price Details helps practitioners understand and distinguish *SKU Prices*, e
-
-## Requirements
-
 SkuPriceDetails [-adheres-]{+MUST adhere+} to the following requirements:
 
 * SkuPriceDetails MUST[-be present in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset) when the service provider supports unit pricing concepts and publishes [*price lists*](#glossary:price-list), publicly or as part of contracting.-]
@@ -41,18 +26,4 @@ SkuPriceDetails [-adheres-]{+MUST adhere+} to the following requirements:
   * Property key MUST match the spelling and casing specified for the FOCUS-defined property.
   * Property value MUST be of the type specified for that property.
   * Property value MUST represent the value for a single PricingUnit, denominated in the unit of measure specified for that property when the property holds a numeric value.
-@@ -59,13 +58,14 @@ A set of properties of a SKU Price ID which are meaningful and common to all ins
-
-## Content Constraints
-
-| Constraint      | Value                                                |
-| [-:-------------]{+:--------------+} | [-:------------------------------------]{+:--------------------------------------------------- |+}
-{+| Dataset         | [Cost and Usage](#datasets.costandusage)+}             |
-| Column type     | Dimension                                            |
-| Feature level   | Conditional                                          |
-| Allows nulls    | True                                                 |
-| Data type       | JSON                                                 |
-| Value format    | [Key-Value [-Format](#key-valueformat)-]{+Format](#attributes.key-valueformat)+}      |
-
-### FOCUS-Defined Properties
 

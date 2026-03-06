@@ -20,22 +20,3 @@ InvoiceId [-adheres-]{+MUST adhere+} to the following requirements:
 * InvoiceId MAY be generated prior to an invoice being issued.
 * InvoiceId MUST be associated with the related *charge* and BillingAccountId when a pre-generated invoice or provisional invoice exists.
 
-See [Appendix: Grouping constructs for resources or [-services](#groupingconstructsforresourcesorservices)-]{+services](#appendix.groupingconstructsforresourcesorservices)+} for details and examples of the different grouping constructs supported by FOCUS.
-
-## Column ID
-
-@@ -32,13 +31,14 @@ The invoice-issuer-assigned identifier for an invoice encapsulating *charges* in
-
-## Content constraints
-
-| Constraint      | Value                                                |
-[-|:----------------|:-----------------|-]{+| :-------------- | :--------------------------------------------------- |+}
-{+| Dataset         | [Cost and Usage](#datasets.costandusage)             |+}
-| Column type     | Dimension                                            |
-| Feature level   | Recommended                                          |
-| Allows nulls    | True                                                 |
-| Data type       | String                                               |
-| Value format    | \<not specified>                                     |
-
-## Introduced (version)
-
