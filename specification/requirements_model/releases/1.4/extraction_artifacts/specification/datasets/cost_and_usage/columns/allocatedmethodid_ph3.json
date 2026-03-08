@@ -1,0 +1,103 @@
+{
+  "ModelRules": {
+    "CAU-AllocatedMethodId-C-000-M": {
+      "RMID": "CAU-AllocatedMethodId-C-000-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "AllocatedMethodId",
+      "Ref": "L007",
+      "Keyword": "MUST",
+      "Order": 0,
+      "Statement": "AllocatedMethodId MUST adhere to the following requirements:",
+      "Dependencies": [
+        "CAU-AllocatedMethodId-C-001-M",
+        "CAU-AllocatedMethodId-C-002-M",
+        "CAU-AllocatedMethodId-C-003-M",
+        "CAU-AllocatedMethodId-C-006-M"
+      ]
+    },
+    "CAU-AllocatedMethodId-C-001-M": {
+      "RMID": "CAU-AllocatedMethodId-C-001-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "AllocatedMethodId",
+      "Ref": "L009",
+      "Keyword": "MUST",
+      "Order": 10,
+      "Statement": "AllocatedMethodId MUST be of type String.",
+      "Dependencies": []
+    },
+    "CAU-AllocatedMethodId-C-002-M": {
+      "RMID": "CAU-AllocatedMethodId-C-002-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "AllocatedMethodId",
+      "Ref": "L010",
+      "Keyword": "MUST",
+      "Order": 20,
+      "Statement": "AllocatedMethodId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "Dependencies": []
+    },
+    "CAU-AllocatedMethodId-C-003-M": {
+      "RMID": "CAU-AllocatedMethodId-C-003-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "AllocatedMethodId",
+      "Ref": "L011",
+      "Keyword": "MUST",
+      "Order": 30,
+      "Statement": "AllocatedMethodId MUST adhere to the following nullability requirements:",
+      "Dependencies": [
+        "CAU-AllocatedMethodId-C-004-M",
+        "CAU-AllocatedMethodId-C-005-M"
+      ]
+    },
+    "CAU-AllocatedMethodId-C-004-M": {
+      "RMID": "CAU-AllocatedMethodId-C-004-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "AllocatedMethodId",
+      "Ref": "L012",
+      "Keyword": "MUST",
+      "Order": 40,
+      "Statement": "AllocatedMethodId MUST be null when a [*charge*](#glossary:charge) is not related to a data generator-calculated split cost allocation.",
+      "Dependencies": []
+    },
+    "CAU-AllocatedMethodId-C-005-M": {
+      "RMID": "CAU-AllocatedMethodId-C-005-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "AllocatedMethodId",
+      "Ref": "L013",
+      "Keyword": "MUST NOT",
+      "Order": 50,
+      "Statement": "AllocatedMethodId MUST NOT be null when a *charge* is related to a data generator-calculated split cost allocation.",
+      "Dependencies": []
+    },
+    "CAU-AllocatedMethodId-C-006-M": {
+      "RMID": "CAU-AllocatedMethodId-C-006-M",
+      "Type": "Static",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "EntityType": "Column",
+      "EntityId": "AllocatedMethodId",
+      "Ref": "L014",
+      "Keyword": "MUST",
+      "Order": 60,
+      "Statement": "Data generator documentation of a split cost allocation method MUST make reference to a single AllocatedMethodId value.",
+      "Dependencies": []
+    }
+  }
+}
