@@ -1,7 +1,7 @@
 {
   "ModelRules": {
     "CAU-AllocatedMethodId-C-000-M": {
-      "Function": "Rule",
+      "Function": "Validation",
       "Reference": "AllocatedMethodId",
       "EntityType": "Column",
       "EntityName": "Allocated Method ID",
@@ -78,7 +78,7 @@
       }
     },
     "CAU-AllocatedMethodId-C-003-M": {
-      "Function": "Rule",
+      "Function": "Nullability",
       "Reference": "AllocatedMethodId",
       "EntityType": "Column",
       "EntityName": "Allocated Method ID",
@@ -153,7 +153,7 @@
       }
     },
     "CAU-AllocatedMethodId-C-006-M": {
-      "Function": "Rule",
+      "Function": "Validation",
       "Reference": "AllocatedMethodId",
       "EntityType": "Column",
       "EntityName": "Allocated Method ID",
