@@ -287,10 +287,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 32,
-        "line_end": 32
+        "line_start": 33,
+        "line_end": 33
       },
-      "ref": "L032"
+      "ref": "L033"
     },
     {
       "temp_id": "R012",
@@ -312,10 +312,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 33,
-        "line_end": 33
+        "line_start": 34,
+        "line_end": 34
       },
-      "ref": "L033"
+      "ref": "L034"
     },
     {
       "temp_id": "R013",
@@ -337,10 +337,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 34,
-        "line_end": 34
+        "line_start": 35,
+        "line_end": 35
       },
-      "ref": "L034"
+      "ref": "L035"
     },
     {
       "temp_id": "R014",
@@ -362,10 +362,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 35,
-        "line_end": 35
+        "line_start": 36,
+        "line_end": 36
       },
-      "ref": "L035"
+      "ref": "L036"
     },
     {
       "temp_id": "R015",
@@ -379,31 +379,6 @@
         "Object Requirements"
       ],
       "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 36,
-        "line_end": 36
-      },
-      "ref": "L036"
-    },
-    {
-      "temp_id": "R016",
-      "order": 16,
-      "text": "**Condition:** MUST be present if Usage Quantity is provided.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Allocated Method Details",
-        "Schema Structure",
-        "Top-Level Properties"
-      ],
-      "block": {
         "block_type": "paragraph",
         "indent_level": 0,
         "bullet": null
@@ -412,35 +387,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 55,
-        "line_end": 55
+        "line_start": 37,
+        "line_end": 37
       },
-      "ref": "L055"
-    },
-    {
-      "temp_id": "R017",
-      "order": 17,
-      "text": "Custom keys MUST be prefixed with \"x_\" followed by PascalCase format (e.g., `x_MyCustomKey`) to make them easy to identify as well as prevent collisions with FOCUS-defined keys.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Allocated Method Details",
-        "Implementation Guidance",
-        "Custom Properties"
-      ],
-      "block": {
-        "block_type": "paragraph",
-        "indent_level": 0,
-        "bullet": null
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 83,
-        "line_end": 83
-      },
-      "ref": "L083"
+      "ref": "L037"
     }
   ],
   "warnings": [],
