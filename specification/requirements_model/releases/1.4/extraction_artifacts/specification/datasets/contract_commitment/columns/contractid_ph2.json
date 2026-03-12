@@ -17,7 +17,7 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 6
+    "atoms_in_scope_count": 7
   },
   "0_outline_root": "ROOT: Contract ID > Requirements",
   "0_outline_lines": [
@@ -25,18 +25,19 @@
     "  L009: \"ContractId MUST be of type String.\"",
     "  L010: \"ContractId MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
     "  L011: \"ContractId MUST NOT be null.\"",
-    "  L013: \"ContractId MUST be a unique identifier within the service provider.\"",
-    "  L014: \"ContractId SHOULD be a fully-qualified identifier.\""
+    "  L012: \"When ContractId is not null, ContractId MUST adhere to the following requirements:\"",
+    "    L013: \"ContractId MUST be a unique identifier within the service provider.\"",
+    "    L014: \"ContractId SHOULD be a fully-qualified identifier.\""
   ],
   "0_outline_summary": {
-    "node_count": 6,
+    "node_count": 7,
     "leaf_count": 5,
-    "lead_in_count": 1,
-    "max_depth": 1,
+    "lead_in_count": 2,
+    "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 4,
+      "MUST": 5,
       "MUST NOT": 1,
       "SHOULD": 1
     },
@@ -44,7 +45,12 @@
       {
         "ref": "L007",
         "text_preview": "ContractId MUST adhere to the following requirements:",
-        "children": 5
+        "children": 4
+      },
+      {
+        "ref": "L012",
+        "text_preview": "When ContractId is not null, ContractId MUST adhere to the following requirements:",
+        "children": 2
       }
     ]
   },
@@ -154,8 +160,8 @@
               "atom": {
                 "temp_id": "R005",
                 "order": 5,
-                "ref": "L013",
-                "text": "ContractId MUST be a unique identifier within the service provider.",
+                "ref": "L012",
+                "text": "When ContractId is not null, ContractId MUST adhere to the following requirements:",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract ID",
@@ -163,38 +169,63 @@
                 ],
                 "block": {
                   "block_type": "list_item",
-                  "indent_level": 1,
+                  "indent_level": 0,
                   "bullet": "*"
                 },
                 "lead_in": {
-                  "ends_with_colon": false
+                  "ends_with_colon": true
                 }
               },
-              "children": []
-            },
-            {
-              "node_id": "R006",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R006",
-                "order": 6,
-                "ref": "L014",
-                "text": "ContractId SHOULD be a fully-qualified identifier.",
-                "keyword": "SHOULD",
-                "section_path": [
-                  "Contract ID",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 1,
-                  "bullet": "*"
+              "children": [
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L013",
+                    "text": "ContractId MUST be a unique identifier within the service provider.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Contract ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
                 },
-                "lead_in": {
-                  "ends_with_colon": false
+                {
+                  "node_id": "R007",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R007",
+                    "order": 7,
+                    "ref": "L014",
+                    "text": "ContractId SHOULD be a fully-qualified identifier.",
+                    "keyword": "SHOULD",
+                    "section_path": [
+                      "Contract ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
                 }
-              },
-              "children": []
+              ]
             }
           ]
         }
