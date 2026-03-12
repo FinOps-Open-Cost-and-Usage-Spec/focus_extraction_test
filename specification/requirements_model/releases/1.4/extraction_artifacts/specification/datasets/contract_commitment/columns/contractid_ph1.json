@@ -116,6 +116,30 @@
     {
       "temp_id": "R005",
       "order": 5,
+      "text": "When ContractId is not null, ContractId MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 12,
+        "line_end": 12
+      },
+      "ref": "L012"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
       "text": "ContractId MUST be a unique identifier within the service provider.",
       "keyword": "MUST",
       "role": "requirement",
@@ -138,8 +162,8 @@
       "ref": "L013"
     },
     {
-      "temp_id": "R006",
-      "order": 6,
+      "temp_id": "R007",
+      "order": 7,
       "text": "ContractId SHOULD be a fully-qualified identifier.",
       "keyword": "SHOULD",
       "role": "requirement",
@@ -162,67 +186,12 @@
       "ref": "L014"
     }
   ],
-  "warnings": [
-    {
-      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
-      "severity": "MEDIUM",
-      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
-      "text": "ContractId MUST NOT be null.",
-      "details": {
-        "ref": "L011",
-        "temp_id": "R004",
-        "order": 4,
-        "indent_level": 0,
-        "section_path": [
-          "Contract ID",
-          "Requirements"
-        ],
-        "next_ref": "L013",
-        "next_temp_id": "R005",
-        "next_order": 5,
-        "next_indent_level": 1
-      }
-    }
-  ],
+  "warnings": [],
   "structural": {
-    "lead_ins": [
-      {
-        "text": "When ContractId is not null, ContractId adheres to the following additional requirements:",
-        "class": "requirements_list_intro",
-        "confidence": "high",
-        "section_path": [
-          "Requirements"
-        ],
-        "block": {
-          "block_type": "list_item",
-          "indent_level": 0,
-          "bullet": "*"
-        },
-        "lead_in": {
-          "ends_with_colon": true
-        },
-        "provenance": {
-          "line_start": 12,
-          "line_end": 12
-        },
-        "ref": "LI012",
-        "next_normative_refs": [
-          "L013",
-          "L014"
-        ]
-      }
-    ],
+    "lead_ins": [],
     "index": {
-      "by_section_path": {
-        "Requirements": [
-          "LI012"
-        ]
-      },
-      "by_line": {
-        "12": [
-          "LI012"
-        ]
-      }
+      "by_section_path": {},
+      "by_line": {}
     }
   }
 }
