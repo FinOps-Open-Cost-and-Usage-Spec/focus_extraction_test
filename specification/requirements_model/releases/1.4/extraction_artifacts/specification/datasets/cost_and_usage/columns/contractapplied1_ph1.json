@@ -1,0 +1,530 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/contractapplied1.md",
+    "version": "1.3"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "ContractApplied",
+    "entity_name": "Contract Applied"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "ContractApplied",
+      "entity_name": "Contract Applied"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "The ContractApplied column MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Column Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 19,
+        "line_end": 19
+      },
+      "ref": "L019"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "ContractApplied MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Column Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 21,
+        "line_end": 21
+      },
+      "ref": "L021"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "ContractApplied MUST NOT be null when one or more *contract commitments* are applied to the *charge*.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Column Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 22,
+        "line_end": 22
+      },
+      "ref": "L022"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "If ContractApplied is not null, ContractApplied MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 28,
+        "line_end": 28
+      },
+      "ref": "L028"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "ContractApplied MUST have a top-level key \"Elements\" which contains an array.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 29,
+        "line_end": 29
+      },
+      "ref": "L029"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "ContractApplied root object MAY contain custom objects, in addition to \"Elements\".",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 30,
+        "line_end": 30
+      },
+      "ref": "L030"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "Each item in \"Elements\" MUST be an object.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 31,
+        "line_end": 31
+      },
+      "ref": "L031"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "\"Elements\" objects MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 32,
+        "line_end": 32
+      },
+      "ref": "L032"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "\"Elements\" objects MUST contain key-value pairs (contract application properties).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 33,
+        "line_end": 33
+      },
+      "ref": "L033"
+    },
+    {
+      "temp_id": "R010",
+      "order": 10,
+      "text": "Contract application property keys SHOULD conform to [PascalCase](#glossary:pascalcase) format.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 34,
+        "line_end": 34
+      },
+      "ref": "L034"
+    },
+    {
+      "temp_id": "R011",
+      "order": 11,
+      "text": "\"Elements\" objects MUST contain four key-value pairs, representing \"ContractCommitmentID\", \"ContractCommitmentAppliedCost\", \"ContractCommitmentAppliedQuantity\", and \"ContractCommitmentAppliedUnit\".",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 35,
+        "line_end": 35
+      },
+      "ref": "L035"
+    },
+    {
+      "temp_id": "R012",
+      "order": 12,
+      "text": "\"Elements\" objects MAY contain custom key-value pairs, representing additional datapoints provided by the data generator.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 36,
+        "line_end": 36
+      },
+      "ref": "L036"
+    },
+    {
+      "temp_id": "R013",
+      "order": 13,
+      "text": "Contract application property custom key-value pairs MUST be prefixed with a consistent `x_` prefix to identify them as external, custom columns and distinguish them from FOCUS columns to avoid conflicts in future releases.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 38,
+        "line_end": 38
+      },
+      "ref": "L038"
+    },
+    {
+      "temp_id": "R014",
+      "order": 14,
+      "text": "Contract application property custom key-value pairs MUST be documented by the data generator.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 39,
+        "line_end": 39
+      },
+      "ref": "L039"
+    },
+    {
+      "temp_id": "R015",
+      "order": 15,
+      "text": "Contract application property custom key-value pairs MUST NOT be nested.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 40,
+        "line_end": 40
+      },
+      "ref": "L040"
+    },
+    {
+      "temp_id": "R016",
+      "order": 16,
+      "text": "FOCUS-defined contract application properties MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 41,
+        "line_end": 41
+      },
+      "ref": "L041"
+    },
+    {
+      "temp_id": "R017",
+      "order": 17,
+      "text": "Contract application property key MUST match the spelling and casing specified for the FOCUS-defined property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 42,
+        "line_end": 42
+      },
+      "ref": "L042"
+    },
+    {
+      "temp_id": "R018",
+      "order": 18,
+      "text": "Contract application property value MUST be of the type specified for that property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 43,
+        "line_end": 43
+      },
+      "ref": "L043"
+    },
+    {
+      "temp_id": "R019",
+      "order": 19,
+      "text": "Contract application property MUST adhere to additional normative requirements specific to that property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 44,
+        "line_end": 44
+      },
+      "ref": "L044"
+    },
+    {
+      "temp_id": "R020",
+      "order": 20,
+      "text": "Contract application property keys MUST begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements",
+        "Object Schema Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 45,
+        "line_end": 45
+      },
+      "ref": "L045"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "\"Elements\" objects MAY contain custom key-value pairs, representing additional datapoints provided by the data generator.",
+      "details": {
+        "ref": "L036",
+        "temp_id": "R012",
+        "order": 12,
+        "indent_level": 1,
+        "section_path": [
+          "Requirements",
+          "Object Schema Requirements"
+        ],
+        "next_ref": "L038",
+        "next_temp_id": "R013",
+        "next_order": 13,
+        "next_indent_level": 2
+      }
+    }
+  ],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}
