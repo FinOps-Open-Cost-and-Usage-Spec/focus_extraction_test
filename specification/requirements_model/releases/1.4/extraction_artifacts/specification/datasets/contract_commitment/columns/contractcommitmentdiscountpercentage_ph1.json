@@ -140,7 +140,7 @@
     {
       "temp_id": "R006",
       "order": 6,
-      "text": "ContractCommitmentDiscountPercentage MUST be a value between 0.0 and 1.0.",
+      "text": "ContractCommitmentDiscountPercentage MUST be a value between 0.0 and 1.0, inclusive.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
