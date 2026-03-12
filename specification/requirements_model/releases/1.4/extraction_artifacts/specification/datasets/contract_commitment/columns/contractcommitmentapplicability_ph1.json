@@ -470,7 +470,7 @@
     {
       "temp_id": "R019",
       "order": 19,
-      "text": "The evaluation of an entity against a commitment applicability MUST follow a strict linear progression:",
+      "text": "The evaluation of an entity against a commitment applicability must follow a strict linear progression:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -495,7 +495,7 @@
     {
       "temp_id": "R020",
       "order": 20,
-      "text": "If a metric key (`Cost` or `Usage`) is missing within a provided `Applicability` object, the engine MUST default that specific value to `1.0`.",
+      "text": "If a metric key (`Cost` or `Usage`) is missing within a provided `Applicability` object, the engine must default that specific value to `1.0`.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -520,7 +520,7 @@
     {
       "temp_id": "R021",
       "order": 21,
-      "text": "Use the `Applicability` from the matching inclusion rule.",
+      "text": "If multiple rules match under `Or`, the engine must use the highest percentage for each respective metric.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -545,31 +545,6 @@
     {
       "temp_id": "R022",
       "order": 22,
-      "text": "If multiple rules match under `Or`, the engine MUST use the highest percentage for each respective metric.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Contract Commitment Applicability",
-        "Implementation Guidance",
-        "Processing Workflow"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "2."
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 132,
-        "line_end": 132
-      },
-      "ref": "L132"
-    },
-    {
-      "temp_id": "R023",
-      "order": 23,
       "text": "The evaluation of **Applicability** percentages must be contextually aligned with the [Contract Commitment Model](#datasets.contractcommitment.contractcommitmentmodel) and [Contract Commitment Fulfillment Interval](#datasets.contractcommitment.contractcommitmentfulfillmentinterval):",
       "keyword": "MUST",
       "role": "requirement",
@@ -591,6 +566,31 @@
         "line_end": 142
       },
       "ref": "L142"
+    },
+    {
+      "temp_id": "R023",
+      "order": 23,
+      "text": "Applicability percentages must be applied to each discrete unit of activity (e.g., every hour) within the **Fulfillment Interval**.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment Applicability",
+        "Implementation Guidance",
+        "Integration with Commitment Logic"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 144,
+        "line_end": 144
+      },
+      "ref": "L144"
     },
     {
       "temp_id": "R024",
@@ -637,10 +637,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 146,
-        "line_end": 146
+        "line_start": 129,
+        "line_end": 129
       },
-      "ref": "L146"
+      "ref": "L129"
     },
     {
       "temp_id": "R026",
@@ -670,7 +670,7 @@
     {
       "temp_id": "R027",
       "order": 27,
-      "text": "`IsGlobalScope` and `IsComplexScope` must both not be `true` at the same time.",
+      "text": "Additionally, `IsGlobalScope` and `IsComplexScope` must both not be `true` at the same time.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -687,10 +687,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 147,
-        "line_end": 147
+        "line_start": 130,
+        "line_end": 130
       },
-      "ref": "L147"
+      "ref": "L130"
     },
     {
       "temp_id": "R028",
@@ -712,32 +712,19 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 147,
-        "line_end": 147
+        "line_start": 130,
+        "line_end": 130
       },
-      "ref": "L147"
+      "ref": "L130"
     }
   ],
   "warnings": [
     {
       "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "More than one BCP-14 keyword occurrence found in the same source block; atoms were split.",
+      "message": "Multiple BCP-14 keywords found in the same source block; atoms were split.",
       "details": {
-        "line": 132,
-        "text": "Rule-level Priority: Use the `Applicability` from the matching inclusion rule. If multiple rules match under `Or`, the engine MUST use the highest percentage for each respective metric.",
-        "total_occurrences": 2,
-        "unique_keywords": [
-          "MUST"
-        ]
-      },
-      "text": "(document-level)"
-    },
-    {
-      "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "More than one BCP-14 keyword occurrence found in the same source block; atoms were split.",
-      "details": {
-        "line": 146,
-        "text": "Consistency: Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
+        "line": 129,
+        "text": "Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
         "total_occurrences": 2,
         "unique_keywords": [
           "SHOULD",
@@ -748,9 +735,9 @@
     },
     {
       "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "More than one BCP-14 keyword occurrence found in the same source block; atoms were split.",
+      "message": "Multiple BCP-14 keywords found in the same source block; atoms were split.",
       "details": {
-        "line": 147,
+        "line": 130,
         "text": "Conflict Resolution: If `IsGlobalScope` or `IsComplexScope` is `true`, the `Inclusions` array must be empty or omitted. Additionally, `IsGlobalScope` and `IsComplexScope` must both not be `true` at the same time. Engines should validate these structural constraints before processing.",
         "total_occurrences": 3,
         "unique_keywords": [
@@ -761,40 +748,19 @@
       "text": "(document-level)"
     },
     {
-      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
-      "severity": "MEDIUM",
-      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
-      "text": "If multiple rules match under `Or`, the engine MUST use the highest percentage for each respective metric.",
+      "code": "W_ORPHAN_COLON",
+      "severity": "LOW",
+      "message": "Line ends with colon (:) but no child list items were detected.",
+      "text": "The evaluation of an entity against a commitment applicability must follow a strict linear progression:",
       "details": {
-        "ref": "L132",
-        "temp_id": "R022",
-        "order": 22,
+        "ref": "L129",
+        "temp_id": "R019",
+        "order": 19,
         "indent_level": 0,
         "section_path": [
           "Contract Commitment Applicability",
           "Implementation Guidance",
           "Processing Workflow"
-        ],
-        "next_ref": "L136",
-        "next_temp_id": "R020",
-        "next_order": 20,
-        "next_indent_level": 1
-      }
-    },
-    {
-      "code": "W_ORPHAN_COLON",
-      "severity": "LOW",
-      "message": "Line ends with colon (:) but no child list items were detected.",
-      "text": "The evaluation of **Applicability** percentages must be contextually aligned with the [Contract Commitment Model](#datasets.contractcommitment.contractcommitmentmodel) and [Contra…",
-      "details": {
-        "ref": "L142",
-        "temp_id": "R023",
-        "order": 23,
-        "indent_level": 0,
-        "section_path": [
-          "Contract Commitment Applicability",
-          "Implementation Guidance",
-          "Integration with Commitment Logic"
         ]
       }
     }
