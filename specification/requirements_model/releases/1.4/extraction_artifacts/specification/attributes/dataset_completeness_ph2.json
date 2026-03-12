@@ -1,0 +1,283 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/attributes/dataset_completeness.md",
+    "version": "1.4"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "DatasetCompleteness",
+    "entity_name": "Dataset Completeness"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 9
+  },
+  "0_outline_root": "ROOT: Dataset Completeness > Requirements",
+  "0_outline_lines": [
+    "L021: \"*FOCUS dataset* MUST include [*custom columns*](#glossary:custom-column) corresponding to *native dataset* columns that materially support analysis or reporting scenarios and do not duplicate information already captured in FOCUS columns.\"",
+    "L022: \"*FOCUS dataset* MUST NOT alter the aggregated values of summable [*metrics*](#glossary:metric) (e.g., costs and quantities) when custom columns are introduced.\"",
+    "L023: \"*FOCUS dataset* SHOULD include custom columns that enable correlation between *FOCUS dataset* records and *native dataset* records (e.g., native [*charge*](#glossary:charge) identifiers).\"",
+    "L024: \"*FOCUS dataset* SHOULD NOT include custom columns that duplicate information already captured in FOCUS columns.\"",
+    "L025: \"*FOCUS dataset* MAY omit *native dataset* columns that do not support any analysis or reporting scenarios.\"",
+    "L026: \"*FOCUS dataset* MAY preserve custom columns for a limited time even after one or more equivalent FOCUS columns are newly introduced, to enable migration without breaking changes.\"",
+    "L027: \"*FOCUS dataset* SHOULD ensure custom columns accurately represent the corresponding values from the *native dataset*.\"",
+    "L028: \"*FOCUS dataset* SHOULD order all *FOCUS columns* before any *custom columns*.\"",
+    "L029: \"*FOCUS dataset* MAY sort *FOCUS columns* alphabetically first, then list *custom columns* alphabetically second.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 9,
+    "leaf_count": 9,
+    "lead_in_count": 0,
+    "max_depth": 0,
+    "max_indent_level": 0,
+    "root_children_count": 9,
+    "keyword_distribution": {
+      "MUST": 1,
+      "MUST NOT": 1,
+      "SHOULD": 3,
+      "SHOULD NOT": 1,
+      "MAY": 3
+    },
+    "lead_ins": []
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L021",
+            "text": "*FOCUS dataset* MUST include [*custom columns*](#glossary:custom-column) corresponding to *native dataset* columns that materially support analysis or reporting scenarios and do not duplicate information already captured in FOCUS columns.",
+            "keyword": "MUST",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R002",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R002",
+            "order": 2,
+            "ref": "L022",
+            "text": "*FOCUS dataset* MUST NOT alter the aggregated values of summable [*metrics*](#glossary:metric) (e.g., costs and quantities) when custom columns are introduced.",
+            "keyword": "MUST NOT",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R003",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R003",
+            "order": 3,
+            "ref": "L023",
+            "text": "*FOCUS dataset* SHOULD include custom columns that enable correlation between *FOCUS dataset* records and *native dataset* records (e.g., native [*charge*](#glossary:charge) identifiers).",
+            "keyword": "SHOULD",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R004",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R004",
+            "order": 4,
+            "ref": "L024",
+            "text": "*FOCUS dataset* SHOULD NOT include custom columns that duplicate information already captured in FOCUS columns.",
+            "keyword": "SHOULD NOT",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R005",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R005",
+            "order": 5,
+            "ref": "L025",
+            "text": "*FOCUS dataset* MAY omit *native dataset* columns that do not support any analysis or reporting scenarios.",
+            "keyword": "MAY",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R006",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R006",
+            "order": 6,
+            "ref": "L026",
+            "text": "*FOCUS dataset* MAY preserve custom columns for a limited time even after one or more equivalent FOCUS columns are newly introduced, to enable migration without breaking changes.",
+            "keyword": "MAY",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R007",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R007",
+            "order": 7,
+            "ref": "L027",
+            "text": "*FOCUS dataset* SHOULD ensure custom columns accurately represent the corresponding values from the *native dataset*.",
+            "keyword": "SHOULD",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R008",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R008",
+            "order": 8,
+            "ref": "L028",
+            "text": "*FOCUS dataset* SHOULD order all *FOCUS columns* before any *custom columns*.",
+            "keyword": "SHOULD",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        },
+        {
+          "node_id": "R009",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R009",
+            "order": 9,
+            "ref": "L029",
+            "text": "*FOCUS dataset* MAY sort *FOCUS columns* alphabetically first, then list *custom columns* alphabetically second.",
+            "keyword": "MAY",
+            "section_path": [
+              "Dataset Completeness",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": false
+            }
+          },
+          "children": []
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}
