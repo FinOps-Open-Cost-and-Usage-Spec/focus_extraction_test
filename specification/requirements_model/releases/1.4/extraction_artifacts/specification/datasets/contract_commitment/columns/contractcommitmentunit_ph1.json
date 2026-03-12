@@ -116,6 +116,30 @@
     {
       "temp_id": "R005",
       "order": 5,
+      "text": "ContractCommitmentUnit MUST adhere to the following nullability requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment Unit",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 12,
+        "line_end": 12
+      },
+      "ref": "L012"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
       "text": "ContractCommitmentUnit MUST be null when ContractCommitmentQuantity is null.",
       "keyword": "MUST",
       "role": "requirement",
@@ -138,8 +162,8 @@
       "ref": "L013"
     },
     {
-      "temp_id": "R006",
-      "order": 6,
+      "temp_id": "R007",
+      "order": 7,
       "text": "ContractCommitmentUnit MUST NOT be null when ContractCommitmentQuantity is not null.",
       "keyword": "MUST NOT",
       "role": "requirement",
@@ -162,28 +186,7 @@
       "ref": "L014"
     }
   ],
-  "warnings": [
-    {
-      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
-      "severity": "MEDIUM",
-      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
-      "text": "ContractCommitmentUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
-      "details": {
-        "ref": "L011",
-        "temp_id": "R004",
-        "order": 4,
-        "indent_level": 0,
-        "section_path": [
-          "Contract Commitment Unit",
-          "Requirements"
-        ],
-        "next_ref": "L013",
-        "next_temp_id": "R005",
-        "next_order": 5,
-        "next_indent_level": 1
-      }
-    }
-  ],
+  "warnings": [],
   "structural": {
     "lead_ins": [],
     "index": {
