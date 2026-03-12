@@ -17,27 +17,28 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 7
+    "atoms_in_scope_count": 8
   },
   "0_outline_root": "ROOT: Pricing Currency Contract Commitment Cost > Requirements",
   "0_outline_lines": [
     "L007: \"PricingCurrencyContractCommitmentCost MUST adhere to the following requirements:\"",
     "  L009: \"PricingCurrencyContractCommitmentCost MUST be of type Decimal.\"",
     "  L010: \"PricingCurrencyContractCommitmentCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
-    "  L012: \"PricingCurrencyContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \\\"Spend\\\" and [PricingCurrency](#datasets.contractcommitment.pricingcurrency) is provided.\"",
-    "  L013: \"PricingCurrencyContractCommitmentCost MAY be null when ContractCommitmentCategory is \\\"Usage\\\".\"",
+    "  L011: \"PricingCurrencyContractCommitmentCost MUST adhere to the following nullability requirements:\"",
+    "    L012: \"PricingCurrencyContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \\\"Spend\\\" and [PricingCurrency](#datasets.contractcommitment.pricingcurrency) is provided.\"",
+    "    L013: \"PricingCurrencyContractCommitmentCost MAY be null when ContractCommitmentCategory is \\\"Usage\\\".\"",
     "  L014: \"PricingCurrencyContractCommitmentCost MUST be a valid decimal value.\"",
     "  L015: \"PricingCurrencyContractCommitmentCost MUST be denominated in the [PricingCurrency](#datasets.contractcommitment.pricingcurrency).\""
   ],
   "0_outline_summary": {
-    "node_count": 7,
+    "node_count": 8,
     "leaf_count": 6,
-    "lead_in_count": 1,
-    "max_depth": 1,
+    "lead_in_count": 2,
+    "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 5,
+      "MUST": 6,
       "MUST NOT": 1,
       "MAY": 1
     },
@@ -45,7 +46,12 @@
       {
         "ref": "L007",
         "text_preview": "PricingCurrencyContractCommitmentCost MUST adhere to the following requirements:",
-        "children": 6
+        "children": 5
+      },
+      {
+        "ref": "L011",
+        "text_preview": "PricingCurrencyContractCommitmentCost MUST adhere to the following nullability requirements:",
+        "children": 2
       }
     ]
   },
@@ -128,52 +134,76 @@
               "atom": {
                 "temp_id": "R004",
                 "order": 4,
-                "ref": "L012",
-                "text": "PricingCurrencyContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \"Spend\" and [PricingCurrency](#datasets.contractcommitment.pricingcurrency) is provided.",
-                "keyword": "MUST NOT",
+                "ref": "L011",
+                "text": "PricingCurrencyContractCommitmentCost MUST adhere to the following nullability requirements:",
+                "keyword": "MUST",
                 "section_path": [
                   "Requirements"
                 ],
                 "block": {
                   "block_type": "list_item",
-                  "indent_level": 1,
+                  "indent_level": 0,
                   "bullet": "*"
                 },
                 "lead_in": {
-                  "ends_with_colon": false
+                  "ends_with_colon": true
                 }
               },
-              "children": []
-            },
-            {
-              "node_id": "R005",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R005",
-                "order": 5,
-                "ref": "L013",
-                "text": "PricingCurrencyContractCommitmentCost MAY be null when ContractCommitmentCategory is \"Usage\".",
-                "keyword": "MAY",
-                "section_path": [
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 1,
-                  "bullet": "*"
+              "children": [
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L012",
+                    "text": "PricingCurrencyContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \"Spend\" and [PricingCurrency](#datasets.contractcommitment.pricingcurrency) is provided.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
                 },
-                "lead_in": {
-                  "ends_with_colon": false
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L013",
+                    "text": "PricingCurrencyContractCommitmentCost MAY be null when ContractCommitmentCategory is \"Usage\".",
+                    "keyword": "MAY",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
                 }
-              },
-              "children": []
+              ]
             },
             {
-              "node_id": "R006",
+              "node_id": "R007",
               "kind": "atom",
               "atom": {
-                "temp_id": "R006",
-                "order": 6,
+                "temp_id": "R007",
+                "order": 7,
                 "ref": "L014",
                 "text": "PricingCurrencyContractCommitmentCost MUST be a valid decimal value.",
                 "keyword": "MUST",
@@ -192,11 +222,11 @@
               "children": []
             },
             {
-              "node_id": "R007",
+              "node_id": "R008",
               "kind": "atom",
               "atom": {
-                "temp_id": "R007",
-                "order": 7,
+                "temp_id": "R008",
+                "order": 8,
                 "ref": "L015",
                 "text": "PricingCurrencyContractCommitmentCost MUST be denominated in the [PricingCurrency](#datasets.contractcommitment.pricingcurrency).",
                 "keyword": "MUST",
