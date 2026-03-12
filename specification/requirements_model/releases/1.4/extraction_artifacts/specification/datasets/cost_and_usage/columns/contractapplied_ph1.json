@@ -216,33 +216,8 @@
     {
       "temp_id": "R009",
       "order": 9,
-      "text": "ContractAppliedObject.Elements[\\*].ContractId MUST be a unique identifier within the service provider.",
+      "text": "ContractAppliedObject.Elements[*].ContractId MUST be a unique identifier within the service provider.",
       "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Contract Applied",
-        "Contract Applied Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 28,
-        "line_end": 28
-      },
-      "ref": "L028"
-    },
-    {
-      "temp_id": "R010",
-      "order": 10,
-      "text": "ContractAppliedObject.Elements[\\*].ContractId SHOULD be a fully-qualified identifier.",
-      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -264,10 +239,10 @@
       "ref": "L029"
     },
     {
-      "temp_id": "R011",
-      "order": 11,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST be a unique identifier within the service provider.",
-      "keyword": "MUST",
+      "temp_id": "R010",
+      "order": 10,
+      "text": "ContractAppliedObject.Elements[*].ContractId SHOULD be a fully-qualified identifier.",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -289,10 +264,10 @@
       "ref": "L030"
     },
     {
-      "temp_id": "R012",
-      "order": 12,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId SHOULD be a fully-qualified identifier.",
-      "keyword": "SHOULD",
+      "temp_id": "R011",
+      "order": 11,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be a unique identifier within the service provider.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -314,10 +289,10 @@
       "ref": "L031"
     },
     {
-      "temp_id": "R013",
-      "order": 13,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[\\*].ContractId.",
-      "keyword": "MUST",
+      "temp_id": "R012",
+      "order": 12,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId SHOULD be a fully-qualified identifier.",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -339,9 +314,9 @@
       "ref": "L032"
     },
     {
-      "temp_id": "R014",
-      "order": 14,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \"Purchase\".",
+      "temp_id": "R013",
+      "order": 13,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[*].ContractId.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -364,10 +339,10 @@
       "ref": "L033"
     },
     {
-      "temp_id": "R015",
-      "order": 15,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[\\*].ContractId.",
-      "keyword": "MAY",
+      "temp_id": "R014",
+      "order": 14,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \"Purchase\".",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -389,10 +364,10 @@
       "ref": "L034"
     },
     {
-      "temp_id": "R016",
-      "order": 16,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedCost MUST be denominated in the BillingCurrency.",
-      "keyword": "MUST",
+      "temp_id": "R015",
+      "order": 15,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[*].ContractId.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -414,9 +389,9 @@
       "ref": "L035"
     },
     {
-      "temp_id": "R017",
-      "order": 17,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedUnit.",
+      "temp_id": "R016",
+      "order": 16,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedCost MUST be denominated in the BillingCurrency.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -439,10 +414,10 @@
       "ref": "L036"
     },
     {
-      "temp_id": "R018",
-      "order": 18,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
-      "keyword": "SHOULD",
+      "temp_id": "R017",
+      "order": 17,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -462,6 +437,31 @@
         "line_end": 37
       },
       "ref": "L037"
+    },
+    {
+      "temp_id": "R018",
+      "order": 18,
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Contract Applied",
+        "Contract Applied Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 38,
+        "line_end": 38
+      },
+      "ref": "L038"
     }
   ],
   "warnings": [],
