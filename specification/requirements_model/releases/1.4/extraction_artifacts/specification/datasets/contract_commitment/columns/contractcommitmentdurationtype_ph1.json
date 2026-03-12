@@ -112,7 +112,7 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "ContractCommitmentDurationType SHOULD be expressed with a quantity and time unit, where quantity is a positive integer, and time-unit is a standardized unit of time, either singular or plural (e.g., Hour, Year, Years). The following formats are valid:",
+      "text": "ContractCommitmentDurationType SHOULD be expressed with a quantity and time unit, where quantity is a positive integer, and time-unit is a standardized unit of time, either singular or plural (e.g., \"1 Day\", \"1 Year\", \"3 Months\", \"3 Years\").",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -124,7 +124,7 @@
         "bullet": "*"
       },
       "lead_in": {
-        "ends_with_colon": true
+        "ends_with_colon": false
       },
       "provenance": {
         "line_start": 21,
@@ -150,10 +150,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 24,
-        "line_end": 24
+        "line_start": 22,
+        "line_end": 22
       },
-      "ref": "L024"
+      "ref": "L022"
     },
     {
       "temp_id": "R007",
@@ -173,10 +173,10 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 25,
-        "line_end": 25
+        "line_start": 23,
+        "line_end": 23
       },
-      "ref": "L025"
+      "ref": "L023"
     },
     {
       "temp_id": "R008",
@@ -196,33 +196,13 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 26,
-        "line_end": 26
+        "line_start": 24,
+        "line_end": 24
       },
-      "ref": "L026"
+      "ref": "L024"
     }
   ],
-  "warnings": [
-    {
-      "code": "W_ORPHAN_COLON",
-      "severity": "LOW",
-      "message": "Line ends with colon (:) but no child list items were detected.",
-      "text": "ContractCommitmentDurationType SHOULD be expressed with a quantity and time unit, where quantity is a positive integer, and time-unit is a standardized unit of time, either singul…",
-      "details": {
-        "ref": "L021",
-        "temp_id": "R005",
-        "order": 5,
-        "indent_level": 0,
-        "section_path": [
-          "Requirements"
-        ],
-        "next_ref": "L024",
-        "next_temp_id": "R006",
-        "next_order": 6,
-        "next_indent_level": 0
-      }
-    }
-  ],
+  "warnings": [],
   "structural": {
     "lead_ins": [],
     "index": {
