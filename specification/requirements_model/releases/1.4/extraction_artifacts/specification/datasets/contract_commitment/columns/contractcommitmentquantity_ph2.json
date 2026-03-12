@@ -17,26 +17,27 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 6
+    "atoms_in_scope_count": 7
   },
   "0_outline_root": "ROOT: Contract Commitment Quantity > Requirements",
   "0_outline_lines": [
     "L007: \"ContractCommitmentQuantity MUST adhere to the following requirements:\"",
     "  L009: \"ContractCommitmentQuantity MUST be of type Decimal.\"",
     "  L010: \"ContractCommitmentQuantity MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
-    "  L012: \"ContractCommitmentQuantity MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \\\"Usage\\\".\"",
-    "  L013: \"ContractCommitmentQuantity MAY be null when ContractCommitmentCategory is \\\"Spend\\\".\"",
+    "  L011: \"ContractCommitmentQuantity MUST adhere to the following nullability requirements:\"",
+    "    L012: \"ContractCommitmentQuantity MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \\\"Usage\\\".\"",
+    "    L013: \"ContractCommitmentQuantity MAY be null when ContractCommitmentCategory is \\\"Spend\\\".\"",
     "  L014: \"ContractCommitmentQuantity MUST be a valid decimal value.\""
   ],
   "0_outline_summary": {
-    "node_count": 6,
+    "node_count": 7,
     "leaf_count": 5,
-    "lead_in_count": 1,
-    "max_depth": 1,
+    "lead_in_count": 2,
+    "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 4,
+      "MUST": 5,
       "MUST NOT": 1,
       "MAY": 1
     },
@@ -44,7 +45,12 @@
       {
         "ref": "L007",
         "text_preview": "ContractCommitmentQuantity MUST adhere to the following requirements:",
-        "children": 5
+        "children": 4
+      },
+      {
+        "ref": "L011",
+        "text_preview": "ContractCommitmentQuantity MUST adhere to the following nullability requirements:",
+        "children": 2
       }
     ]
   },
@@ -130,54 +136,79 @@
               "atom": {
                 "temp_id": "R004",
                 "order": 4,
-                "ref": "L012",
-                "text": "ContractCommitmentQuantity MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \"Usage\".",
-                "keyword": "MUST NOT",
+                "ref": "L011",
+                "text": "ContractCommitmentQuantity MUST adhere to the following nullability requirements:",
+                "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment Quantity",
                   "Requirements"
                 ],
                 "block": {
                   "block_type": "list_item",
-                  "indent_level": 1,
+                  "indent_level": 0,
                   "bullet": "*"
                 },
                 "lead_in": {
-                  "ends_with_colon": false
+                  "ends_with_colon": true
                 }
               },
-              "children": []
-            },
-            {
-              "node_id": "R005",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R005",
-                "order": 5,
-                "ref": "L013",
-                "text": "ContractCommitmentQuantity MAY be null when ContractCommitmentCategory is \"Spend\".",
-                "keyword": "MAY",
-                "section_path": [
-                  "Contract Commitment Quantity",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 1,
-                  "bullet": "*"
+              "children": [
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L012",
+                    "text": "ContractCommitmentQuantity MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is \"Usage\".",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Contract Commitment Quantity",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
                 },
-                "lead_in": {
-                  "ends_with_colon": false
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L013",
+                    "text": "ContractCommitmentQuantity MAY be null when ContractCommitmentCategory is \"Spend\".",
+                    "keyword": "MAY",
+                    "section_path": [
+                      "Contract Commitment Quantity",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
                 }
-              },
-              "children": []
+              ]
             },
             {
-              "node_id": "R006",
+              "node_id": "R007",
               "kind": "atom",
               "atom": {
-                "temp_id": "R006",
-                "order": 6,
+                "temp_id": "R007",
+                "order": 7,
                 "ref": "L014",
                 "text": "ContractCommitmentQuantity MUST be a valid decimal value.",
                 "keyword": "MUST",
