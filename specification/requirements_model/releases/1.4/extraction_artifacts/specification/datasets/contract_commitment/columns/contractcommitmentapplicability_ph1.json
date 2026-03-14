@@ -520,7 +520,7 @@
     {
       "temp_id": "R021",
       "order": 21,
-      "text": "If multiple rules match under `Or`, the engine must use the highest percentage for each respective metric.",
+      "text": "Use the `Applicability` from the matching inclusion rule.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -545,6 +545,31 @@
     {
       "temp_id": "R022",
       "order": 22,
+      "text": "If multiple rules match under `Or`, the engine must use the highest percentage for each respective metric.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment Applicability",
+        "Implementation Guidance",
+        "Processing Workflow"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "1."
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 131,
+        "line_end": 131
+      },
+      "ref": "L131"
+    },
+    {
+      "temp_id": "R023",
+      "order": 23,
       "text": "The evaluation of **Applicability** percentages must be contextually aligned with the [Contract Commitment Model](#datasets.contractcommitment.contractcommitmentmodel) and [Contract Commitment Fulfillment Interval](#datasets.contractcommitment.contractcommitmentfulfillmentinterval):",
       "keyword": "MUST",
       "role": "requirement",
@@ -568,8 +593,8 @@
       "ref": "L142"
     },
     {
-      "temp_id": "R023",
-      "order": 23,
+      "temp_id": "R024",
+      "order": 24,
       "text": "Applicability percentages must be applied to each discrete unit of activity (e.g., every hour) within the **Fulfillment Interval**.",
       "keyword": "MUST",
       "role": "requirement",
@@ -593,8 +618,8 @@
       "ref": "L144"
     },
     {
-      "temp_id": "R024",
-      "order": 24,
+      "temp_id": "R025",
+      "order": 25,
       "text": "Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
       "keyword": "SHOULD",
       "role": "requirement",
@@ -618,8 +643,8 @@
       "ref": "L149"
     },
     {
-      "temp_id": "R025",
-      "order": 25,
+      "temp_id": "R026",
+      "order": 26,
       "text": "Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
       "keyword": "SHOULD NOT",
       "role": "requirement",
@@ -629,22 +654,22 @@
         "Dependency Logic"
       ],
       "block": {
-        "block_type": "list_item",
+        "block_type": "paragraph",
         "indent_level": 0,
-        "bullet": "2."
+        "bullet": null
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 132,
-        "line_end": 132
+        "line_start": 143,
+        "line_end": 143
       },
-      "ref": "L132"
+      "ref": "L143"
     },
     {
-      "temp_id": "R026",
-      "order": 26,
+      "temp_id": "R027",
+      "order": 27,
       "text": "If `IsGlobalScope` or `IsComplexScope` is `true`, the `Inclusions` array must be empty or omitted.",
       "keyword": "MUST",
       "role": "requirement",
@@ -668,8 +693,8 @@
       "ref": "L150"
     },
     {
-      "temp_id": "R027",
-      "order": 27,
+      "temp_id": "R028",
+      "order": 28,
       "text": "Additionally, `IsGlobalScope` and `IsComplexScope` must both not be `true` at the same time.",
       "keyword": "MUST",
       "role": "requirement",
@@ -681,20 +706,20 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "3."
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 133,
-        "line_end": 133
+        "line_start": 144,
+        "line_end": 144
       },
-      "ref": "L133"
+      "ref": "L144"
     },
     {
-      "temp_id": "R028",
-      "order": 28,
+      "temp_id": "R029",
+      "order": 29,
       "text": "Engines should validate these structural constraints before processing.",
       "keyword": "SHOULD",
       "role": "requirement",
@@ -706,25 +731,25 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "3."
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 133,
-        "line_end": 133
+        "line_start": 144,
+        "line_end": 144
       },
-      "ref": "L133"
+      "ref": "L144"
     }
   ],
   "warnings": [
     {
       "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "More than one BCP-14 keyword occurs in the same source sentence/block.",
+      "message": "Multiple BCP-14 keywords found in the same source block; atoms were split.",
       "details": {
-        "line": 132,
-        "text": "Consistency: Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
+        "line": 143,
+        "text": "Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
         "total_occurrences": 2,
         "unique_keywords": [
           "SHOULD",
@@ -734,34 +759,24 @@
       "text": "(document-level)"
     },
     {
-      "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "More than one BCP-14 keyword occurs in the same source sentence/block.",
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "If multiple rules match under `Or`, the engine must use the highest percentage for each respective metric.",
       "details": {
-        "line": 133,
-        "text": "Conflict Resolution: If `IsGlobalScope` or `IsComplexScope` is `true`, the `Inclusions` array must be empty or omitted. Additionally, `IsGlobalScope` and `IsComplexScope` must both not be `true` at the same time. Engines should validate these structural constraints before processing.",
-        "total_occurrences": 3,
-        "unique_keywords": [
-          "MUST",
-          "SHOULD"
-        ]
-      },
-      "text": "(document-level)"
-    },
-    {
-      "code": "W_ORPHAN_COLON",
-      "severity": "LOW",
-      "message": "Line ends with colon (:) but no child list items were detected.",
-      "text": "The evaluation of an entity against a commitment applicability must follow a strict linear progression:",
-      "details": {
-        "ref": "L129",
-        "temp_id": "R019",
-        "order": 19,
+        "ref": "L131",
+        "temp_id": "R022",
+        "order": 22,
         "indent_level": 0,
         "section_path": [
           "Contract Commitment Applicability",
           "Implementation Guidance",
           "Processing Workflow"
-        ]
+        ],
+        "next_ref": "L136",
+        "next_temp_id": "R020",
+        "next_order": 20,
+        "next_indent_level": 1
       }
     }
   ],
