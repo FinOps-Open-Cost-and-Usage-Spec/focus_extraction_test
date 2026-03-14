@@ -554,18 +554,18 @@
         "Processing Workflow"
       ],
       "block": {
-        "block_type": "list_item",
+        "block_type": "paragraph",
         "indent_level": 0,
-        "bullet": "1."
+        "bullet": null
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 131,
-        "line_end": 131
+        "line_start": 121,
+        "line_end": 121
       },
-      "ref": "L131"
+      "ref": "L121"
     },
     {
       "temp_id": "R023",
@@ -654,18 +654,18 @@
         "Dependency Logic"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "4."
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 143,
-        "line_end": 143
+        "line_start": 134,
+        "line_end": 134
       },
-      "ref": "L143"
+      "ref": "L134"
     },
     {
       "temp_id": "R027",
@@ -705,17 +705,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 144,
-        "line_end": 144
+        "line_start": 135,
+        "line_end": 135
       },
-      "ref": "L144"
+      "ref": "L135"
     },
     {
       "temp_id": "R029",
@@ -730,17 +730,17 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 144,
-        "line_end": 144
+        "line_start": 135,
+        "line_end": 135
       },
-      "ref": "L144"
+      "ref": "L135"
     }
   ],
   "warnings": [
@@ -748,7 +748,7 @@
       "code": "W_MULTIPLE_BCP14_IN_BLOCK",
       "message": "Multiple BCP-14 keywords found in the same source block; atoms were split.",
       "details": {
-        "line": 143,
+        "line": 134,
         "text": "Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
         "total_occurrences": 2,
         "unique_keywords": [
@@ -762,20 +762,20 @@
       "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
       "severity": "MEDIUM",
       "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
-      "text": "If multiple rules match under `Or`, the engine must use the highest percentage for each respective metric.",
+      "text": "Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
       "details": {
-        "ref": "L131",
-        "temp_id": "R022",
-        "order": 22,
+        "ref": "L134",
+        "temp_id": "R026",
+        "order": 26,
         "indent_level": 0,
         "section_path": [
           "Contract Commitment Applicability",
           "Implementation Guidance",
-          "Processing Workflow"
+          "Dependency Logic"
         ],
-        "next_ref": "L136",
-        "next_temp_id": "R020",
-        "next_order": 20,
+        "next_ref": "L135",
+        "next_temp_id": "R028",
+        "next_order": 28,
         "next_indent_level": 1
       }
     }
