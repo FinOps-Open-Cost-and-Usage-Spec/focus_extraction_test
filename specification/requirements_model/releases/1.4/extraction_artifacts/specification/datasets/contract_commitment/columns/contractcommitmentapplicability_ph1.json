@@ -629,18 +629,18 @@
         "Dependency Logic"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "2."
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 129,
-        "line_end": 129
+        "line_start": 132,
+        "line_end": 132
       },
-      "ref": "L129"
+      "ref": "L132"
     },
     {
       "temp_id": "R026",
@@ -679,18 +679,18 @@
         "Dependency Logic"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "3."
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 130,
-        "line_end": 130
+        "line_start": 133,
+        "line_end": 133
       },
-      "ref": "L130"
+      "ref": "L133"
     },
     {
       "temp_id": "R028",
@@ -704,27 +704,27 @@
         "Dependency Logic"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "3."
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 130,
-        "line_end": 130
+        "line_start": 133,
+        "line_end": 133
       },
-      "ref": "L130"
+      "ref": "L133"
     }
   ],
   "warnings": [
     {
       "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "Multiple BCP-14 keywords found in the same source block; atoms were split.",
+      "message": "More than one BCP-14 keyword occurs in the same source sentence/block.",
       "details": {
-        "line": 129,
-        "text": "Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
+        "line": 132,
+        "text": "Consistency: Engines should expect a JSON Object and should not support scalar (Decimal/Float) values for this field to ensure compatibility with typed database schemas.",
         "total_occurrences": 2,
         "unique_keywords": [
           "SHOULD",
@@ -735,9 +735,9 @@
     },
     {
       "code": "W_MULTIPLE_BCP14_IN_BLOCK",
-      "message": "Multiple BCP-14 keywords found in the same source block; atoms were split.",
+      "message": "More than one BCP-14 keyword occurs in the same source sentence/block.",
       "details": {
-        "line": 130,
+        "line": 133,
         "text": "Conflict Resolution: If `IsGlobalScope` or `IsComplexScope` is `true`, the `Inclusions` array must be empty or omitted. Additionally, `IsGlobalScope` and `IsComplexScope` must both not be `true` at the same time. Engines should validate these structural constraints before processing.",
         "total_occurrences": 3,
         "unique_keywords": [
