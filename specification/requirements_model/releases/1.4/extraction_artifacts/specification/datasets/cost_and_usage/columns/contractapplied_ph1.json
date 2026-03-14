@@ -14,6 +14,11 @@
       "entity_type": "Column",
       "entity_id": "ContractApplied",
       "entity_name": "Contract Applied"
+    },
+    {
+      "entity_type": "Object",
+      "entity_id": "ContractAppliedObject",
+      "entity_name": "Contract Applied Object"
     }
   ],
   "atoms": [
@@ -484,9 +489,98 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L037"
+    },
+    {
+      "temp_id": "R019",
+      "order": 19,
+      "text": "Must be present if Quantity and Unit are not provided.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Applied",
+        "Schema Structure",
+        "Elements Object"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 57,
+        "line_end": 57
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L057"
+    },
+    {
+      "temp_id": "R020",
+      "order": 20,
+      "text": "Must be present if Cost is not provided.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Applied",
+        "Schema Structure",
+        "Elements Object"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 58,
+        "line_end": 58
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L058"
+    },
+    {
+      "temp_id": "R021",
+      "order": 21,
+      "text": "Must be present if Contract Commitment Applied Quantity is provided.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Applied",
+        "Schema Structure",
+        "Elements Object"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 59,
+        "line_end": 59
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L059"
     }
   ],
   "warnings": [
+    {
+      "code": "W_ENTITY_MULTIPLE_TYPES",
+      "message": "More than one entity type was detected in the document.",
+      "details": {
+        "entity_types_detected": [
+          "Column",
+          "Object"
+        ]
+      },
+      "text": "(document-level)"
+    },
     {
       "code": "W_ENTITY_FALLBACK_APPLIED",
       "severity": "LOW",
@@ -500,7 +594,7 @@
         "selected_entity_type": "Column",
         "selected_entity_id": "ContractApplied",
         "selected_entity_name": "Contract Applied",
-        "entities_found_count": 1
+        "entities_found_count": 2
       },
       "text": "(document-level)"
     }
