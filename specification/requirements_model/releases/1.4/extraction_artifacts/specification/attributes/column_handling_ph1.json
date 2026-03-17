@@ -38,6 +38,7 @@
         "line_start": 16,
         "line_end": 16
       },
+      "_alignment_status": "confirmed",
       "ref": "L016"
     },
     {
@@ -63,6 +64,7 @@
         "line_start": 34,
         "line_end": 34
       },
+      "_alignment_status": "confirmed",
       "ref": "L034"
     },
     {
@@ -88,6 +90,7 @@
         "line_start": 35,
         "line_end": 35
       },
+      "_alignment_status": "confirmed",
       "ref": "L035"
     },
     {
@@ -113,6 +116,7 @@
         "line_start": 36,
         "line_end": 36
       },
+      "_alignment_status": "confirmed",
       "ref": "L036"
     },
     {
@@ -138,6 +142,7 @@
         "line_start": 37,
         "line_end": 37
       },
+      "_alignment_status": "confirmed",
       "ref": "L037"
     },
     {
@@ -163,6 +168,7 @@
         "line_start": 38,
         "line_end": 38
       },
+      "_alignment_status": "confirmed",
       "ref": "L038"
     },
     {
@@ -188,6 +194,7 @@
         "line_start": 39,
         "line_end": 39
       },
+      "_alignment_status": "confirmed",
       "ref": "L039"
     },
     {
@@ -213,6 +220,7 @@
         "line_start": 40,
         "line_end": 40
       },
+      "_alignment_status": "confirmed",
       "ref": "L040"
     },
     {
@@ -238,6 +246,7 @@
         "line_start": 41,
         "line_end": 41
       },
+      "_alignment_status": "confirmed",
       "ref": "L041"
     },
     {
@@ -263,6 +272,7 @@
         "line_start": 42,
         "line_end": 42
       },
+      "_alignment_status": "confirmed",
       "ref": "L042"
     },
     {
@@ -288,6 +298,7 @@
         "line_start": 43,
         "line_end": 43
       },
+      "_alignment_status": "confirmed",
       "ref": "L043"
     },
     {
@@ -313,6 +324,7 @@
         "line_start": 44,
         "line_end": 44
       },
+      "_alignment_status": "confirmed",
       "ref": "L044"
     },
     {
@@ -338,6 +350,7 @@
         "line_start": 45,
         "line_end": 45
       },
+      "_alignment_status": "confirmed",
       "ref": "L045"
     },
     {
@@ -363,6 +376,7 @@
         "line_start": 46,
         "line_end": 46
       },
+      "_alignment_status": "confirmed",
       "ref": "L046"
     }
   ],
