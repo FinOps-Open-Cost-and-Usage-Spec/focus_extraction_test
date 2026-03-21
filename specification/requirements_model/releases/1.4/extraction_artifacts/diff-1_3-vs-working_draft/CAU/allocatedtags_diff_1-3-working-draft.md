@@ -17,3 +17,4 @@ AllocatedTags [-adheres-]{+MUST adhere+} to the following requirements:
   * Data generator SHOULD publish all data generator-specified tag key prefixes within their respective documentation.
 * User-defined tags {+MUST+} adhere to the following[-additional-] requirements:
   * Data generator MUST prefix all user-defined tags scheme with a predetermined, data generator-specified tag key prefix that is unique to each corresponding user-defined tag scheme when the data generator has more than one user-defined tag scheme.
+
