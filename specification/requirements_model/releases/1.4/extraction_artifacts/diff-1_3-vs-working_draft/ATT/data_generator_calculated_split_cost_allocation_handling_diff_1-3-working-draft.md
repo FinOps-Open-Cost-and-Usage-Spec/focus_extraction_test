@@ -5,7 +5,7 @@
   * [-[AllocatedMethodId](#allocatedmethodid)-]{+[AllocatedMethodId](#datasets.costandusage.allocatedmethodid)+}
   * [-[AllocatedResourceId](#allocatedresourceid)-]{+[AllocatedResourceId](#datasets.costandusage.allocatedresourceid)+}
   * [-[AllocatedResourceName](#allocatedresourcename)-]{+[AllocatedResourceName](#datasets.costandusage.allocatedresourcename)+}
-  * [-[AllocatedResourceTags](#allocatedresourcetags)-]{+[AllocatedResourceTags](#datasets.costandusage.allocatedtags)+}
+  * [-[AllocatedResourceTags](#allocatedresourcetags)-]{+[AllocatedTags](#datasets.costandusage.allocatedtags)+}
 * A FOCUS dataset SHOULD include the following column when the data generator supports data generator-calculated split cost allocation:
   * [-[AllocatedMethodDetails](#allocatedmethoddetails)-]{+[AllocatedMethodDetails](#datasets.costandusage.allocatedmethoddetails)+}
 * Allocated charge records in a FOCUS dataset MUST sum up to the origin charge record for all aggregatable metric columns.
@@ -17,6 +17,4 @@
 * A FOCUS dataset MAY contain records for the unused or unallocated usage from the origin charge as separate allocated charges, if it aligns to the data generator's documented allocation method.
 * Allocated charge records MAY contain apportioned costs for the unused or unallocated usage from the origin charge, if it aligns to the data generator's documented allocation method.
 * Split cost allocation [-is RECOMMENDED to-]{+SHOULD+} be applied to charges on an opt-in basis.
-
-
 
