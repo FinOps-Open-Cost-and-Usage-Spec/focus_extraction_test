@@ -12,3 +12,4 @@ AllocatedResourceId [-adheres-]{+MUST adhere+} to the following requirements:
 * When AllocatedResourceId is not null, AllocatedResourceId [-adheres-]{+MUST adhere+} to the following[-additional-] requirements:
   * AllocatedResourceId SHOULD be a locally unique identifier within the associated ResourceId and ChargePeriod.
   * AllocatedResourceId MAY NOT be unique across ResourceId or ChargePeriod values.
+  
