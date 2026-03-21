@@ -12,4 +12,3 @@ CapacityReservationId [-adheres-]{+MUST adhere+} to the following requirements:
 * When CapacityReservationId is not null, CapacityReservationId [-adheres-]{+MUST adhere+} to the following[-additional-] requirements:
   * CapacityReservationId MUST be a unique identifier within the service provider.
   * CapacityReservationId SHOULD be a fully-qualified identifier.
-
