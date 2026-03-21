@@ -1,5 +1,6 @@
 ## Diff
 
+
 ContractCommitmentQuantity [-adheres-]{+MUST adhere+} to the following requirements:
 
 [-* ContractCommitmentQuantity MUST be present in a Contract Commitment [*FOCUS dataset*](#glossary:FOCUS-dataset).-]
