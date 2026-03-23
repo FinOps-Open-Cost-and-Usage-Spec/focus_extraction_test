@@ -2,7 +2,7 @@
   "phase": 1,
   "source": {
     "path": "specification/datasets/billing_period/dataset.md",
-    "version": "unknown"
+    "version": "1.4"
   },
   "entity": {
     "entity_type": "Dataset",
@@ -39,6 +39,7 @@
         "line_start": 27,
         "line_end": 27
       },
+      "_alignment_status": "confirmed",
       "ref": "L027"
     },
     {
@@ -63,6 +64,7 @@
         "line_start": 29,
         "line_end": 29
       },
+      "_alignment_status": "confirmed",
       "ref": "L029"
     },
     {
@@ -87,6 +89,7 @@
         "line_start": 30,
         "line_end": 30
       },
+      "_alignment_status": "confirmed",
       "ref": "L030"
     },
     {
@@ -111,6 +114,7 @@
         "line_start": 31,
         "line_end": 31
       },
+      "_alignment_status": "confirmed",
       "ref": "L031"
     },
     {
@@ -135,6 +139,7 @@
         "line_start": 32,
         "line_end": 32
       },
+      "_alignment_status": "confirmed",
       "ref": "L032"
     },
     {
@@ -159,6 +164,7 @@
         "line_start": 33,
         "line_end": 33
       },
+      "_alignment_status": "confirmed",
       "ref": "L033"
     },
     {
@@ -183,6 +189,7 @@
         "line_start": 34,
         "line_end": 34
       },
+      "_alignment_status": "confirmed",
       "ref": "L034"
     },
     {
@@ -207,6 +214,7 @@
         "line_start": 35,
         "line_end": 35
       },
+      "_alignment_status": "confirmed",
       "ref": "L035"
     },
     {
@@ -231,6 +239,7 @@
         "line_start": 36,
         "line_end": 36
       },
+      "_alignment_status": "confirmed",
       "ref": "L036"
     },
     {
@@ -255,21 +264,36 @@
         "line_start": 37,
         "line_end": 37
       },
+      "_alignment_status": "confirmed",
       "ref": "L037"
-    }
-  ],
-  "warnings": [
+    },
     {
-      "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
-      "severity": "MEDIUM",
-      "message": "Heading \"## Introduced (version)\" is missing, empty, or invalid.",
-      "details": {
-        "found_heading": false,
-        "found_version": null
+      "temp_id": "R011",
+      "order": 11,
+      "text": "BillingPeriod MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billing Period",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
       },
-      "text": "(document-level)"
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 38,
+        "line_end": 38
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L038"
     }
   ],
+  "warnings": [],
   "structural": {
     "lead_ins": [],
     "index": {
