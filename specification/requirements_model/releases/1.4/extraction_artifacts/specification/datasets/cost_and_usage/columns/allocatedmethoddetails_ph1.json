@@ -14,6 +14,11 @@
       "entity_type": "Column",
       "entity_id": "AllocatedMethodDetails",
       "entity_name": "Allocated Method Details"
+    },
+    {
+      "entity_type": "Object",
+      "entity_id": "AllocatedMethodDetailsObject",
+      "entity_name": "Allocated Method Details Object"
     }
   ],
   "atoms": [
@@ -408,7 +413,21 @@
       "ref": "L036"
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "W_ENTITY_MULTIPLE_TYPES",
+      "severity": "LOW",
+      "message": "Multiple entity types were explicitly identified in the document.",
+      "details": {
+        "entity_types": [
+          "Column",
+          "Object"
+        ],
+        "entities_found_count": 2
+      },
+      "text": "(document-level)"
+    }
+  ],
   "structural": {
     "lead_ins": [],
     "index": {
