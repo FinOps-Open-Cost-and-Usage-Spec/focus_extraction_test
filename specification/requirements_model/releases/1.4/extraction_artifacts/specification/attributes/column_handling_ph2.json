@@ -30,10 +30,10 @@
     "  L040: \"Columns that have an ID and a Name MUST have the `Id` or `Name` suffix in the Column ID.\"",
     "  L041: \"Column display names MUST be consistent with their Column IDs, with spaces inserted between words (e.g., Column ID \\\"BillingAccountName\\\" and display name \\\"Billing Account Name\\\").\"",
     "  L042: \"Columns with the `Category` suffix MUST be normalized.\"",
-    "L043: \"Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:\"",
+    "L043: \"<a name=\\\"column_handling:custom-column\\\"></a>Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:\"",
     "  L044: \"Custom columns MUST be prefixed with a consistent `x_` prefix to identify them as external, custom columns and distinguish them from FOCUS columns to avoid conflicts in future releases.\"",
     "  L045: \"Custom columns SHOULD follow the same rules listed above for FOCUS columns.\"",
-    "  L046: \"Custom columns MUST be documented, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.\""
+    "  L046: \"Custom columns MUST be detailed in publicly-available documentation, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.\""
   ],
   "0_outline_summary": {
     "node_count": 13,
@@ -56,7 +56,7 @@
       },
       {
         "ref": "L043",
-        "text_preview": "Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST fo…",
+        "text_preview": "<a name=\"column_handling:custom-column\"></a>Custom (e.g., service-provider-defined) columns that are not defined by FOC…",
         "children": 3
       }
     ]
@@ -299,7 +299,7 @@
             "temp_id": "R011",
             "order": 11,
             "ref": "L043",
-            "text": "Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:",
+            "text": "<a name=\"column_handling:custom-column\"></a>Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:",
             "keyword": "MUST",
             "section_path": [
               "Column Handling",
@@ -373,7 +373,7 @@
                 "temp_id": "R014",
                 "order": 14,
                 "ref": "L046",
-                "text": "Custom columns MUST be documented, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.",
+                "text": "Custom columns MUST be detailed in publicly-available documentation, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.",
                 "keyword": "MUST",
                 "section_path": [
                   "Column Handling",
