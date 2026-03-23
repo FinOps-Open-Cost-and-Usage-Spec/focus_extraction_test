@@ -20,7 +20,7 @@
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "All columns defined in the FOCUS specification MUST follow the naming and documentation requirements listed below.",
+      "text": "All columns included in a *FOCUS dataset* must follow the naming and documentation requirements listed below.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -278,7 +278,7 @@
     {
       "temp_id": "R011",
       "order": 11,
-      "text": "Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:",
+      "text": "<a name=\"column_handling:custom-column\"></a>Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -356,7 +356,7 @@
     {
       "temp_id": "R014",
       "order": 14,
-      "text": "Custom columns MUST be documented, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.",
+      "text": "Custom columns MUST be detailed in publicly-available documentation, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
