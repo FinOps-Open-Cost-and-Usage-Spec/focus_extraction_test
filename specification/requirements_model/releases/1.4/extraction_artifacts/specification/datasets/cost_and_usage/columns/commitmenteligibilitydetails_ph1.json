@@ -58,7 +58,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -82,7 +82,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -106,7 +106,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -250,7 +250,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -290,33 +290,8 @@
     {
       "temp_id": "R012",
       "order": 12,
-      "text": "CommitmentEligibilityDetailsObject MUST have at least one top-level property key when not null.",
+      "text": "CommitmentEligibilityDetailsObject MUST have a top-level property key \"CommitmentPrograms\".",
       "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 26,
-        "line_end": 26
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L026"
-    },
-    {
-      "temp_id": "R013",
-      "order": 13,
-      "text": "CommitmentEligibilityDetailsObject MAY have a top-level property key \"CommitmentDiscountTypes\".",
-      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
         "Commitment Eligibility Details Object",
@@ -338,9 +313,9 @@
       "ref": "L027"
     },
     {
-      "temp_id": "R014",
-      "order": 14,
-      "text": "CommitmentEligibilityDetailsObject MAY have a top-level property key \"CapacityReservationTypes\" for commitment programs whose primary purpose is to reserve capacity rather than to provide a unit discount.",
+      "temp_id": "R013",
+      "order": 13,
+      "text": "CommitmentEligibilityDetailsObject MAY contain additional data generator-defined top-level property keys.",
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
@@ -363,10 +338,10 @@
       "ref": "L028"
     },
     {
-      "temp_id": "R015",
-      "order": 15,
-      "text": "CommitmentEligibilityDetailsObject MAY contain additional data generator-defined top-level property keys for future or service provider-specific commitment categories.",
-      "keyword": "MAY",
+      "temp_id": "R014",
+      "order": 14,
+      "text": "CommitmentEligibilityDetailsObject MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Commitment Eligibility Details Object",
@@ -388,9 +363,9 @@
       "ref": "L029"
     },
     {
-      "temp_id": "R016",
-      "order": 16,
-      "text": "CommitmentEligibilityDetailsObject MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
+      "temp_id": "R015",
+      "order": 15,
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -400,7 +375,32 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 0,
-        "bullet": "-"
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 30,
+        "line_end": 30
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L030"
+    },
+    {
+      "temp_id": "R016",
+      "order": 16,
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type Array.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Commitment Eligibility Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -415,7 +415,7 @@
     {
       "temp_id": "R017",
       "order": 17,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MUST adhere to the following requirements:",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST contain one or more objects.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -424,11 +424,11 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "-"
+        "indent_level": 2,
+        "bullet": "*"
       },
       "lead_in": {
-        "ends_with_colon": true
+        "ends_with_colon": false
       },
       "provenance": {
         "line_start": 32,
@@ -440,7 +440,7 @@
     {
       "temp_id": "R018",
       "order": 18,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MUST be of type Array.",
+      "text": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type JSON Object.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -450,7 +450,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -465,7 +465,7 @@
     {
       "temp_id": "R019",
       "order": 19,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MUST contain one or more objects.",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have a property key \"ProgramType\".",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -475,7 +475,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -490,8 +490,8 @@
     {
       "temp_id": "R020",
       "order": 20,
-      "text": "Each entry in CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MUST be of type JSON Object.",
-      "keyword": "MUST",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MAY contain additional data generator-defined property keys.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
         "Commitment Eligibility Details Object",
@@ -500,7 +500,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -515,7 +515,7 @@
     {
       "temp_id": "R021",
       "order": 21,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MUST have a property key \"Type\".",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -525,7 +525,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -540,8 +540,8 @@
     {
       "temp_id": "R022",
       "order": 22,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MAY contain additional data generator-defined property keys.",
-      "keyword": "MAY",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST be of type String.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Commitment Eligibility Details Object",
@@ -550,7 +550,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -565,8 +565,8 @@
     {
       "temp_id": "R023",
       "order": 23,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
-      "keyword": "MUST",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST NOT be null.",
+      "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
         "Commitment Eligibility Details Object",
@@ -575,7 +575,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -590,7 +590,7 @@
     {
       "temp_id": "R024",
       "order": 24,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes.Type MUST be of type String.",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \"SavingsPlan\", \"ReservedInstance\", \"CommittedUseDiscount\", \"CapacityReservation\", \"ZonalReservation\").",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -600,7 +600,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -615,8 +615,8 @@
     {
       "temp_id": "R025",
       "order": 25,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes.Type MUST NOT be null.",
-      "keyword": "MUST NOT",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST equal [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for one object in CommitmentEligibilityDetailsObject.CommitmentPrograms when CommitmentDiscountType is not null.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Commitment Eligibility Details Object",
@@ -625,7 +625,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -640,8 +640,8 @@
     {
       "temp_id": "R026",
       "order": 26,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes.Type MUST correspond to a commitment program type supported by the provider (e.g., \"SavingsPlan\", \"ReservedInstance\", \"CommittedUseDiscount\").",
-      "keyword": "MUST",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Commitment Eligibility Details Object",
@@ -650,7 +650,7 @@
       "block": {
         "block_type": "list_item",
         "indent_level": 2,
-        "bullet": "-"
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
@@ -661,306 +661,6 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L041"
-    },
-    {
-      "temp_id": "R027",
-      "order": 27,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes.Type MUST equal [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for  one object in CommitmentEligibilityDetailsObject.CommitmentDiscountTypes when CommitmentDiscountType is not null.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 42,
-        "line_end": 42
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L042"
-    },
-    {
-      "temp_id": "R028",
-      "order": 28,
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes.Type SHOULD correspond to terminology disclosed by the service provider in public documentation.",
-      "keyword": "SHOULD",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 43,
-        "line_end": 43
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L043"
-    },
-    {
-      "temp_id": "R029",
-      "order": 29,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes MUST adhere to the following requirements:",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": true
-      },
-      "provenance": {
-        "line_start": 44,
-        "line_end": 44
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L044"
-    },
-    {
-      "temp_id": "R030",
-      "order": 30,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes MUST be of type Array.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 45,
-        "line_end": 45
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L045"
-    },
-    {
-      "temp_id": "R031",
-      "order": 31,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes MUST contain one or more objects.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 46,
-        "line_end": 46
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L046"
-    },
-    {
-      "temp_id": "R032",
-      "order": 32,
-      "text": "Each entry in CommitmentEligibilityDetailsObject.CapacityReservationTypes MUST be of type JSON Object.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 47,
-        "line_end": 47
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L047"
-    },
-    {
-      "temp_id": "R033",
-      "order": 33,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes MUST have a property key \"Type\".",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 48,
-        "line_end": 48
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L048"
-    },
-    {
-      "temp_id": "R034",
-      "order": 34,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes MAY contain additional data generator-defined property keys.",
-      "keyword": "MAY",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 49,
-        "line_end": 49
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L049"
-    },
-    {
-      "temp_id": "R035",
-      "order": 35,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 50,
-        "line_end": 50
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L050"
-    },
-    {
-      "temp_id": "R036",
-      "order": 36,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes.Type MUST be of type String.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 51,
-        "line_end": 51
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L051"
-    },
-    {
-      "temp_id": "R037",
-      "order": 37,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes.Type MUST NOT be null.",
-      "keyword": "MUST NOT",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 52,
-        "line_end": 52
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L052"
-    },
-    {
-      "temp_id": "R038",
-      "order": 38,
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes.Type MUST correspond to a capacity-reservation-style commitment program supported by the provider (for example, \"CapacityReservation\", \"ZonalReservation\").",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Eligibility Details Object",
-        "Object Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 2,
-        "bullet": "-"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 53,
-        "line_end": 53
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L053"
     }
   ],
   "warnings": [
@@ -981,60 +681,22 @@
       "code": "W_INDENT_JUMP",
       "severity": "MEDIUM",
       "message": "Indentation jump suggests ambiguous nesting (child indent > parent indent + 1).",
-      "text": "CommitmentEligibilityDetailsObject.CommitmentDiscountTypes MUST adhere to the following requirements:",
+      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:",
       "details": {
-        "ref": "L032",
-        "temp_id": "R017",
-        "order": 17,
+        "ref": "L030",
+        "temp_id": "R015",
+        "order": 15,
         "indent_level": 0,
         "section_path": [
           "Commitment Eligibility Details Object",
           "Object Requirements"
         ],
-        "next_ref": "L033",
-        "next_temp_id": "R018",
-        "next_order": 18,
+        "next_ref": "L031",
+        "next_temp_id": "R016",
+        "next_order": 16,
         "next_indent_level": 2,
         "expected_max_child_indent": 1
       }
-    },
-    {
-      "code": "W_INDENT_JUMP",
-      "severity": "MEDIUM",
-      "message": "Indentation jump suggests ambiguous nesting (child indent > parent indent + 1).",
-      "text": "CommitmentEligibilityDetailsObject.CapacityReservationTypes MUST adhere to the following requirements:",
-      "details": {
-        "ref": "L044",
-        "temp_id": "R029",
-        "order": 29,
-        "indent_level": 0,
-        "section_path": [
-          "Commitment Eligibility Details Object",
-          "Object Requirements"
-        ],
-        "next_ref": "L045",
-        "next_temp_id": "R030",
-        "next_order": 30,
-        "next_indent_level": 2,
-        "expected_max_child_indent": 1
-      }
-    },
-    {
-      "code": "W_ENTITY_FALLBACK_APPLIED",
-      "severity": "LOW",
-      "message": "Canonical entity was assigned by deterministic fallback precedence because multiple entities were detected.",
-      "details": {
-        "precedence": [
-          "Column",
-          "Dataset",
-          "Attribute"
-        ],
-        "selected_entity_type": "Column",
-        "selected_entity_id": "CommitmentEligibilityDetails",
-        "selected_entity_name": "Commitment Eligibility Details",
-        "entities_found_count": 2
-      },
-      "text": "(document-level)"
     }
   ],
   "structural": {
