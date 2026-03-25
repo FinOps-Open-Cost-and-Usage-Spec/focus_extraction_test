@@ -29,6 +29,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -53,6 +54,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -77,6 +79,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -101,6 +104,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -125,6 +129,7 @@
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -149,6 +154,7 @@
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -173,6 +179,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -197,6 +204,7 @@
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -221,6 +229,7 @@
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -245,6 +254,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -269,6 +279,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
@@ -294,6 +305,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
@@ -319,6 +331,7 @@
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
@@ -344,6 +357,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
@@ -369,6 +383,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
@@ -394,12 +409,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -419,12 +435,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -444,12 +461,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -469,12 +487,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -494,12 +513,13 @@
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -519,12 +539,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -544,12 +565,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -569,12 +591,13 @@
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -594,12 +617,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -619,12 +643,13 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -644,12 +669,13 @@
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
+        "Commitment Eligibility Details",
         "Commitment Eligibility Details Object",
         "Object Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 2,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -678,25 +704,21 @@
       "text": "(document-level)"
     },
     {
-      "code": "W_INDENT_JUMP",
-      "severity": "MEDIUM",
-      "message": "Indentation jump suggests ambiguous nesting (child indent > parent indent + 1).",
-      "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:",
+      "code": "W_ENTITY_FALLBACK_APPLIED",
+      "severity": "LOW",
+      "message": "Canonical entity was assigned by deterministic fallback precedence because multiple entities were detected.",
       "details": {
-        "ref": "L030",
-        "temp_id": "R015",
-        "order": 15,
-        "indent_level": 0,
-        "section_path": [
-          "Commitment Eligibility Details Object",
-          "Object Requirements"
+        "precedence": [
+          "Column",
+          "Dataset",
+          "Attribute"
         ],
-        "next_ref": "L031",
-        "next_temp_id": "R016",
-        "next_order": 16,
-        "next_indent_level": 2,
-        "expected_max_child_indent": 1
-      }
+        "selected_entity_type": "Column",
+        "selected_entity_id": "CommitmentEligibilityDetails",
+        "selected_entity_name": "Commitment Eligibility Details",
+        "entities_found_count": 2
+      },
+      "text": "(document-level)"
     }
   ],
   "structural": {
