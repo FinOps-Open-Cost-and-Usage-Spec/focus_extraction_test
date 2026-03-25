@@ -39,6 +39,7 @@
         "line_start": 7,
         "line_end": 7
       },
+      "_alignment_status": "confirmed",
       "ref": "L007"
     },
     {
@@ -63,6 +64,7 @@
         "line_start": 9,
         "line_end": 9
       },
+      "_alignment_status": "confirmed",
       "ref": "L009"
     },
     {
@@ -87,6 +89,7 @@
         "line_start": 10,
         "line_end": 10
       },
+      "_alignment_status": "confirmed",
       "ref": "L010"
     },
     {
@@ -111,6 +114,7 @@
         "line_start": 11,
         "line_end": 11
       },
+      "_alignment_status": "confirmed",
       "ref": "L011"
     }
   ],
