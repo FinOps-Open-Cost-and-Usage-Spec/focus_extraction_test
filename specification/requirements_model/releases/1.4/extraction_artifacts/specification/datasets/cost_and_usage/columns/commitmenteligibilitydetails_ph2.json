@@ -53,7 +53,7 @@
     "leaf_count": 23,
     "lead_in_count": 3,
     "max_depth": 2,
-    "max_indent_level": 2,
+    "max_indent_level": 1,
     "root_children_count": 2,
     "keyword_distribution": {
       "MUST": 18,
@@ -94,6 +94,7 @@
             "text": "CommitmentEligibilityDetails MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
+              "Commitment Eligibility Details",
               "Requirements"
             ],
             "block": {
@@ -116,6 +117,7 @@
                 "text": "CommitmentEligibilityDetails MUST be of type String.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -139,6 +141,7 @@
                 "text": "CommitmentEligibilityDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -162,6 +165,7 @@
                 "text": "CommitmentEligibilityDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -185,6 +189,7 @@
                 "text": "CommitmentEligibilityDetails MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.",
                 "keyword": "MUST NOT",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -208,6 +213,7 @@
                 "text": "CommitmentEligibilityDetails MUST NOT consider transient account configurations or quotas that might temporarily prevent purchase or participation in a *commitment program*.",
                 "keyword": "MUST NOT",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -231,6 +237,7 @@
                 "text": "CommitmentEligibilityDetails MUST include all publicly available *commitment programs* for which the usage is eligible.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -254,6 +261,7 @@
                 "text": "CommitmentEligibilityDetails SHOULD include negotiated *commitment programs* for which the usage is eligible.",
                 "keyword": "SHOULD",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -277,6 +285,7 @@
                 "text": "CommitmentEligibilityDetails MUST NOT include data related to *commitment* [*periods*](#glossary:period) or payment options.",
                 "keyword": "MUST NOT",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -300,6 +309,7 @@
                 "text": "CommitmentEligibilityDetails MUST conform to [CommitmentEligibilityDetailsObject](#datasets.costandusage.commitmenteligibilitydetails.commitmenteligibilitydetailsobject) requirements when CommitmentEligibilityDetails is not null.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -325,6 +335,7 @@
             "text": "CommitmentEligibilityDetailsObject MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
+              "Commitment Eligibility Details",
               "Commitment Eligibility Details Object",
               "Object Requirements"
             ],
@@ -348,6 +359,7 @@
                 "text": "CommitmentEligibilityDetailsObject MUST have a top-level property key \"CommitmentPrograms\".",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Commitment Eligibility Details Object",
                   "Object Requirements"
                 ],
@@ -372,6 +384,7 @@
                 "text": "CommitmentEligibilityDetailsObject MAY contain additional data generator-defined top-level property keys.",
                 "keyword": "MAY",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Commitment Eligibility Details Object",
                   "Object Requirements"
                 ],
@@ -396,6 +409,7 @@
                 "text": "CommitmentEligibilityDetailsObject MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Commitment Eligibility Details Object",
                   "Object Requirements"
                 ],
@@ -420,6 +434,7 @@
                 "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:",
                 "keyword": "MUST",
                 "section_path": [
+                  "Commitment Eligibility Details",
                   "Commitment Eligibility Details Object",
                   "Object Requirements"
                 ],
@@ -443,12 +458,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type Array.",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -467,12 +483,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST contain one or more objects.",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -491,12 +508,13 @@
                     "text": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type JSON Object.",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -515,12 +533,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have a property key \"ProgramType\".",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -539,12 +558,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MAY contain additional data generator-defined property keys.",
                     "keyword": "MAY",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -563,12 +583,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -587,12 +608,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST be of type String.",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -611,12 +633,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST NOT be null.",
                     "keyword": "MUST NOT",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -635,12 +658,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \"SavingsPlan\", \"ReservedInstance\", \"CommittedUseDiscount\", \"CapacityReservation\", \"ZonalReservation\").",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -659,12 +683,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST equal [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for one object in CommitmentEligibilityDetailsObject.CommitmentPrograms when CommitmentDiscountType is not null.",
                     "keyword": "MUST",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
@@ -683,12 +708,13 @@
                     "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.",
                     "keyword": "SHOULD",
                     "section_path": [
+                      "Commitment Eligibility Details",
                       "Commitment Eligibility Details Object",
                       "Object Requirements"
                     ],
                     "block": {
                       "block_type": "list_item",
-                      "indent_level": 2,
+                      "indent_level": 1,
                       "bullet": "*"
                     },
                     "lead_in": {
