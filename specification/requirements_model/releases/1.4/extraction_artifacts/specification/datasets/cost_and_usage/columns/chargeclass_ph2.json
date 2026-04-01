@@ -24,8 +24,8 @@
     "L007: \"ChargeClass MUST adhere to the following requirements:\"",
     "  L009: \"ChargeClass MUST be of type String.\"",
     "  L010: \"ChargeClass MUST adhere to the following nullability requirements:\"",
-    "    L011: \"ChargeClass MUST be null when the *charge* does not represent a correction to a previously *closed billing period*.\"",
-    "    L012: \"ChargeClass MUST NOT be null when the *charge* represents a correction to a previously *closed billing period*.\"",
+    "    L011: \"ChargeClass MUST be null when the *row* does not represent a correction or when it represents a correction within the current *billing period*.\"",
+    "    L012: \"ChargeClass MUST NOT be null when the *row* represents a correction to a previously invoiced *billing period*.\"",
     "  L013: \"ChargeClass MUST be \\\"Correction\\\" when ChargeClass is not null.\""
   ],
   "0_outline_summary": {
@@ -134,7 +134,7 @@
                     "temp_id": "R004",
                     "order": 4,
                     "ref": "L011",
-                    "text": "ChargeClass MUST be null when the *charge* does not represent a correction to a previously *closed billing period*.",
+                    "text": "ChargeClass MUST be null when the *row* does not represent a correction or when it represents a correction within the current *billing period*.",
                     "keyword": "MUST",
                     "section_path": [
                       "Charge Class",
@@ -158,7 +158,7 @@
                     "temp_id": "R005",
                     "order": 5,
                     "ref": "L012",
-                    "text": "ChargeClass MUST NOT be null when the *charge* represents a correction to a previously *closed billing period*.",
+                    "text": "ChargeClass MUST NOT be null when the *row* represents a correction to a previously invoiced *billing period*.",
                     "keyword": "MUST NOT",
                     "section_path": [
                       "Charge Class",
