@@ -2,7 +2,7 @@
   "phase": 1,
   "source": {
     "path": "specification/datasets/invoice_detail/dataset.md",
-    "version": "unknown"
+    "version": "1.4"
   },
   "entity": {
     "entity_type": "Dataset",
@@ -39,6 +39,7 @@
         "line_start": 47,
         "line_end": 47
       },
+      "_alignment_status": "confirmed",
       "ref": "L047"
     },
     {
@@ -63,6 +64,7 @@
         "line_start": 49,
         "line_end": 49
       },
+      "_alignment_status": "confirmed",
       "ref": "L049"
     },
     {
@@ -87,6 +89,7 @@
         "line_start": 50,
         "line_end": 50
       },
+      "_alignment_status": "confirmed",
       "ref": "L050"
     },
     {
@@ -111,6 +114,7 @@
         "line_start": 51,
         "line_end": 51
       },
+      "_alignment_status": "confirmed",
       "ref": "L051"
     },
     {
@@ -135,6 +139,7 @@
         "line_start": 52,
         "line_end": 52
       },
+      "_alignment_status": "confirmed",
       "ref": "L052"
     },
     {
@@ -159,6 +164,7 @@
         "line_start": 53,
         "line_end": 53
       },
+      "_alignment_status": "confirmed",
       "ref": "L053"
     },
     {
@@ -183,6 +189,7 @@
         "line_start": 54,
         "line_end": 54
       },
+      "_alignment_status": "confirmed",
       "ref": "L054"
     },
     {
@@ -207,6 +214,7 @@
         "line_start": 55,
         "line_end": 55
       },
+      "_alignment_status": "confirmed",
       "ref": "L055"
     },
     {
@@ -231,6 +239,7 @@
         "line_start": 56,
         "line_end": 56
       },
+      "_alignment_status": "confirmed",
       "ref": "L056"
     },
     {
@@ -255,6 +264,7 @@
         "line_start": 57,
         "line_end": 57
       },
+      "_alignment_status": "confirmed",
       "ref": "L057"
     },
     {
@@ -279,6 +289,7 @@
         "line_start": 58,
         "line_end": 58
       },
+      "_alignment_status": "confirmed",
       "ref": "L058"
     },
     {
@@ -303,6 +314,7 @@
         "line_start": 59,
         "line_end": 59
       },
+      "_alignment_status": "confirmed",
       "ref": "L059"
     },
     {
@@ -327,6 +339,7 @@
         "line_start": 60,
         "line_end": 60
       },
+      "_alignment_status": "confirmed",
       "ref": "L060"
     },
     {
@@ -351,6 +364,7 @@
         "line_start": 61,
         "line_end": 61
       },
+      "_alignment_status": "confirmed",
       "ref": "L061"
     },
     {
@@ -375,6 +389,7 @@
         "line_start": 62,
         "line_end": 62
       },
+      "_alignment_status": "confirmed",
       "ref": "L062"
     },
     {
@@ -399,6 +414,7 @@
         "line_start": 63,
         "line_end": 63
       },
+      "_alignment_status": "confirmed",
       "ref": "L063"
     },
     {
@@ -423,6 +439,7 @@
         "line_start": 64,
         "line_end": 64
       },
+      "_alignment_status": "confirmed",
       "ref": "L064"
     },
     {
@@ -447,6 +464,7 @@
         "line_start": 65,
         "line_end": 65
       },
+      "_alignment_status": "confirmed",
       "ref": "L065"
     },
     {
@@ -471,6 +489,7 @@
         "line_start": 66,
         "line_end": 66
       },
+      "_alignment_status": "confirmed",
       "ref": "L066"
     },
     {
@@ -495,6 +514,7 @@
         "line_start": 67,
         "line_end": 67
       },
+      "_alignment_status": "confirmed",
       "ref": "L067"
     },
     {
@@ -519,6 +539,7 @@
         "line_start": 68,
         "line_end": 68
       },
+      "_alignment_status": "confirmed",
       "ref": "L068"
     },
     {
@@ -543,6 +564,7 @@
         "line_start": 69,
         "line_end": 69
       },
+      "_alignment_status": "confirmed",
       "ref": "L069"
     },
     {
@@ -567,6 +589,7 @@
         "line_start": 70,
         "line_end": 70
       },
+      "_alignment_status": "confirmed",
       "ref": "L070"
     },
     {
@@ -591,6 +614,7 @@
         "line_start": 71,
         "line_end": 71
       },
+      "_alignment_status": "confirmed",
       "ref": "L071"
     },
     {
@@ -615,6 +639,7 @@
         "line_start": 72,
         "line_end": 72
       },
+      "_alignment_status": "confirmed",
       "ref": "L072"
     },
     {
@@ -639,12 +664,13 @@
         "line_start": 73,
         "line_end": 73
       },
+      "_alignment_status": "confirmed",
       "ref": "L073"
     },
     {
       "temp_id": "R027",
       "order": 27,
-      "text": "InvoiceDetail MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "text": "InvoiceDetail MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -663,12 +689,13 @@
         "line_start": 74,
         "line_end": 74
       },
+      "_alignment_status": "confirmed",
       "ref": "L074"
     },
     {
       "temp_id": "R028",
       "order": 28,
-      "text": "InvoiceDetail MUST conform to [InvoiceHandling](#attributes.invoicehandling) requirements.",
+      "text": "InvoiceDetail MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -687,12 +714,13 @@
         "line_start": 75,
         "line_end": 75
       },
+      "_alignment_status": "confirmed",
       "ref": "L075"
     },
     {
       "temp_id": "R029",
       "order": 29,
-      "text": "InvoiceDetail MUST represent all invoice line items with a non-zero [BilledCost](#datasets.invoicedetail.billedcost) on any invoice associated with a [BillingAccountId](#datasets.invoicedetail.billingaccountid).",
+      "text": "InvoiceDetail MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -711,11 +739,87 @@
         "line_start": 76,
         "line_end": 76
       },
+      "_alignment_status": "confirmed",
       "ref": "L076"
     },
     {
       "temp_id": "R030",
       "order": 30,
+      "text": "InvoiceDetail MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Invoice Detail",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 77,
+        "line_end": 77
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L077"
+    },
+    {
+      "temp_id": "R031",
+      "order": 31,
+      "text": "InvoiceDetail MUST represent all invoice line items with a non-zero BilledCost on any invoice associated with a BillingAccountId.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Invoice Detail",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 78,
+        "line_end": 78
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L078"
+    },
+    {
+      "temp_id": "R032",
+      "order": 32,
+      "text": "InvoiceDetail MUST include [*custom columns*](#glossary:custom-column) to represent any monetary metric that appears on an invoice issued to a BillingAccountId when there is no equivalent [*FOCUS column*](#glossary:FOCUS-column).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Invoice Detail",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 79,
+        "line_end": 79
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L079"
+    },
+    {
+      "temp_id": "R033",
+      "order": 33,
       "text": "InvoiceDetail documentation MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
@@ -732,87 +836,16 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 77,
-        "line_end": 77
-      },
-      "ref": "L077"
-    },
-    {
-      "temp_id": "R031",
-      "order": 31,
-      "text": "InvoiceDetail documentation MUST specify how InvoiceDetail records correspond to invoice line items.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Invoice Detail",
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 1,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 78,
-        "line_end": 78
-      },
-      "ref": "L078"
-    },
-    {
-      "temp_id": "R032",
-      "order": 32,
-      "text": "InvoiceDetail documentation MUST specify whether invoice line items with BilledCost of 0 are excluded from InvoiceDetail.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Invoice Detail",
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 1,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 79,
-        "line_end": 79
-      },
-      "ref": "L079"
-    },
-    {
-      "temp_id": "R033",
-      "order": 33,
-      "text": "InvoiceDetail documentation MUST describe how columns in the CostAndUsage and InvoiceDetail datasets represent the invoice issuer's invoice reconciliation process.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Invoice Detail",
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 1,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
         "line_start": 80,
         "line_end": 80
       },
+      "_alignment_status": "confirmed",
       "ref": "L080"
     },
     {
       "temp_id": "R034",
       "order": 34,
-      "text": "InvoiceDetail documentation MUST be freely accessible to FOCUS consumers.",
+      "text": "InvoiceDetail documentation MUST specify how InvoiceDetail records correspond to invoice line items.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -831,33 +864,86 @@
         "line_start": 81,
         "line_end": 81
       },
+      "_alignment_status": "confirmed",
       "ref": "L081"
-    }
-  ],
-  "warnings": [
-    {
-      "code": "W_ENTITY_NAME_CONFLICT",
-      "message": "Both name and display name headings are present for the same entity type.",
-      "details": {
-        "entity_type": "Dataset",
-        "name_heading_expected": "## Dataset Name",
-        "name_heading_present": true,
-        "display_name_heading_expected": "## Display Name",
-        "display_name_heading_present": true
-      },
-      "text": "(document-level)"
     },
     {
-      "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
-      "severity": "MEDIUM",
-      "message": "Heading \"## Introduced (version)\" is missing, empty, or invalid.",
-      "details": {
-        "found_heading": false,
-        "found_version": null
+      "temp_id": "R035",
+      "order": 35,
+      "text": "InvoiceDetail documentation MUST specify whether invoice line items with BilledCost of 0 are excluded from InvoiceDetail.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Invoice Detail",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
       },
-      "text": "(document-level)"
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 82,
+        "line_end": 82
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L082"
+    },
+    {
+      "temp_id": "R036",
+      "order": 36,
+      "text": "InvoiceDetail documentation MUST describe how columns in the CostAndUsage and InvoiceDetail datasets represent the invoice issuer's [*invoice reconciliation*](#glossary:invoice-reconciliation) process.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Invoice Detail",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 83,
+        "line_end": 83
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L083"
+    },
+    {
+      "temp_id": "R037",
+      "order": 37,
+      "text": "InvoiceDetail documentation MUST be freely accessible to FOCUS consumers.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Invoice Detail",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 84,
+        "line_end": 84
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L084"
     }
   ],
+  "warnings": [],
   "structural": {
     "lead_ins": [],
     "index": {
