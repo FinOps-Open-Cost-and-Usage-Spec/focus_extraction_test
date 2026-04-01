@@ -67,6 +67,7 @@
             "text": "ChargeClass MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
+              "Charge Class",
               "Requirements"
             ],
             "block": {
@@ -89,6 +90,7 @@
                 "text": "ChargeClass MUST be of type String.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Charge Class",
                   "Requirements"
                 ],
                 "block": {
@@ -112,6 +114,7 @@
                 "text": "ChargeClass MUST adhere to the following nullability requirements:",
                 "keyword": "MUST",
                 "section_path": [
+                  "Charge Class",
                   "Requirements"
                 ],
                 "block": {
@@ -134,6 +137,7 @@
                     "text": "ChargeClass MUST be null when the *charge* does not represent a correction to a previously *closed billing period*.",
                     "keyword": "MUST",
                     "section_path": [
+                      "Charge Class",
                       "Requirements"
                     ],
                     "block": {
@@ -157,6 +161,7 @@
                     "text": "ChargeClass MUST NOT be null when the *charge* represents a correction to a previously *closed billing period*.",
                     "keyword": "MUST NOT",
                     "section_path": [
+                      "Charge Class",
                       "Requirements"
                     ],
                     "block": {
@@ -182,6 +187,7 @@
                 "text": "ChargeClass MUST be \"Correction\" when ChargeClass is not null.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Charge Class",
                   "Requirements"
                 ],
                 "block": {
