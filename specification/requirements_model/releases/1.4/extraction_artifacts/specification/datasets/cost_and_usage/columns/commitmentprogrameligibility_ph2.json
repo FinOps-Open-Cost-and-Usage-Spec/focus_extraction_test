@@ -6,8 +6,8 @@
   },
   "entity": {
     "entity_type": "Column",
-    "entity_id": "CommitmentEligibilityDetails",
-    "entity_name": "Commitment Eligibility Details"
+    "entity_id": "CommitmentProgramEligibility",
+    "entity_name": "Commitment Program Eligibility"
   },
   "requirements_scope": {
     "section_names_allowed": [
@@ -19,34 +19,34 @@
     ],
     "atoms_in_scope_count": 26
   },
-  "0_outline_root": "ROOT: Commitment Eligibility Details > Requirements",
+  "0_outline_root": "ROOT: Commitment Program Eligibility > Requirements",
   "0_outline_lines": [
-    "L007: \"CommitmentEligibilityDetails MUST adhere to the following requirements:\"",
-    "  L009: \"CommitmentEligibilityDetails MUST be of type String.\"",
-    "  L010: \"CommitmentEligibilityDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
-    "  L011: \"CommitmentEligibilityDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.\"",
-    "  L012: \"CommitmentEligibilityDetails MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.\"",
-    "  L013: \"CommitmentEligibilityDetails MUST NOT consider transient account configurations or quotas that might temporarily prevent purchase or participation in a *commitment program*.\"",
-    "  L014: \"CommitmentEligibilityDetails MUST include all publicly available *commitment programs* for which the usage is eligible.\"",
-    "  L015: \"CommitmentEligibilityDetails SHOULD include negotiated *commitment programs* for which the usage is eligible.\"",
-    "  L016: \"CommitmentEligibilityDetails MUST NOT include data related to *commitment* [*periods*](#glossary:period) or payment options.\"",
-    "  L017: \"CommitmentEligibilityDetails MUST conform to [CommitmentEligibilityDetailsObject](#datasets.costandusage.commitmenteligibilitydetails.commitmenteligibilitydetailsobject) requirements when CommitmentEligibilityDetails is not null.\"",
-    "L025: \"CommitmentEligibilityDetailsObject MUST adhere to the following requirements:\"",
-    "  L027: \"CommitmentEligibilityDetailsObject MUST have a top-level property key \\\"CommitmentPrograms\\\".\"",
-    "  L028: \"CommitmentEligibilityDetailsObject MAY contain additional data generator-defined top-level property keys.\"",
-    "  L029: \"CommitmentEligibilityDetailsObject MUST have property keys that begin with the string \\\"x\\\\_\\\" unless it is a FOCUS-defined property key.\"",
-    "  L030: \"CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:\"",
-    "    L031: \"CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type Array.\"",
-    "    L032: \"CommitmentEligibilityDetailsObject.CommitmentPrograms MUST contain one or more objects.\"",
-    "    L033: \"Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type JSON Object.\"",
-    "    L034: \"Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have a property key \\\"ProgramType\\\".\"",
-    "    L035: \"Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MAY contain additional data generator-defined property keys.\"",
-    "    L036: \"Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have property keys that begin with the string \\\"x\\\\_\\\" unless it is a FOCUS-defined property key.\"",
-    "    L038: \"CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST be of type String.\"",
-    "    L039: \"CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST NOT be null.\"",
-    "    L040: \"CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \\\"Savings Plan\\\", \\\"Reserved Instance\\\", \\\"Committed Use Discount\\\", \\\"Capacity Reservation\\\", \\\"Zonal Reservation\\\").\"",
-    "    L041: \"CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST equal [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for one object in CommitmentEligibilityDetailsObject.CommitmentPrograms when CommitmentDiscountType is not null.\"",
-    "    L042: \"CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.\""
+    "L007: \"CommitmentProgramEligibility MUST adhere to the following requirements:\"",
+    "  L009: \"CommitmentProgramEligibility MUST be of type String.\"",
+    "  L010: \"CommitmentProgramEligibility MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L011: \"CommitmentProgramEligibility MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.\"",
+    "  L012: \"CommitmentProgramEligibility MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.\"",
+    "  L013: \"CommitmentProgramEligibility MUST NOT consider transient account configurations or quotas that might temporarily prevent purchase or participation in a *commitment program*.\"",
+    "  L014: \"CommitmentProgramEligibility MUST include all publicly available *commitment programs* for which the usage is eligible.\"",
+    "  L015: \"CommitmentProgramEligibility SHOULD include negotiated *commitment programs* for which the usage is eligible.\"",
+    "  L016: \"CommitmentProgramEligibility MUST NOT include data related to *commitment* [*periods*](#glossary:period) or payment options.\"",
+    "  L017: \"CommitmentProgramEligibility MUST conform to [CommitmentProgramEligibilityObject](#datasets.costandusage.commitmentprogrameligibility.commitmentprogrameligibilityobject) requirements when CommitmentProgramEligibility is not null.\"",
+    "L025: \"CommitmentProgramEligibilityObject MUST adhere to the following requirements:\"",
+    "  L027: \"CommitmentProgramEligibilityObject MUST have a top-level property key \\\"CommitmentPrograms\\\".\"",
+    "  L028: \"CommitmentProgramEligibilityObject MAY contain additional data generator-defined top-level property keys.\"",
+    "  L029: \"CommitmentProgramEligibilityObject MUST have property keys that begin with the string \\\"x_\\\" unless it is a FOCUS-defined property key.\"",
+    "  L030: \"CommitmentProgramEligibilityObject.CommitmentPrograms MUST adhere to the following requirements:\"",
+    "    L031: \"CommitmentProgramEligibilityObject.CommitmentPrograms MUST be of type Array.\"",
+    "    L032: \"CommitmentProgramEligibilityObject.CommitmentPrograms MUST contain one or more objects.\"",
+    "    L033: \"Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST be of type JSON Object.\"",
+    "    L034: \"Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST have a property key \\\"ProgramType\\\".\"",
+    "    L035: \"Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MAY contain additional data generator-defined property keys.\"",
+    "    L036: \"Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST have property keys that begin with the string \\\"x_\\\" unless it is a FOCUS-defined property key.\"",
+    "    L037: \"CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST be of type String.\"",
+    "    L038: \"CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST NOT be null.\"",
+    "    L039: \"CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \\\"FlexibleSpendPlan\\\", \\\"ResourceReservation\\\", \\\"BulkCapacityCredit\\\", \\\"AdvanceResourceCommitment\\\").\"",
+    "    L040: \"CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST equal [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for one object in CommitmentProgramEligibilityObject.CommitmentPrograms when CommitmentDiscountType is not null.\"",
+    "    L041: \"CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.\""
   ],
   "0_outline_summary": {
     "node_count": 26,
@@ -64,17 +64,17 @@
     "lead_ins": [
       {
         "ref": "L007",
-        "text_preview": "CommitmentEligibilityDetails MUST adhere to the following requirements:",
+        "text_preview": "CommitmentProgramEligibility MUST adhere to the following requirements:",
         "children": 9
       },
       {
         "ref": "L025",
-        "text_preview": "CommitmentEligibilityDetailsObject MUST adhere to the following requirements:",
+        "text_preview": "CommitmentProgramEligibilityObject MUST adhere to the following requirements:",
         "children": 4
       },
       {
         "ref": "L030",
-        "text_preview": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:",
+        "text_preview": "CommitmentProgramEligibilityObject.CommitmentPrograms MUST adhere to the following requirements:",
         "children": 11
       }
     ]
@@ -91,10 +91,9 @@
             "temp_id": "R001",
             "order": 1,
             "ref": "L007",
-            "text": "CommitmentEligibilityDetails MUST adhere to the following requirements:",
+            "text": "CommitmentProgramEligibility MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
-              "Commitment Eligibility Details",
               "Requirements"
             ],
             "block": {
@@ -114,10 +113,9 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "CommitmentEligibilityDetails MUST be of type String.",
+                "text": "CommitmentProgramEligibility MUST be of type String.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -138,10 +136,9 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "CommitmentEligibilityDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "text": "CommitmentProgramEligibility MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -162,10 +159,9 @@
                 "temp_id": "R004",
                 "order": 4,
                 "ref": "L011",
-                "text": "CommitmentEligibilityDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
+                "text": "CommitmentProgramEligibility MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -186,10 +182,9 @@
                 "temp_id": "R005",
                 "order": 5,
                 "ref": "L012",
-                "text": "CommitmentEligibilityDetails MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.",
+                "text": "CommitmentProgramEligibility MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.",
                 "keyword": "MUST NOT",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -210,10 +205,9 @@
                 "temp_id": "R006",
                 "order": 6,
                 "ref": "L013",
-                "text": "CommitmentEligibilityDetails MUST NOT consider transient account configurations or quotas that might temporarily prevent purchase or participation in a *commitment program*.",
+                "text": "CommitmentProgramEligibility MUST NOT consider transient account configurations or quotas that might temporarily prevent purchase or participation in a *commitment program*.",
                 "keyword": "MUST NOT",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -234,10 +228,9 @@
                 "temp_id": "R007",
                 "order": 7,
                 "ref": "L014",
-                "text": "CommitmentEligibilityDetails MUST include all publicly available *commitment programs* for which the usage is eligible.",
+                "text": "CommitmentProgramEligibility MUST include all publicly available *commitment programs* for which the usage is eligible.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -258,10 +251,9 @@
                 "temp_id": "R008",
                 "order": 8,
                 "ref": "L015",
-                "text": "CommitmentEligibilityDetails SHOULD include negotiated *commitment programs* for which the usage is eligible.",
+                "text": "CommitmentProgramEligibility SHOULD include negotiated *commitment programs* for which the usage is eligible.",
                 "keyword": "SHOULD",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -282,10 +274,9 @@
                 "temp_id": "R009",
                 "order": 9,
                 "ref": "L016",
-                "text": "CommitmentEligibilityDetails MUST NOT include data related to *commitment* [*periods*](#glossary:period) or payment options.",
+                "text": "CommitmentProgramEligibility MUST NOT include data related to *commitment* [*periods*](#glossary:period) or payment options.",
                 "keyword": "MUST NOT",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -306,10 +297,9 @@
                 "temp_id": "R010",
                 "order": 10,
                 "ref": "L017",
-                "text": "CommitmentEligibilityDetails MUST conform to [CommitmentEligibilityDetailsObject](#datasets.costandusage.commitmenteligibilitydetails.commitmenteligibilitydetailsobject) requirements when CommitmentEligibilityDetails is not null.",
+                "text": "CommitmentProgramEligibility MUST conform to [CommitmentProgramEligibilityObject](#datasets.costandusage.commitmentprogrameligibility.commitmentprogrameligibilityobject) requirements when CommitmentProgramEligibility is not null.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
                   "Requirements"
                 ],
                 "block": {
@@ -332,11 +322,10 @@
             "temp_id": "R011",
             "order": 11,
             "ref": "L025",
-            "text": "CommitmentEligibilityDetailsObject MUST adhere to the following requirements:",
+            "text": "CommitmentProgramEligibilityObject MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
-              "Commitment Eligibility Details",
-              "Commitment Eligibility Details Object",
+              "Commitment Program Eligibility Object",
               "Object Requirements"
             ],
             "block": {
@@ -356,11 +345,10 @@
                 "temp_id": "R012",
                 "order": 12,
                 "ref": "L027",
-                "text": "CommitmentEligibilityDetailsObject MUST have a top-level property key \"CommitmentPrograms\".",
+                "text": "CommitmentProgramEligibilityObject MUST have a top-level property key \"CommitmentPrograms\".",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
-                  "Commitment Eligibility Details Object",
+                  "Commitment Program Eligibility Object",
                   "Object Requirements"
                 ],
                 "block": {
@@ -381,11 +369,10 @@
                 "temp_id": "R013",
                 "order": 13,
                 "ref": "L028",
-                "text": "CommitmentEligibilityDetailsObject MAY contain additional data generator-defined top-level property keys.",
+                "text": "CommitmentProgramEligibilityObject MAY contain additional data generator-defined top-level property keys.",
                 "keyword": "MAY",
                 "section_path": [
-                  "Commitment Eligibility Details",
-                  "Commitment Eligibility Details Object",
+                  "Commitment Program Eligibility Object",
                   "Object Requirements"
                 ],
                 "block": {
@@ -406,11 +393,10 @@
                 "temp_id": "R014",
                 "order": 14,
                 "ref": "L029",
-                "text": "CommitmentEligibilityDetailsObject MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
+                "text": "CommitmentProgramEligibilityObject MUST have property keys that begin with the string \"x_\" unless it is a FOCUS-defined property key.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
-                  "Commitment Eligibility Details Object",
+                  "Commitment Program Eligibility Object",
                   "Object Requirements"
                 ],
                 "block": {
@@ -431,11 +417,10 @@
                 "temp_id": "R015",
                 "order": 15,
                 "ref": "L030",
-                "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:",
+                "text": "CommitmentProgramEligibilityObject.CommitmentPrograms MUST adhere to the following requirements:",
                 "keyword": "MUST",
                 "section_path": [
-                  "Commitment Eligibility Details",
-                  "Commitment Eligibility Details Object",
+                  "Commitment Program Eligibility Object",
                   "Object Requirements"
                 ],
                 "block": {
@@ -455,11 +440,10 @@
                     "temp_id": "R016",
                     "order": 16,
                     "ref": "L031",
-                    "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type Array.",
+                    "text": "CommitmentProgramEligibilityObject.CommitmentPrograms MUST be of type Array.",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -480,11 +464,10 @@
                     "temp_id": "R017",
                     "order": 17,
                     "ref": "L032",
-                    "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST contain one or more objects.",
+                    "text": "CommitmentProgramEligibilityObject.CommitmentPrograms MUST contain one or more objects.",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -505,11 +488,10 @@
                     "temp_id": "R018",
                     "order": 18,
                     "ref": "L033",
-                    "text": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type JSON Object.",
+                    "text": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST be of type JSON Object.",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -530,11 +512,10 @@
                     "temp_id": "R019",
                     "order": 19,
                     "ref": "L034",
-                    "text": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have a property key \"ProgramType\".",
+                    "text": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST have a property key \"ProgramType\".",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -555,11 +536,10 @@
                     "temp_id": "R020",
                     "order": 20,
                     "ref": "L035",
-                    "text": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MAY contain additional data generator-defined property keys.",
+                    "text": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MAY contain additional data generator-defined property keys.",
                     "keyword": "MAY",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -580,11 +560,10 @@
                     "temp_id": "R021",
                     "order": 21,
                     "ref": "L036",
-                    "text": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
+                    "text": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST have property keys that begin with the string \"x_\" unless it is a FOCUS-defined property key.",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -604,12 +583,11 @@
                   "atom": {
                     "temp_id": "R022",
                     "order": 22,
-                    "ref": "L038",
-                    "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST be of type String.",
+                    "ref": "L037",
+                    "text": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST be of type String.",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -629,12 +607,11 @@
                   "atom": {
                     "temp_id": "R023",
                     "order": 23,
-                    "ref": "L039",
-                    "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST NOT be null.",
+                    "ref": "L038",
+                    "text": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST NOT be null.",
                     "keyword": "MUST NOT",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -654,12 +631,11 @@
                   "atom": {
                     "temp_id": "R024",
                     "order": 24,
-                    "ref": "L040",
-                    "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \"Savings Plan\", \"Reserved Instance\", \"Committed Use Discount\", \"Capacity Reservation\", \"Zonal Reservation\").",
+                    "ref": "L039",
+                    "text": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \"FlexibleSpendPlan\", \"ResourceReservation\", \"BulkCapacityCredit\", \"AdvanceResourceCommitment\").",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -679,12 +655,11 @@
                   "atom": {
                     "temp_id": "R025",
                     "order": 25,
-                    "ref": "L041",
-                    "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST equal [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for one object in CommitmentEligibilityDetailsObject.CommitmentPrograms when CommitmentDiscountType is not null.",
+                    "ref": "L040",
+                    "text": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST equal [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for one object in CommitmentProgramEligibilityObject.CommitmentPrograms when CommitmentDiscountType is not null.",
                     "keyword": "MUST",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
@@ -704,12 +679,11 @@
                   "atom": {
                     "temp_id": "R026",
                     "order": 26,
-                    "ref": "L042",
-                    "text": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.",
+                    "ref": "L041",
+                    "text": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.",
                     "keyword": "SHOULD",
                     "section_path": [
-                      "Commitment Eligibility Details",
-                      "Commitment Eligibility Details Object",
+                      "Commitment Program Eligibility Object",
                       "Object Requirements"
                     ],
                     "block": {
