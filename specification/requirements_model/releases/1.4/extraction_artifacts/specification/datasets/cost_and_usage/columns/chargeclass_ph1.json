@@ -95,7 +95,7 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "ChargeClass MUST be null when the *charge* does not represent a correction to a previously *closed billing period*.",
+      "text": "ChargeClass MUST be null when the *row* does not represent a correction or when it represents a correction within the current *billing period*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -120,7 +120,7 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "ChargeClass MUST NOT be null when the *charge* represents a correction to a previously *closed billing period*.",
+      "text": "ChargeClass MUST NOT be null when the *row* represents a correction to a previously invoiced *billing period*.",
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
