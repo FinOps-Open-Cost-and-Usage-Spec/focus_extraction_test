@@ -96,7 +96,7 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "ChargeClass MUST be null when the *charge* does not represent a correction to a previously *closed billing period*.",
+        "MustSatisfy": "ChargeClass MUST be null when the *row* does not represent a correction or when it represents a correction within the current *billing period*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -120,7 +120,7 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "ChargeClass MUST NOT be null when the *charge* represents a correction to a previously *closed billing period*.",
+        "MustSatisfy": "ChargeClass MUST NOT be null when the *row* represents a correction to a previously invoiced *billing period*.",
         "Keyword": "MUST NOT",
         "Requirement": {},
         "Condition": [],
