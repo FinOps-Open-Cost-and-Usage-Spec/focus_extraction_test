@@ -17,7 +17,7 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 37
+    "atoms_in_scope_count": 39
   },
   "0_outline_root": "ROOT: Contract Commitment > Requirements",
   "0_outline_lines": [
@@ -55,25 +55,27 @@
     "    L085: \"ContractCommitment MUST include [PricingCurrencyContractCommitmentCost](#datasets.contractcommitment.pricingcurrencycontractcommitmentcost) when the service provider supports pricing and billing in different currencies.\"",
     "    L086: \"ContractCommitment MUST include [ServiceProviderName](#datasets.contractcommitment.serviceprovidername).\"",
     "  L087: \"ContractCommitment MUST conform to [ColumnHandling](#attributes.columnhandling) requirements.\"",
-    "  L088: \"ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.\"",
-    "  L089: \"ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.\"",
-    "  L090: \"ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.\""
+    "  L088: \"ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.\"",
+    "  L089: \"ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.\"",
+    "  L090: \"ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.\"",
+    "  L091: \"ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.\"",
+    "  L092: \"ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.\""
   ],
   "0_outline_summary": {
-    "node_count": 37,
-    "leaf_count": 35,
+    "node_count": 39,
+    "leaf_count": 37,
     "lead_in_count": 2,
     "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 37
+      "MUST": 39
     },
     "lead_ins": [
       {
         "ref": "L053",
         "text_preview": "ContractCommitment MUST adhere to the following requirements:",
-        "children": 6
+        "children": 8
       },
       {
         "ref": "L056",
@@ -910,7 +912,7 @@
                 "temp_id": "R035",
                 "order": 35,
                 "ref": "L088",
-                "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
+                "text": "ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
@@ -934,7 +936,7 @@
                 "temp_id": "R036",
                 "order": 36,
                 "ref": "L089",
-                "text": "ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+                "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
@@ -959,6 +961,54 @@
                 "order": 37,
                 "ref": "L090",
                 "text": "ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R038",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R038",
+                "order": 38,
+                "ref": "L091",
+                "text": "ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R039",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R039",
+                "order": 39,
+                "ref": "L092",
+                "text": "ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
