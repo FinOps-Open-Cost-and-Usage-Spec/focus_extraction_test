@@ -870,7 +870,7 @@
     {
       "temp_id": "R035",
       "order": 35,
-      "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
+      "text": "ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -895,7 +895,7 @@
     {
       "temp_id": "R036",
       "order": 36,
-      "text": "ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -941,6 +941,56 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L090"
+    },
+    {
+      "temp_id": "R038",
+      "order": 38,
+      "text": "ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 91,
+        "line_end": 91
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L091"
+    },
+    {
+      "temp_id": "R039",
+      "order": 39,
+      "text": "ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 92,
+        "line_end": 92
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L092"
     }
   ],
   "warnings": [],
