@@ -1,11 +1,11 @@
 {
   "ModelRules": {
-    "CAU-CommitmentEligibilityDetails-C-000-M": {
+    "CAU-CommitmentProgramEligibility-C-000-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -17,29 +17,29 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST adhere to the following requirements:",
+        "MustSatisfy": "CommitmentProgramEligibility MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "CAU-CommitmentEligibilityDetails-C-001-M",
-          "CAU-CommitmentEligibilityDetails-C-002-M",
-          "CAU-CommitmentEligibilityDetails-C-003-M",
-          "CAU-CommitmentEligibilityDetails-C-004-C",
-          "CAU-CommitmentEligibilityDetails-C-005-M",
-          "CAU-CommitmentEligibilityDetails-C-006-M",
-          "CAU-CommitmentEligibilityDetails-C-007-O",
-          "CAU-CommitmentEligibilityDetails-C-008-M",
-          "CAU-CommitmentEligibilityDetails-C-009-C"
+          "CAU-CommitmentProgramEligibility-C-001-M",
+          "CAU-CommitmentProgramEligibility-C-002-M",
+          "CAU-CommitmentProgramEligibility-C-003-M",
+          "CAU-CommitmentProgramEligibility-C-004-C",
+          "CAU-CommitmentProgramEligibility-C-005-M",
+          "CAU-CommitmentProgramEligibility-C-006-M",
+          "CAU-CommitmentProgramEligibility-C-007-O",
+          "CAU-CommitmentProgramEligibility-C-008-M",
+          "CAU-CommitmentProgramEligibility-C-009-C"
         ]
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-001-M": {
+    "CAU-CommitmentProgramEligibility-C-001-M": {
       "Function": "Type",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -51,19 +51,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST be of type String.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST be of type String.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-002-M": {
+    "CAU-CommitmentProgramEligibility-C-002-M": {
       "Function": "Format",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -75,19 +75,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST conform to StringHandling requirements.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST conform to StringHandling requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-003-M": {
+    "CAU-CommitmentProgramEligibility-C-003-M": {
       "Function": "Format",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -99,19 +99,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST conform to JsonObjectFormat requirements.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST conform to JsonObjectFormat requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-004-C": {
+    "CAU-CommitmentProgramEligibility-C-004-C": {
       "Function": "Nullability",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -123,19 +123,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST NOT be null when a charge is eligible for a *commitment program*, regardless of whether a *commitment* was actually applied to the charge.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST NOT be null when a charge is eligible for a *commitment program*, regardless of whether a *commitment* was actually applied to the charge.",
         "Keyword": "MUST NOT",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-005-M": {
+    "CAU-CommitmentProgramEligibility-C-005-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -147,19 +147,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST NOT consider transient account configurations or quotas that might temporarily prevent purchase or participation in a *commitment program*.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST NOT consider transient account configurations or quotas that might temporarily prevent purchase or participation in a *commitment program*.",
         "Keyword": "MUST NOT",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-006-M": {
+    "CAU-CommitmentProgramEligibility-C-006-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -171,19 +171,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST include all publicly available *commitment programs* for which the usage is eligible.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST include all publicly available *commitment programs* for which the usage is eligible.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-007-O": {
+    "CAU-CommitmentProgramEligibility-C-007-O": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -195,19 +195,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails SHOULD include negotiated *commitment programs* for which the usage is eligible.",
+        "MustSatisfy": "CommitmentProgramEligibility SHOULD include negotiated *commitment programs* for which the usage is eligible.",
         "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-008-M": {
+    "CAU-CommitmentProgramEligibility-C-008-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -219,19 +219,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST NOT include data related to *commitment* *periods* or payment options.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST NOT include data related to *commitment* *periods* or payment options.",
         "Keyword": "MUST NOT",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-009-C": {
+    "CAU-CommitmentProgramEligibility-C-009-C": {
       "Function": "Format",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -243,19 +243,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetails MUST conform to CommitmentEligibilityDetailsObject requirements when CommitmentEligibilityDetails is not null.",
+        "MustSatisfy": "CommitmentProgramEligibility MUST conform to CommitmentProgramEligibilityObject requirements when CommitmentProgramEligibility is not null.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-010-M": {
+    "CAU-CommitmentProgramEligibility-C-010-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -267,24 +267,24 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject MUST adhere to the following requirements:",
+        "MustSatisfy": "CommitmentProgramEligibilityObject MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "CAU-CommitmentEligibilityDetails-C-011-M",
-          "CAU-CommitmentEligibilityDetails-C-012-O",
-          "CAU-CommitmentEligibilityDetails-C-013-C",
-          "CAU-CommitmentEligibilityDetails-C-014-M"
+          "CAU-CommitmentProgramEligibility-C-011-M",
+          "CAU-CommitmentProgramEligibility-C-012-O",
+          "CAU-CommitmentProgramEligibility-C-013-C",
+          "CAU-CommitmentProgramEligibility-C-014-M"
         ]
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-011-M": {
+    "CAU-CommitmentProgramEligibility-C-011-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -296,19 +296,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject MUST have a top-level property key \"CommitmentPrograms\".",
+        "MustSatisfy": "CommitmentProgramEligibilityObject MUST have a top-level property key \"CommitmentPrograms\".",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-012-O": {
+    "CAU-CommitmentProgramEligibility-C-012-O": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -320,19 +320,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject MAY contain additional data generator-defined top-level property keys.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject MAY contain additional data generator-defined top-level property keys.",
         "Keyword": "MAY",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-013-C": {
+    "CAU-CommitmentProgramEligibility-C-013-C": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -344,19 +344,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject MUST have property keys that begin with the string \"x_\" unless it is a FOCUS-defined property key.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-014-M": {
+    "CAU-CommitmentProgramEligibility-C-014-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -368,31 +368,31 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST adhere to the following requirements:",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "CAU-CommitmentEligibilityDetails-C-015-M",
-          "CAU-CommitmentEligibilityDetails-C-016-M",
-          "CAU-CommitmentEligibilityDetails-C-017-M",
-          "CAU-CommitmentEligibilityDetails-C-018-M",
-          "CAU-CommitmentEligibilityDetails-C-019-O",
-          "CAU-CommitmentEligibilityDetails-C-020-C",
-          "CAU-CommitmentEligibilityDetails-C-021-M",
-          "CAU-CommitmentEligibilityDetails-C-022-M",
-          "CAU-CommitmentEligibilityDetails-C-023-M",
-          "CAU-CommitmentEligibilityDetails-C-024-C",
-          "CAU-CommitmentEligibilityDetails-C-025-O"
+          "CAU-CommitmentProgramEligibility-C-015-M",
+          "CAU-CommitmentProgramEligibility-C-016-M",
+          "CAU-CommitmentProgramEligibility-C-017-M",
+          "CAU-CommitmentProgramEligibility-C-018-M",
+          "CAU-CommitmentProgramEligibility-C-019-O",
+          "CAU-CommitmentProgramEligibility-C-020-C",
+          "CAU-CommitmentProgramEligibility-C-021-M",
+          "CAU-CommitmentProgramEligibility-C-022-M",
+          "CAU-CommitmentProgramEligibility-C-023-M",
+          "CAU-CommitmentProgramEligibility-C-024-C",
+          "CAU-CommitmentProgramEligibility-C-025-O"
         ]
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-015-M": {
+    "CAU-CommitmentProgramEligibility-C-015-M": {
       "Function": "Type",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -404,19 +404,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type Array.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms MUST be of type Array.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-016-M": {
+    "CAU-CommitmentProgramEligibility-C-016-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -428,19 +428,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms MUST contain one or more objects.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms MUST contain one or more objects.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-017-M": {
+    "CAU-CommitmentProgramEligibility-C-017-M": {
       "Function": "Type",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -452,19 +452,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST be of type JSON Object.",
+        "MustSatisfy": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST be of type JSON Object.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-018-M": {
+    "CAU-CommitmentProgramEligibility-C-018-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -476,19 +476,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have a property key \"ProgramType\".",
+        "MustSatisfy": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST have a property key \"ProgramType\".",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-019-O": {
+    "CAU-CommitmentProgramEligibility-C-019-O": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -500,19 +500,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MAY contain additional data generator-defined property keys.",
+        "MustSatisfy": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MAY contain additional data generator-defined property keys.",
         "Keyword": "MAY",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-020-C": {
+    "CAU-CommitmentProgramEligibility-C-020-C": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -524,19 +524,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "Each entry in CommitmentEligibilityDetailsObject.CommitmentPrograms MUST have property keys that begin with the string \"x\\_\" unless it is a FOCUS-defined property key.",
+        "MustSatisfy": "Each entry in CommitmentProgramEligibilityObject.CommitmentPrograms MUST have property keys that begin with the string \"x_\" unless it is a FOCUS-defined property key.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-021-M": {
+    "CAU-CommitmentProgramEligibility-C-021-M": {
       "Function": "Type",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -548,19 +548,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST be of type String.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST be of type String.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-022-M": {
+    "CAU-CommitmentProgramEligibility-C-022-M": {
       "Function": "Nullability",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -572,19 +572,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST NOT be null.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST NOT be null.",
         "Keyword": "MUST NOT",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-023-M": {
+    "CAU-CommitmentProgramEligibility-C-023-M": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -596,19 +596,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \"Savings Plan\", \"Reserved Instance\", \"Committed Use Discount\", \"Capacity Reservation\", \"Zonal Reservation\").",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST correspond to a *commitment program* type supported by the service provider (e.g., \"FlexibleSpendPlan\", \"ResourceReservation\", \"BulkCapacityCredit\", \"AdvanceResourceCommitment\").",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-024-C": {
+    "CAU-CommitmentProgramEligibility-C-024-C": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -620,19 +620,19 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType MUST equal CommitmentDiscountType for one object in CommitmentEligibilityDetailsObject.CommitmentPrograms when CommitmentDiscountType is not null.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType MUST equal CommitmentDiscountType for one object in CommitmentProgramEligibilityObject.CommitmentPrograms when CommitmentDiscountType is not null.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "CAU-CommitmentEligibilityDetails-C-025-O": {
+    "CAU-CommitmentProgramEligibility-C-025-O": {
       "Function": "Validation",
-      "Reference": "CommitmentEligibilityDetails",
+      "Reference": "CommitmentProgramEligibility",
       "EntityType": "Column",
-      "EntityName": "Commitment Eligibility Details",
-      "EntityId": "CommitmentEligibilityDetails",
+      "EntityName": "Commitment Program Eligibility",
+      "EntityId": "CommitmentProgramEligibility",
       "Notes": "",
       "ModelVersionIntroduced": "1.4",
       "Status": "Active",
@@ -644,7 +644,7 @@
       "DatasetId": "CostAndUsage",
       "DatasetName": "Cost and Usage",
       "ValidationCriteria": {
-        "MustSatisfy": "CommitmentEligibilityDetailsObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.",
+        "MustSatisfy": "CommitmentProgramEligibilityObject.CommitmentPrograms.ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.",
         "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
