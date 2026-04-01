@@ -2,7 +2,7 @@
   "phase": 2,
   "source": {
     "path": "specification/datasets/invoice_detail/dataset.md",
-    "version": "unknown"
+    "version": "1.4"
   },
   "entity": {
     "entity_type": "Dataset",
@@ -17,7 +17,7 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 34
+    "atoms_in_scope_count": 37
   },
   "0_outline_root": "ROOT: Invoice Detail > Requirements",
   "0_outline_lines": [
@@ -47,30 +47,33 @@
     "    L071: \"InvoiceDetail MUST include [PurchaseOrderNumber](#datasets.invoicedetail.purchaseordernumber) if the invoice issuer supports customer input of purchase order numbers.\"",
     "    L072: \"InvoiceDetail MUST include [ReferenceInvoiceId](#datasets.invoicedetail.referenceinvoiceid).\"",
     "  L073: \"InvoiceDetail MUST conform to [ColumnHandling](#attributes.columnhandling) requirements.\"",
-    "  L074: \"InvoiceDetail MUST conform to [NullHandling](#attributes.nullhandling) requirements.\"",
-    "  L075: \"InvoiceDetail MUST conform to [InvoiceHandling](#attributes.invoicehandling) requirements.\"",
-    "  L076: \"InvoiceDetail MUST represent all invoice line items with a non-zero [BilledCost](#datasets.invoicedetail.billedcost) on any invoice associated with a [BillingAccountId](#datasets.invoicedetail.billingaccountid).\"",
-    "  L077: \"InvoiceDetail documentation MUST adhere to the following requirements:\"",
-    "    L078: \"InvoiceDetail documentation MUST specify how InvoiceDetail records correspond to invoice line items.\"",
-    "    L079: \"InvoiceDetail documentation MUST specify whether invoice line items with BilledCost of 0 are excluded from InvoiceDetail.\"",
-    "    L080: \"InvoiceDetail documentation MUST describe how columns in the CostAndUsage and InvoiceDetail datasets represent the invoice issuer's invoice reconciliation process.\"",
-    "    L081: \"InvoiceDetail documentation MUST be freely accessible to FOCUS consumers.\""
+    "  L074: \"InvoiceDetail MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.\"",
+    "  L075: \"InvoiceDetail MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.\"",
+    "  L076: \"InvoiceDetail MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.\"",
+    "  L077: \"InvoiceDetail MUST conform to [NullHandling](#attributes.nullhandling) requirements.\"",
+    "  L078: \"InvoiceDetail MUST represent all invoice line items with a non-zero BilledCost on any invoice associated with a BillingAccountId.\"",
+    "  L079: \"InvoiceDetail MUST include [*custom columns*](#glossary:custom-column) to represent any monetary metric that appears on an invoice issued to a BillingAccountId when there is no equivalent [*FOCUS column*](#glossary:FOCUS-column).\"",
+    "  L080: \"InvoiceDetail documentation MUST adhere to the following requirements:\"",
+    "    L081: \"InvoiceDetail documentation MUST specify how InvoiceDetail records correspond to invoice line items.\"",
+    "    L082: \"InvoiceDetail documentation MUST specify whether invoice line items with BilledCost of 0 are excluded from InvoiceDetail.\"",
+    "    L083: \"InvoiceDetail documentation MUST describe how columns in the CostAndUsage and InvoiceDetail datasets represent the invoice issuer's [*invoice reconciliation*](#glossary:invoice-reconciliation) process.\"",
+    "    L084: \"InvoiceDetail documentation MUST be freely accessible to FOCUS consumers.\""
   ],
   "0_outline_summary": {
-    "node_count": 34,
-    "leaf_count": 31,
+    "node_count": 37,
+    "leaf_count": 34,
     "lead_in_count": 3,
     "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 34
+      "MUST": 37
     },
     "lead_ins": [
       {
         "ref": "L047",
         "text_preview": "InvoiceDetail MUST adhere to the following requirements:",
-        "children": 7
+        "children": 10
       },
       {
         "ref": "L050",
@@ -78,7 +81,7 @@
         "children": 22
       },
       {
-        "ref": "L077",
+        "ref": "L080",
         "text_preview": "InvoiceDetail documentation MUST adhere to the following requirements:",
         "children": 4
       }
@@ -720,7 +723,7 @@
                 "temp_id": "R027",
                 "order": 27,
                 "ref": "L074",
-                "text": "InvoiceDetail MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+                "text": "InvoiceDetail MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Invoice Detail",
@@ -744,7 +747,7 @@
                 "temp_id": "R028",
                 "order": 28,
                 "ref": "L075",
-                "text": "InvoiceDetail MUST conform to [InvoiceHandling](#attributes.invoicehandling) requirements.",
+                "text": "InvoiceDetail MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Invoice Detail",
@@ -768,7 +771,7 @@
                 "temp_id": "R029",
                 "order": 29,
                 "ref": "L076",
-                "text": "InvoiceDetail MUST represent all invoice line items with a non-zero [BilledCost](#datasets.invoicedetail.billedcost) on any invoice associated with a [BillingAccountId](#datasets.invoicedetail.billingaccountid).",
+                "text": "InvoiceDetail MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Invoice Detail",
@@ -792,6 +795,78 @@
                 "temp_id": "R030",
                 "order": 30,
                 "ref": "L077",
+                "text": "InvoiceDetail MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Invoice Detail",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R031",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R031",
+                "order": 31,
+                "ref": "L078",
+                "text": "InvoiceDetail MUST represent all invoice line items with a non-zero BilledCost on any invoice associated with a BillingAccountId.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Invoice Detail",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R032",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R032",
+                "order": 32,
+                "ref": "L079",
+                "text": "InvoiceDetail MUST include [*custom columns*](#glossary:custom-column) to represent any monetary metric that appears on an invoice issued to a BillingAccountId when there is no equivalent [*FOCUS column*](#glossary:FOCUS-column).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Invoice Detail",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R033",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R033",
+                "order": 33,
+                "ref": "L080",
                 "text": "InvoiceDetail documentation MUST adhere to the following requirements:",
                 "keyword": "MUST",
                 "section_path": [
@@ -809,12 +884,12 @@
               },
               "children": [
                 {
-                  "node_id": "R031",
+                  "node_id": "R034",
                   "kind": "atom",
                   "atom": {
-                    "temp_id": "R031",
-                    "order": 31,
-                    "ref": "L078",
+                    "temp_id": "R034",
+                    "order": 34,
+                    "ref": "L081",
                     "text": "InvoiceDetail documentation MUST specify how InvoiceDetail records correspond to invoice line items.",
                     "keyword": "MUST",
                     "section_path": [
@@ -833,12 +908,12 @@
                   "children": []
                 },
                 {
-                  "node_id": "R032",
+                  "node_id": "R035",
                   "kind": "atom",
                   "atom": {
-                    "temp_id": "R032",
-                    "order": 32,
-                    "ref": "L079",
+                    "temp_id": "R035",
+                    "order": 35,
+                    "ref": "L082",
                     "text": "InvoiceDetail documentation MUST specify whether invoice line items with BilledCost of 0 are excluded from InvoiceDetail.",
                     "keyword": "MUST",
                     "section_path": [
@@ -857,13 +932,13 @@
                   "children": []
                 },
                 {
-                  "node_id": "R033",
+                  "node_id": "R036",
                   "kind": "atom",
                   "atom": {
-                    "temp_id": "R033",
-                    "order": 33,
-                    "ref": "L080",
-                    "text": "InvoiceDetail documentation MUST describe how columns in the CostAndUsage and InvoiceDetail datasets represent the invoice issuer's invoice reconciliation process.",
+                    "temp_id": "R036",
+                    "order": 36,
+                    "ref": "L083",
+                    "text": "InvoiceDetail documentation MUST describe how columns in the CostAndUsage and InvoiceDetail datasets represent the invoice issuer's [*invoice reconciliation*](#glossary:invoice-reconciliation) process.",
                     "keyword": "MUST",
                     "section_path": [
                       "Invoice Detail",
@@ -881,12 +956,12 @@
                   "children": []
                 },
                 {
-                  "node_id": "R034",
+                  "node_id": "R037",
                   "kind": "atom",
                   "atom": {
-                    "temp_id": "R034",
-                    "order": 34,
-                    "ref": "L081",
+                    "temp_id": "R037",
+                    "order": 37,
+                    "ref": "L084",
                     "text": "InvoiceDetail documentation MUST be freely accessible to FOCUS consumers.",
                     "keyword": "MUST",
                     "section_path": [
