@@ -9,7 +9,10 @@ from pathlib import Path
 
 SOURCE_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
 TARGET_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
-INPUT_FILE = TARGET_REPO / "diff_command.md"
+
+# NEW: separate location for diff_command.md
+COMMAND_REPO = Path("/Users/jpradocueva/Documents/github/focus/focus_extraction_test")
+INPUT_FILE = COMMAND_REPO / "diff_command.md"
 
 OUTPUT_DIRS = {
     "ATT": TARGET_REPO / "specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/ATT",
