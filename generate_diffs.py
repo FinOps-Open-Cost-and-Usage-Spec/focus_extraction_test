@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 SOURCE_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
-TARGET_REPO = Path("/Users/jpradocueva/Documents/github/focus/focus_extraction_test")
+TARGET_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
 INPUT_FILE = TARGET_REPO / "diff_command.md"
 
 OUTPUT_DIRS = {
