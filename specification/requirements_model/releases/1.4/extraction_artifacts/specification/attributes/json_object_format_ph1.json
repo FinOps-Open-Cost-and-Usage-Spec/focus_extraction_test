@@ -1,0 +1,287 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/attributes/json_object_format.md",
+    "version": "1.3"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "JsonObjectFormat",
+    "entity_name": "JSON Object Format"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Attribute",
+      "entity_id": "JsonObjectFormat",
+      "entity_name": "JSON Object Format"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST contain a serialized JSON string, consistent with the [ECMA 404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf) definition of an object.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 5,
+        "line_end": 5
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L005"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "*FOCUS dataset column* MUST conform to all requirements of the corresponding column definition, which may specify or restrict the shape or contents of the object.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 6,
+        "line_end": 6
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L006"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "Object in *FOCUS dataset column* SHOULD NOT exceed 3 levels of nesting.",
+      "keyword": "SHOULD NOT",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 7,
+        "line_end": 7
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L007"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "Key in Object in *FOCUS dataset column* MUST be unique.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 8,
+        "line_end": 8
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L008"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "Key value in Object in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), array, object, or `null`.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 9,
+        "line_end": 9
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L009"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "Object in array in *FOCUS dataset column* MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L010"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "Object in array in *FOCUS dataset column* MUST be of a consistent type.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L011"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "Object in array in *FOCUS dataset column* MUST NOT be repeated.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 12,
+        "line_end": 12
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L012"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "Object in array in *FOCUS dataset column* MUST NOT be null.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 13,
+        "line_end": 13
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L013"
+    },
+    {
+      "temp_id": "R010",
+      "order": 10,
+      "text": "Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "JSON Object Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 29,
+        "line_end": 29
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L029"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "W_ORPHAN_COLON",
+      "severity": "LOW",
+      "message": "Line ends with colon (:) but no child list items were detected.",
+      "text": "Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:",
+      "details": {
+        "ref": "L029",
+        "temp_id": "R010",
+        "order": 10,
+        "indent_level": 0,
+        "section_path": [
+          "JSON Object Format",
+          "Requirements"
+        ]
+      }
+    }
+  ],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}
