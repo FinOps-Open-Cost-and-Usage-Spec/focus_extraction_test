@@ -1,0 +1,28 @@
+{
+  "ModelRules": {
+    "ATT-JsonObjectFormat-C-009-M": {
+      "Function": "Format",
+      "Reference": "JsonObjectFormat",
+      "EntityType": "Attribute",
+      "EntityName": "JSON Object Format",
+      "EntityId": "JsonObjectFormat",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.3",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 90,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    }
+  }
+}
