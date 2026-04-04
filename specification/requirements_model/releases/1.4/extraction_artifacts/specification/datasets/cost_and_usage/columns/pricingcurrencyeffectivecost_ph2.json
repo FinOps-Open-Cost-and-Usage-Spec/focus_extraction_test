@@ -17,43 +17,33 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 9
+    "atoms_in_scope_count": 6
   },
   "0_outline_root": "ROOT: Pricing Currency Effective Cost > Requirements",
   "0_outline_lines": [
-    "L011: \"PricingCurrencyEffectiveCost MUST adhere to the following requirements:\"",
-    "  L013: \"PricingCurrencyEffectiveCost presence in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset) MUST adhere to the following presence requirements:\"",
-    "    L014: \"PricingCurrencyEffectiveCost SHOULD be present in a Cost and Usage *FOCUS dataset* when the service provider supports pricing and billing in different currencies and publishes unit prices exclusive of discounts.\"",
-    "    L015: \"PricingCurrencyEffectiveCost MAY be present in a Cost and Usage *FOCUS dataset* in all other cases.\"",
-    "  L016: \"PricingCurrencyEffectiveCost MUST be of type Decimal.\"",
-    "  L017: \"PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
-    "  L018: \"PricingCurrencyEffectiveCost MUST NOT be null.\"",
-    "  L019: \"PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).\"",
-    "  L020: \"PricingCurrencyEffectiveCost MUST be the PricingCurrency-denominated equivalent of [EffectiveCost](#datasets.costandusage.effectivecost).\""
+    "L007: \"PricingCurrencyEffectiveCost MUST adhere to the following requirements:\"",
+    "  L009: \"PricingCurrencyEffectiveCost MUST be of type Decimal.\"",
+    "  L010: \"PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
+    "  L011: \"PricingCurrencyEffectiveCost MUST NOT be null.\"",
+    "  L012: \"PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.\"",
+    "  L013: \"PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).\""
   ],
   "0_outline_summary": {
-    "node_count": 9,
-    "leaf_count": 7,
-    "lead_in_count": 2,
-    "max_depth": 2,
-    "max_indent_level": 1,
+    "node_count": 6,
+    "leaf_count": 5,
+    "lead_in_count": 1,
+    "max_depth": 1,
+    "max_indent_level": 0,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 6,
-      "SHOULD": 1,
-      "MAY": 1,
+      "MUST": 5,
       "MUST NOT": 1
     },
     "lead_ins": [
       {
-        "ref": "L011",
+        "ref": "L007",
         "text_preview": "PricingCurrencyEffectiveCost MUST adhere to the following requirements:",
-        "children": 6
-      },
-      {
-        "ref": "L013",
-        "text_preview": "PricingCurrencyEffectiveCost presence in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset) MUST adhere to the…",
-        "children": 2
+        "children": 5
       }
     ]
   },
@@ -68,7 +58,7 @@
           "atom": {
             "temp_id": "R001",
             "order": 1,
-            "ref": "L011",
+            "ref": "L007",
             "text": "PricingCurrencyEffectiveCost MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
@@ -90,8 +80,8 @@
               "atom": {
                 "temp_id": "R002",
                 "order": 2,
-                "ref": "L013",
-                "text": "PricingCurrencyEffectiveCost presence in a Cost and Usage [*FOCUS dataset*](#glossary:FOCUS-dataset) MUST adhere to the following presence requirements:",
+                "ref": "L009",
+                "text": "PricingCurrencyEffectiveCost MUST be of type Decimal.",
                 "keyword": "MUST",
                 "section_path": [
                   "Requirements"
@@ -102,57 +92,56 @@
                   "bullet": "*"
                 },
                 "lead_in": {
-                  "ends_with_colon": true
+                  "ends_with_colon": false
                 }
               },
-              "children": [
-                {
-                  "node_id": "R003",
-                  "kind": "atom",
-                  "atom": {
-                    "temp_id": "R003",
-                    "order": 3,
-                    "ref": "L014",
-                    "text": "PricingCurrencyEffectiveCost SHOULD be present in a Cost and Usage *FOCUS dataset* when the service provider supports pricing and billing in different currencies and publishes unit prices exclusive of discounts.",
-                    "keyword": "SHOULD",
-                    "section_path": [
-                      "Requirements"
-                    ],
-                    "block": {
-                      "block_type": "list_item",
-                      "indent_level": 1,
-                      "bullet": "*"
-                    },
-                    "lead_in": {
-                      "ends_with_colon": false
-                    }
-                  },
-                  "children": []
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L010",
+                "text": "PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
                 },
-                {
-                  "node_id": "R004",
-                  "kind": "atom",
-                  "atom": {
-                    "temp_id": "R004",
-                    "order": 4,
-                    "ref": "L015",
-                    "text": "PricingCurrencyEffectiveCost MAY be present in a Cost and Usage *FOCUS dataset* in all other cases.",
-                    "keyword": "MAY",
-                    "section_path": [
-                      "Requirements"
-                    ],
-                    "block": {
-                      "block_type": "list_item",
-                      "indent_level": 1,
-                      "bullet": "*"
-                    },
-                    "lead_in": {
-                      "ends_with_colon": false
-                    }
-                  },
-                  "children": []
+                "lead_in": {
+                  "ends_with_colon": false
                 }
-              ]
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L011",
+                "text": "PricingCurrencyEffectiveCost MUST NOT be null.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
             },
             {
               "node_id": "R005",
@@ -160,8 +149,8 @@
               "atom": {
                 "temp_id": "R005",
                 "order": 5,
-                "ref": "L016",
-                "text": "PricingCurrencyEffectiveCost MUST be of type Decimal.",
+                "ref": "L012",
+                "text": "PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.",
                 "keyword": "MUST",
                 "section_path": [
                   "Requirements"
@@ -183,77 +172,8 @@
               "atom": {
                 "temp_id": "R006",
                 "order": 6,
-                "ref": "L017",
-                "text": "PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
-                "keyword": "MUST",
-                "section_path": [
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
-            },
-            {
-              "node_id": "R007",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R007",
-                "order": 7,
-                "ref": "L018",
-                "text": "PricingCurrencyEffectiveCost MUST NOT be null.",
-                "keyword": "MUST NOT",
-                "section_path": [
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
-            },
-            {
-              "node_id": "R008",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R008",
-                "order": 8,
-                "ref": "L019",
+                "ref": "L013",
                 "text": "PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).",
-                "keyword": "MUST",
-                "section_path": [
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
-            },
-            {
-              "node_id": "R009",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R009",
-                "order": 9,
-                "ref": "L020",
-                "text": "PricingCurrencyEffectiveCost MUST be the PricingCurrency-denominated equivalent of [EffectiveCost](#datasets.costandusage.effectivecost).",
                 "keyword": "MUST",
                 "section_path": [
                   "Requirements"
