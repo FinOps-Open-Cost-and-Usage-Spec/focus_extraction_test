@@ -17,7 +17,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* MUST adhere to the following requirements:",
+        "MustSatisfy": "Dataset conforming to DatasetConfiguration attribute MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
