@@ -8,11 +8,6 @@ Note: Requirements section could not be identified in one or both refs. Falling 
 - Requirements found in from ref: `True`
 - Requirements found in to ref: `False`
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_p50rpyvc_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_39esbt_2_to.md
-index 7b1a6916..e69de29b 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_p50rpyvc_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_39esbt_2_to.md
-@@ -1,33 +0,0 @@
 [-# Invoice Handling-]
 
 [-FinOps practitioners must be able to reconcile FOCUS datasets with the corresponding invoices and usage statements they receive from *Invoice Issuers*. In practice, this means ensuring that all monetary *charges* that appear on an invoice or usage statement — including those not tied to metered usage — are represented in the *FOCUS dataset*. Without this alignment, it becomes difficult to perform accurate invoice reconciliation, financial reporting, and chargeback.-]

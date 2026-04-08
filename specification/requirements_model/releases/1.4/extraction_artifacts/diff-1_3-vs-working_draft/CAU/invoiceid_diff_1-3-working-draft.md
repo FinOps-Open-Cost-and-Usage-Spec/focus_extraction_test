@@ -1,10 +1,5 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_bqtpsvq4_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_t96l_7uh_to.md
-index d60aca17..e16b2a9e 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_bqtpsvq4_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_t96l_7uh_to.md
-@@ -1,12 +1,10 @@
 ## Requirements
 
 InvoiceId [-adheres-]{+MUST adhere+} to the following requirements:

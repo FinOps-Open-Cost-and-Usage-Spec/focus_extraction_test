@@ -1,10 +1,5 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_r4i9jwdq_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_cqq0hr93_to.md
-index e05f8e6b..81d62446 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_r4i9jwdq_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_cqq0hr93_to.md
-@@ -1,18 +1,18 @@
 ## Requirements
 
 EffectiveCost [-adheres-]{+MUST adhere+} to the following requirements:

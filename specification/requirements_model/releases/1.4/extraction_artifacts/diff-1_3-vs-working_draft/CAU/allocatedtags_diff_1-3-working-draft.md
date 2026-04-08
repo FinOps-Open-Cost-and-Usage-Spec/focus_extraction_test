@@ -1,10 +1,5 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_srag98mw_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_5hb4dayl_to.md
-index 7d7570c1..201cdc5c 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_srag98mw_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_5hb4dayl_to.md
-@@ -1,19 +1,18 @@
 ## Requirements
 
 AllocatedTags [-adheres-]{+MUST adhere+} to the following requirements:

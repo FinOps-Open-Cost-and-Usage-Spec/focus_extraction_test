@@ -1,10 +1,5 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_lkv38_gt_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_4b30kld9_to.md
-index 9d45b587..b57f1b5e 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_lkv38_gt_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_4b30kld9_to.md
-@@ -1,12 +1,15 @@
 ## Requirements
 
 BilledCost [-adheres-]{+MUST adhere+} to the following requirements:

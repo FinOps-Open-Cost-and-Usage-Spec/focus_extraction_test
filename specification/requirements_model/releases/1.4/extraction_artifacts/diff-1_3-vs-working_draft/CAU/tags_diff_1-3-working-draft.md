@@ -1,10 +1,5 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_dktw7q0z_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_fzkicqin_to.md
-index 2421ea30..6fe20a4c 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_dktw7q0z_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_fzkicqin_to.md
-@@ -1,11 +1,10 @@
 ## Requirements
 
 Tags [-adheres-]{+MUST adhere+} to the following requirements:
@@ -16,7 +11,6 @@ Tags [-adheres-]{+MUST adhere+} to the following requirements:
   * Tags MUST include all user-defined and provider-defined tags.
   * Tags MUST only include finalized tags.
   * Tags SHOULD include tag keys with corresponding non-null values for a given *resource*.
-@@ -13,10 +12,10 @@ Tags adheres to the following requirements:
   * Tag keys that do not support corresponding values, MUST have a corresponding true (boolean) value set.
   * Data generator SHOULD publish tag finalization methods and semantics within their respective documentation.
   * Data generator MUST NOT alter tag values unless applying true (boolean) to valueless tags.

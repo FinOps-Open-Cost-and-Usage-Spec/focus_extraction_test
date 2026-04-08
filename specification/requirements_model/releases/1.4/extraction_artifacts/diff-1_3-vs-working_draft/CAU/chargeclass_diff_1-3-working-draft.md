@@ -1,10 +1,5 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff__e93o21q_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ge0cfmr8_to.md
-index 2434df00..4ed46301 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff__e93o21q_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ge0cfmr8_to.md
-@@ -1,10 +1,9 @@
 ## Requirements
 
 ChargeClass [-adheres-]{+MUST adhere+} to the following requirements:
