@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 SOURCE_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
-TARGET_REPO = Path("/Users/jpradocueva/Documents/github/focus/focus_extraction_test")
+TARGET_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
 
 # Separate location for the input file that lists target markdown files
 COMMAND_REPO = Path("/Users/jpradocueva/Documents/github/focus/focus_extraction_test")
