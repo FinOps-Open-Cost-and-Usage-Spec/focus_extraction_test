@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -127,6 +128,40 @@ def strip_markdown_links(content: str) -> str:
     return MARKDOWN_LINK_RE.sub(r"\1", content)
 
 
+def extract_requirements_section(content: str) -> tuple[bool, str]:
+    """
+    Extract the Requirements section from a markdown document.
+
+    Supported headers:
+    - ## Requirements
+    - ## Requirements <!--SkipTOC-->
+
+    The section ends at the next level-2 heading that starts with '## '.
+    """
+    lines = content.splitlines()
+    start_index = None
+
+    for i, line in enumerate(lines):
+        if line.startswith("## Requirements"):
+            start_index = i
+            break
+
+    if start_index is None:
+        return False, ""
+
+    end_index = len(lines)
+    for i in range(start_index + 1, len(lines)):
+        if lines[i].startswith("## "):
+            end_index = i
+            break
+
+    section_text = "\n".join(lines[start_index:end_index]).strip()
+    if section_text:
+        section_text += "\n"
+
+    return True, section_text
+
+
 def write_temp_content(content: str, suffix: str) -> str:
     tmp = tempfile.NamedTemporaryFile(
         mode="w",
@@ -144,8 +179,6 @@ def write_temp_content(content: str, suffix: str) -> str:
 
 
 def run_detailed_diff(
-    from_label: str,
-    to_label: str,
     from_file: str,
     to_file: str,
 ) -> tuple[bool, str]:
@@ -223,6 +256,7 @@ def main() -> int:
         try:
             from_exists, from_content = fetch_file_from_ref(SOURCE_REPO, DIFF_FROM_REF, spec_path)
             to_exists, to_content = fetch_file_from_ref(SOURCE_REPO, DIFF_TO_REF, spec_path)
+
         except RuntimeError as exc:
             failures += 1
             write_output_file(output_path, f"ERROR: {exc}\n")
@@ -237,29 +271,50 @@ def main() -> int:
             print(f"Processed with error: {output_path.name}")
             continue
 
-        from_processed = strip_markdown_links(from_content)
-        to_processed = strip_markdown_links(to_content)
+        from_has_requirements, from_requirements = extract_requirements_section(from_content) if from_exists else (False, "")
+        to_has_requirements, to_requirements = extract_requirements_section(to_content) if to_exists else (False, "")
+
+        if not from_has_requirements and not to_has_requirements:
+            write_output_file(
+                output_path,
+                (
+                    "No Requirements section found in either comparison ref.\n\n"
+                    f"- Path: `{spec_path}`\n"
+                    f"- From ref: `{DIFF_FROM_REF}`\n"
+                    f"- To ref: `{DIFF_TO_REF}`\n"
+                ),
+            )
+            files_generated += 1
+            print(f"Processed: {output_path.name}")
+            continue
+
+        from_processed = strip_markdown_links(from_requirements)
+        to_processed = strip_markdown_links(to_requirements)
 
         from_temp = write_temp_content(from_processed, "_from.md")
         to_temp = write_temp_content(to_processed, "_to.md")
 
-        from_label = f"{DIFF_FROM_REF}:{spec_path}"
-        to_label = f"{DIFF_TO_REF}:{spec_path}"
+        try:
+            success, diff_output = run_detailed_diff(
+                from_file=from_temp,
+                to_file=to_temp,
+            )
 
-        success, diff_output = run_detailed_diff(
-            from_label=from_label,
-            to_label=to_label,
-            from_file=from_temp,
-            to_file=to_temp,
-        )
-
-        if not success:
-            failures += 1
-            write_output_file(output_path, f"ERROR: {diff_output}\n")
-        else:
-            if not diff_output.strip():
-                diff_output = "No differences found.\n"
-            write_output_file(output_path, diff_output)
+            if not success:
+                failures += 1
+                write_output_file(output_path, f"ERROR: {diff_output}\n")
+            else:
+                if not diff_output.strip():
+                    diff_output = "No differences found.\n"
+                write_output_file(output_path, diff_output)
+        finally:
+            for temp_path in (from_temp, to_temp):
+                try:
+                    os.remove(temp_path)
+                except FileNotFoundError:
+                    pass
+                except OSError:
+                    pass
 
         files_generated += 1
         print(f"Processed: {output_path.name}")
