@@ -1,15 +1,10 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ezmzy14t_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_uu951ttn_to.md
-index e69de29b..56967dfc 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ezmzy14t_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_uu951ttn_to.md
-@@ -0,0 +1,42 @@
-{+## Requirements<!--SkipTOC-->+}
+[-<div class='h4-nonindex'>Requirements</div>-]{+## Requirements<!--SkipTOC-->+}
 
-{+ContractCommitment MUST adhere to the following requirements:+}
+ContractCommitment [-adheres-]{+MUST adhere+} to the following requirements:
 
-{+* ContractCommitment MUST be present when the service provider supports *contract commitments*.+}
+* ContractCommitment MUST be present when the service provider supports *contract commitments*.
 {+* ContractCommitment column presence MUST adhere to the following requirements:+}
 {+  * ContractCommitment MUST include BillingCurrency.+}
 {+  * ContractCommitment MUST include ContractCommitmentApplicability.+}
@@ -41,9 +36,9 @@ index e69de29b..56967dfc 100644
 {+  * ContractCommitment MUST include PricingCurrency when the service provider supports pricing and billing in different currencies.+}
 {+  * ContractCommitment MUST include PricingCurrencyContractCommitmentCost when the service provider supports pricing and billing in different currencies.+}
 {+  * ContractCommitment MUST include ServiceProviderName.+}
-{+* ContractCommitment MUST conform to ColumnHandling requirements.+}
+* ContractCommitment MUST conform to ColumnHandling requirements.
 {+* ContractCommitment MUST conform to CorrectionHandling requirements.+}
 {+* ContractCommitment MUST conform to DatasetCompleteness requirements.+}
 {+* ContractCommitment MUST conform to DatasetConfiguration requirements.+}
 {+* ContractCommitment MUST conform to DeliveryHandling requirements.+}
-{+* ContractCommitment MUST conform to NullHandling requirements.+}
+* ContractCommitment MUST conform to NullHandling requirements.

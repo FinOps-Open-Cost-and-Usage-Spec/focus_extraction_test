@@ -1,11 +1,10 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_3z87uzkt_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_3i17euvm_to.md
-index c472126a..7bd83bfa 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_3z87uzkt_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_3i17euvm_to.md
-@@ -4,29 +4,28 @@ The Allocated Tags column represents the set of *tags* assigned to *tag sources*
-
+diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_srag98mw_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_5hb4dayl_to.md
+index 7d7570c1..201cdc5c 100644
+--- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_srag98mw_from.md
++++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_5hb4dayl_to.md
+@@ -1,19 +1,18 @@
 ## Requirements
 
 AllocatedTags [-adheres-]{+MUST adhere+} to the following requirements:
@@ -25,27 +24,3 @@ AllocatedTags [-adheres-]{+MUST adhere+} to the following requirements:
   * Data generator SHOULD publish all data generator-specified tag key prefixes within their respective documentation.
 * User-defined tags {+MUST+} adhere to the following[-additional-] requirements:
   * Data generator MUST prefix all user-defined [-tags scheme-]{+*tag schemes*+} with a predetermined, data generator-specified tag key prefix that is unique to each corresponding user-defined [-tag scheme-]{+*tag scheme*+} when the data generator has more than one user-defined [-tag scheme.-]{+*tag scheme*.+}
-
-## Data Generator-Defined vs. User-Defined Tags
-
-This example illustrates various tags produced from multiple user-defined and data generator-defined [-tag schemes.-]{+*tag schemes*.+} The first two tags illustrate examples from two different, user-defined [-tag schemes.-]{+*tag schemes*.+} The second tag is produced from a valueless, user-defined [-tag scheme,-]{+*tag scheme*,+} so the data generator also applies `true` as its default value.
-
-The last two tags illustrate examples from two different, data generator-defined [-tag schemes.-]{+*tag schemes*.+}
-
-```json
-    {
-@@ -51,13 +50,14 @@ A set of tags assigned to tag sources that are applicable to *allocated charges*
-
-## Content Constraints
-
-| Constraint      | Value                                                |
-[-|:----------------|:-----------------|-]{+| :-------------- | :--------------------------------------------------- |+}
-{+| Dataset         | Cost and Usage             |+}
-| Column type     | Dimension                                            |
-| Feature level   | Conditional                                          |
-| Allows nulls    | True                                                 |
-| Data type       | JSON                                                 |
-| Value format    | Key-Value Format      |
-
-## Introduced (version)
-

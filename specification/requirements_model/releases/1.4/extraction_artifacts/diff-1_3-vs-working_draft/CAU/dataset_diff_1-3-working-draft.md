@@ -1,50 +1,5 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_4fm2czl1_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_oqd_fqxg_to.md
-index 3160f40f..1be2a490 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_4fm2czl1_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_oqd_fqxg_to.md
-@@ -4,7 +4,7 @@ The Cost and Usage dataset is the primary dataset for FOCUS cost and usage data.
-
-The specification for the Cost and Usage dataset defines a group of columns that provide qualitative values (such as dates, resource, and service provider information) categorized as "dimensions" and quantitative values (numeric values) categorized as "metrics" that can be used for performing various [FinOps capabilities][FODOFC]. Metrics are commonly used for aggregations (sum, multiplication, averaging etc.) and statistical operations within the dataset. Dimensions are commonly used to categorize, filter, and reveal details in your data when combined with metrics. The columns are presented in alphabetical order.
-
-[-<div class='h4-nonindex'>Columns</div>-]{+## Columns<!--SkipTOC-->+}
-
-| Column                                                                        | Column Type        | Feature Level | Allows Nulls | Data Type |
-| ----------------------------------------------------------------------------- | ------------------ | ------------- | ------------ | --------- |
-@@ -43,19 +43,18 @@ The specification for the Cost and Usage dataset defines a group of columns that
-| Contracted Unit Price                                 | Metric             | Conditional   | True         | Decimal   |
-| Effective Cost                                              | Metric             | Mandatory     | False        | Decimal   |
-| Host Provider Name                                       | Dimension          | Mandatory     | False        | String    |
-| Invoice {+Detail+} ID                                                      | Dimension          | [-Recommended-]{+Conditional   | True         | String    |+}
-{+| Invoice ID                                                      | Dimension          | Conditional+}   | True         | String    |
-| Invoice Issuer Name                                     | Dimension          | Mandatory     | False        | String    |
-| List Cost                                                        | Metric             | Mandatory     | False        | Decimal   |
-| List Unit Price                                             | Metric             | Conditional   | True         | Decimal   |
-| Pricing Category                                          | Dimension          | Conditional   | True         | String    |
-| Pricing Currency                                          | Dimension          | Conditional   | [-True-]{+False+}        | String    |
-| Pricing Currency Contracted Unit Price | Metric             | Conditional   | True         | Decimal   |
-| Pricing Currency Effective Cost              | Metric             | Conditional   | [-True-]{+False+}        | Decimal   |
-| Pricing Currency List Unit Price             | Metric             | Conditional   | True         | Decimal   |
-| Pricing Quantity                                          | Metric             | Mandatory     | True         | Decimal   |
-| Pricing Unit                                                  | Dimension          | Mandatory     | True         | String    |
-[-| Provider - DEPRECATED                                        | Dimension          | Mandatory     | False        | String    |-]
-[-| Publisher - DEPRECATED                                      | Dimension          | Mandatory     | False        | String    |-]
-| Region ID                                                        | Dimension          | Conditional   | True         | String    |
-| Region Name                                                    | Dimension          | Conditional   | True         | String    |
-| Resource ID                                                    | Dimension          | Conditional   | True         | String    |
-@@ -74,7 +73,7 @@ The specification for the Cost and Usage dataset defines a group of columns that
-| Sub Account Type                                           | Dimension          | Conditional   | True         | String    |
-| Tags                                                                 | Dimension          | Conditional   | True         | JSON      |
-
-[-<div class='h4-nonindex'>Relationships</div>-]{+## Relationships<!--SkipTOC-->+}
-
-The Cost and Usage dataset can be joined to the Contract Commitment dataset through the use of the Contract Commitment ID.
-
-@@ -85,29 +84,97 @@ The Cost and Usage dataset can be joined to the Contract Commitment dataset thro
-| ------------------- | ----------------- | ------------------- | ---------------------- |
-| Cost and Usage      | Contract Applied  | Contract Commitment | Contract Commitment ID |
-
 [-<div class='h4-nonindex'>Requirements</div>-]{+## Requirements<!--SkipTOC-->+}
 
 CostAndUsage [-adheres-]{+MUST adhere+} to the following requirements:
@@ -125,19 +80,3 @@ CostAndUsage [-adheres-]{+MUST adhere+} to the following requirements:
 {+* CostAndUsage MUST conform to DeliveryHandling requirements.+}
 {+* CostAndUsage MUST conform to DiscountHandling requirements.+}
 {+* CostAndUsage MUST conform to NullHandling requirements.+}
-
-[-<div class='h4-nonindex'>Dataset ID</div>-]{+## Dataset ID<!--SkipTOC-->+}
-
-CostAndUsage
-
-[-<div class='h4-nonindex'>Display Name</div>-]{+## Display Name<!--SkipTOC-->+}
-
-Cost and Usage
-
-[-<div class='h4-nonindex'>Description</div>-]{+## Description<!--SkipTOC-->+}
-
-Describes the cost and usage incurred through using or purchasing a service provider's *resources* or *services*.
-
-[-<div class='h4-nonindex'>Introduced (version)</div>-]{+## Introduced (version)<!--SkipTOC-->+}
-
-0.5

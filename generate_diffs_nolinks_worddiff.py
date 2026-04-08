@@ -218,6 +218,24 @@ def run_detailed_diff(
     error_text = result.stderr.strip() or result.stdout.strip() or f"git diff failed with exit code {result.returncode}"
     return False, error_text
 
+def strip_git_diff_metadata(diff_output: str) -> str:
+    filtered_lines = []
+    for line in diff_output.splitlines():
+        if (
+            line.startswith("diff --git ")
+            or line.startswith("index ")
+            or line.startswith("--- ")
+            or line.startswith("+++ ")
+            or line.startswith("@@ ")
+        ):
+            continue
+        filtered_lines.append(line)
+
+    result = "\n".join(filtered_lines)
+    if result:
+        result += "\n"
+
+    return result
 
 def write_output_file(output_path: Path, content: str) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -335,6 +353,8 @@ def main() -> int:
                 failures += 1
                 write_output_file(output_path, f"ERROR: {diff_output}\n")
             else:
+                diff_output = strip_git_diff_metadata(diff_output)
+
                 if not diff_output.strip():
                     diff_output = "No differences found.\n"
 

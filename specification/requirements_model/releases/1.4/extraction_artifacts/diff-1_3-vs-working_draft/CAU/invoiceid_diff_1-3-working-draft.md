@@ -1,11 +1,10 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_he_3n0lg_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_a3rh485v_to.md
-index fd652ece..a3e6c03d 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_he_3n0lg_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_a3rh485v_to.md
-@@ -4,13 +4,11 @@ An Invoice ID is an invoice-issuer-assigned identifier for an invoice encapsulat
-
+diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_bqtpsvq4_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_t96l_7uh_to.md
+index d60aca17..e16b2a9e 100644
+--- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_bqtpsvq4_from.md
++++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_t96l_7uh_to.md
+@@ -1,12 +1,10 @@
 ## Requirements
 
 InvoiceId [-adheres-]{+MUST adhere+} to the following requirements:
@@ -18,18 +17,3 @@ InvoiceId [-adheres-]{+MUST adhere+} to the following requirements:
   * InvoiceId MUST be null when the *charge* is not associated either with an invoice or with a pre-generated provisional invoice.
   * InvoiceId MUST NOT be null when the *charge* is associated with either an issued invoice or a pre-generated provisional invoice.
 * InvoiceId MAY be generated prior to an invoice being issued.
-@@ -32,13 +30,14 @@ The invoice-issuer-assigned identifier for an invoice encapsulating *charges* in
-
-## Content constraints
-
-| Constraint      | Value                                                |
-[-|:----------------|:-----------------|-]{+| :-------------- | :--------------------------------------------------- |+}
-{+| Dataset         | Cost and Usage             |+}
-| Column type     | Dimension                                            |
-| Feature level   | [-Recommended-]{+Conditional+}                                          |
-| Allows nulls    | True                                                 |
-| Data type       | String                                               |
-| Value format    | \<not specified>                                     |
-
-## Introduced (version)
-
