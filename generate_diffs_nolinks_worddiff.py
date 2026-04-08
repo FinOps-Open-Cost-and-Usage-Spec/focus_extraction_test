@@ -132,11 +132,12 @@ def extract_requirements_section(content: str) -> tuple[bool, str]:
     """
     Extract the Requirements section from a markdown document.
 
-    Supported headers:
+    Supported start headings:
     - ## Requirements
     - ## Requirements <!--SkipTOC-->
+    - ## Requirements<!--SkipTOC-->
 
-    The section ends at the next level-2 heading that starts with '## '.
+    The section ends at the next markdown level-2 heading that starts with '## '.
     """
     lines = content.splitlines()
     start_index = None
@@ -232,6 +233,46 @@ def format_missing_both_error(spec_path: str) -> str:
     )
 
 
+def build_diff_input(
+    spec_path: str,
+    from_exists: bool,
+    from_content: str,
+    to_exists: bool,
+    to_content: str,
+) -> tuple[str, str, str | None]:
+    """
+    Returns:
+      from_text, to_text, optional_note
+
+    Rule:
+    - If Requirements section is found in both refs, diff only Requirements.
+    - Otherwise, fall back to diffing the full document and add a note.
+    """
+    if not from_exists:
+        from_requirements_found, from_requirements = (False, "")
+    else:
+        from_requirements_found, from_requirements = extract_requirements_section(from_content)
+
+    if not to_exists:
+        to_requirements_found, to_requirements = (False, "")
+    else:
+        to_requirements_found, to_requirements = extract_requirements_section(to_content)
+
+    if from_requirements_found and to_requirements_found:
+        return from_requirements, to_requirements, None
+
+    fallback_note = (
+        "Note: Requirements section could not be identified in one or both refs. "
+        "Falling back to full-document diff.\n\n"
+        f"- Path: `{spec_path}`\n"
+        f"- From ref: `{DIFF_FROM_REF}`\n"
+        f"- To ref: `{DIFF_TO_REF}`\n"
+        f"- Requirements found in from ref: `{from_requirements_found}`\n"
+        f"- Requirements found in to ref: `{to_requirements_found}`\n\n"
+    )
+    return from_content, to_content, fallback_note
+
+
 def main() -> int:
     args = parse_args()
     section = args.section
@@ -256,7 +297,6 @@ def main() -> int:
         try:
             from_exists, from_content = fetch_file_from_ref(SOURCE_REPO, DIFF_FROM_REF, spec_path)
             to_exists, to_content = fetch_file_from_ref(SOURCE_REPO, DIFF_TO_REF, spec_path)
-
         except RuntimeError as exc:
             failures += 1
             write_output_file(output_path, f"ERROR: {exc}\n")
@@ -271,25 +311,16 @@ def main() -> int:
             print(f"Processed with error: {output_path.name}")
             continue
 
-        from_has_requirements, from_requirements = extract_requirements_section(from_content) if from_exists else (False, "")
-        to_has_requirements, to_requirements = extract_requirements_section(to_content) if to_exists else (False, "")
+        diff_from_content, diff_to_content, fallback_note = build_diff_input(
+            spec_path=spec_path,
+            from_exists=from_exists,
+            from_content=from_content,
+            to_exists=to_exists,
+            to_content=to_content,
+        )
 
-        if not from_has_requirements and not to_has_requirements:
-            write_output_file(
-                output_path,
-                (
-                    "No Requirements section found in either comparison ref.\n\n"
-                    f"- Path: `{spec_path}`\n"
-                    f"- From ref: `{DIFF_FROM_REF}`\n"
-                    f"- To ref: `{DIFF_TO_REF}`\n"
-                ),
-            )
-            files_generated += 1
-            print(f"Processed: {output_path.name}")
-            continue
-
-        from_processed = strip_markdown_links(from_requirements)
-        to_processed = strip_markdown_links(to_requirements)
+        from_processed = strip_markdown_links(diff_from_content)
+        to_processed = strip_markdown_links(diff_to_content)
 
         from_temp = write_temp_content(from_processed, "_from.md")
         to_temp = write_temp_content(to_processed, "_to.md")
@@ -306,6 +337,10 @@ def main() -> int:
             else:
                 if not diff_output.strip():
                     diff_output = "No differences found.\n"
+
+                if fallback_note:
+                    diff_output = fallback_note + diff_output
+
                 write_output_file(output_path, diff_output)
         finally:
             for temp_path in (from_temp, to_temp):

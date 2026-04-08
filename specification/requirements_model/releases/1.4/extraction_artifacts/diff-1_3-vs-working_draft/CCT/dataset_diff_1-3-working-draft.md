@@ -1,5 +1,10 @@
 ## Diff
 
+diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ezmzy14t_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_uu951ttn_to.md
+index e69de29b..56967dfc 100644
+--- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ezmzy14t_from.md
++++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_uu951ttn_to.md
+@@ -0,0 +1,42 @@
 {+## Requirements<!--SkipTOC-->+}
 
 {+ContractCommitment MUST adhere to the following requirements:+}
