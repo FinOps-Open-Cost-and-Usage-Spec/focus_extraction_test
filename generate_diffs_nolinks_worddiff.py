@@ -142,7 +142,7 @@ def extract_requirements_section(content: str) -> tuple[bool, str]:
     start_index = None
 
     for i, line in enumerate(lines):
-        if line.startswith("## Requirements"):
+        if line.strip().startswith("## Requirements"):
             start_index = i
             break
 
@@ -151,7 +151,7 @@ def extract_requirements_section(content: str) -> tuple[bool, str]:
 
     end_index = len(lines)
     for i in range(start_index + 1, len(lines)):
-        if lines[i].startswith("## "):
+        if lines[i].strip().startswith("## "):
             end_index = i
             break
 

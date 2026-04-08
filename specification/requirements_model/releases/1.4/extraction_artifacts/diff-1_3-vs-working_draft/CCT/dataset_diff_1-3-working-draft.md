@@ -1,61 +1,10 @@
 ## Diff
 
-diff --git a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ex8ec4jw_from.md b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_kzk5eerb_to.md
-index 71c5dafd..2ab35b4e 100644
---- a/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_ex8ec4jw_from.md
-+++ b/var/folders/h3/3pbbsg0s01760nzc6wsgc6f40000gn/T/focus_diff_kzk5eerb_to.md
-@@ -2,25 +2,42 @@
+{+## Requirements<!--SkipTOC-->+}
 
-The Contract Commitment dataset is a supporting dataset that describes the terms of contracts agreed between a service provider and a customer.
+{+ContractCommitment MUST adhere to the following requirements:+}
 
-[-<div class='h4-nonindex'>Columns</div>-]{+## Columns<!--SkipTOC-->+}
-
-| Column | Column Type | Feature Level | Allows Nulls | Data Type |
-| [--------------------------------------------------------------------]{+:---+} | [-------------]{+:---+} | [---------------]{+:---+} | [--------------]{+:---+} | [-----------]{+:---+} |
-| Billing Currency | Dimension | Mandatory | True | String |
-| Contract Commitment {+Applicability | Dimension | Mandatory | False | JSON |+}
-{+| Contract Commitment Benefit Category | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment+} Category | Dimension | Mandatory | False | String |
-| Contract Commitment Cost | Metric | Mandatory | True | [-Numeric-]{+Decimal |+}
-{+| Contract Commitment Created | Dimension | Mandatory | False | Date/Time+} |
-| Contract Commitment Description | Dimension | Mandatory | True | String |
-| Contract Commitment {+Discount Percentage | Dimension | Mandatory | True | Decimal |+}
-{+| Contract Commitment Duration Type | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment Fulfillment Interval | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment+} ID | Dimension | Mandatory | False | String |
-| Contract Commitment {+Last Updated | Dimension | Mandatory | False | Date/Time |+}
-{+| Contract Commitment Lifecycle Status | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment Model | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment Offer Category | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment Payment Interval | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment Payment Model | Dimension | Mandatory | False | String |+}
-{+| Contract Commitment Payment Upfront Percentage | Dimension | Conditional | False | Decimal |+}
-{+| Contract Commitment+} Period End | Dimension | Mandatory | False | Date/Time |
-| Contract Commitment Period Start | Dimension | Mandatory | False | Date/Time |
-| Contract Commitment Quantity | Metric | Mandatory | True | [-Numeric-]{+Decimal+} |
-| Contract Commitment Type | Dimension | Mandatory | False | String |
-| Contract Commitment Unit | Dimension | Mandatory | True | String |
-| Contract ID | Dimension | Mandatory | False | String |
-| Contract Period End | Dimension | Mandatory | False | Date/Time |
-| Contract Period Start | Dimension | Mandatory | False | Date/Time |
-[-<div class='h4-nonindex'>Relationships</div>-]{+| Invoice Issuer Name | Dimension | Mandatory | False | String |+}
-{+| Pricing Currency | Dimension | Conditional | False | String |+}
-{+| Pricing Currency Contract Commitment Cost | Metric | Conditional | True | Decimal |+}
-{+| Service Provider Name | Dimension | Mandatory | False | String |+}
-
-{+## Relationships<!--SkipTOC-->+}
-
-The Contract Commitment dataset can be joined to the Cost and Usage dataset through the use of Contract Commitment ID.
-
-@@ -31,26 +48,61 @@ The Contract Commitment dataset can be joined to the Cost and Usage dataset thro
-| ------------------- | ---------------------- | -------------- | -----------------|
-| Contract Commitment | Contract Commitment ID | Cost and Usage | Contract Applied |
-
-[-<div class='h4-nonindex'>Requirements</div>-]{+## Requirements<!--SkipTOC-->+}
-
-ContractCommitment [-adheres-]{+MUST adhere+} to the following requirements:
-
-* ContractCommitment MUST be present when the service provider supports *contract commitments*.
+{+* ContractCommitment MUST be present when the service provider supports *contract commitments*.+}
 {+* ContractCommitment column presence MUST adhere to the following requirements:+}
 {+  * ContractCommitment MUST include BillingCurrency.+}
 {+  * ContractCommitment MUST include ContractCommitmentApplicability.+}
@@ -87,25 +36,9 @@ ContractCommitment [-adheres-]{+MUST adhere+} to the following requirements:
 {+  * ContractCommitment MUST include PricingCurrency when the service provider supports pricing and billing in different currencies.+}
 {+  * ContractCommitment MUST include PricingCurrencyContractCommitmentCost when the service provider supports pricing and billing in different currencies.+}
 {+  * ContractCommitment MUST include ServiceProviderName.+}
-* ContractCommitment MUST conform to ColumnHandling requirements.
+{+* ContractCommitment MUST conform to ColumnHandling requirements.+}
 {+* ContractCommitment MUST conform to CorrectionHandling requirements.+}
 {+* ContractCommitment MUST conform to DatasetCompleteness requirements.+}
 {+* ContractCommitment MUST conform to DatasetConfiguration requirements.+}
 {+* ContractCommitment MUST conform to DeliveryHandling requirements.+}
-* ContractCommitment MUST conform to NullHandling requirements.
-
-[-<div class='h4-nonindex'>Dataset ID</div>-]{+## Dataset ID<!--SkipTOC-->+}
-
-ContractCommitment
-
-[-<div class='h4-nonindex'>Display Name</div>-]{+## Display Name<!--SkipTOC-->+}
-
-Contract Commitment
-
-[-<div class='h4-nonindex'>Description</div>-]{+## Description<!--SkipTOC-->+}
-
-Describes the terms of contracts agreed between a service provider and a customer.
-
-[-<div class='h4-nonindex'>Introduced (version)</div>-]{+## Introduced (version)<!--SkipTOC-->+}
-
-1.3
+{+* ContractCommitment MUST conform to NullHandling requirements.+}
