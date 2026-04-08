@@ -1,29 +1,30 @@
 {
   "phase": 1,
   "source": {
-    "path": "specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md",
-    "version": "1.2"
+    "path": "specification/attributes/null_handling.md",
+    "version": "0.5"
   },
   "entity": {
-    "entity_type": "Column",
-    "entity_id": "PricingCurrencyEffectiveCost",
-    "entity_name": "Pricing Currency Effective Cost"
+    "entity_type": "Attribute",
+    "entity_id": "NullHandling",
+    "entity_name": "Null Handling"
   },
   "entities_found": [
     {
-      "entity_type": "Column",
-      "entity_id": "PricingCurrencyEffectiveCost",
-      "entity_name": "Pricing Currency Effective Cost"
+      "entity_type": "Attribute",
+      "entity_id": "NullHandling",
+      "entity_name": "Null Handling"
     }
   ],
   "atoms": [
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "PricingCurrencyEffectiveCost MUST adhere to the following requirements:",
+      "text": "Column conforming to NullHandling attribute MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Null Handling",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "PricingCurrencyEffectiveCost MUST be of type Decimal.",
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST use `null` for absent values when the *FOCUS dataset column* is defined as nullable.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Null Handling",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
-      "keyword": "MUST",
+      "text": "*FOCUS dataset column* MUST NOT contain empty strings or placeholder strings (e.g., `Not Applicable`) for absent values when the *FOCUS dataset column* contains string values.",
+      "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Null Handling",
         "Requirements"
       ],
       "block": {
@@ -92,10 +95,11 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "PricingCurrencyEffectiveCost MUST NOT be null.",
+      "text": "*FOCUS dataset column* MUST NOT contain placeholder numeric values (e.g., `0`) for absent values when the *FOCUS dataset column* contains numeric values.",
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Null Handling",
         "Requirements"
       ],
       "block": {
@@ -112,54 +116,6 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L011"
-    },
-    {
-      "temp_id": "R005",
-      "order": 5,
-      "text": "PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 12,
-        "line_end": 12
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L012"
-    },
-    {
-      "temp_id": "R006",
-      "order": 6,
-      "text": "PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 13,
-        "line_end": 13
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L013"
     }
   ],
   "warnings": [],

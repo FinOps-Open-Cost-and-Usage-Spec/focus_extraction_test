@@ -1,0 +1,133 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/attributes/currency_format.md",
+    "version": "0.5"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "CurrencyFormat",
+    "entity_name": "Currency Format"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Attribute",
+      "entity_id": "CurrencyFormat",
+      "entity_name": "Currency Format"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "Column conforming to CurrencyFormat attribute MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Currency Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 12,
+        "line_end": 12
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L012"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST conform to [ISO 4217:2015](https://www.iso.org/standard/64758.html) standard.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Currency Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 14,
+        "line_end": 14
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L014"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "*FOCUS dataset column* MUST use the three-letter alphabetic code defined in ISO 4217:2015 (e.g., USD, EUR).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Currency Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 15,
+        "line_end": 15
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L015"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [
+      {
+        "text": "A currency may be one of the following currency types:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [],
+        "block": {
+          "block_type": "paragraph",
+          "indent_level": 0,
+          "bullet": null
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 5,
+          "line_end": 5
+        },
+        "ref": "LI005",
+        "next_normative_refs": [
+          "L012",
+          "L014",
+          "L015"
+        ]
+      }
+    ],
+    "index": {
+      "by_section_path": {},
+      "by_line": {
+        "5": [
+          "LI005"
+        ]
+      }
+    }
+  }
+}

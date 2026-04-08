@@ -1,30 +1,29 @@
 {
   "phase": 1,
   "source": {
-    "path": "specification/attributes/dataset_completeness.md",
-    "version": "1.4"
+    "path": "specification/attributes/string_handling.md",
+    "version": "1.0"
   },
   "entity": {
     "entity_type": "Attribute",
-    "entity_id": "DatasetCompleteness",
-    "entity_name": "Dataset Completeness"
+    "entity_id": "StringHandling",
+    "entity_name": "String Handling"
   },
   "entities_found": [
     {
       "entity_type": "Attribute",
-      "entity_id": "DatasetCompleteness",
-      "entity_name": "Dataset Completeness"
+      "entity_id": "StringHandling",
+      "entity_name": "String Handling"
     }
   ],
   "atoms": [
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "Dataset conforming to DatasetCompleteness attribute MUST adhere to the following requirements:",
+      "text": "Column conforming to StringHandling attribute MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
@@ -36,20 +35,19 @@
         "ends_with_colon": true
       },
       "provenance": {
-        "line_start": 9,
-        "line_end": 9
+        "line_start": 7,
+        "line_end": 7
       },
       "_alignment_status": "confirmed",
-      "ref": "L009"
+      "ref": "L007"
     },
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "*FOCUS dataset* MUST adhere to the following *custom column* presence requirements:",
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST preserve the original casing of string values.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
@@ -58,7 +56,55 @@
         "bullet": "*"
       },
       "lead_in": {
-        "ends_with_colon": true
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 9,
+        "line_end": 9
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L009"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "*FOCUS dataset column* MUST preserve the original spacing of string values.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L010"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "*FOCUS dataset column* MUST preserve other relevant consistency factors as specified by the data generator or end-user.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
       },
       "provenance": {
         "line_start": 11,
@@ -68,18 +114,17 @@
       "ref": "L011"
     },
     {
-      "temp_id": "R003",
-      "order": 3,
-      "text": "*FOCUS dataset* MUST include *custom columns* (e.g., `x_ChargeSubType`) needed to support [*invoice reconciliation*](#glossary:invoice-reconciliation) when the invoice issuer supports payable invoices, and when *FOCUS columns* are not sufficient.",
+      "temp_id": "R005",
+      "order": 5,
+      "text": "*FOCUS dataset column* MUST remain consistent across all [*billing periods*](#glossary:billing-period) when the *FOCUS dataset column* contains immutable string values (e.g., resource identifier, region identifier).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -93,22 +138,21 @@
       "ref": "L012"
     },
     {
-      "temp_id": "R004",
-      "order": 4,
-      "text": "*FOCUS dataset* MUST include *custom columns* corresponding to [*native dataset*](#glossary:native-dataset) columns, except those explicitly listed as exclusions with justification in publicly-available documentation, provided those excluded columns are unrelated to *invoice reconciliation*.",
+      "temp_id": "R006",
+      "order": 6,
+      "text": "When column contains mutable string values (e.g., resource name, region name), *FOCUS dataset column* MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
-        "ends_with_colon": false
+        "ends_with_colon": true
       },
       "provenance": {
         "line_start": 13,
@@ -118,13 +162,12 @@
       "ref": "L013"
     },
     {
-      "temp_id": "R005",
-      "order": 5,
-      "text": "*FOCUS dataset* MUST have all included *custom columns* documented in publicly-available documentation, including description, purpose, and relationship to *native dataset* columns.",
+      "temp_id": "R007",
+      "order": 7,
+      "text": "*FOCUS dataset column* MUST reflect the altered value in all records pertaining to a period after the change.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
@@ -143,13 +186,12 @@
       "ref": "L014"
     },
     {
-      "temp_id": "R006",
-      "order": 6,
-      "text": "*FOCUS dataset* SHOULD include *custom columns* that enable correlation between *FOCUS dataset* records and *native dataset* records (e.g., native [*charge*](#glossary:charge) identifiers), even if they meet the criteria for exclusion.",
-      "keyword": "SHOULD",
+      "temp_id": "R008",
+      "order": 8,
+      "text": "*FOCUS dataset column* MUST reflect the string value as it existed prior to the change in all records pertaining to a period prior to the change when the record does not represent a correction to a previously closed billing period.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
@@ -168,13 +210,12 @@
       "ref": "L015"
     },
     {
-      "temp_id": "R007",
-      "order": 7,
-      "text": "*FOCUS dataset* SHOULD exclude *custom columns* that duplicate information already captured in *FOCUS columns*, except during a transitional period as defined in publicly-available documentation, to enable migration without breaking changes.",
-      "keyword": "SHOULD",
+      "temp_id": "R009",
+      "order": 9,
+      "text": "*FOCUS dataset column* MAY reflect the altered value in records pertaining to a period prior to the change when the record represents a correction to a previously closed billing period.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
@@ -193,13 +234,12 @@
       "ref": "L016"
     },
     {
-      "temp_id": "R008",
-      "order": 8,
-      "text": "*FOCUS dataset* MUST ensure *custom columns* retain the fidelity of corresponding *native dataset* values without lossy transformations (e.g., rounding or truncation).",
+      "temp_id": "R010",
+      "order": 10,
+      "text": "When column contains not-nullable string values, *FOCUS dataset column* MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
@@ -208,7 +248,7 @@
         "bullet": "*"
       },
       "lead_in": {
-        "ends_with_colon": false
+        "ends_with_colon": true
       },
       "provenance": {
         "line_start": 17,
@@ -218,18 +258,17 @@
       "ref": "L017"
     },
     {
-      "temp_id": "R009",
-      "order": 9,
-      "text": "*FOCUS dataset* MUST NOT alter the aggregated values of summable [*metrics*](#glossary:metric) (e.g., costs and quantities) due to the inclusion of *custom columns*.",
-      "keyword": "MUST NOT",
+      "temp_id": "R011",
+      "order": 11,
+      "text": "*FOCUS dataset column* SHOULD NOT contain empty strings.",
+      "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -243,18 +282,17 @@
       "ref": "L018"
     },
     {
-      "temp_id": "R010",
-      "order": 10,
-      "text": "*FOCUS dataset* SHOULD sort all *FOCUS columns* alphabetically first, then all *custom columns* alphabetically second.",
-      "keyword": "SHOULD",
+      "temp_id": "R012",
+      "order": 12,
+      "text": "*FOCUS dataset column* SHOULD NOT contain strings consisting solely of whitespace characters.",
+      "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
-        "Dataset Completeness",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {

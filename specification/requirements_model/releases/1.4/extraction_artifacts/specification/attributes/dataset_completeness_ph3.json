@@ -1,6 +1,6 @@
 {
   "ModelRules": {
-    "ATT-DatasetCompleteness-C-000-M": {
+    "ATT-DatasetCompleteness-A-000-M": {
       "Function": "Validation",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -17,19 +17,19 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* MUST adhere to the following requirements:",
+        "MustSatisfy": "Dataset conforming to DatasetCompleteness attribute MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-DatasetCompleteness-C-001-M",
-          "ATT-DatasetCompleteness-C-006-M",
-          "ATT-DatasetCompleteness-C-007-M",
-          "ATT-DatasetCompleteness-C-008-O"
+          "ATT-DatasetCompleteness-A-001-M",
+          "ATT-DatasetCompleteness-A-007-M",
+          "ATT-DatasetCompleteness-A-008-M",
+          "ATT-DatasetCompleteness-A-009-O"
         ]
       }
     },
-    "ATT-DatasetCompleteness-C-001-M": {
+    "ATT-DatasetCompleteness-A-001-M": {
       "Function": "Presence",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -51,14 +51,15 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-DatasetCompleteness-C-002-C",
-          "ATT-DatasetCompleteness-C-003-M",
-          "ATT-DatasetCompleteness-C-004-C",
-          "ATT-DatasetCompleteness-C-005-O"
+          "ATT-DatasetCompleteness-A-002-C",
+          "ATT-DatasetCompleteness-A-003-M",
+          "ATT-DatasetCompleteness-A-004-M",
+          "ATT-DatasetCompleteness-A-005-C",
+          "ATT-DatasetCompleteness-A-006-O"
         ]
       }
     },
-    "ATT-DatasetCompleteness-C-002-C": {
+    "ATT-DatasetCompleteness-A-002-C": {
       "Function": "Validation",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -82,7 +83,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DatasetCompleteness-C-003-M": {
+    "ATT-DatasetCompleteness-A-003-M": {
       "Function": "Validation",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -106,31 +107,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DatasetCompleteness-C-004-C": {
-      "Function": "Validation",
-      "Reference": "DatasetCompleteness",
-      "EntityType": "Attribute",
-      "EntityName": "Dataset Completeness",
-      "EntityId": "DatasetCompleteness",
-      "Notes": "",
-      "ModelVersionIntroduced": "1.4",
-      "Status": "Active",
-      "ModelVersionRemoved": "",
-      "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
-      "Order": 40,
-      "DatasetType": "ATT",
-      "DatasetId": "",
-      "DatasetName": "",
-      "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* SHOULD include *custom columns* that enable correlation between *FOCUS dataset* records and *native dataset* records (e.g., native *charge* identifiers), even if they meet the criteria for exclusion.",
-        "Keyword": "SHOULD",
-        "Requirement": {},
-        "Condition": [],
-        "Dependencies": []
-      }
-    },
-    "ATT-DatasetCompleteness-C-005-O": {
+    "ATT-DatasetCompleteness-A-004-M": {
       "Function": "Validation",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -142,19 +119,43 @@
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
+      "Order": 40,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "*FOCUS dataset* MUST have all included *custom columns* documented in publicly-available documentation, including description, purpose, and relationship to *native dataset* columns.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "ATT-DatasetCompleteness-A-005-C": {
+      "Function": "Validation",
+      "Reference": "DatasetCompleteness",
+      "EntityType": "Attribute",
+      "EntityName": "Dataset Completeness",
+      "EntityId": "DatasetCompleteness",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.4",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
       "Order": 50,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* SHOULD exclude *custom columns* that duplicate information already captured in *FOCUS columns*, except during a transitional period as defined in publicly-available documentation, to enable migration without breaking changes.",
+        "MustSatisfy": "*FOCUS dataset* SHOULD include *custom columns* that enable correlation between *FOCUS dataset* records and *native dataset* records (e.g., native *charge* identifiers), even if they meet the criteria for exclusion.",
         "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-DatasetCompleteness-C-006-M": {
+    "ATT-DatasetCompleteness-A-006-O": {
       "Function": "Validation",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -171,14 +172,14 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* MUST NOT alter the aggregated values of summable *metrics* (e.g., costs and quantities) due to the inclusion of *custom columns*.",
-        "Keyword": "MUST NOT",
+        "MustSatisfy": "*FOCUS dataset* SHOULD exclude *custom columns* that duplicate information already captured in *FOCUS columns*, except during a transitional period as defined in publicly-available documentation, to enable migration without breaking changes.",
+        "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-DatasetCompleteness-C-007-M": {
+    "ATT-DatasetCompleteness-A-007-M": {
       "Function": "Validation",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -202,7 +203,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DatasetCompleteness-C-008-O": {
+    "ATT-DatasetCompleteness-A-008-M": {
       "Function": "Validation",
       "Reference": "DatasetCompleteness",
       "EntityType": "Attribute",
@@ -215,6 +216,30 @@
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 80,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "*FOCUS dataset* MUST NOT alter the aggregated values of summable *metrics* (e.g., costs and quantities) due to the inclusion of *custom columns*.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "ATT-DatasetCompleteness-A-009-O": {
+      "Function": "Validation",
+      "Reference": "DatasetCompleteness",
+      "EntityType": "Attribute",
+      "EntityName": "Dataset Completeness",
+      "EntityId": "DatasetCompleteness",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.4",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 90,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",

@@ -1,29 +1,30 @@
 {
   "phase": 1,
   "source": {
-    "path": "specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md",
-    "version": "1.2"
+    "path": "specification/attributes/datetime_format.md",
+    "version": "0.5"
   },
   "entity": {
-    "entity_type": "Column",
-    "entity_id": "PricingCurrencyEffectiveCost",
-    "entity_name": "Pricing Currency Effective Cost"
+    "entity_type": "Attribute",
+    "entity_id": "DateTimeFormat",
+    "entity_name": "Date/Time Format"
   },
   "entities_found": [
     {
-      "entity_type": "Column",
-      "entity_id": "PricingCurrencyEffectiveCost",
-      "entity_name": "Pricing Currency Effective Cost"
+      "entity_type": "Attribute",
+      "entity_id": "DateTimeFormat",
+      "entity_name": "Date/Time Format"
     }
   ],
   "atoms": [
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "PricingCurrencyEffectiveCost MUST adhere to the following requirements:",
+      "text": "Column conforming to DateTimeFormat attribute MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Date/Time Format",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "PricingCurrencyEffectiveCost MUST be of type Decimal.",
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST be expressed in UTC (Coordinated Universal Time) to avoid ambiguity and ensure consistency across different time zones.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Date/Time Format",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+      "text": "*FOCUS dataset column* MUST conform to the ISO 8601 standard, which provides a globally recognized format for representing dates and times (see [ISO 8601-1:2019](https://www.iso.org/standard/70907.html) governing document for details).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Date/Time Format",
         "Requirements"
       ],
       "block": {
@@ -92,10 +95,11 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "PricingCurrencyEffectiveCost MUST NOT be null.",
-      "keyword": "MUST NOT",
+      "text": "When column represents a specific moment in time, *FOCUS dataset column* MUST adhere to the following requirements:",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Date/Time Format",
         "Requirements"
       ],
       "block": {
@@ -104,7 +108,7 @@
         "bullet": "*"
       },
       "lead_in": {
-        "ends_with_colon": false
+        "ends_with_colon": true
       },
       "provenance": {
         "line_start": 11,
@@ -116,15 +120,16 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.",
+      "text": "*FOCUS dataset column* MUST use the extended ISO 8601 format with UTC offset (`YYYY-MM-DDTHH:mm:ssZ`).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Date/Time Format",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -140,15 +145,16 @@
     {
       "temp_id": "R006",
       "order": 6,
-      "text": "PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).",
+      "text": "*FOCUS dataset column* MUST include both the date and time components, separated with the letter `T`.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Date/Time Format",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -160,6 +166,56 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L013"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "*FOCUS dataset column* MUST use two-digit hours (`HH`), minutes (`mm`), and seconds (`ss`).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Date/Time Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 14,
+        "line_end": 14
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L014"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "*FOCUS dataset column* MUST end with the ISO 8601 UTC designator `Z`.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Date/Time Format",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 15,
+        "line_end": 15
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L015"
     }
   ],
   "warnings": [],

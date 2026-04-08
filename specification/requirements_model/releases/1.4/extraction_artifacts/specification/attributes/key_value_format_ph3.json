@@ -1,13 +1,13 @@
 {
   "ModelRules": {
-    "ATT-DatasetConfiguration-C-000-M": {
+    "ATT-KeyValueFormat-C-000-M": {
       "Function": "Validation",
-      "Reference": "DatasetConfiguration",
+      "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
-      "EntityName": "Dataset Configuration",
-      "EntityId": "DatasetConfiguration",
+      "EntityName": "Key-Value Format",
+      "EntityId": "KeyValueFormat",
       "Notes": "",
-      "ModelVersionIntroduced": "1.4",
+      "ModelVersionIntroduced": "unknown",
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
@@ -17,26 +17,26 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "Dataset conforming to DatasetConfiguration attribute MUST adhere to the following requirements:",
+        "MustSatisfy": "Column conforming to KeyValueFormat attribute MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-DatasetConfiguration-C-001-M",
-          "ATT-DatasetConfiguration-C-002-M",
-          "ATT-DatasetConfiguration-C-003-O",
-          "ATT-DatasetConfiguration-C-004-C"
+          "ATT-KeyValueFormat-C-001-M",
+          "ATT-KeyValueFormat-C-002-M",
+          "ATT-KeyValueFormat-C-003-M",
+          "ATT-KeyValueFormat-C-004-M"
         ]
       }
     },
-    "ATT-DatasetConfiguration-C-001-M": {
+    "ATT-KeyValueFormat-C-001-M": {
       "Function": "Validation",
-      "Reference": "DatasetConfiguration",
+      "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
-      "EntityName": "Dataset Configuration",
-      "EntityId": "DatasetConfiguration",
+      "EntityName": "Key-Value Format",
+      "EntityId": "KeyValueFormat",
       "Notes": "",
-      "ModelVersionIntroduced": "1.4",
+      "ModelVersionIntroduced": "unknown",
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
@@ -46,21 +46,21 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* MUST be configurable to include only a user-defined selection of columns.",
+        "MustSatisfy": "*FOCUS dataset column* MUST be a serialized JSON string, consistent with the ECMA 404 definition of an object.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-DatasetConfiguration-C-002-M": {
+    "ATT-KeyValueFormat-C-002-M": {
       "Function": "Validation",
-      "Reference": "DatasetConfiguration",
+      "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
-      "EntityName": "Dataset Configuration",
-      "EntityId": "DatasetConfiguration",
+      "EntityName": "Key-Value Format",
+      "EntityId": "KeyValueFormat",
       "Notes": "",
-      "ModelVersionIntroduced": "1.4",
+      "ModelVersionIntroduced": "unknown",
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
@@ -70,21 +70,21 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* MUST adhere to all column-level specifications defined in the FOCUS schema, regardless of the user's chosen configuration (e.g., column selection).",
+        "MustSatisfy": "Keys in *FOCUS dataset column* MUST be unique within the object.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-DatasetConfiguration-C-003-O": {
-      "Function": "Validation",
-      "Reference": "DatasetConfiguration",
+    "ATT-KeyValueFormat-C-003-M": {
+      "Function": "Type",
+      "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
-      "EntityName": "Dataset Configuration",
-      "EntityId": "DatasetConfiguration",
+      "EntityName": "Key-Value Format",
+      "EntityId": "KeyValueFormat",
       "Notes": "",
-      "ModelVersionIntroduced": "1.4",
+      "ModelVersionIntroduced": "unknown",
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
@@ -94,32 +94,32 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* MAY offer a default column set.",
-        "Keyword": "MAY",
+        "MustSatisfy": "Key values in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), or `null`.",
+        "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-DatasetConfiguration-C-004-C": {
+    "ATT-KeyValueFormat-C-004-M": {
       "Function": "Validation",
-      "Reference": "DatasetConfiguration",
+      "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
-      "EntityName": "Dataset Configuration",
-      "EntityId": "DatasetConfiguration",
+      "EntityName": "Key-Value Format",
+      "EntityId": "KeyValueFormat",
       "Notes": "",
-      "ModelVersionIntroduced": "1.4",
+      "ModelVersionIntroduced": "unknown",
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 40,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset* default column set MUST include all applicable *FOCUS columns* when a default column set is offered.",
-        "Keyword": "MUST",
+        "MustSatisfy": "Key values in *FOCUS dataset column* MUST NOT be objects or arrays.",
+        "Keyword": "MUST NOT",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []

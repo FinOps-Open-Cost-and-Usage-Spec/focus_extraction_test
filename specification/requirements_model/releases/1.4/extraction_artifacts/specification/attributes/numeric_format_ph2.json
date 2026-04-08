@@ -1,0 +1,418 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/attributes/numeric_format.md",
+    "version": "unknown"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "NumericFormat",
+    "entity_name": "Numeric Format"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 14
+  },
+  "0_outline_root": "ROOT: Numeric Format > Requirements",
+  "0_outline_lines": [
+    "L007: \"Column conforming to NumericFormat attribute MUST adhere to the following requirements:\"",
+    "  L009: \"[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST contain a single numeric value.\"",
+    "  L010: \"*FOCUS dataset column* MUST have values of type integer, decimal, or scientific notation.\"",
+    "  L011: \"*FOCUS dataset column* MUST contain values that, when not null, conform to one of the allowed Data Types defined in the table below.\"",
+    "  L012: \"*FOCUS dataset column* MUST contain values that, when not null, conform to one of the allowed precision levels (and scale, where applicable) defined in the table below.\"",
+    "  L013: \"*FOCUS dataset column* MUST NOT use mathematical symbols, functions, or operators, except for a negative sign (-) to indicate a negative value or a negative exponent in scientific notation.\"",
+    "  L014: \"*FOCUS dataset column* MUST NOT include additional characters or qualifiers (e.g., currency symbols, units of measure).\"",
+    "  L015: \"*FOCUS dataset column* MUST NOT contain commas or punctuation marks, except for a single decimal point when required for a decimal value.\"",
+    "  L016: \"*FOCUS dataset column* MUST use a negative sign (-) to indicate a negative value.\"",
+    "  L017: \"*FOCUS dataset column* MUST NOT include a positive sign (+) for a positive value.\"",
+    "  L018: \"When column contains numeric values expressed in scientific notation, *FOCUS dataset column* MUST adhere to the following requirements:\"",
+    "    L019: \"*FOCUS dataset column* MUST use E notation \\\"mEn\\\", where m is a real number and n is an integer exponent.\"",
+    "    L020: \"*FOCUS dataset column* MUST use a negative sign (-) to indicate a negative exponent.\"",
+    "    L021: \"*FOCUS dataset column* MUST NOT include a positive sign (+) for a positive exponent.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 14,
+    "leaf_count": 12,
+    "lead_in_count": 2,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 9,
+      "MUST NOT": 5
+    },
+    "lead_ins": [
+      {
+        "ref": "L007",
+        "text_preview": "Column conforming to NumericFormat attribute MUST adhere to the following requirements:",
+        "children": 10
+      },
+      {
+        "ref": "L018",
+        "text_preview": "When column contains numeric values expressed in scientific notation, *FOCUS dataset column* MUST adhere to the followi…",
+        "children": 3
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L007",
+            "text": "Column conforming to NumericFormat attribute MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Numeric Format",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L009",
+                "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST contain a single numeric value.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L010",
+                "text": "*FOCUS dataset column* MUST have values of type integer, decimal, or scientific notation.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L011",
+                "text": "*FOCUS dataset column* MUST contain values that, when not null, conform to one of the allowed Data Types defined in the table below.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L012",
+                "text": "*FOCUS dataset column* MUST contain values that, when not null, conform to one of the allowed precision levels (and scale, where applicable) defined in the table below.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R006",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R006",
+                "order": 6,
+                "ref": "L013",
+                "text": "*FOCUS dataset column* MUST NOT use mathematical symbols, functions, or operators, except for a negative sign (-) to indicate a negative value or a negative exponent in scientific notation.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R007",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R007",
+                "order": 7,
+                "ref": "L014",
+                "text": "*FOCUS dataset column* MUST NOT include additional characters or qualifiers (e.g., currency symbols, units of measure).",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R008",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R008",
+                "order": 8,
+                "ref": "L015",
+                "text": "*FOCUS dataset column* MUST NOT contain commas or punctuation marks, except for a single decimal point when required for a decimal value.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R009",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R009",
+                "order": 9,
+                "ref": "L016",
+                "text": "*FOCUS dataset column* MUST use a negative sign (-) to indicate a negative value.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R010",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R010",
+                "order": 10,
+                "ref": "L017",
+                "text": "*FOCUS dataset column* MUST NOT include a positive sign (+) for a positive value.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R011",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R011",
+                "order": 11,
+                "ref": "L018",
+                "text": "When column contains numeric values expressed in scientific notation, *FOCUS dataset column* MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Numeric Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R012",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R012",
+                    "order": 12,
+                    "ref": "L019",
+                    "text": "*FOCUS dataset column* MUST use E notation \"mEn\", where m is a real number and n is an integer exponent.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Numeric Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R013",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R013",
+                    "order": 13,
+                    "ref": "L020",
+                    "text": "*FOCUS dataset column* MUST use a negative sign (-) to indicate a negative exponent.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Numeric Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R014",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R014",
+                    "order": 14,
+                    "ref": "L021",
+                    "text": "*FOCUS dataset column* MUST NOT include a positive sign (+) for a positive exponent.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Numeric Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

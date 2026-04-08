@@ -1,29 +1,30 @@
 {
   "phase": 1,
   "source": {
-    "path": "specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md",
-    "version": "1.2"
+    "path": "specification/attributes/key_value_format.md",
+    "version": "unknown"
   },
   "entity": {
-    "entity_type": "Column",
-    "entity_id": "PricingCurrencyEffectiveCost",
-    "entity_name": "Pricing Currency Effective Cost"
+    "entity_type": "Attribute",
+    "entity_id": "KeyValueFormat",
+    "entity_name": "Key-Value Format"
   },
   "entities_found": [
     {
-      "entity_type": "Column",
-      "entity_id": "PricingCurrencyEffectiveCost",
-      "entity_name": "Pricing Currency Effective Cost"
+      "entity_type": "Attribute",
+      "entity_id": "KeyValueFormat",
+      "entity_name": "Key-Value Format"
     }
   ],
   "atoms": [
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "PricingCurrencyEffectiveCost MUST adhere to the following requirements:",
+      "text": "Column conforming to KeyValueFormat attribute MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Key-Value Format",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "PricingCurrencyEffectiveCost MUST be of type Decimal.",
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST be a serialized JSON string, consistent with the [ECMA 404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf) definition of an object.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Key-Value Format",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+      "text": "Keys in *FOCUS dataset column* MUST be unique within the object.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Key-Value Format",
         "Requirements"
       ],
       "block": {
@@ -92,10 +95,11 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "PricingCurrencyEffectiveCost MUST NOT be null.",
-      "keyword": "MUST NOT",
+      "text": "Key values in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), or `null`.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Key-Value Format",
         "Requirements"
       ],
       "block": {
@@ -116,10 +120,11 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.",
-      "keyword": "MUST",
+      "text": "Key values in *FOCUS dataset column* MUST NOT be objects or arrays.",
+      "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Key-Value Format",
         "Requirements"
       ],
       "block": {
@@ -136,33 +141,20 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L012"
-    },
-    {
-      "temp_id": "R006",
-      "order": 6,
-      "text": "PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 13,
-        "line_end": 13
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L013"
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "W_VERSION_INTRODUCED_MISSING_OR_INVALID",
+      "message": "Unable to parse version from version section; found \"1.0-preview\". Version set to \"unknown\".",
+      "details": {
+        "reason": "unparseable_value",
+        "found": "1.0-preview",
+        "expected": "A single line like \"1.3\" or \"v1.3\" under the heading \"## Introduced (version)\" or \"## Version (Introduced)\"."
+      },
+      "text": "(document-level)"
+    }
+  ],
   "structural": {
     "lead_ins": [],
     "index": {
