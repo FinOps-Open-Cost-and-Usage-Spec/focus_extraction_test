@@ -1,111 +1,130 @@
 ## Diff
 
-diff --git a/specification/datasets/contract_commitment/dataset.md b/specification/datasets/contract_commitment/dataset.md
-index 69e79ff2..2da59bcc 100644
---- a/specification/datasets/contract_commitment/dataset.md
-+++ b/specification/datasets/contract_commitment/dataset.md
-@@ -2,25 +2,42 @@
+ERROR: error: unknown option `label'
+usage: git diff --no-index [<options>] <path> <path>
 
-The Contract Commitment dataset is a supporting dataset that describes the terms of contracts agreed between a service provider and a customer.
+Diff output format options
+    -p, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=<n>]   generate diffs with <n> lines context
+    -W, --function-context
+                          generate diffs with <n> lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=<param1,param2>...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=<param1,param2>...]
+                          synonym for --dirstat=files,param1,param2...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=<width>[,<name-width>[,<count>]]]
+                          generate diffstat
+    --stat-width <width>  generate diffstat with a given width
+    --stat-name-width <width>
+                          generate diffstat with a given name width
+    --stat-graph-width <width>
+                          generate diffstat with a given graph width
+    --stat-count <count>  generate diffstat with limited lines
+    --compact-summary     generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --full-index          show full pre- and post-image object names on the "index" lines
+    --color[=<when>]      show colored diff
+    --ws-error-highlight <kind>
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --abbrev[=<n>]        use <n> digits to display object names
+    --src-prefix <prefix>
+                          show the given source prefix instead of "a/"
+    --dst-prefix <prefix>
+                          show the given destination prefix instead of "b/"
+    --line-prefix <prefix>
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new <char>
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old <char>
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context <char>
+                          specify the character to indicate a context instead of ' '
 
-[-<div class='h4-nonindex'>Columns</div>-]{+## Columns<!--SkipTOC-->+}
+Diff rename options
+    -B, --break-rewrites[=<n>[/<m>]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=<n>]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=<n>]
+                          detect copies
+    --find-copies-harder  use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --rename-empty        use empty blobs as rename source
+    --follow              continue listing the history of a file beyond renames
+    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
 
-| Column | Column Type | Feature Level | Allows Nulls | Data Type |
-| [--------------------------------------------------------------------]{+:---+} | [-------------]{+:---+} | [---------------]{+:---+} | [--------------]{+:---+} | [-----------]{+:---+} |
-| [Billing [-Currency](#billingcurrency-1)-]{+Currency](#datasets.contractcommitment.billingcurrency)+} | Dimension | Mandatory | True | String |
-| [Contract Commitment [-Category](#contractcommitmentcategory)-]{+Applicability](#datasets.contractcommitment.contractcommitmentapplicability) | Dimension | Mandatory | False | JSON |+}
-{+| [Contract Commitment Benefit Category](#datasets.contractcommitment.contractcommitmentbenefitcategory) | Dimension | Mandatory | False | String |+}
-{+| [Contract Commitment Category](#datasets.contractcommitment.contractcommitmentcategory)+} | Dimension | Mandatory | False | String |
-| [Contract Commitment [-Cost](#contractcommitmentcost)-]{+Cost](#datasets.contractcommitment.contractcommitmentcost)+} | Metric | Mandatory | True | [-Numeric-]{+Decimal |+}
-{+| [Contract Commitment Created](#datasets.contractcommitment.contractcommitmentcreated) | Dimension | Mandatory | False | Date/Time |+}
-{+| [Contract Commitment Description](#datasets.contractcommitment.contractcommitmentdescription) | Dimension | Mandatory | True | String+} |
-| [Contract Commitment [-Description](#contractcommitmentdescription)-]{+Discount Percentage](#datasets.contractcommitment.contractcommitmentdiscountpercentage)+} | Dimension | Mandatory | True | {+Decimal |+}
-{+| [Contract Commitment Duration Type](#datasets.contractcommitment.contractcommitmentdurationtype) | Dimension | Mandatory | False | String |+}
-{+| [Contract Commitment Fulfillment Interval](#datasets.contractcommitment.contractcommitmentfulfillmentinterval) | Dimension | Mandatory | False | String |+}
-{+| [Contract Commitment ID](#datasets.contractcommitment.contractcommitmentid) | Dimension | Mandatory | False | String |+}
-{+| [Contract Commitment Last Updated](#datasets.contractcommitment.contractcommitmentlastupdated) | Dimension | Mandatory | False | Date/Time |+}
-{+| [Contract Commitment Lifecycle Status](#datasets.contractcommitment.contractcommitmentlifecyclestatus) | Dimension | Mandatory | False | String |+}
-{+| [Contract Commitment Model](#datasets.contractcommitment.contractcommitmentmodel) | Dimension | Mandatory | False | String |+}
-{+| [Contract Commitment Offer Category](#datasets.contractcommitment.contractcommitmentoffercategory) | Dimension | Mandatory | False | String |+}
-{+| [Contract Commitment Payment Interval](#datasets.contractcommitment.contractcommitmentpaymentinterval) | Dimension | Mandatory | False |+} String |
-| [Contract Commitment [-ID](#contractcommitmentid-1)-]{+Payment Model](#datasets.contractcommitment.contractcommitmentpaymentmodel)+} | Dimension | Mandatory | False | String |
-| [Contract Commitment {+Payment Upfront Percentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) | Dimension | Conditional | False | Decimal |+}
-{+| [Contract Commitment+} Period [-End](#contractcommitmentperiodend)-]{+End](#datasets.contractcommitment.contractcommitmentperiodend)+} | Dimension | Mandatory | False | Date/Time |
-| [Contract Commitment Period [-Start](#contractcommitmentperiodstart)-]{+Start](#datasets.contractcommitment.contractcommitmentperiodstart)+} | Dimension | Mandatory | False | Date/Time |
-| [Contract Commitment [-Quantity](#contractcommitmentquantity)-]{+Quantity](#datasets.contractcommitment.contractcommitmentquantity)+} | Metric | Mandatory | True | [-Numeric-]{+Decimal+} |
-| [Contract Commitment [-Type](#contractcommitmenttype)-]{+Type](#datasets.contractcommitment.contractcommitmenttype)+} | Dimension | Mandatory | False | String |
-| [Contract Commitment [-Unit](#contractcommitmentunit)-]{+Unit](#datasets.contractcommitment.contractcommitmentunit)+} | Dimension | Mandatory | True | String |
-| [Contract [-ID](#contractid-1)-]{+ID](#datasets.contractcommitment.contractid)+} | Dimension | Mandatory | False | String |
-| [Contract Period [-End](#contractperiodend)-]{+End](#datasets.contractcommitment.contractperiodend)+} | Dimension | Mandatory | False | Date/Time |
-| [Contract Period [-Start](#contractperiodstart)-]{+Start](#datasets.contractcommitment.contractperiodstart)+} | Dimension | Mandatory | False | Date/Time |
-[-<div class='h4-nonindex'>Relationships</div>-]{+| [Invoice Issuer Name](#datasets.contractcommitment.invoiceissuername) | Dimension | Mandatory | False | String |+}
-{+| [Pricing Currency](#datasets.contractcommitment.pricingcurrency) | Dimension | Conditional | False | String |+}
-{+| [Pricing Currency Contract Commitment Cost](#datasets.contractcommitment.pricingcurrencycontractcommitmentcost) | Metric | Conditional | True | Decimal |+}
-{+| [Service Provider Name](#datasets.contractcommitment.serviceprovidername) | Dimension | Mandatory | False | String |+}
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol
+                          ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --ignore-matching-lines <regex>
+                          ignore changes whose all lines match <regex>
+    --indent-heuristic    heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm <algorithm>
+                          choose a diff algorithm
+    --anchored <text>     generate diff using the "anchored diff" algorithm
+    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
+    --word-diff-regex <regex>
+                          use <regex> to decide what a word is
+    --color-words[=<regex>]
+                          equivalent to --word-diff=color --word-diff-regex=<regex>
+    --color-moved[=<mode>]
+                          moved lines of code are colored differently
+    --color-moved-ws <mode>
+                          how white spaces are ignored in --color-moved
 
-{+## Relationships<!--SkipTOC-->+}
-
-The Contract Commitment dataset can be joined to the Cost and Usage dataset through the use of Contract Commitment ID.
-
-@@ -31,26 +48,61 @@ The Contract Commitment dataset can be joined to the Cost and Usage dataset thro
-| ------------------- | ---------------------- | -------------- | -----------------|
-| Contract Commitment | Contract Commitment ID | Cost and Usage | Contract Applied |
-
-[-<div class='h4-nonindex'>Requirements</div>-]{+## Requirements<!--SkipTOC-->+}
-
-ContractCommitment [-adheres-]{+MUST adhere+} to the following requirements:
-
-* ContractCommitment MUST be present when the service provider supports *contract commitments*.
-* ContractCommitment {+column presence MUST adhere to the following requirements:+}
-{+  * ContractCommitment MUST include [BillingCurrency](#datasets.contractcommitment.billingcurrency).+}
-{+  * ContractCommitment MUST include [ContractCommitmentApplicability](#datasets.contractcommitment.contractcommitmentapplicability).+}
-{+  * ContractCommitment MUST include [ContractCommitmentBenefitCategory](#datasets.contractcommitment.contractcommitmentbenefitcategory).+}
-{+  * ContractCommitment MUST include [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory).+}
-{+  * ContractCommitment MUST include [ContractCommitmentCost](#datasets.contractcommitment.contractcommitmentcost).+}
-{+  * ContractCommitment MUST include [ContractCommitmentCreated](#datasets.contractcommitment.contractcommitmentcreated).+}
-{+  * ContractCommitment MUST include [ContractCommitmentDescription](#datasets.contractcommitment.contractcommitmentdescription).+}
-{+  * ContractCommitment MUST include [ContractCommitmentDiscountPercentage](#datasets.contractcommitment.contractcommitmentdiscountpercentage).+}
-{+  * ContractCommitment MUST include [ContractCommitmentDurationType](#datasets.contractcommitment.contractcommitmentdurationtype).+}
-{+  * ContractCommitment MUST include [ContractCommitmentFulfillmentInterval](#datasets.contractcommitment.contractcommitmentfulfillmentinterval).+}
-{+  * ContractCommitment MUST include [ContractCommitmentId](#datasets.contractcommitment.contractcommitmentid).+}
-{+  * ContractCommitment MUST include [ContractCommitmentLastUpdated](#datasets.contractcommitment.contractcommitmentlastupdated).+}
-{+  * ContractCommitment MUST include [ContractCommitmentLifecycleStatus](#datasets.contractcommitment.contractcommitmentlifecyclestatus).+}
-{+  * ContractCommitment MUST include [ContractCommitmentModel](#datasets.contractcommitment.contractcommitmentmodel).+}
-{+  * ContractCommitment MUST include [ContractCommitmentOfferCategory](#datasets.contractcommitment.contractcommitmentoffercategory).+}
-{+  * ContractCommitment MUST include [ContractCommitmentPaymentInterval](#datasets.contractcommitment.contractcommitmentpaymentinterval).+}
-{+  * ContractCommitment MUST include [ContractCommitmentPaymentModel](#datasets.contractcommitment.contractcommitmentpaymentmodel).+}
-{+  * ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) when the service provider offers "Partial Upfront" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).+}
-{+  * ContractCommitment MUST include [ContractCommitmentPeriodEnd](#datasets.contractcommitment.contractcommitmentperiodend).+}
-{+  * ContractCommitment MUST include [ContractCommitmentPeriodStart](#datasets.contractcommitment.contractcommitmentperiodstart).+}
-{+  * ContractCommitment MUST include [ContractCommitmentQuantity](#datasets.contractcommitment.contractcommitmentquantity).+}
-{+  * ContractCommitment MUST include [ContractCommitmentType](#datasets.contractcommitment.contractcommitmenttype).+}
-{+  * ContractCommitment MUST include [ContractCommitmentUnit](#datasets.contractcommitment.contractcommitmentunit).+}
-{+  * ContractCommitment MUST include [ContractId](#datasets.contractcommitment.contractid).+}
-{+  * ContractCommitment MUST include [ContractPeriodEnd](#datasets.contractcommitment.contractperiodend).+}
-{+  * ContractCommitment MUST include [ContractPeriodStart](#datasets.contractcommitment.contractperiodstart).+}
-{+  * ContractCommitment MUST include [InvoiceIssuerName](#datasets.contractcommitment.invoiceissuername).+}
-{+  * ContractCommitment MUST include [PricingCurrency](#datasets.contractcommitment.pricingcurrency) when the service provider supports pricing and billing in different currencies.+}
-{+  * ContractCommitment MUST include [PricingCurrencyContractCommitmentCost](#datasets.contractcommitment.pricingcurrencycontractcommitmentcost) when the service provider supports pricing and billing in different currencies.+}
-{+  * ContractCommitment MUST include [ServiceProviderName](#datasets.contractcommitment.serviceprovidername).+}
-{+* ContractCommitment MUST conform to [ColumnHandling](#attributes.columnhandling) requirements.+}
-{+* ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.+}
-{+* ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.+}
-{+* ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.+}
-{+* ContractCommitment+} MUST conform to [-[ColumnHandling](#columnhandling)-]{+[DeliveryHandling](#attributes.deliveryhandling)+} requirements.
-* ContractCommitment MUST conform to [-[NullHandling](#nullhandling)-]{+[NullHandling](#attributes.nullhandling)+} requirements.
-
-[-<div class='h4-nonindex'>Dataset ID</div>-]{+## Dataset ID<!--SkipTOC-->+}
-
-ContractCommitment
-
-[-<div class='h4-nonindex'>Display Name</div>-]{+## Display Name<!--SkipTOC-->+}
-
-Contract Commitment
-
-[-<div class='h4-nonindex'>Description</div>-]{+## Description<!--SkipTOC-->+}
-
-Describes the terms of contracts agreed between a service provider and a customer.
-
-[-<div class='h4-nonindex'>Introduced (version)</div>-]{+## Introduced (version)<!--SkipTOC-->+}
-
-1.3
+Other diff options
+    --relative[=<prefix>]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --text            treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --exit-code           exit with 1 if there were differences, 0 otherwise
+    --quiet               disable all output of the program
+    --ext-diff            allow an external diff helper to be executed
+    --textconv            run external text conversion filters when comparing binary files
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules in the diff generation
+    --submodule[=<format>]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S <string>           look for differences that change the number of occurrences of the specified string
+    -G <regex>            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression
+    -O <file>             control the order in which files appear in the output
+    --rotate-to <path>    show the change in the specified path first
+    --skip-to <path>      skip the output to the specified path
+    --find-object <object-id>
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --output <file>       output to a specific file

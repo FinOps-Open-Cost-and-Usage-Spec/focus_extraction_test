@@ -70,7 +70,7 @@ ls diff_target_files.md
 2. Run a small test using the ATT section:
 
 ```bash
-python generate_diffs_nolinks_worddiff.py ATT
+python3 generate_diffs_nolinks_worddiff.py ATT
 ```
 
 3. Review the generated output files in:
@@ -80,13 +80,13 @@ specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-w
 4. If the ATT output is correct, process the CCT section:
 
 ```bash
-python generate_diffs_nolinks_worddiff.py CCT
+python3 generate_diffs_nolinks_worddiff.py CCT
 ```
 
 5. Finally, process the CAU section (largest set):
 
 ```bash
-python generate_diffs_nolinks_worddiff.py CAU
+python3 generate_diffs_nolinks_worddiff.py CAU
 ```
 
 6. Review outputs in their respective directories:
@@ -103,3 +103,25 @@ python generate_diffs_nolinks_worddiff.py CAU
 >
 > specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/CAU/
 
+
+## Diff Command 
+* Provides a diff command with color (command line) for each file.
+* Deltas with [-deleted-]{+added+} format for easy review.
+* Does not include links in the diff output.
+
+
+```bash
+git show v1.3:specification/datasets/cost_and_usage/columns/allocatedtags.md \
+  | perl -pe 's/\[([^\]]+)\]\([^)]+\)/$1/g' \
+  > /tmp/allocatedtags_v13.md && \
+
+git show working_draft:specification/datasets/cost_and_usage/columns/allocatedtags.md \
+  | perl -pe 's/\[([^\]]+)\]\([^)]+\)/$1/g' \
+  > /tmp/allocatedtags_working.md && \
+
+git diff --no-index \
+  --color \
+  --word-diff=plain \
+  --word-diff-regex='[^[:space:]]+' \
+  /tmp/allocatedtags_v13.md /tmp/allocatedtags_working.md
+  ``` 

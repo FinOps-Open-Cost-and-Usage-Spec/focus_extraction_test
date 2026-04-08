@@ -160,10 +160,6 @@ def run_detailed_diff(
         "--no-index",
         "--word-diff=plain",
         f"--word-diff-regex={WORD_DIFF_REGEX}",
-        "--label",
-        from_label,
-        "--label",
-        to_label,
         from_file,
         to_file,
     ]
