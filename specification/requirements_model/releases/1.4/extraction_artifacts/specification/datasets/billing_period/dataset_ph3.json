@@ -27,7 +27,10 @@
           "BIP-BillingPeriod-C-009-M",
           "BIP-BillingPeriod-C-010-M",
           "BIP-BillingPeriod-C-011-M",
-          "BIP-BillingPeriod-C-012-M"
+          "BIP-BillingPeriod-C-012-M",
+          "BIP-BillingPeriod-C-013-M",
+          "BIP-BillingPeriod-C-014-M",
+          "BIP-BillingPeriod-C-015-M"
         ]
       }
     },
@@ -48,7 +51,7 @@
       "DatasetId": "BillingPeriod",
       "DatasetName": "Billing Period",
       "ValidationCriteria": {
-        "MustSatisfy": "BillingPeriod MUST be present if the invoice issuer supports payable invoices.",
+        "MustSatisfy": "BillingPeriod MUST be present when the invoice issuer supports payable invoices.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -247,7 +250,7 @@
       "DatasetId": "BillingPeriod",
       "DatasetName": "Billing Period",
       "ValidationCriteria": {
-        "MustSatisfy": "BillingPeriod MUST conform to ColumnHandling requirements.",
+        "MustSatisfy": "BillingPeriod MUST conform to CorrectionHandling requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -271,7 +274,7 @@
       "DatasetId": "BillingPeriod",
       "DatasetName": "Billing Period",
       "ValidationCriteria": {
-        "MustSatisfy": "BillingPeriod MUST conform to CorrectionHandling requirements.",
+        "MustSatisfy": "BillingPeriod MUST conform to DatasetCompleteness requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -295,7 +298,7 @@
       "DatasetId": "BillingPeriod",
       "DatasetName": "Billing Period",
       "ValidationCriteria": {
-        "MustSatisfy": "BillingPeriod MUST conform to DatasetCompleteness requirements.",
+        "MustSatisfy": "BillingPeriod MUST conform to DatasetConfiguration requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -320,6 +323,78 @@
       "DatasetName": "Billing Period",
       "ValidationCriteria": {
         "MustSatisfy": "BillingPeriod MUST conform to DeliveryHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "BIP-BillingPeriod-C-013-M": {
+      "Function": "Format",
+      "Reference": "BillingPeriod",
+      "EntityType": "Dataset",
+      "EntityName": "Billing Period",
+      "EntityId": "BillingPeriod",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.4",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 130,
+      "DatasetType": "BIP",
+      "DatasetId": "BillingPeriod",
+      "DatasetName": "Billing Period",
+      "ValidationCriteria": {
+        "MustSatisfy": "BillingPeriod *FOCUS columns* MUST conform to FocusColumnHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "BIP-BillingPeriod-C-014-M": {
+      "Function": "Format",
+      "Reference": "BillingPeriod",
+      "EntityType": "Dataset",
+      "EntityName": "Billing Period",
+      "EntityId": "BillingPeriod",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.4",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 140,
+      "DatasetType": "BIP",
+      "DatasetId": "BillingPeriod",
+      "DatasetName": "Billing Period",
+      "ValidationCriteria": {
+        "MustSatisfy": "BillingPeriod *FOCUS columns* MUST conform to NullHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "BIP-BillingPeriod-C-015-M": {
+      "Function": "Format",
+      "Reference": "BillingPeriod",
+      "EntityType": "Dataset",
+      "EntityName": "Billing Period",
+      "EntityId": "BillingPeriod",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.4",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 150,
+      "DatasetType": "BIP",
+      "DatasetId": "BillingPeriod",
+      "DatasetName": "Billing Period",
+      "ValidationCriteria": {
+        "MustSatisfy": "BillingPeriod *custom columns* MUST conform to CustomColumnHandling requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
