@@ -1,6 +1,6 @@
 {
   "ModelRules": {
-    "ATT-FocusColumnHandling-C-000-M": {
+    "ATT-FocusColumnHandling-A-000-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -22,21 +22,21 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-FocusColumnHandling-C-001-M",
-          "ATT-FocusColumnHandling-C-002-M",
-          "ATT-FocusColumnHandling-C-003-M",
-          "ATT-FocusColumnHandling-C-004-M",
-          "ATT-FocusColumnHandling-C-005-M",
-          "ATT-FocusColumnHandling-C-006-O",
-          "ATT-FocusColumnHandling-C-007-O",
-          "ATT-FocusColumnHandling-C-008-C",
-          "ATT-FocusColumnHandling-C-009-C",
-          "ATT-FocusColumnHandling-C-010-C",
-          "ATT-FocusColumnHandling-C-011-C"
+          "ATT-FocusColumnHandling-A-001-M",
+          "ATT-FocusColumnHandling-A-002-M",
+          "ATT-FocusColumnHandling-A-003-M",
+          "ATT-FocusColumnHandling-A-004-M",
+          "ATT-FocusColumnHandling-A-005-M",
+          "ATT-FocusColumnHandling-A-006-O",
+          "ATT-FocusColumnHandling-A-007-O",
+          "ATT-FocusColumnHandling-A-008-M",
+          "ATT-FocusColumnHandling-A-009-M",
+          "ATT-FocusColumnHandling-A-010-M",
+          "ATT-FocusColumnHandling-A-011-M"
         ]
       }
     },
-    "ATT-FocusColumnHandling-C-001-M": {
+    "ATT-FocusColumnHandling-A-001-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -60,7 +60,7 @@
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-002-M": {
+    "ATT-FocusColumnHandling-A-002-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -84,7 +84,7 @@
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-003-M": {
+    "ATT-FocusColumnHandling-A-003-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -108,7 +108,7 @@
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-004-M": {
+    "ATT-FocusColumnHandling-A-004-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -132,7 +132,7 @@
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-005-M": {
+    "ATT-FocusColumnHandling-A-005-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -156,7 +156,7 @@
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-006-O": {
+    "ATT-FocusColumnHandling-A-006-O": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -180,7 +180,7 @@
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-007-O": {
+    "ATT-FocusColumnHandling-A-007-O": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -204,7 +204,7 @@
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-008-C": {
+    "ATT-FocusColumnHandling-A-008-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -215,20 +215,20 @@
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 80,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS column* MUST include the `Id` suffix in the Column ID when the *FOCUS column* represents an identifier.",
+        "MustSatisfy": "*FOCUS column* representing an identifier MUST include the `Id` suffix in the Column ID.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-009-C": {
+    "ATT-FocusColumnHandling-A-009-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -239,20 +239,20 @@
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 90,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS column* MUST include the `Name` suffix in the Column ID when the *FOCUS column* represents a name.",
+        "MustSatisfy": "*FOCUS column* representing a name MUST include the `Name` suffix in the Column ID.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-010-C": {
+    "ATT-FocusColumnHandling-A-010-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -263,20 +263,20 @@
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 100,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS column* MUST include `Sku` in the Column ID when the *FOCUS column* represents a product offering that incurred a charge.",
+        "MustSatisfy": "*FOCUS column* representing a product offering that incurred a charge MUST include `Sku` in the Column ID.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-FocusColumnHandling-C-011-C": {
+    "ATT-FocusColumnHandling-A-011-M": {
       "Function": "Validation",
       "Reference": "FocusColumnHandling",
       "EntityType": "Attribute",
@@ -287,13 +287,13 @@
       "Status": "Active",
       "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 110,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS column* MUST contain one of the FOCUS-defined allowed values when the *FOCUS column* includes `Category` suffix in the Column ID and is not null.",
+        "MustSatisfy": "*FOCUS column* that includes the `Category` suffix in the Column ID and is not null MUST contain one of the FOCUS-defined allowed values.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
