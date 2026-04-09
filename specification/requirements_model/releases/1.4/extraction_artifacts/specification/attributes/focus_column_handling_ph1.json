@@ -220,7 +220,7 @@
     {
       "temp_id": "R009",
       "order": 9,
-      "text": "*FOCUS column* MUST include the `Id` suffix in the Column ID when the *FOCUS column* represents an identifier.",
+      "text": "*FOCUS column* representing an identifier MUST include the `Id` suffix in the Column ID.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -245,7 +245,7 @@
     {
       "temp_id": "R010",
       "order": 10,
-      "text": "*FOCUS column* MUST include the `Name` suffix in the Column ID when the *FOCUS column* represents a name.",
+      "text": "*FOCUS column* representing a name MUST include the `Name` suffix in the Column ID.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -270,7 +270,7 @@
     {
       "temp_id": "R011",
       "order": 11,
-      "text": "*FOCUS column* MUST include `Sku` in the Column ID when the *FOCUS column* represents a product offering that incurred a charge.",
+      "text": "*FOCUS column* representing a product offering that incurred a charge MUST include `Sku` in the Column ID.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -295,7 +295,7 @@
     {
       "temp_id": "R012",
       "order": 12,
-      "text": "*FOCUS column* MUST contain one of the FOCUS-defined allowed values when the *FOCUS column* includes `Category` suffix in the Column ID and is not null.",
+      "text": "*FOCUS column* that includes the `Category` suffix in the Column ID and is not null MUST contain one of the FOCUS-defined allowed values.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
