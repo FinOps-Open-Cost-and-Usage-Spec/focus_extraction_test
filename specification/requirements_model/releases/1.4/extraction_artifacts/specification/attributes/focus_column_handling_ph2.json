@@ -29,10 +29,10 @@
     "  L013: \"*FOCUS column* MUST NOT use abbreviations other than `Id` in the Column ID.\"",
     "  L014: \"*FOCUS column* SHOULD NOT use acronyms other than `Sku` in the Column ID.\"",
     "  L015: \"*FOCUS column* SHOULD NOT exceed 50 characters in the Column ID to accommodate column length restrictions of various data repositories.\"",
-    "  L016: \"*FOCUS column* MUST include the `Id` suffix in the Column ID when the *FOCUS column* represents an identifier.\"",
-    "  L017: \"*FOCUS column* MUST include the `Name` suffix in the Column ID when the *FOCUS column* represents a name.\"",
-    "  L018: \"*FOCUS column* MUST include `Sku` in the Column ID when the *FOCUS column* represents a product offering that incurred a charge.\"",
-    "  L019: \"*FOCUS column* MUST contain one of the FOCUS-defined allowed values when the *FOCUS column* includes `Category` suffix in the Column ID and is not null.\""
+    "  L016: \"*FOCUS column* representing an identifier MUST include the `Id` suffix in the Column ID.\"",
+    "  L017: \"*FOCUS column* representing a name MUST include the `Name` suffix in the Column ID.\"",
+    "  L018: \"*FOCUS column* representing a product offering that incurred a charge MUST include `Sku` in the Column ID.\"",
+    "  L019: \"*FOCUS column* that includes the `Category` suffix in the Column ID and is not null MUST contain one of the FOCUS-defined allowed values.\""
   ],
   "0_outline_summary": {
     "node_count": 12,
@@ -257,7 +257,7 @@
                 "temp_id": "R009",
                 "order": 9,
                 "ref": "L016",
-                "text": "*FOCUS column* MUST include the `Id` suffix in the Column ID when the *FOCUS column* represents an identifier.",
+                "text": "*FOCUS column* representing an identifier MUST include the `Id` suffix in the Column ID.",
                 "keyword": "MUST",
                 "section_path": [
                   "FOCUS Column Handling",
@@ -281,7 +281,7 @@
                 "temp_id": "R010",
                 "order": 10,
                 "ref": "L017",
-                "text": "*FOCUS column* MUST include the `Name` suffix in the Column ID when the *FOCUS column* represents a name.",
+                "text": "*FOCUS column* representing a name MUST include the `Name` suffix in the Column ID.",
                 "keyword": "MUST",
                 "section_path": [
                   "FOCUS Column Handling",
@@ -305,7 +305,7 @@
                 "temp_id": "R011",
                 "order": 11,
                 "ref": "L018",
-                "text": "*FOCUS column* MUST include `Sku` in the Column ID when the *FOCUS column* represents a product offering that incurred a charge.",
+                "text": "*FOCUS column* representing a product offering that incurred a charge MUST include `Sku` in the Column ID.",
                 "keyword": "MUST",
                 "section_path": [
                   "FOCUS Column Handling",
@@ -329,7 +329,7 @@
                 "temp_id": "R012",
                 "order": 12,
                 "ref": "L019",
-                "text": "*FOCUS column* MUST contain one of the FOCUS-defined allowed values when the *FOCUS column* includes `Category` suffix in the Column ID and is not null.",
+                "text": "*FOCUS column* that includes the `Category` suffix in the Column ID and is not null MUST contain one of the FOCUS-defined allowed values.",
                 "keyword": "MUST",
                 "section_path": [
                   "FOCUS Column Handling",
