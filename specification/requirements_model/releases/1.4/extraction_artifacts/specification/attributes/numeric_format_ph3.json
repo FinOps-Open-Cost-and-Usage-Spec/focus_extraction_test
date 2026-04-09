@@ -1,6 +1,6 @@
 {
   "ModelRules": {
-    "ATT-NumericFormat-C-000-M": {
+    "ATT-NumericFormat-A-000-M": {
       "Function": "Format",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -22,20 +22,20 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-NumericFormat-C-001-M",
-          "ATT-NumericFormat-C-002-M",
-          "ATT-NumericFormat-C-003-C",
-          "ATT-NumericFormat-C-004-C",
-          "ATT-NumericFormat-C-005-M",
-          "ATT-NumericFormat-C-006-M",
-          "ATT-NumericFormat-C-007-C",
-          "ATT-NumericFormat-C-008-M",
-          "ATT-NumericFormat-C-009-M",
-          "ATT-NumericFormat-C-010-C"
+          "ATT-NumericFormat-A-001-M",
+          "ATT-NumericFormat-A-002-M",
+          "ATT-NumericFormat-A-003-C",
+          "ATT-NumericFormat-A-004-C",
+          "ATT-NumericFormat-A-005-M",
+          "ATT-NumericFormat-A-006-M",
+          "ATT-NumericFormat-A-007-C",
+          "ATT-NumericFormat-A-008-M",
+          "ATT-NumericFormat-A-009-M",
+          "ATT-NumericFormat-A-010-C"
         ]
       }
     },
-    "ATT-NumericFormat-C-001-M": {
+    "ATT-NumericFormat-A-001-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -59,7 +59,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-002-M": {
+    "ATT-NumericFormat-A-002-M": {
       "Function": "Type",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -83,7 +83,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-003-C": {
+    "ATT-NumericFormat-A-003-C": {
       "Function": "Format",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -107,7 +107,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-004-C": {
+    "ATT-NumericFormat-A-004-C": {
       "Function": "Format",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -131,7 +131,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-005-M": {
+    "ATT-NumericFormat-A-005-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -155,7 +155,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-006-M": {
+    "ATT-NumericFormat-A-006-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -179,7 +179,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-007-C": {
+    "ATT-NumericFormat-A-007-C": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -203,7 +203,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-008-M": {
+    "ATT-NumericFormat-A-008-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -227,7 +227,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-009-M": {
+    "ATT-NumericFormat-A-009-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -251,7 +251,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-010-C": {
+    "ATT-NumericFormat-A-010-C": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -273,13 +273,13 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-NumericFormat-C-011-M",
-          "ATT-NumericFormat-C-012-M",
-          "ATT-NumericFormat-C-013-M"
+          "ATT-NumericFormat-A-011-M",
+          "ATT-NumericFormat-A-012-M",
+          "ATT-NumericFormat-A-013-M"
         ]
       }
     },
-    "ATT-NumericFormat-C-011-M": {
+    "ATT-NumericFormat-A-011-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -303,7 +303,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-012-M": {
+    "ATT-NumericFormat-A-012-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
@@ -327,7 +327,7 @@
         "Dependencies": []
       }
     },
-    "ATT-NumericFormat-C-013-M": {
+    "ATT-NumericFormat-A-013-M": {
       "Function": "Validation",
       "Reference": "NumericFormat",
       "EntityType": "Attribute",
