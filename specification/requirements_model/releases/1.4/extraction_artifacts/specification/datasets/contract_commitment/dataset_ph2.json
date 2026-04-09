@@ -17,7 +17,7 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 39
+    "atoms_in_scope_count": 40
   },
   "0_outline_root": "ROOT: Contract Commitment > Requirements",
   "0_outline_lines": [
@@ -41,7 +41,7 @@
     "    L071: \"ContractCommitment MUST include [ContractCommitmentOfferCategory](#datasets.contractcommitment.contractcommitmentoffercategory).\"",
     "    L072: \"ContractCommitment MUST include [ContractCommitmentPaymentInterval](#datasets.contractcommitment.contractcommitmentpaymentinterval).\"",
     "    L073: \"ContractCommitment MUST include [ContractCommitmentPaymentModel](#datasets.contractcommitment.contractcommitmentpaymentmodel).\"",
-    "    L074: \"ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) if the service provider offers \\\"Partial Upfront\\\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).\"",
+    "    L074: \"ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) when the service provider offers \\\"Partial Upfront\\\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).\"",
     "    L075: \"ContractCommitment MUST include [ContractCommitmentPeriodEnd](#datasets.contractcommitment.contractcommitmentperiodend).\"",
     "    L076: \"ContractCommitment MUST include [ContractCommitmentPeriodStart](#datasets.contractcommitment.contractcommitmentperiodstart).\"",
     "    L077: \"ContractCommitment MUST include [ContractCommitmentQuantity](#datasets.contractcommitment.contractcommitmentquantity).\"",
@@ -54,28 +54,29 @@
     "    L084: \"ContractCommitment MUST include [PricingCurrency](#datasets.contractcommitment.pricingcurrency) when the service provider supports pricing and billing in different currencies.\"",
     "    L085: \"ContractCommitment MUST include [PricingCurrencyContractCommitmentCost](#datasets.contractcommitment.pricingcurrencycontractcommitmentcost) when the service provider supports pricing and billing in different currencies.\"",
     "    L086: \"ContractCommitment MUST include [ServiceProviderName](#datasets.contractcommitment.serviceprovidername).\"",
-    "  L087: \"ContractCommitment MUST conform to [ColumnHandling](#attributes.columnhandling) requirements.\"",
-    "  L088: \"ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.\"",
-    "  L089: \"ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.\"",
-    "  L090: \"ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.\"",
-    "  L091: \"ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.\"",
-    "  L092: \"ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.\""
+    "  L087: \"ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.\"",
+    "  L088: \"ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.\"",
+    "  L089: \"ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.\"",
+    "  L090: \"ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.\"",
+    "  L091: \"ContractCommitment [*FOCUS columns*](#glossary:FOCUS-column) MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.\"",
+    "  L092: \"ContractCommitment *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.\"",
+    "  L093: \"ContractCommitment [*custom columns*](#glossary:custom-column) MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.\""
   ],
   "0_outline_summary": {
-    "node_count": 39,
-    "leaf_count": 37,
+    "node_count": 40,
+    "leaf_count": 38,
     "lead_in_count": 2,
     "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 39
+      "MUST": 40
     },
     "lead_ins": [
       {
         "ref": "L053",
         "text_preview": "ContractCommitment MUST adhere to the following requirements:",
-        "children": 8
+        "children": 9
       },
       {
         "ref": "L056",
@@ -574,7 +575,7 @@
                     "temp_id": "R021",
                     "order": 21,
                     "ref": "L074",
-                    "text": "ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) if the service provider offers \"Partial Upfront\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).",
+                    "text": "ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) when the service provider offers \"Partial Upfront\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).",
                     "keyword": "MUST",
                     "section_path": [
                       "Contract Commitment",
@@ -888,7 +889,7 @@
                 "temp_id": "R034",
                 "order": 34,
                 "ref": "L087",
-                "text": "ContractCommitment MUST conform to [ColumnHandling](#attributes.columnhandling) requirements.",
+                "text": "ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
@@ -912,7 +913,7 @@
                 "temp_id": "R035",
                 "order": 35,
                 "ref": "L088",
-                "text": "ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
+                "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
@@ -936,7 +937,7 @@
                 "temp_id": "R036",
                 "order": 36,
                 "ref": "L089",
-                "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
+                "text": "ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
@@ -960,7 +961,7 @@
                 "temp_id": "R037",
                 "order": 37,
                 "ref": "L090",
-                "text": "ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.",
+                "text": "ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
@@ -984,7 +985,7 @@
                 "temp_id": "R038",
                 "order": 38,
                 "ref": "L091",
-                "text": "ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
+                "text": "ContractCommitment [*FOCUS columns*](#glossary:FOCUS-column) MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
@@ -1008,7 +1009,31 @@
                 "temp_id": "R039",
                 "order": 39,
                 "ref": "L092",
-                "text": "ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+                "text": "ContractCommitment *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Commitment",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R040",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R040",
+                "order": 40,
+                "ref": "L093",
+                "text": "ContractCommitment [*custom columns*](#glossary:custom-column) MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Commitment",
