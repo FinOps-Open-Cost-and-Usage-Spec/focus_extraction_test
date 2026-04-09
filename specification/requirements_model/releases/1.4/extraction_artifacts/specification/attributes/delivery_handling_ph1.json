@@ -120,7 +120,7 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "*FOCUS dataset* MUST represent a complete snapshot for a given *delivery scope*.",
+      "text": "*FOCUS dataset* MUST represent a complete snapshot for a given [*delivery scope*](#glossary:delivery-scope).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
