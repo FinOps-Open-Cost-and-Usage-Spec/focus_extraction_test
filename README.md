@@ -56,6 +56,76 @@ CAU:
 specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/CAU/
 ```
 
+## Configuration
+
+Before running the script, ensure the following configuration values are correctly set in `generate_diffs_nolinks_worddiff.py`.
+
+These constants define where files are read from, how comparisons are performed, and where outputs are written.
+
+### Repository Paths
+
+```python
+SOURCE_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
+TARGET_REPO = Path("/Users/jpradocueva/Documents/github/focus/FOCUS_Spec")
+```
+
+* **SOURCE_REPO:** Repository used to read file contents and run `git` commands.
+* **TARGET_REPO:** Repository where the generated diff output files will be written.
+* These can be the same repository or different ones depending on your workflow.
+
+### Input File Location
+
+```python
+COMMAND_REPO = Path("/Users/jpradocueva/Documents/github/focus/focus_extraction_test")
+INPUT_FILE = COMMAND_REPO / "diff_target_files.md"
+```
+
+* **COMMAND_REPO:** Location of the file that lists the markdown files to compare.
+* **INPUT_FILE:** The file containing grouped file paths (ATT, CCT, CAU).
+* Ensure `diff_target_files.md` exists and is correctly populated before running the script.
+
+### Branch Comparison
+
+```python
+DIFF_FROM_REF = "v1.3"
+DIFF_TO_REF = "working_draft"
+```
+
+* Defines the direction of the comparison:
+    * **DIFF_FROM_REF:** Base version (e.g., released version)
+    * **DIFF_TO_REF:** Target version (e.g., working branch)
+* The script will compute diffs as: `FROM → TO`
+
+### Output Directories
+
+```python
+OUTPUT_DIRS = {
+    "ATT": TARGET_REPO / "specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/ATT",
+    "CCT": TARGET_REPO / "specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/CCT",
+    "CAU": TARGET_REPO / "specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/CAU",
+}
+```
+
+* Defines where the generated diff files will be stored for each section:
+* **ATT, CCT, CAU**
+* The script will automatically create these directories if they do not exist.
+* Output files follow the naming pattern:
+
+```bash
+<filename>_diff_1-3-working-draft.md
+```
+
+### Summary
+
+Before running the script, verify:
+
+*Paths to repositories are correct
+* `diff_target_files.md` exists and is populated
+* Branch names (`DIFF_FROM_REF`, `DIFF_TO_REF`) are valid in the source repo
+* Output directories are aligned with your desired location
+
+Incorrect configuration may result in missing files, empty diffs, or execution errors.
+
 
 ## Detailed Diff (No Links, Word-Level)
 
