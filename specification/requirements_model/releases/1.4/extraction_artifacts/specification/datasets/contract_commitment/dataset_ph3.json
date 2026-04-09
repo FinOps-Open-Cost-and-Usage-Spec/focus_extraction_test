@@ -29,7 +29,8 @@
           "CCT-ContractCommitment-C-035-M",
           "CCT-ContractCommitment-C-036-M",
           "CCT-ContractCommitment-C-037-M",
-          "CCT-ContractCommitment-C-038-M"
+          "CCT-ContractCommitment-C-038-M",
+          "CCT-ContractCommitment-C-039-M"
         ]
       }
     },
@@ -537,7 +538,7 @@
       "DatasetId": "ContractCommitment",
       "DatasetName": "Contract Commitment",
       "ValidationCriteria": {
-        "MustSatisfy": "ContractCommitment MUST include ContractCommitmentPaymentUpfrontPercentage if the service provider offers \"Partial Upfront\" payment models.",
+        "MustSatisfy": "ContractCommitment MUST include ContractCommitmentPaymentUpfrontPercentage when the service provider offers \"Partial Upfront\" payment models.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -853,7 +854,7 @@
       "DatasetId": "ContractCommitment",
       "DatasetName": "Contract Commitment",
       "ValidationCriteria": {
-        "MustSatisfy": "ContractCommitment MUST conform to ColumnHandling requirements.",
+        "MustSatisfy": "ContractCommitment MUST conform to CorrectionHandling requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -877,7 +878,7 @@
       "DatasetId": "ContractCommitment",
       "DatasetName": "Contract Commitment",
       "ValidationCriteria": {
-        "MustSatisfy": "ContractCommitment MUST conform to CorrectionHandling requirements.",
+        "MustSatisfy": "ContractCommitment MUST conform to DatasetCompleteness requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -901,7 +902,7 @@
       "DatasetId": "ContractCommitment",
       "DatasetName": "Contract Commitment",
       "ValidationCriteria": {
-        "MustSatisfy": "ContractCommitment MUST conform to DatasetCompleteness requirements.",
+        "MustSatisfy": "ContractCommitment MUST conform to DatasetConfiguration requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -925,7 +926,7 @@
       "DatasetId": "ContractCommitment",
       "DatasetName": "Contract Commitment",
       "ValidationCriteria": {
-        "MustSatisfy": "ContractCommitment MUST conform to DatasetConfiguration requirements.",
+        "MustSatisfy": "ContractCommitment MUST conform to DeliveryHandling requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -949,7 +950,7 @@
       "DatasetId": "ContractCommitment",
       "DatasetName": "Contract Commitment",
       "ValidationCriteria": {
-        "MustSatisfy": "ContractCommitment MUST conform to DeliveryHandling requirements.",
+        "MustSatisfy": "ContractCommitment *FOCUS columns* MUST conform to FocusColumnHandling requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
@@ -973,7 +974,31 @@
       "DatasetId": "ContractCommitment",
       "DatasetName": "Contract Commitment",
       "ValidationCriteria": {
-        "MustSatisfy": "ContractCommitment MUST conform to NullHandling requirements.",
+        "MustSatisfy": "ContractCommitment *FOCUS columns* MUST conform to NullHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CCT-ContractCommitment-C-039-M": {
+      "Function": "Format",
+      "Reference": "ContractCommitment",
+      "EntityType": "Dataset",
+      "EntityName": "Contract Commitment",
+      "EntityId": "ContractCommitment",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.3",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 390,
+      "DatasetType": "CCT",
+      "DatasetId": "ContractCommitment",
+      "DatasetName": "Contract Commitment",
+      "ValidationCriteria": {
+        "MustSatisfy": "ContractCommitment *custom columns* MUST conform to CustomColumnHandling requirements.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
