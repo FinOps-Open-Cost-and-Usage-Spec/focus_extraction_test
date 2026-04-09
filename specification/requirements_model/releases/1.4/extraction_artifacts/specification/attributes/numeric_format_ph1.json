@@ -270,7 +270,7 @@
     {
       "temp_id": "R011",
       "order": 11,
-      "text": "When column contains numeric values expressed in scientific notation, *FOCUS dataset column* MUST adhere to the following requirements:",
+      "text": "When *FOCUS dataset column* contains numeric values expressed in scientific notation, it MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
