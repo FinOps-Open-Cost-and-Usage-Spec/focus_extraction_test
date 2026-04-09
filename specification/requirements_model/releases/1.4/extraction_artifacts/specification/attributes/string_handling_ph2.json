@@ -26,11 +26,11 @@
     "  L010: \"*FOCUS dataset column* MUST preserve the original spacing of string values.\"",
     "  L011: \"*FOCUS dataset column* MUST preserve other relevant consistency factors as specified by the data generator or end-user.\"",
     "  L012: \"*FOCUS dataset column* MUST remain consistent across all [*billing periods*](#glossary:billing-period) when the *FOCUS dataset column* contains immutable string values (e.g., resource identifier, region identifier).\"",
-    "  L013: \"When column contains mutable string values (e.g., resource name, region name), *FOCUS dataset column* MUST adhere to the following requirements:\"",
+    "  L013: \"When *FOCUS dataset column* contains mutable string values (e.g., resource name, region name), it MUST adhere to the following requirements:\"",
     "    L014: \"*FOCUS dataset column* MUST reflect the altered value in all records pertaining to a period after the change.\"",
     "    L015: \"*FOCUS dataset column* MUST reflect the string value as it existed prior to the change in all records pertaining to a period prior to the change when the record does not represent a correction to a previously closed billing period.\"",
     "    L016: \"*FOCUS dataset column* MAY reflect the altered value in records pertaining to a period prior to the change when the record represents a correction to a previously closed billing period.\"",
-    "  L017: \"When column contains not-nullable string values, *FOCUS dataset column* MUST adhere to the following requirements:\"",
+    "  L017: \"When *FOCUS dataset column* contains not-nullable string values, it MUST adhere to the following requirements:\"",
     "    L018: \"*FOCUS dataset column* SHOULD NOT contain empty strings.\"",
     "    L019: \"*FOCUS dataset column* SHOULD NOT contain strings consisting solely of whitespace characters.\""
   ],
@@ -54,12 +54,12 @@
       },
       {
         "ref": "L013",
-        "text_preview": "When column contains mutable string values (e.g., resource name, region name), *FOCUS dataset column* MUST adhere to th…",
+        "text_preview": "When *FOCUS dataset column* contains mutable string values (e.g., resource name, region name), it MUST adhere to the fo…",
         "children": 3
       },
       {
         "ref": "L017",
-        "text_preview": "When column contains not-nullable string values, *FOCUS dataset column* MUST adhere to the following requirements:",
+        "text_preview": "When *FOCUS dataset column* contains not-nullable string values, it MUST adhere to the following requirements:",
         "children": 2
       }
     ]
@@ -190,7 +190,7 @@
                 "temp_id": "R006",
                 "order": 6,
                 "ref": "L013",
-                "text": "When column contains mutable string values (e.g., resource name, region name), *FOCUS dataset column* MUST adhere to the following requirements:",
+                "text": "When *FOCUS dataset column* contains mutable string values (e.g., resource name, region name), it MUST adhere to the following requirements:",
                 "keyword": "MUST",
                 "section_path": [
                   "Requirements"
@@ -283,7 +283,7 @@
                 "temp_id": "R010",
                 "order": 10,
                 "ref": "L017",
-                "text": "When column contains not-nullable string values, *FOCUS dataset column* MUST adhere to the following requirements:",
+                "text": "When *FOCUS dataset column* contains not-nullable string values, it MUST adhere to the following requirements:",
                 "keyword": "MUST",
                 "section_path": [
                   "Requirements"
