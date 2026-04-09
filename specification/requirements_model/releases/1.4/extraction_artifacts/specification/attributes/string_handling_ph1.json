@@ -140,7 +140,7 @@
     {
       "temp_id": "R006",
       "order": 6,
-      "text": "When column contains mutable string values (e.g., resource name, region name), *FOCUS dataset column* MUST adhere to the following requirements:",
+      "text": "When *FOCUS dataset column* contains mutable string values (e.g., resource name, region name), it MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -236,7 +236,7 @@
     {
       "temp_id": "R010",
       "order": 10,
-      "text": "When column contains not-nullable string values, *FOCUS dataset column* MUST adhere to the following requirements:",
+      "text": "When *FOCUS dataset column* contains not-nullable string values, it MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
