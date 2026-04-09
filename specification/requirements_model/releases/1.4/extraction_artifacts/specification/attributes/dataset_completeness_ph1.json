@@ -195,7 +195,7 @@
     {
       "temp_id": "R008",
       "order": 8,
-      "text": "*FOCUS dataset* MUST ensure *custom columns* retain the fidelity of corresponding *native dataset* values without lossy transformations (e.g., rounding or truncation).",
+      "text": "*FOCUS dataset* MUST retain the fidelity of corresponding *native dataset* values within *custom columns* without lossy transformations (e.g., rounding or truncation).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
