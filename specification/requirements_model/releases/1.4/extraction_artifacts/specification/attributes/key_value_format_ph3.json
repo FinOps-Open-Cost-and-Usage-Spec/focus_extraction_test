@@ -1,6 +1,6 @@
 {
   "ModelRules": {
-    "ATT-KeyValueFormat-C-000-M": {
+    "ATT-KeyValueFormat-A-000-M": {
       "Function": "Validation",
       "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
@@ -22,14 +22,14 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-KeyValueFormat-C-001-M",
-          "ATT-KeyValueFormat-C-002-M",
-          "ATT-KeyValueFormat-C-003-M",
-          "ATT-KeyValueFormat-C-004-M"
+          "ATT-KeyValueFormat-A-001-M",
+          "ATT-KeyValueFormat-A-002-M",
+          "ATT-KeyValueFormat-A-003-M",
+          "ATT-KeyValueFormat-A-004-M"
         ]
       }
     },
-    "ATT-KeyValueFormat-C-001-M": {
+    "ATT-KeyValueFormat-A-001-M": {
       "Function": "Validation",
       "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
@@ -53,7 +53,7 @@
         "Dependencies": []
       }
     },
-    "ATT-KeyValueFormat-C-002-M": {
+    "ATT-KeyValueFormat-A-002-M": {
       "Function": "Validation",
       "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
@@ -77,7 +77,7 @@
         "Dependencies": []
       }
     },
-    "ATT-KeyValueFormat-C-003-M": {
+    "ATT-KeyValueFormat-A-003-M": {
       "Function": "Type",
       "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
@@ -101,7 +101,7 @@
         "Dependencies": []
       }
     },
-    "ATT-KeyValueFormat-C-004-M": {
+    "ATT-KeyValueFormat-A-004-M": {
       "Function": "Validation",
       "Reference": "KeyValueFormat",
       "EntityType": "Attribute",
