@@ -95,7 +95,7 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "When column represents a specific moment in time, *FOCUS dataset column* MUST adhere to the following requirements:",
+      "text": "When *FOCUS dataset column* represents a specific moment in time, it MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
