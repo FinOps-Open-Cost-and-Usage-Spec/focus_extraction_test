@@ -20,7 +20,7 @@
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "When the data generator supports data generator-calculated split cost allocation, column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:",
+      "text": "Column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a dimension.",
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) representing a dimension MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "*FOCUS dataset column* values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a non-summable [*metric*](#glossary:metric) (e.g., unit prices).",
+      "text": "*FOCUS dataset column* representing a non-summable [*metric*](#glossary:metric) (e.g., unit prices) MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -95,7 +95,7 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "The sum of *FOCUS dataset column* values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a summable *metric* (e.g., costs and quantities).",
+      "text": "The sum of *FOCUS dataset column* across *allocated charges* MUST match the *FOCUS dataset column* in the corresponding *origin charge* when the *FOCUS dataset column* represents a summable metric (e.g., costs and quantities).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
