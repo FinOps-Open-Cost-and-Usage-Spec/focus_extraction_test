@@ -1,6 +1,6 @@
 {
   "ModelRules": {
-    "ATT-StringHandling-C-000-M": {
+    "ATT-StringHandling-A-000-M": {
       "Function": "Format",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -22,16 +22,16 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-StringHandling-C-001-M",
-          "ATT-StringHandling-C-002-M",
-          "ATT-StringHandling-C-003-M",
-          "ATT-StringHandling-C-004-C",
-          "ATT-StringHandling-C-005-C",
-          "ATT-StringHandling-C-009-C"
+          "ATT-StringHandling-A-001-M",
+          "ATT-StringHandling-A-002-M",
+          "ATT-StringHandling-A-003-M",
+          "ATT-StringHandling-A-004-C",
+          "ATT-StringHandling-A-005-C",
+          "ATT-StringHandling-A-009-C"
         ]
       }
     },
-    "ATT-StringHandling-C-001-M": {
+    "ATT-StringHandling-A-001-M": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -55,7 +55,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-002-M": {
+    "ATT-StringHandling-A-002-M": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -79,7 +79,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-003-M": {
+    "ATT-StringHandling-A-003-M": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -103,7 +103,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-004-C": {
+    "ATT-StringHandling-A-004-C": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -127,7 +127,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-005-C": {
+    "ATT-StringHandling-A-005-C": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -144,18 +144,18 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "When column contains mutable string values (e.g., resource name, region name), *FOCUS dataset column* MUST adhere to the following requirements:",
+        "MustSatisfy": "When *FOCUS dataset column* contains mutable string values (e.g., resource name, region name), it MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-StringHandling-C-006-M",
-          "ATT-StringHandling-C-007-C",
-          "ATT-StringHandling-C-008-C"
+          "ATT-StringHandling-A-006-M",
+          "ATT-StringHandling-A-007-C",
+          "ATT-StringHandling-A-008-C"
         ]
       }
     },
-    "ATT-StringHandling-C-006-M": {
+    "ATT-StringHandling-A-006-M": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -179,7 +179,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-007-C": {
+    "ATT-StringHandling-A-007-C": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -203,7 +203,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-008-C": {
+    "ATT-StringHandling-A-008-C": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -227,7 +227,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-009-C": {
+    "ATT-StringHandling-A-009-C": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -244,17 +244,17 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "When column contains not-nullable string values, *FOCUS dataset column* MUST adhere to the following requirements:",
+        "MustSatisfy": "When *FOCUS dataset column* contains not-nullable string values, it MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-StringHandling-C-010-O",
-          "ATT-StringHandling-C-011-O"
+          "ATT-StringHandling-A-010-O",
+          "ATT-StringHandling-A-011-O"
         ]
       }
     },
-    "ATT-StringHandling-C-010-O": {
+    "ATT-StringHandling-A-010-O": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
@@ -278,7 +278,7 @@
         "Dependencies": []
       }
     },
-    "ATT-StringHandling-C-011-O": {
+    "ATT-StringHandling-A-011-O": {
       "Function": "Validation",
       "Reference": "StringHandling",
       "EntityType": "Attribute",
