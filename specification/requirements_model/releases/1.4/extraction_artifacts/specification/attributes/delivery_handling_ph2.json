@@ -25,7 +25,7 @@
     "  L060: \"*FOCUS dataset* MUST have its mechanism(s) for delivering *dataset artifacts* documented and accessible to practitioners (including whether Overwrite or Append is used and under which conditions).\"",
     "  L061: \"*FOCUS dataset* MUST NOT require practitioners to deduplicate records within or across delivered dataset artifacts.\"",
     "  L062: \"When using Overwrite delivery mechanism, *FOCUS dataset* MUST adhere to the following additional requirements:\"",
-    "    L063: \"*FOCUS dataset* MUST represent a complete snapshot for a given *delivery scope*.\"",
+    "    L063: \"*FOCUS dataset* MUST represent a complete snapshot for a given [*delivery scope*](#glossary:delivery-scope).\"",
     "    L064: \"*FOCUS dataset* MUST supersede all previously delivered *dataset artifacts* for the same *delivery scope*.\"",
     "  L065: \"*FOCUS dataset* MUST preserve all previously delivered *dataset artifacts* when using Append delivery mechanism.\"",
     "  L066: \"*FOCUS dataset* SHOULD have delivered *dataset artifacts* accompanied by corresponding [FOCUS Metadata](#metadata).\"",
@@ -162,7 +162,7 @@
                     "temp_id": "R005",
                     "order": 5,
                     "ref": "L063",
-                    "text": "*FOCUS dataset* MUST represent a complete snapshot for a given *delivery scope*.",
+                    "text": "*FOCUS dataset* MUST represent a complete snapshot for a given [*delivery scope*](#glossary:delivery-scope).",
                     "keyword": "MUST",
                     "section_path": [
                       "Delivery Handling",
