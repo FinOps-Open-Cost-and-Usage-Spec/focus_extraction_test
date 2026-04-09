@@ -1,6 +1,6 @@
 {
   "ModelRules": {
-    "ATT-DateTimeFormat-C-000-M": {
+    "ATT-DateTimeFormat-A-000-M": {
       "Function": "Format",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
@@ -22,13 +22,13 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-DateTimeFormat-C-001-M",
-          "ATT-DateTimeFormat-C-002-M",
-          "ATT-DateTimeFormat-C-003-C"
+          "ATT-DateTimeFormat-A-001-M",
+          "ATT-DateTimeFormat-A-002-M",
+          "ATT-DateTimeFormat-A-003-C"
         ]
       }
     },
-    "ATT-DateTimeFormat-C-001-M": {
+    "ATT-DateTimeFormat-A-001-M": {
       "Function": "Validation",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
@@ -52,7 +52,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DateTimeFormat-C-002-M": {
+    "ATT-DateTimeFormat-A-002-M": {
       "Function": "Format",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
@@ -76,7 +76,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DateTimeFormat-C-003-C": {
+    "ATT-DateTimeFormat-A-003-C": {
       "Function": "Validation",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
@@ -93,19 +93,19 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "When column represents a specific moment in time, *FOCUS dataset column* MUST adhere to the following requirements:",
+        "MustSatisfy": "When *FOCUS dataset column* represents a specific moment in time, it MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-DateTimeFormat-C-004-M",
-          "ATT-DateTimeFormat-C-005-M",
-          "ATT-DateTimeFormat-C-006-M",
-          "ATT-DateTimeFormat-C-007-M"
+          "ATT-DateTimeFormat-A-004-M",
+          "ATT-DateTimeFormat-A-005-M",
+          "ATT-DateTimeFormat-A-006-M",
+          "ATT-DateTimeFormat-A-007-M"
         ]
       }
     },
-    "ATT-DateTimeFormat-C-004-M": {
+    "ATT-DateTimeFormat-A-004-M": {
       "Function": "Format",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
@@ -129,7 +129,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DateTimeFormat-C-005-M": {
+    "ATT-DateTimeFormat-A-005-M": {
       "Function": "Validation",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
@@ -153,7 +153,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DateTimeFormat-C-006-M": {
+    "ATT-DateTimeFormat-A-006-M": {
       "Function": "Validation",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
@@ -177,7 +177,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DateTimeFormat-C-007-M": {
+    "ATT-DateTimeFormat-A-007-M": {
       "Function": "Validation",
       "Reference": "DateTimeFormat",
       "EntityType": "Attribute",
