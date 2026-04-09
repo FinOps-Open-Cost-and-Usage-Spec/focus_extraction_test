@@ -1,6 +1,6 @@
 {
   "ModelRules": {
-    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-C-000-C": {
+    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-A-000-C": {
       "Function": "Validation",
       "Reference": "DataGeneratorCalculatedSplitCostAllocationHandling",
       "EntityType": "Attribute",
@@ -24,13 +24,13 @@
         "Requirement": {},
         "Condition": [],
         "Dependencies": [
-          "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-C-001-C",
-          "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-C-002-C",
-          "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-C-003-C"
+          "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-A-001-C",
+          "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-A-002-C",
+          "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-A-003-C"
         ]
       }
     },
-    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-C-001-C": {
+    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-A-001-C": {
       "Function": "Validation",
       "Reference": "DataGeneratorCalculatedSplitCostAllocationHandling",
       "EntityType": "Attribute",
@@ -54,7 +54,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-C-002-C": {
+    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-A-002-C": {
       "Function": "Validation",
       "Reference": "DataGeneratorCalculatedSplitCostAllocationHandling",
       "EntityType": "Attribute",
@@ -78,7 +78,7 @@
         "Dependencies": []
       }
     },
-    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-C-003-C": {
+    "ATT-DataGeneratorCalculatedSplitCostAllocationHandling-A-003-C": {
       "Function": "Validation",
       "Reference": "DataGeneratorCalculatedSplitCostAllocationHandling",
       "EntityType": "Attribute",
