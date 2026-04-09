@@ -245,8 +245,8 @@
     {
       "temp_id": "R010",
       "order": 10,
-      "text": "*FOCUS dataset column* MAY include a count-based base unit that is not listed as one of the allowed values.",
-      "keyword": "MAY",
+      "text": "*FOCUS dataset column* SHOULD use capitalized nouns for base units that do not correspond to any of the allowed base unit names listed below.",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Unit Format",
@@ -270,8 +270,8 @@
     {
       "temp_id": "R011",
       "order": 11,
-      "text": "*FOCUS dataset column* SHOULD use capitalized nouns for base units that do not correspond to any of the allowed base unit names listed below.",
-      "keyword": "SHOULD",
+      "text": "*FOCUS dataset column* MAY include a count-based base unit that is not listed as one of the allowed values.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
         "Unit Format",
@@ -295,8 +295,8 @@
     {
       "temp_id": "R012",
       "order": 12,
-      "text": "*FOCUS dataset column* MUST use a hyphen (`-`) to separate base units when expressing a [compound unit](#attributes.definitions.compoundunit) (e.g., `GB-Hours`).",
-      "keyword": "MUST",
+      "text": "*FOCUS dataset column* MAY include a [unit quantity](#attributes.definitions.unitquantity) expressed as a positive integer.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
         "Unit Format",
@@ -320,7 +320,7 @@
     {
       "temp_id": "R013",
       "order": 13,
-      "text": "*FOCUS dataset column* MUST use a slash (`/`) to separate the numerator and denominator when expressing a [ratio unit](#attributes.definitions.ratiounit) (e.g., `GB/Hour` to signify gigabytes per hour).",
+      "text": "*FOCUS dataset column* expressing a compound unit MUST use a hyphen (`-`) to separate base units (e.g., `GB-Hours`).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -345,7 +345,7 @@
     {
       "temp_id": "R014",
       "order": 14,
-      "text": "*FOCUS dataset column* SHOULD use the `<plural-units>` format when expressing a [simple unit](#attributes.definitions.simpleunit) (e.g., `GB`, `Seconds`).",
+      "text": "*FOCUS dataset column* expressing a compound unit SHOULD use the `<singular-base-unit>-<plural-base-unit>` format (e.g., `GB-Hours`, `MB-Days`, `Request-Tokens`).",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -370,8 +370,8 @@
     {
       "temp_id": "R015",
       "order": 15,
-      "text": "*FOCUS dataset column* SHOULD use the `<singular-base-unit>-<plural-base-unit>` format when expressing a compound unit (e.g., `GB-Hours`, `MB-Days`, `Request-Tokens`).",
-      "keyword": "SHOULD",
+      "text": "*FOCUS dataset column* expressing a ratio unit MUST use a slash (`/`) to separate the numerator and denominator (e.g., `GB/Hour` to signify gigabytes per hour).",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Unit Format",
@@ -395,8 +395,8 @@
     {
       "temp_id": "R016",
       "order": 16,
-      "text": "*FOCUS dataset column* SHOULD use the `<plural-units>/<singular-time-unit>` format when expressing a ratio unit with a time denominator (e.g., `GB/Hour`, `PB/Day`).",
-      "keyword": "SHOULD",
+      "text": "*FOCUS dataset column* expressing a ratio unit MAY include a [denominator quantity](#attributes.definitions.denominatorquantity) expressed as a positive integer.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
         "Unit Format",
@@ -420,7 +420,7 @@
     {
       "temp_id": "R017",
       "order": 17,
-      "text": "*FOCUS dataset column* SHOULD use the `<compound-unit>/<singular-time-unit>` format when expressing a ratio unit with a compound unit numerator (e.g., `Core-Hours/Day`).",
+      "text": "*FOCUS dataset column* expressing a ratio unit and including a denominator quantity SHOULD use the `<plural-units>/<denominator-quantity> <plural-time-units>` format (e.g., `Units/3 Months`).",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -445,8 +445,8 @@
     {
       "temp_id": "R018",
       "order": 18,
-      "text": "*FOCUS dataset column* MAY include a [unit quantity](#attributes.definitions.unitquantity) expressed as a positive integer.",
-      "keyword": "MAY",
+      "text": "*FOCUS dataset column* expressing a ratio unit with a compound unit numerator SHOULD use the `<compound-unit>/<singular-time-unit>` format (e.g., `Core-Hours/Day`).",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Unit Format",
@@ -470,7 +470,7 @@
     {
       "temp_id": "R019",
       "order": 19,
-      "text": "*FOCUS dataset column* SHOULD use the `<unit-quantity> <plural-units>` format when a unit quantity is included (e.g., `1000 Tokens`, `1000 Characters`).",
+      "text": "*FOCUS dataset column* expressing a ratio unit with a time denominator SHOULD use the `<plural-units>/<singular-time-unit>` format (e.g., `GB/Hour`, `PB/Day`).",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -495,8 +495,8 @@
     {
       "temp_id": "R020",
       "order": 20,
-      "text": "*FOCUS dataset column* MAY include a [denominator quantity](#attributes.definitions.denominatorquantity) expressed as a positive integer when the *FOCUS dataset column* represents a ratio unit.",
-      "keyword": "MAY",
+      "text": "*FOCUS dataset column* expressing a simple unit SHOULD use the `<plural-units>` format (e.g., `GB`, `Seconds`).",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Unit Format",
@@ -520,7 +520,7 @@
     {
       "temp_id": "R021",
       "order": 21,
-      "text": "*FOCUS dataset column* SHOULD use the `<plural-units>/<denominator-quantity> <plural-time-units>` format when the *FOCUS dataset column* represents a ratio unit and a denominator quantity is included (e.g., `Units/3 Months`).",
+      "text": "*FOCUS dataset column* including a unit quantity SHOULD use the `<unit-quantity> <plural-units>` format (e.g., `1000 Tokens`, `1000 Characters`).",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
