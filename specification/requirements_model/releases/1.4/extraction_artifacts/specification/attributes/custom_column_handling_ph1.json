@@ -95,7 +95,7 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "*Custom column* SHOULD use [*Pascal case*](#glossary:pascalcase) in the Column ID.",
+      "text": "*Custom column* SHOULD use [*Pascal case*](#glossary:pascalcase) in the portion of the Column ID following the required `x_` prefix.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -120,7 +120,7 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "*Custom column* SHOULD use only alphanumeric characters in the Column ID.",
+      "text": "*Custom column* SHOULD use only alphanumeric characters in the portion of the Column ID following the required `x_` prefix.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -145,7 +145,7 @@
     {
       "temp_id": "R006",
       "order": 6,
-      "text": "*Custom column* SHOULD NOT include special characters in the Column ID.",
+      "text": "*Custom column* SHOULD NOT include special characters other than the underscore in the required `x_` prefix.",
       "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
@@ -186,31 +186,6 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 27,
-        "line_end": 27
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L027"
-    },
-    {
-      "temp_id": "R008",
-      "order": 8,
-      "text": "*Custom column* SHOULD NOT use acronyms other than `Sku` in the Column ID.",
-      "keyword": "SHOULD NOT",
-      "role": "requirement",
-      "section_path": [
-        "Custom Column Handling",
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 1,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
         "line_start": 28,
         "line_end": 28
       },
@@ -218,9 +193,9 @@
       "ref": "L028"
     },
     {
-      "temp_id": "R009",
-      "order": 9,
-      "text": "*Custom column* SHOULD NOT exceed 50 characters in the Column ID to accommodate column length restrictions of various data repositories.",
+      "temp_id": "R008",
+      "order": 8,
+      "text": "*Custom column* SHOULD NOT use acronyms other than `Sku` in the Column ID.",
       "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
@@ -243,10 +218,10 @@
       "ref": "L029"
     },
     {
-      "temp_id": "R010",
-      "order": 10,
-      "text": "*Custom column* SHOULD include the `Id` suffix in the Column ID when the *custom column* represents an identifier.",
-      "keyword": "SHOULD",
+      "temp_id": "R009",
+      "order": 9,
+      "text": "*Custom column* SHOULD NOT exceed 50 characters in the Column ID to accommodate column length restrictions of various data repositories.",
+      "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
         "Custom Column Handling",
@@ -268,9 +243,9 @@
       "ref": "L030"
     },
     {
-      "temp_id": "R011",
-      "order": 11,
-      "text": "*Custom column* SHOULD include the `Name` suffix in the Column ID when the *custom column* represents a name.",
+      "temp_id": "R010",
+      "order": 10,
+      "text": "*Custom column* SHOULD include the `Id` suffix in the Column ID when the *custom column* represents an identifier.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -293,9 +268,9 @@
       "ref": "L031"
     },
     {
-      "temp_id": "R012",
-      "order": 12,
-      "text": "*Custom column* SHOULD conform to [DataGeneratorCalculatedSplitCostAllocationHandling](#attributes.datagenerator-calculatedsplitcostallocationhandling) requirements when the data generator supports data generator-calculated split cost allocation.",
+      "temp_id": "R011",
+      "order": 11,
+      "text": "*Custom column* SHOULD include the `Name` suffix in the Column ID when the *custom column* represents a name.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -304,7 +279,7 @@
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 0,
+        "indent_level": 1,
         "bullet": "*"
       },
       "lead_in": {
@@ -318,9 +293,9 @@
       "ref": "L032"
     },
     {
-      "temp_id": "R013",
-      "order": 13,
-      "text": "*Custom column* SHOULD conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "temp_id": "R012",
+      "order": 12,
+      "text": "*Custom column* SHOULD conform to [DataGeneratorCalculatedSplitCostAllocationHandling](#attributes.datagenerator-calculatedsplitcostallocationhandling) requirements when the data generator supports data generator-calculated split cost allocation.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -343,9 +318,9 @@
       "ref": "L033"
     },
     {
-      "temp_id": "R014",
-      "order": 14,
-      "text": "*Custom column* containing date/time values SHOULD conform to [DateTimeFormat](#attributes.datetimeformat) requirements.",
+      "temp_id": "R013",
+      "order": 13,
+      "text": "*Custom column* SHOULD conform to [NullHandling](#attributes.nullhandling) requirements.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -368,10 +343,10 @@
       "ref": "L034"
     },
     {
-      "temp_id": "R015",
-      "order": 15,
-      "text": "*Custom column* containing JSON objects MUST have its object schema documented by the data generator and accessible to practitioners.",
-      "keyword": "MUST",
+      "temp_id": "R014",
+      "order": 14,
+      "text": "*Custom column* containing date/time values SHOULD conform to [DateTimeFormat](#attributes.datetimeformat) requirements.",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Custom Column Handling",
@@ -393,9 +368,9 @@
       "ref": "L035"
     },
     {
-      "temp_id": "R016",
-      "order": 16,
-      "text": "*Custom column* containing numeric values MUST contain a single numeric value.",
+      "temp_id": "R015",
+      "order": 15,
+      "text": "*Custom column* containing JSON objects MUST have its object schema documented by the data generator and accessible to practitioners.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -418,10 +393,10 @@
       "ref": "L036"
     },
     {
-      "temp_id": "R017",
-      "order": 17,
-      "text": "*Custom column* containing numeric values SHOULD conform to [NumericFormat](#attributes.numericformat) requirements.",
-      "keyword": "SHOULD",
+      "temp_id": "R016",
+      "order": 16,
+      "text": "*Custom column* containing numeric values MUST contain a single numeric value.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Custom Column Handling",
@@ -443,9 +418,9 @@
       "ref": "L037"
     },
     {
-      "temp_id": "R018",
-      "order": 18,
-      "text": "*Custom column* containing string values SHOULD conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "temp_id": "R017",
+      "order": 17,
+      "text": "*Custom column* containing numeric values SHOULD conform to [NumericFormat](#attributes.numericformat) requirements.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -468,9 +443,9 @@
       "ref": "L038"
     },
     {
-      "temp_id": "R019",
-      "order": 19,
-      "text": "*Custom column* representing a national currency SHOULD conform to [CurrencyFormat](#attributes.currencyformat) requirements.",
+      "temp_id": "R018",
+      "order": 18,
+      "text": "*Custom column* containing string values SHOULD conform to [StringHandling](#attributes.stringhandling) requirements.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -493,9 +468,9 @@
       "ref": "L039"
     },
     {
-      "temp_id": "R020",
-      "order": 20,
-      "text": "*Custom column* representing a measurement unit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
+      "temp_id": "R019",
+      "order": 19,
+      "text": "*Custom column* representing a national currency SHOULD conform to [CurrencyFormat](#attributes.currencyformat) requirements.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -516,6 +491,31 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L040"
+    },
+    {
+      "temp_id": "R020",
+      "order": 20,
+      "text": "*Custom column* representing a measurement unit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Custom Column Handling",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 41,
+        "line_end": 41
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L041"
     }
   ],
   "warnings": [],
