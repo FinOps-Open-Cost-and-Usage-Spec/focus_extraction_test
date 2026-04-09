@@ -192,6 +192,7 @@ def run_detailed_diff(
         "git",
         "diff",
         "--no-index",
+        "--unified=999999",
         "--word-diff=plain",
         f"--word-diff-regex={WORD_DIFF_REGEX}",
         from_file,
