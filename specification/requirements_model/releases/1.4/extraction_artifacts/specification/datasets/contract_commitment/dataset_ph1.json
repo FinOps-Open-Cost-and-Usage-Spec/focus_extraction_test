@@ -520,7 +520,7 @@
     {
       "temp_id": "R021",
       "order": 21,
-      "text": "ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) if the service provider offers \"Partial Upfront\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).",
+      "text": "ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) when the service provider offers \"Partial Upfront\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -845,7 +845,7 @@
     {
       "temp_id": "R034",
       "order": 34,
-      "text": "ContractCommitment MUST conform to [ColumnHandling](#attributes.columnhandling) requirements.",
+      "text": "ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -870,7 +870,7 @@
     {
       "temp_id": "R035",
       "order": 35,
-      "text": "ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
+      "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -895,7 +895,7 @@
     {
       "temp_id": "R036",
       "order": 36,
-      "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
+      "text": "ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -920,7 +920,7 @@
     {
       "temp_id": "R037",
       "order": 37,
-      "text": "ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.",
+      "text": "ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -945,7 +945,7 @@
     {
       "temp_id": "R038",
       "order": 38,
-      "text": "ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
+      "text": "ContractCommitment [*FOCUS columns*](#glossary:FOCUS-column) MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -970,7 +970,7 @@
     {
       "temp_id": "R039",
       "order": 39,
-      "text": "ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "text": "ContractCommitment *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -991,6 +991,31 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L092"
+    },
+    {
+      "temp_id": "R040",
+      "order": 40,
+      "text": "ContractCommitment [*custom columns*](#glossary:custom-column) MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 93,
+        "line_end": 93
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L093"
     }
   ],
   "warnings": [],
