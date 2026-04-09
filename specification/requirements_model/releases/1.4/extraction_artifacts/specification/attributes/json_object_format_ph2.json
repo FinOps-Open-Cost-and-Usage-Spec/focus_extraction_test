@@ -17,27 +17,43 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 1
+    "atoms_in_scope_count": 10
   },
   "0_outline_root": "ROOT: JSON Object Format > Requirements",
   "0_outline_lines": [
-    "L029: \"Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:\""
+    "L007: \"Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:\"",
+    "  L009: \"[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST contain a serialized JSON string, consistent with the [ECMA 404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf) definition of an object.\"",
+    "  L010: \"*FOCUS dataset column* MUST conform to all requirements of the corresponding column definition, which may specify or restrict the shape or contents of the object.\"",
+    "  L011: \"Object in *FOCUS dataset column* SHOULD NOT exceed 3 levels of nesting.\"",
+    "  L012: \"Key in Object in *FOCUS dataset column* MUST be unique.\"",
+    "  L013: \"Key value in Object in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), array, object, or `null`.\"",
+    "  L014: \"Object in array in *FOCUS dataset column* MUST adhere to the following requirements:\"",
+    "    L015: \"Object in array in *FOCUS dataset column* MUST be of a consistent type.\"",
+    "    L016: \"Object in array in *FOCUS dataset column* MUST NOT be repeated.\"",
+    "    L017: \"Object in array in *FOCUS dataset column* MUST NOT be null.\""
   ],
   "0_outline_summary": {
-    "node_count": 1,
-    "leaf_count": 1,
-    "lead_in_count": 1,
-    "max_depth": 0,
-    "max_indent_level": 0,
+    "node_count": 10,
+    "leaf_count": 8,
+    "lead_in_count": 2,
+    "max_depth": 2,
+    "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 1
+      "MUST": 7,
+      "SHOULD NOT": 1,
+      "MUST NOT": 2
     },
     "lead_ins": [
       {
-        "ref": "L029",
+        "ref": "L007",
         "text_preview": "Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:",
-        "children": 0
+        "children": 6
+      },
+      {
+        "ref": "L014",
+        "text_preview": "Object in array in *FOCUS dataset column* MUST adhere to the following requirements:",
+        "children": 3
       }
     ]
   },
@@ -47,12 +63,12 @@
       "kind": "root",
       "children": [
         {
-          "node_id": "R010",
+          "node_id": "R001",
           "kind": "atom",
           "atom": {
-            "temp_id": "R010",
-            "order": 10,
-            "ref": "L029",
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L007",
             "text": "Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
@@ -68,7 +84,225 @@
               "ends_with_colon": true
             }
           },
-          "children": []
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L009",
+                "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST contain a serialized JSON string, consistent with the [ECMA 404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf) definition of an object.",
+                "keyword": "MUST",
+                "section_path": [
+                  "JSON Object Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L010",
+                "text": "*FOCUS dataset column* MUST conform to all requirements of the corresponding column definition, which may specify or restrict the shape or contents of the object.",
+                "keyword": "MUST",
+                "section_path": [
+                  "JSON Object Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L011",
+                "text": "Object in *FOCUS dataset column* SHOULD NOT exceed 3 levels of nesting.",
+                "keyword": "SHOULD NOT",
+                "section_path": [
+                  "JSON Object Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L012",
+                "text": "Key in Object in *FOCUS dataset column* MUST be unique.",
+                "keyword": "MUST",
+                "section_path": [
+                  "JSON Object Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R006",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R006",
+                "order": 6,
+                "ref": "L013",
+                "text": "Key value in Object in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), array, object, or `null`.",
+                "keyword": "MUST",
+                "section_path": [
+                  "JSON Object Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R007",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R007",
+                "order": 7,
+                "ref": "L014",
+                "text": "Object in array in *FOCUS dataset column* MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "JSON Object Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R008",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R008",
+                    "order": 8,
+                    "ref": "L015",
+                    "text": "Object in array in *FOCUS dataset column* MUST be of a consistent type.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "JSON Object Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R009",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R009",
+                    "order": 9,
+                    "ref": "L016",
+                    "text": "Object in array in *FOCUS dataset column* MUST NOT be repeated.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "JSON Object Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R010",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R010",
+                    "order": 10,
+                    "ref": "L017",
+                    "text": "Object in array in *FOCUS dataset column* MUST NOT be null.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "JSON Object Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -80,15 +314,6 @@
       "lead_in_colon",
       "indent_level"
     ],
-    "warnings": [
-      {
-        "code": "LEADIN_NO_CHILDREN",
-        "at": {
-          "temp_id": "R010",
-          "order": null
-        },
-        "text": "Lead-in ends with ':' but no children were attached."
-      }
-    ]
+    "warnings": []
   }
 }
