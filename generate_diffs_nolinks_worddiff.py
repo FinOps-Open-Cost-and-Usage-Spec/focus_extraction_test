@@ -226,12 +226,11 @@ def strip_git_diff_metadata(diff_output: str) -> str:
             or line.startswith("index ")
             or line.startswith("--- ")
             or line.startswith("+++ ")
-            or line.startswith("@@ ")
         ):
             continue
         filtered_lines.append(line)
 
-    result = "\n".join(filtered_lines)
+    result = "\n".join(filtered_lines).strip()
     if result:
         result += "\n"
 
