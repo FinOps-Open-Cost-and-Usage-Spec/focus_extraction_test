@@ -21,10 +21,10 @@
   },
   "0_outline_root": "ROOT: Data Generator-Calculated Split Cost Allocation Handling > Requirements",
   "0_outline_lines": [
-    "L007: \"When the data generator supports data generator-calculated split cost allocation, column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:\"",
-    "  L009: \"[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a dimension.\"",
-    "  L010: \"*FOCUS dataset column* values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a non-summable [*metric*](#glossary:metric) (e.g., unit prices).\"",
-    "  L011: \"The sum of *FOCUS dataset column* values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a summable *metric* (e.g., costs and quantities).\""
+    "L007: \"Column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:\"",
+    "  L009: \"[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) representing a dimension MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.\"",
+    "  L010: \"*FOCUS dataset column* representing a non-summable [*metric*](#glossary:metric) (e.g., unit prices) MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.\"",
+    "  L011: \"The sum of *FOCUS dataset column* across *allocated charges* MUST match the *FOCUS dataset column* in the corresponding *origin charge* when the *FOCUS dataset column* represents a summable metric (e.g., costs and quantities).\""
   ],
   "0_outline_summary": {
     "node_count": 4,
@@ -39,7 +39,7 @@
     "lead_ins": [
       {
         "ref": "L007",
-        "text_preview": "When the data generator supports data generator-calculated split cost allocation, column conforming to DataGeneratorCal…",
+        "text_preview": "Column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirem…",
         "children": 3
       }
     ]
@@ -56,10 +56,9 @@
             "temp_id": "R001",
             "order": 1,
             "ref": "L007",
-            "text": "When the data generator supports data generator-calculated split cost allocation, column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:",
+            "text": "Column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
-              "Data Generator-Calculated Split Cost Allocation Handling",
               "Requirements"
             ],
             "block": {
@@ -79,10 +78,9 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a dimension.",
+                "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) representing a dimension MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Data Generator-Calculated Split Cost Allocation Handling",
                   "Requirements"
                 ],
                 "block": {
@@ -103,10 +101,9 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "*FOCUS dataset column* values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a non-summable [*metric*](#glossary:metric) (e.g., unit prices).",
+                "text": "*FOCUS dataset column* representing a non-summable [*metric*](#glossary:metric) (e.g., unit prices) MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.",
                 "keyword": "MUST",
                 "section_path": [
-                  "Data Generator-Calculated Split Cost Allocation Handling",
                   "Requirements"
                 ],
                 "block": {
@@ -127,10 +124,9 @@
                 "temp_id": "R004",
                 "order": 4,
                 "ref": "L011",
-                "text": "The sum of *FOCUS dataset column* values in *allocated charges* MUST match the corresponding value in the *origin charge* when the *FOCUS dataset column* represents a summable *metric* (e.g., costs and quantities).",
+                "text": "The sum of *FOCUS dataset column* across *allocated charges* MUST match the *FOCUS dataset column* in the corresponding *origin charge* when the *FOCUS dataset column* represents a summable metric (e.g., costs and quantities).",
                 "keyword": "MUST",
                 "section_path": [
-                  "Data Generator-Calculated Split Cost Allocation Handling",
                   "Requirements"
                 ],
                 "block": {
