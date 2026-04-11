@@ -195,3 +195,20 @@ git diff --no-index \
   --word-diff-regex='[^[:space:]]+' \
   /tmp/allocatedtags_v13.md /tmp/allocatedtags_working.md
   ``` 
+  Other example commands can be found in the `diff_commands.md` file.:
+
+  ```bash
+git show v1.3:specification/datasets/cost_and_usage/columns/contractapplied.md \
+  | perl -pe 's/\[([^\]]+)\]\([^)]+\)/$1/g' \
+  > /tmp/contractapplied_v13.md && \
+
+git show working_draft:specification/datasets/cost_and_usage/columns/contractapplied.md \
+  | perl -pe 's/\[([^\]]+)\]\([^)]+\)/$1/g' \
+  > /tmp/contractapplied_working.md && \
+
+git diff --no-index \
+  --color \
+  --word-diff=plain \
+  --word-diff-regex='[^[:space:]]+' \
+  /tmp/contractapplied_v13.md /tmp/contractapplied_working.md
+  ``` 
