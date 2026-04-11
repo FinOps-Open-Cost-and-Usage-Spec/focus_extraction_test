@@ -2,7 +2,12 @@
 ### ATT
 specification/attributes/column_handling.md
 specification/attributes/currency_format.md
+specification/attributes/custom_column_handling.md
+specification/attributes/correction_handling.md
 specification/attributes/data_generator_calculated_split_cost_allocation_handling.md
+specification/attributes/dataset_completeness.md
+specification/attributes/dataset_configuration.md
+specification/attributes/delivery_handling.md
 specification/attributes/datetime_format.md
 specification/attributes/discount_handling.md
 specification/attributes/invoice_handling.md
