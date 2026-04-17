@@ -31,15 +31,7 @@ specification/datasets/contract_commitment/dataset.md
 
 
 ### CAU
-specification/datasets/cost_and_usage/columns/chargecategory.md
-specification/datasets/cost_and_usage/columns/commitmentdiscountid.md
 specification/datasets/cost_and_usage/columns/commitmentdiscountstatus.md
-specification/datasets/cost_and_usage/columns/contractapplied.md
-specification/datasets/cost_and_usage/columns/pricingcurrencycontractedunitprice.md
-specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md
-specification/datasets/cost_and_usage/columns/pricingcurrencylistunitprice.md
-specification/datasets/cost_and_usage/columns/resourceid.md
-specification/datasets/cost_and_usage/dataset.md
 
 
 
