@@ -420,13 +420,11 @@
     {
       "temp_id": "R017",
       "order": 17,
-      "text": "To evaluate these purchasing options, the `CommitmentPrograms` JSON array must be flattened so each eligible program can be analyzed independently.",
-      "keyword": "MUST",
+      "text": "NOTE: The above JSON Type Definition (JTD) is an approximation of the expected contents of this column, but it should not be considered normative because it cannot accurately describe the normative requirements (above) for CommitmentProgramEligibilityDetails.",
+      "keyword": "SHOULD NOT",
       "role": "requirement",
       "section_path": [
-        "Commitment Program Eligibility Details Object",
-        "Example Scenarios",
-        "Uncovered Eligible Spend by Program Type"
+        "Commitment Program Eligibility Details Object"
       ],
       "block": {
         "block_type": "paragraph",
@@ -437,37 +435,11 @@
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 148,
-        "line_end": 148
+        "line_start": 73,
+        "line_end": 73
       },
       "_alignment_status": "confirmed",
-      "ref": "L148"
-    },
-    {
-      "temp_id": "R018",
-      "order": 18,
-      "text": "The practitioner must choose between them (or split across both) based on flexibility requirements and discount depth.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Commitment Program Eligibility Details Object",
-        "Example Scenarios",
-        "Uncovered Eligible Spend by Program Type"
-      ],
-      "block": {
-        "block_type": "paragraph",
-        "indent_level": 0,
-        "bullet": null
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 157,
-        "line_end": 157
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L157"
+      "ref": "L073"
     }
   ],
   "warnings": [],
