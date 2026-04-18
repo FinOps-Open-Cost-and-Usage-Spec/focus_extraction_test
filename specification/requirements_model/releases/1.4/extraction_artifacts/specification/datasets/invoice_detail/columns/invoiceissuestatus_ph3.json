@@ -1,7 +1,7 @@
 {
   "ModelRules": {
     "IND-InvoiceIssueStatus-C-000-M": {
-      "Function": "Validation",
+      "Function": "Composite",
       "Reference": "InvoiceIssueStatus",
       "EntityType": "Column",
       "EntityName": "Invoice Issue Status",
@@ -120,7 +120,7 @@
       "DatasetId": "InvoiceDetail",
       "DatasetName": "Invoice Detail",
       "ValidationCriteria": {
-        "MustSatisfy": "InvoiceIssueStatus MUST be one of the allowed values defined in the Allowed Values section.",
+        "MustSatisfy": "InvoiceIssueStatus MUST be one of the allowed values.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
