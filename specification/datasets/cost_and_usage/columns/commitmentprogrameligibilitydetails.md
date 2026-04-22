@@ -6,7 +6,7 @@ Commitment Program Eligibility Details identifies the [*commitment programs*](#g
 
 CommitmentProgramEligibilityDetails MUST adhere to the following requirements:
 
-* CommitmentProgramEligibilityDetails MUST be of type String.
+* CommitmentProgramEligibilityDetails MUST be of type JSON Object (serialized as a String where necessary).
 * CommitmentProgramEligibilityDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.
 * CommitmentProgramEligibilityDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.
 * CommitmentProgramEligibilityDetails MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.
