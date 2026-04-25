@@ -1,29 +1,30 @@
 {
   "phase": 1,
   "source": {
-    "path": "specification/datasets/invoice_detail/columns/chargecategory.md",
+    "path": "specification/datasets/cost_and_usage/columns/commitmentprogrameligibilitydetails.md",
     "version": "1.4"
   },
   "entity": {
     "entity_type": "Column",
-    "entity_id": "ChargeCategory",
-    "entity_name": "Charge Category"
+    "entity_id": "CommitmentProgramEligibilityDetails",
+    "entity_name": "Commitment Program Eligibility Details"
   },
   "entities_found": [
     {
       "entity_type": "Column",
-      "entity_id": "ChargeCategory",
-      "entity_name": "Charge Category"
+      "entity_id": "CommitmentProgramEligibilityDetails",
+      "entity_name": "Commitment Program Eligibility Details"
     }
   ],
   "atoms": [
     {
       "temp_id": "R001",
       "order": 1,
-      "text": "ChargeCategory MUST adhere to the following requirements:",
+      "text": "CommitmentProgramEligibilityDetails MUST adhere to the following requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "ChargeCategory MUST be of type String.",
+      "text": "CommitmentProgramEligibilityDetails MUST be of type JSON Object (serialized as a String where necessary).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "ChargeCategory MUST NOT be null.",
-      "keyword": "MUST NOT",
+      "text": "CommitmentProgramEligibilityDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -92,10 +95,11 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "ChargeCategory MUST be one of the allowed values.",
+      "text": "CommitmentProgramEligibilityDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -116,10 +120,11 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "When the *charge* does not aggregate multiple classifications, ChargeCategory MUST adhere to the following requirements:",
-      "keyword": "MUST",
+      "text": "CommitmentProgramEligibilityDetails MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.",
+      "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
@@ -128,7 +133,7 @@
         "bullet": "*"
       },
       "lead_in": {
-        "ends_with_colon": true
+        "ends_with_colon": false
       },
       "provenance": {
         "line_start": 12,
@@ -140,15 +145,16 @@
     {
       "temp_id": "R006",
       "order": 6,
-      "text": "ChargeCategory MUST be \"Usage\" when the *charge* represents consumption of a service or resource.",
-      "keyword": "MUST",
+      "text": "CommitmentProgramEligibilityDetails MUST NOT reflect restrictions (e.g., transient account configurations, quotas) that might temporarily prevent purchase or participation in a *commitment program*.",
+      "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -164,15 +170,16 @@
     {
       "temp_id": "R007",
       "order": 7,
-      "text": "ChargeCategory MUST be \"Purchase\" when the *charge* represents acquisition of a service, resource, or *commitment*.",
+      "text": "CommitmentProgramEligibilityDetails MUST include all publicly available *commitment programs* for which the usage is eligible.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -188,15 +195,16 @@
     {
       "temp_id": "R008",
       "order": 8,
-      "text": "ChargeCategory MUST be \"Tax\" when the *charge* represents taxes levied by the relevant authorities.",
-      "keyword": "MUST",
+      "text": "CommitmentProgramEligibilityDetails MAY include negotiated *commitment programs* when the usage is eligible and the program is not broadly applicable across the service provider's service catalog.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -212,15 +220,16 @@
     {
       "temp_id": "R009",
       "order": 9,
-      "text": "ChargeCategory MUST be \"Credit\" when the *charge* represents a financial incentive or allowance unrelated to other *charges*.",
-      "keyword": "MUST",
+      "text": "CommitmentProgramEligibilityDetails MUST NOT include data related to *commitment* [*periods*](#glossary:period) or payment options.",
+      "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -236,15 +245,16 @@
     {
       "temp_id": "R010",
       "order": 10,
-      "text": "ChargeCategory MUST be \"Adjustment\" when the *charge* represents a billing modification that does not fall into other ChargeCategories.",
+      "text": "CommitmentProgramEligibilityDetails MUST conform to [CommitmentProgramEligibilityDetailsObject](#datasets.costandusage.commitmentprogrameligibilitydetails.commitmentprogrameligibilitydetailsobject) requirements when CommitmentProgramEligibilityDetails is not null.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Commitment Program Eligibility Details",
         "Requirements"
       ],
       "block": {
         "block_type": "list_item",
-        "indent_level": 1,
+        "indent_level": 0,
         "bullet": "*"
       },
       "lead_in": {
@@ -256,54 +266,6 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L017"
-    },
-    {
-      "temp_id": "R011",
-      "order": 11,
-      "text": "When the *charge* aggregates multiple classifications, ChargeCategory MUST adhere to the following requirements:",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": true
-      },
-      "provenance": {
-        "line_start": 18,
-        "line_end": 18
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L018"
-    },
-    {
-      "temp_id": "R012",
-      "order": 12,
-      "text": "ChargeCategory MAY be \"Usage\" when the record aggregates *charges* across multiple allowed values other than \"Tax\" (for example, aggregation of \"Usage\" and \"Credit\" is allowed, but not \"Usage\" and \"Tax\").",
-      "keyword": "MAY",
-      "role": "requirement",
-      "section_path": [
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 1,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 19,
-        "line_end": 19
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L019"
     }
   ],
   "warnings": [],

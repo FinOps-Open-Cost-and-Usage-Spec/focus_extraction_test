@@ -311,7 +311,7 @@
     {
       "temp_id": "R012",
       "order": 12,
-      "text": "Values for all AllocatedMethodDetailsObject.Elements[*].AllocatedRatio properties across all allocated charges related to a single origin charge MUST sum up to 1 (100%).",
+      "text": "The sum of AllocatedMethodDetailsObject.Elements[*].AllocatedRatio across all allocated charges related to a single origin charge MUST be equal to 1 (100%).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -423,6 +423,23 @@
           "Column",
           "Object"
         ],
+        "entities_found_count": 2
+      },
+      "text": "(document-level)"
+    },
+    {
+      "code": "W_ENTITY_FALLBACK_APPLIED",
+      "severity": "LOW",
+      "message": "Canonical entity was assigned by deterministic fallback precedence because multiple entities were detected.",
+      "details": {
+        "precedence": [
+          "Column",
+          "Dataset",
+          "Attribute"
+        ],
+        "selected_entity_type": "Column",
+        "selected_entity_id": "AllocatedMethodDetails",
+        "selected_entity_name": "Allocated Method Details",
         "entities_found_count": 2
       },
       "text": "(document-level)"

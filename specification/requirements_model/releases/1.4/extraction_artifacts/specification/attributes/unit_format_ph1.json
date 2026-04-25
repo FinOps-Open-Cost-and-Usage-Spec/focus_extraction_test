@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST adhere to the following [base unit](#attributes.definitions.baseunit) requirements:",
+      "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST adhere to the following [base unit](#attributes.unitformat.definitions.baseunit) requirements:",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -295,7 +295,7 @@
     {
       "temp_id": "R012",
       "order": 12,
-      "text": "*FOCUS dataset column* MAY include a [unit quantity](#attributes.definitions.unitquantity) expressed as a positive integer.",
+      "text": "*FOCUS dataset column* MAY include a [unit quantity](#attributes.unitformat.definitions.unitquantity) expressed as a positive integer.",
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
@@ -320,7 +320,7 @@
     {
       "temp_id": "R013",
       "order": 13,
-      "text": "*FOCUS dataset column* expressing a compound unit MUST use a hyphen (`-`) to separate base units (e.g., `GB-Hours`).",
+      "text": "*FOCUS dataset column* expressing a [compound unit](#attributes.unitformat.definitions.compoundunit) MUST use a hyphen (`-`) to separate base units (e.g., `GB-Hours`).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -370,7 +370,7 @@
     {
       "temp_id": "R015",
       "order": 15,
-      "text": "*FOCUS dataset column* expressing a ratio unit MUST use a slash (`/`) to separate the numerator and denominator (e.g., `GB/Hour` to signify gigabytes per hour).",
+      "text": "*FOCUS dataset column* expressing a [ratio unit](#attributes.unitformat.definitions.ratiounit) MUST use a slash (`/`) to separate the numerator and denominator (e.g., `GB/Hour` to signify gigabytes per hour).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -395,7 +395,7 @@
     {
       "temp_id": "R016",
       "order": 16,
-      "text": "*FOCUS dataset column* expressing a ratio unit MAY include a [denominator quantity](#attributes.definitions.denominatorquantity) expressed as a positive integer.",
+      "text": "*FOCUS dataset column* expressing a ratio unit MAY include a [denominator quantity](#attributes.unitformat.definitions.denominatorquantity) expressed as a positive integer.",
       "keyword": "MAY",
       "role": "requirement",
       "section_path": [
@@ -495,7 +495,7 @@
     {
       "temp_id": "R020",
       "order": 20,
-      "text": "*FOCUS dataset column* expressing a simple unit SHOULD use the `<plural-units>` format (e.g., `GB`, `Seconds`).",
+      "text": "*FOCUS dataset column* expressing a [simple unit](#attributes.unitformat.definitions.simpleunit) SHOULD use the `<plural-units>` format (e.g., `GB`, `Seconds`).",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [

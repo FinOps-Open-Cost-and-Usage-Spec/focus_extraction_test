@@ -1,7 +1,7 @@
 {
   "ModelRules": {
     "ATT-UnitFormat-A-000-M": {
-      "Function": "Format",
+      "Function": "Composite",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
       "EntityName": "Unit Format",
@@ -9,7 +9,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 0,
@@ -23,21 +22,21 @@
         "Condition": [],
         "Dependencies": [
           "ATT-UnitFormat-A-001-M",
-          "ATT-UnitFormat-A-011-C",
-          "ATT-UnitFormat-A-012-C",
-          "ATT-UnitFormat-A-013-C",
-          "ATT-UnitFormat-A-014-C",
-          "ATT-UnitFormat-A-015-C",
-          "ATT-UnitFormat-A-016-C",
+          "ATT-UnitFormat-A-011-O",
+          "ATT-UnitFormat-A-012-M",
+          "ATT-UnitFormat-A-013-O",
+          "ATT-UnitFormat-A-014-M",
+          "ATT-UnitFormat-A-015-O",
+          "ATT-UnitFormat-A-016-O",
           "ATT-UnitFormat-A-017-O",
-          "ATT-UnitFormat-A-018-C",
-          "ATT-UnitFormat-A-019-C",
-          "ATT-UnitFormat-A-020-C"
+          "ATT-UnitFormat-A-018-O",
+          "ATT-UnitFormat-A-019-O",
+          "ATT-UnitFormat-A-020-O"
         ]
       }
     },
     "ATT-UnitFormat-A-001-M": {
-      "Function": "Validation",
+      "Function": "Composite",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
       "EntityName": "Unit Format",
@@ -45,7 +44,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 10,
@@ -79,7 +77,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 20,
@@ -103,7 +100,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 30,
@@ -127,7 +123,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 40,
@@ -151,7 +146,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Dynamic",
       "Order": 50,
@@ -175,7 +169,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Dynamic",
       "Order": 60,
@@ -199,7 +192,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 70,
@@ -223,7 +215,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 80,
@@ -247,7 +238,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 90,
@@ -255,8 +245,8 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* MAY include a count-based base unit that is not listed as one of the allowed values.",
-        "Keyword": "MAY",
+        "MustSatisfy": "*FOCUS dataset column* SHOULD use capitalized nouns for base units that do not correspond to any of the allowed base unit names listed below.",
+        "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
@@ -271,7 +261,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 100,
@@ -279,14 +268,14 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* SHOULD use capitalized nouns for base units that do not correspond to any of the allowed base unit names listed below.",
-        "Keyword": "SHOULD",
+        "MustSatisfy": "*FOCUS dataset column* MAY include a count-based base unit that is not listed as one of the allowed values.",
+        "Keyword": "MAY",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-011-C": {
+    "ATT-UnitFormat-A-011-O": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -295,22 +284,21 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 110,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* MUST use a hyphen (`-`) to separate base units when expressing a compound unit (e.g., `GB-Hours`).",
-        "Keyword": "MUST",
+        "MustSatisfy": "*FOCUS dataset column* MAY include a unit quantity expressed as a positive integer.",
+        "Keyword": "MAY",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-012-C": {
+    "ATT-UnitFormat-A-012-M": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -319,22 +307,21 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 120,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* MUST use a slash (`/`) to separate the numerator and denominator when expressing a ratio unit (e.g., `GB/Hour` to signify gigabytes per hour).",
+        "MustSatisfy": "*FOCUS dataset column* expressing a compound unit MUST use a hyphen (`-`) to separate base units (e.g., `GB-Hours`).",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-013-C": {
+    "ATT-UnitFormat-A-013-O": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -343,22 +330,21 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 130,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* SHOULD use the `<plural-units>` format when expressing a simple unit (e.g., `GB`, `Seconds`).",
+        "MustSatisfy": "*FOCUS dataset column* expressing a compound unit SHOULD use the `<singular-base-unit>-<plural-base-unit>` format (e.g., `GB-Hours`, `MB-Days`, `Request-Tokens`).",
         "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-014-C": {
+    "ATT-UnitFormat-A-014-M": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -367,22 +353,21 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 140,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* SHOULD use the `<singular-base-unit>-<plural-base-unit>` format when expressing a compound unit (e.g., `GB-Hours`, `MB-Days`, `Request-Tokens`).",
-        "Keyword": "SHOULD",
+        "MustSatisfy": "*FOCUS dataset column* expressing a ratio unit MUST use a slash (`/`) to separate the numerator and denominator (e.g., `GB/Hour` to signify gigabytes per hour).",
+        "Keyword": "MUST",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-015-C": {
+    "ATT-UnitFormat-A-015-O": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -391,22 +376,21 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 150,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* SHOULD use the `<plural-units>/<singular-time-unit>` format when expressing a ratio unit with a time denominator (e.g., `GB/Hour`, `PB/Day`).",
-        "Keyword": "SHOULD",
+        "MustSatisfy": "*FOCUS dataset column* expressing a ratio unit MAY include a denominator quantity expressed as a positive integer.",
+        "Keyword": "MAY",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-016-C": {
+    "ATT-UnitFormat-A-016-O": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -415,15 +399,14 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
       "Order": 160,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* SHOULD use the `<compound-unit>/<singular-time-unit>` format when expressing a ratio unit with a compound unit numerator (e.g., `Core-Hours/Day`).",
+        "MustSatisfy": "*FOCUS dataset column* expressing a ratio unit and including a denominator quantity SHOULD use the `<plural-units>/<denominator-quantity> <plural-time-units>` format (e.g., `Units/3 Months`).",
         "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
@@ -439,7 +422,6 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
       "Type": "Static",
       "Order": 170,
@@ -447,38 +429,14 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* MAY include a unit quantity expressed as a positive integer.",
-        "Keyword": "MAY",
-        "Requirement": {},
-        "Condition": [],
-        "Dependencies": []
-      }
-    },
-    "ATT-UnitFormat-A-018-C": {
-      "Function": "Validation",
-      "Reference": "UnitFormat",
-      "EntityType": "Attribute",
-      "EntityName": "Unit Format",
-      "EntityId": "UnitFormat",
-      "Notes": "",
-      "ModelVersionIntroduced": "unknown",
-      "Status": "Active",
-      "ModelVersionRemoved": "",
-      "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
-      "Order": 180,
-      "DatasetType": "ATT",
-      "DatasetId": "",
-      "DatasetName": "",
-      "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* SHOULD use the `<unit-quantity> <plural-units>` format when a unit quantity is included (e.g., `1000 Tokens`, `1000 Characters`).",
+        "MustSatisfy": "*FOCUS dataset column* expressing a ratio unit with a compound unit numerator SHOULD use the `<compound-unit>/<singular-time-unit>` format (e.g., `Core-Hours/Day`).",
         "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-019-C": {
+    "ATT-UnitFormat-A-018-O": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -487,22 +445,21 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
-      "Order": 190,
+      "Type": "Static",
+      "Order": 180,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* MAY include a denominator quantity expressed as a positive integer when the *FOCUS dataset column* represents a ratio unit.",
-        "Keyword": "MAY",
+        "MustSatisfy": "*FOCUS dataset column* expressing a ratio unit with a time denominator SHOULD use the `<plural-units>/<singular-time-unit>` format (e.g., `GB/Hour`, `PB/Day`).",
+        "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
         "Dependencies": []
       }
     },
-    "ATT-UnitFormat-A-020-C": {
+    "ATT-UnitFormat-A-019-O": {
       "Function": "Validation",
       "Reference": "UnitFormat",
       "EntityType": "Attribute",
@@ -511,15 +468,37 @@
       "Notes": "",
       "ModelVersionIntroduced": "unknown",
       "Status": "Active",
-      "ModelVersionRemoved": "",
       "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
+      "Type": "Static",
+      "Order": 190,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "*FOCUS dataset column* expressing a simple unit SHOULD use the `<plural-units>` format (e.g., `GB`, `Seconds`).",
+        "Keyword": "SHOULD",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "ATT-UnitFormat-A-020-O": {
+      "Function": "Validation",
+      "Reference": "UnitFormat",
+      "EntityType": "Attribute",
+      "EntityName": "Unit Format",
+      "EntityId": "UnitFormat",
+      "Notes": "",
+      "ModelVersionIntroduced": "unknown",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
       "Order": 200,
       "DatasetType": "ATT",
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "*FOCUS dataset column* SHOULD use the `<plural-units>/<denominator-quantity> <plural-time-units>` format when the *FOCUS dataset column* represents a ratio unit and a denominator quantity is included (e.g., `Units/3 Months`).",
+        "MustSatisfy": "*FOCUS dataset column* including a unit quantity SHOULD use the `<unit-quantity> <plural-units>` format (e.g., `1000 Tokens`, `1000 Characters`).",
         "Keyword": "SHOULD",
         "Requirement": {},
         "Condition": [],
