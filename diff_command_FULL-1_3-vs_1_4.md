@@ -80,6 +80,8 @@ specification/datasets/cost_and_usage/columns/commitmentdiscountquantity.md
 specification/datasets/cost_and_usage/columns/commitmentdiscountstatus.md
 specification/datasets/cost_and_usage/columns/commitmentdiscounttype.md
 specification/datasets/cost_and_usage/columns/commitmentdiscountunit.md
+specification/datasets/cost_and_usage/columns/commitmentprogrameligibilitydetails.md
+specification/datasets/cost_and_usage/columns/commitmentprogrameligibilitydetailsobject.md
 specification/datasets/cost_and_usage/columns/consumedquantity.md
 specification/datasets/cost_and_usage/columns/consumedunit.md
 specification/datasets/cost_and_usage/columns/contractapplied.md
