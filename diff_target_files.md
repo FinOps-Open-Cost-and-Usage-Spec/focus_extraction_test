@@ -45,36 +45,23 @@ specification/datasets/cost_and_usage/columns/chargefrequency.md
 specification/datasets/cost_and_usage/columns/commitmentdiscountcategory.md
 specification/datasets/cost_and_usage/columns/commitmentdiscountquantity.md
 specification/datasets/cost_and_usage/columns/commitmentdiscountstatus.md
-
-
 specification/datasets/cost_and_usage/columns/contractapplied.md
 specification/datasets/cost_and_usage/columns/contractedcost.md
 specification/datasets/cost_and_usage/columns/contractedunitprice.md
 specification/datasets/cost_and_usage/columns/effectivecost.md
 specification/datasets/cost_and_usage/columns/hostprovidername.md
-
 specification/datasets/cost_and_usage/columns/invoiceissuername.md
 specification/datasets/cost_and_usage/columns/listcost.md
 specification/datasets/cost_and_usage/columns/listunitprice.md
 specification/datasets/cost_and_usage/columns/pricingcategory.md
-
 specification/datasets/cost_and_usage/pricingcurrencycontractedunitprice.md
-
 specification/datasets/cost_and_usage/columns/pricingcurrencylistunitprice.md
 specification/datasets/cost_and_usage/columns/pricingquantity.md
 specification/datasets/cost_and_usage/columns/pricingunit.md
-
-
 specification/datasets/cost_and_usage/columns/servicecategory.md
-
-
-
 specification/datasets/cost_and_usage/columns/servicesubcategory.md
 specification/datasets/cost_and_usage/columns/skuid.md
-
-
 specification/datasets/cost_and_usage/columns/skupriceid.md
-
 specification/datasets/cost_and_usage/dataset.md
 
 
