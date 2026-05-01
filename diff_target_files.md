@@ -11,8 +11,8 @@ specification/attributes/string_handling.md
 
 ### CCT
 specification/datasets/contract_commitment/columns/contractcommitmentdescription.md
-specification/datasets/contract_commitment/columns/contractperiodend.md
-specification/datasets/contract_commitment/columns/contractperiodstart.md
+specification/datasets/contract_commitment/columns/contractcommitmentperiodend.md
+specification/datasets/contract_commitment/columns/contractcommitmentperiodstart.md
 specification/datasets/contract_commitment/columns/contractperiodend.md
 specification/datasets/contract_commitment/columns/contractperiodstart.md
 
@@ -35,7 +35,6 @@ specification/datasets/cost_and_usage/columns/contractedunitprice.md
 specification/datasets/cost_and_usage/columns/effectivecost.md
 specification/datasets/cost_and_usage/columns/hostprovidername.md
 specification/datasets/cost_and_usage/columns/listunitprice.md
-specification/datasets/cost_and_usage/columns/pricingcategory.md
 specification/datasets/cost_and_usage/columns/pricingcurrency.md
 specification/datasets/cost_and_usage/columns/pricingcurrencycontractedunitprice.md
 specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md
