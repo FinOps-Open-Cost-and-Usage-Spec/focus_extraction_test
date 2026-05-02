@@ -174,7 +174,7 @@ python3 generate_diffs_nolinks_worddiff.py CAU
 > specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/CAU/
 
 
-## Diff Command 
+## Diff Command (terminal output)
 * Provides a diff command with color (command line) for each file.
 * Deltas with [-deleted-]{+added+} format for easy review.
 * Does not include links in the diff output.
@@ -212,3 +212,28 @@ git diff --no-index \
   --word-diff-regex='[^[:space:]]+' \
   /tmp/contractapplied_v13.md /tmp/contractapplied_working.md
   ``` 
+
+## Diff Command (file output)
+
+This command extracts two versions of the `contractapplied.md` file—one from the `v1.3` tag and one from the `working_draft` branch—removes Markdown links to compare only the visible text, and generates a word-level diff showing changes between the two versions. The result is saved to a Markdown file for review, using `{−removed−}` and `{+added+}` markers without terminal color formatting.
+
+- Ensure the release tags or branches are provided in the correct order (baseline first, then target) to reflect the intended direction of the diff.
+- Ensure the filename specified in both `git show` commands is the same and corresponds to the file you want to compare.
+- Use a consistent output filename schema: `<filename>_diff_<baseline>-vs-<target>.md` (e.g., `contractapplied_diff_1-3-working-draft.md`) to clearly indicate the file compared and the direction of the diff.
+
+```
+git show v1.3:specification/datasets/cost_and_usage/columns/contractapplied.md \
+  | perl -pe 's/\[([^\]]+)\]\([^)]+\)/$1/g' \
+  > /tmp/contractapplied_v13.md && \
+
+git show working_draft:specification/datasets/cost_and_usage/columns/contractapplied.md \
+  | perl -pe 's/\[([^\]]+)\]\([^)]+\)/$1/g' \
+  > /tmp/contractapplied_working.md && \
+
+git diff --no-index \
+  --no-color \
+  --word-diff=plain \
+  --word-diff-regex='[^[:space:]]+' \
+  /tmp/contractapplied_v13.md /tmp/contractapplied_working.md \
+  > specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/CAU/contractapplied_diff_1-3-working-draft.md
+  ```
