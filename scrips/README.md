@@ -55,9 +55,10 @@ python3 /Users/jpradocueva/Documents/github/focus/focus_extraction_test/scrips/g
 The script will:
 
 1. Load and normalize the two JSON files
-2. Compare them line-by-line
-3. Generate inline delta markers
-4. Write the diff output to:
+2. Ignore indentation-only changes
+3. Compare meaningful line-level content changes
+4. Generate inline delta markers
+5. Write the diff output to:
 
 ```text
 specification/requirements_model/releases/1.4/extraction_artifacts/diff-working_draft-2344/delivery_handling_diff_working_draft-2344.json
@@ -70,3 +71,21 @@ specification/requirements_model/releases/1.4/extraction_artifacts/diff-working_
 - The script must be executed from inside the `FOCUS_Spec` repository root.
 - The script itself can be stored outside the production repository.
 - Output directories are automatically created if they do not exist.
+
+### Note About Indentation Handling
+
+The script ignores indentation-only differences between the two JSON files.
+
+This is useful when one JSON file has the same content but is nested differently or formatted with different spacing. The diff output focuses on meaningful content changes, such as:
+
+- Added or removed fields
+- Changed values
+- Changed rule IDs
+- Changed dependencies
+- Added or removed model rules
+
+Indentation-only changes are not reported in the output.
+
+## Important Limitation
+
+The script compares normalized JSON line-by-line. It reduces formatting noise, but it is not a full semantic JSON diff tool. If a rule is renamed, moved, or restructured, the output may still show larger blocks of additions and removals.
