@@ -237,3 +237,97 @@ git diff --no-index \
   /tmp/contractapplied_v13.md /tmp/contractapplied_working.md \
   > specification/requirements_model/releases/1.4/extraction_artifacts/diff-1_3-vs-working_draft/CAU/contractapplied_diff_1-3-working-draft.md
   ```
+
+
+
+# Workflow to Build the JSON RequirementsModel and Extract Normative Text
+
+## 1. Install Python Requirements
+
+Move into the main `FOCUS_Spec` folder and install the required Python packages.
+
+```bash
+cd /Users/jpradocueva/Documents/github/focus/FOCUS_Spec
+
+python3 -m pip install -r requirements.txt
+```
+
+---
+
+## 2. Move into the requirements_model Folder
+
+```bash
+cd specification/requirements_model
+```
+
+You should now be in:
+
+```text
+FOCUS_Spec/specification/requirements_model
+```
+
+---
+
+## 3. Build the JSON Model for Version 1.4
+
+Run the build script to generate the JSON model for FOCUS version 1.4.
+
+```bash
+./build_json.py --version 1.4
+```
+
+This script:
+- Reads the specification source files
+- Processes the requirements model
+- Generates machine-readable JSON files
+
+---
+
+## 4. Verify the Generated Build Files
+
+List the contents of the `build` folder.
+
+```bash
+ls build
+```
+
+You should see files similar to:
+
+```text
+model-1.4.json
+```
+
+---
+
+## 5. Extract Normative Text from the Generated Model
+
+Run the extraction script against the generated JSON model.
+
+```bash
+./output_normative_text_from_model.py build/model-1.4.json --dataset costandusage
+```
+
+This command:
+- Opens the generated JSON model
+- Extracts normative requirements text
+- Filters the output to the `costandusage` dataset
+
+---
+
+# Alternative Workflow Using make
+
+Instead of running the scripts manually, you can use the automated workflow provided by the repository.
+
+Move into the `specification` folder:
+
+```bash
+cd /Users/jpradocueva/Documents/github/focus/FOCUS_Spec/specification
+```
+
+Then run:
+
+```bash
+make
+```
+
+The `make` command uses the repository `Makefile` to automate the build workflow.
