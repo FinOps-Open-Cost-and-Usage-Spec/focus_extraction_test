@@ -270,3 +270,84 @@ ContractPeriodStart MUST adhere to the following requirements:
 * ContractPeriodStart MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
 * ContractPeriodStart MUST NOT be null.
 * ContractPeriodStart MUST be the *inclusive start bound* of the effective period of the *contract*.
+
+# InvoiceIssuerName
+
+InvoiceIssuerName MUST adhere to the following requirements:
+
+* InvoiceIssuerName MUST be of type String.
+* InvoiceIssuerName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* InvoiceIssuerName MUST NOT be null.
+* InvoiceIssuerName MUST represent the entity that issues invoices.
+
+# PricingCurrency
+
+PricingCurrency MUST adhere to the following requirements:
+
+* PricingCurrency MUST be of type String.
+* PricingCurrency MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* PricingCurrency MUST conform to [CurrencyFormat](#attributes.currencyformat) requirements.
+* PricingCurrency MUST NOT be null.
+
+# PricingCurrencyContractCommitmentCost
+
+PricingCurrencyContractCommitmentCost MUST adhere to the following requirements:
+
+* PricingCurrencyContractCommitmentCost MUST be of type Decimal.
+* PricingCurrencyContractCommitmentCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* PricingCurrencyContractCommitmentCost MUST adhere to the following nullability requirements:
+  * PricingCurrencyContractCommitmentCost MUST NOT be null when [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory) is "Spend" and [PricingCurrency](#datasets.contractcommitment.pricingcurrency) is provided.
+  * PricingCurrencyContractCommitmentCost MAY be null when ContractCommitmentCategory is "Usage".
+* PricingCurrencyContractCommitmentCost MUST be denominated in the PricingCurrency.
+
+# ServiceProviderName
+
+ServiceProviderName MUST adhere to the following requirements:
+
+* ServiceProviderName MUST be of type String.
+* ServiceProviderName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ServiceProviderName MUST NOT be null.
+
+# Dataset
+
+ContractCommitment MUST adhere to the following requirements:
+
+* ContractCommitment MUST be present when the service provider supports *contract commitments*.
+* ContractCommitment column presence MUST adhere to the following requirements:
+  * ContractCommitment MUST include [BillingCurrency](#datasets.contractcommitment.billingcurrency).
+  * ContractCommitment MUST include [ContractCommitmentApplicability](#datasets.contractcommitment.contractcommitmentapplicability).
+  * ContractCommitment MUST include [ContractCommitmentBenefitCategory](#datasets.contractcommitment.contractcommitmentbenefitcategory).
+  * ContractCommitment MUST include [ContractCommitmentCategory](#datasets.contractcommitment.contractcommitmentcategory).
+  * ContractCommitment MUST include [ContractCommitmentCost](#datasets.contractcommitment.contractcommitmentcost).
+  * ContractCommitment MUST include [ContractCommitmentCreated](#datasets.contractcommitment.contractcommitmentcreated).
+  * ContractCommitment MUST include [ContractCommitmentDescription](#datasets.contractcommitment.contractcommitmentdescription).
+  * ContractCommitment MUST include [ContractCommitmentDiscountPercentage](#datasets.contractcommitment.contractcommitmentdiscountpercentage).
+  * ContractCommitment MUST include [ContractCommitmentDurationType](#datasets.contractcommitment.contractcommitmentdurationtype).
+  * ContractCommitment MUST include [ContractCommitmentFulfillmentInterval](#datasets.contractcommitment.contractcommitmentfulfillmentinterval).
+  * ContractCommitment MUST include [ContractCommitmentId](#datasets.contractcommitment.contractcommitmentid).
+  * ContractCommitment MUST include [ContractCommitmentLastUpdated](#datasets.contractcommitment.contractcommitmentlastupdated).
+  * ContractCommitment MUST include [ContractCommitmentLifecycleStatus](#datasets.contractcommitment.contractcommitmentlifecyclestatus).
+  * ContractCommitment MUST include [ContractCommitmentModel](#datasets.contractcommitment.contractcommitmentmodel).
+  * ContractCommitment MUST include [ContractCommitmentOfferCategory](#datasets.contractcommitment.contractcommitmentoffercategory).
+  * ContractCommitment MUST include [ContractCommitmentPaymentInterval](#datasets.contractcommitment.contractcommitmentpaymentinterval).
+  * ContractCommitment MUST include [ContractCommitmentPaymentModel](#datasets.contractcommitment.contractcommitmentpaymentmodel).
+  * ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) when the service provider offers "Partial Upfront" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).
+  * ContractCommitment MUST include [ContractCommitmentPeriodEnd](#datasets.contractcommitment.contractcommitmentperiodend).
+  * ContractCommitment MUST include [ContractCommitmentPeriodStart](#datasets.contractcommitment.contractcommitmentperiodstart).
+  * ContractCommitment MUST include [ContractCommitmentQuantity](#datasets.contractcommitment.contractcommitmentquantity).
+  * ContractCommitment MUST include [ContractCommitmentType](#datasets.contractcommitment.contractcommitmenttype).
+  * ContractCommitment MUST include [ContractCommitmentUnit](#datasets.contractcommitment.contractcommitmentunit).
+  * ContractCommitment MUST include [ContractId](#datasets.contractcommitment.contractid).
+  * ContractCommitment MUST include [ContractPeriodEnd](#datasets.contractcommitment.contractperiodend).
+  * ContractCommitment MUST include [ContractPeriodStart](#datasets.contractcommitment.contractperiodstart).
+  * ContractCommitment MUST include [InvoiceIssuerName](#datasets.contractcommitment.invoiceissuername).
+  * ContractCommitment MUST include [PricingCurrency](#datasets.contractcommitment.pricingcurrency) when the service provider supports pricing and billing in different currencies.
+  * ContractCommitment MUST include [PricingCurrencyContractCommitmentCost](#datasets.contractcommitment.pricingcurrencycontractcommitmentcost) when the service provider supports pricing and billing in different currencies.
+  * ContractCommitment MUST include [ServiceProviderName](#datasets.contractcommitment.serviceprovidername).
+* ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.
+* ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.
+* ContractCommitment MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.
+* ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.
+* ContractCommitment [*FOCUS columns*](#glossary:FOCUS-column) MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.
+* ContractCommitment *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.
+* ContractCommitment [*custom columns*](#glossary:custom-column) MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.
