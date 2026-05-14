@@ -1,0 +1,124 @@
+{
+  "ModelRules": {
+    "DM-DataModel-M-000-M": {
+      "Function": "Composite",
+      "Reference": "DataModel",
+      "EntityType": "DataModel",
+      "EntityName": "Data Model",
+      "EntityId": "DataModel",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "DM",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "DataModel MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "DM-DataModel-M-001-M",
+          "DM-DataModel-M-002-C",
+          "DM-DataModel-M-003-C",
+          "DM-DataModel-M-004-C"
+        ]
+      }
+    },
+    "DM-DataModel-M-001-M": {
+      "Function": "Validation",
+      "Reference": "DataModel",
+      "EntityType": "DataModel",
+      "EntityName": "Data Model",
+      "EntityId": "DataModel",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "DM",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "DataModel MUST include CostAndUsage.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "DM-DataModel-M-002-C": {
+      "Function": "Validation",
+      "Reference": "DataModel",
+      "EntityType": "DataModel",
+      "EntityName": "Data Model",
+      "EntityId": "DataModel",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 20,
+      "DatasetType": "DM",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "DataModel MUST include BillingPeriod when the invoice issuer supports payable invoices.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "DM-DataModel-M-003-C": {
+      "Function": "Validation",
+      "Reference": "DataModel",
+      "EntityType": "DataModel",
+      "EntityName": "Data Model",
+      "EntityId": "DataModel",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 30,
+      "DatasetType": "DM",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "DataModel MUST include ContractCommitment when the service provider supports *contract commitments*.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "DM-DataModel-M-004-C": {
+      "Function": "Validation",
+      "Reference": "DataModel",
+      "EntityType": "DataModel",
+      "EntityName": "Data Model",
+      "EntityId": "DataModel",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 40,
+      "DatasetType": "DM",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "DataModel MUST include InvoiceDetail when the invoice issuer supports payable invoices.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    }
+  }
+}
