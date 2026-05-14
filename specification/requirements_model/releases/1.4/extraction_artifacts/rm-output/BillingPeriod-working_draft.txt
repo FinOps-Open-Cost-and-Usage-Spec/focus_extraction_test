@@ -1,0 +1,76 @@
+# BillingPeriodCreated
+
+BillingPeriodCreated MUST adhere to the following requirements:
+
+* BillingPeriodCreated MUST be of type Date/Time.
+* BillingPeriodCreated MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* BillingPeriodCreated MUST NOT be null.
+* BillingPeriodCreated MUST represent the moment in time the [Billing Period](#datasets.billingperiod) record was instantiated.
+
+
+# BillingPeriodEnd
+
+BillingPeriodEnd MUST adhere to the following requirements:
+
+* BillingPeriodEnd MUST be of type Date/Time.
+* BillingPeriodEnd MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* BillingPeriodEnd MUST NOT be null.
+* BillingPeriodEnd MUST be the *exclusive end bound* of the *billing period*.
+
+# BillingPeriodLastUpdated
+
+BillingPeriodLastUpdated MUST adhere to the following requirements:
+
+* BillingPeriodLastUpdated MUST be of type Date/Time.
+* BillingPeriodLastUpdated MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* BillingPeriodLastUpdated MUST NOT be null.
+* BillingPeriodLastUpdated MUST represent the most recent moment in time when any column value of the Billing Period record was created or modified.
+* BillingPeriodLastUpdated MUST be greater than or equal to [BillingPeriodCreated](#datasets.billingperiod.billingperiodcreated).
+
+# BillingPeriodStart
+
+BillingPeriodStart MUST adhere to the following requirements:
+
+* BillingPeriodStart MUST be of type Date/Time.
+* BillingPeriodStart MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* BillingPeriodStart MUST NOT be null.
+* BillingPeriodStart MUST be the *inclusive start bound* of the *billing period*.
+
+# BillingPeriodStatus
+
+BillingPeriodStatus MUST adhere to the following requirements:
+
+* BillingPeriodStatus MUST be of type String.
+* BillingPeriodStatus MUST NOT be null.
+* BillingPeriodStatus MUST be one of the allowed values.
+* BillingPeriodStatus MUST represent the state of the billing period identified by [BillingPeriodStart](#datasets.billingperiod.billingperiodstart) and [BillingPeriodEnd](#datasets.billingperiod.billingperiodend).
+* BillingPeriodStatus MUST NOT be "Open" following a previous status of "Closed", except when explicitly requested or approved by the customer.
+
+# InvoiceIssuerName
+
+InvoiceIssuerName MUST adhere to the following requirements:
+
+* InvoiceIssuerName MUST be of type String.
+* InvoiceIssuerName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* InvoiceIssuerName MUST NOT be null.
+* InvoiceIssuerName MUST represent the entity that issues invoices.
+
+# BillingPeriod Dataset
+
+BillingPeriod MUST adhere to the following requirements:
+
+* BillingPeriod MUST be present when the invoice issuer supports payable invoices.
+* The presence of columns in BillingPeriod MUST adhere to the following requirements:
+  * BillingPeriod MUST include [BillingPeriodCreated](#datasets.billingperiod.billingperiodcreated).
+  * BillingPeriod MUST include [BillingPeriodEnd](#datasets.billingperiod.billingperiodend).
+  * BillingPeriod MUST include [BillingPeriodLastUpdated](#datasets.billingperiod.billingperiodlastupdated).
+  * BillingPeriod MUST include [BillingPeriodStart](#datasets.billingperiod.billingperiodstart).
+  * BillingPeriod MUST include [BillingPeriodStatus](#datasets.billingperiod.billingperiodstatus).
+  * BillingPeriod MUST include [InvoiceIssuerName](#datasets.billingperiod.invoiceissuername).
+* BillingPeriod MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.
+* BillingPeriod MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.
+* BillingPeriod MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.
+* BillingPeriod MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.
+* BillingPeriod [*FOCUS columns*](#glossary:FOCUS-column) MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.
+* BillingPeriod *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.
+* BillingPeriod [*custom columns*](#glossary:custom-column) MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.
