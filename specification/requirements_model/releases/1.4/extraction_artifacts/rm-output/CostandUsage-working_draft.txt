@@ -1,0 +1,951 @@
+# AllocatedMethodDetails
+
+AllocatedMethodDetails MUST adhere to the following requirements:
+
+* AllocatedMethodDetails MUST be of type JSON Object (serialized as a String where necessary).
+* AllocatedMethodDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.
+* AllocatedMethodDetails MUST adhere to the following nullability requirements:
+  * AllocatedMethodDetails MUST be null when a charge is not related to a data generator-calculated split cost allocation.
+  * AllocatedMethodDetails SHOULD NOT be null when a charge is related to a data generator-calculated split cost allocation.
+* AllocatedMethodDetails MUST conform to [AllocatedMethodDetailsObject](#datasets.costandusage.allocatedmethoddetails.allocatedmethoddetailsobject) requirements when AllocatedMethodDetails is not null.
+
+# AllocatedMethodId
+
+AllocatedMethodId MUST adhere to the following requirements:
+
+* AllocatedMethodId MUST be of type String.
+* AllocatedMethodId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* AllocatedMethodId MUST adhere to the following nullability requirements:
+  * AllocatedMethodId MUST be null when a [*charge*](#glossary:charge) is not related to a data generator-calculated split cost allocation.
+  * AllocatedMethodId MUST NOT be null when a *charge* is related to a data generator-calculated split cost allocation.
+* Data generator-calculated split cost allocation method documentation MUST reference a single AllocatedMethodId value.
+
+# AllocatedResourceId
+
+AllocatedResourceId MUST adhere to the following requirements:
+
+* AllocatedResourceId MUST be of type String.
+* AllocatedResourceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* AllocatedResourceId MUST adhere to the following nullability requirements:
+  * AllocatedResourceId MUST be null when a *charge* is not related to a data generator-calculated split cost allocation.
+  * AllocatedResourceId MUST be null when a *charge* represents the unallocated portion of the origin *charge* after split cost allocation.
+  * AllocatedResourceId MUST NOT be null when a *charge* represents the allocated portion of the origin *charge*.
+* When AllocatedResourceId is not null, AllocatedResourceId MUST adhere to the following requirements:
+  * AllocatedResourceId SHOULD be a locally unique identifier within the associated ResourceId and ChargePeriod.
+  * AllocatedResourceId MAY NOT be unique across ResourceId or ChargePeriod values.
+
+# AllocatedResourceName
+
+AllocatedResourceName MUST adhere to the following requirements:
+
+* AllocatedResourceName MUST be of type String.
+* AllocatedResourceName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* AllocatedResourceName MUST adhere to the following nullability requirements:
+  * AllocatedResourceName MUST be null when [AllocatedResourceId](#datasets.costandusage.allocatedresourceid) is null.
+  * AllocatedResourceName MUST NOT be null when AllocatedResourceId is not null.
+* AllocatedResourceName MAY duplicate AllocatedResourceId when a separate display name is not applicable.
+
+# AllocatedTags
+
+AllocatedTags MUST adhere to the following requirements:
+
+* AllocatedTags MUST be of type JSON Object (serialized as a String where necessary).
+* AllocatedTags MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* AllocatedTags MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.
+* AllocatedTags MUST adhere to the following nullability requirements:
+  * AllocatedTags MUST be null when a *charge* is not related to a data generator-calculated split cost allocation.
+  * AllocatedTags MAY be null in all other cases.
+* When AllocatedTags is not null, AllocatedTags MUST adhere to the following requirements:
+  * AllocatedTags MUST NOT include resource tags already present in [Tags](#datasets.costandusage.tags).
+  * AllocatedTags MUST include all applicable user-defined and data generator-defined tags for the [AllocatedResourceId](#datasets.costandusage.allocatedresourceid).
+  * Tag keys that do not support corresponding values MUST have a corresponding true (boolean) value set.
+  * Tag values MUST match the provided values unless true (boolean) is applied to valueless tags.
+* Data generator-defined tags MUST adhere to the following requirements:
+  * Data generator-defined tag keys MUST be prefixed with a predetermined, data generator-specified tag key prefix that is unique to each corresponding provider-specified [*tag scheme*](#glossary:tag-scheme).
+  * Data generator-specified tag key prefixes SHOULD be publicly documented.
+* User-defined tag keys in all user-defined *tag schemes* MUST include a predetermined, data generator-specified tag key prefix that is unique to each corresponding user-defined *tag scheme* when the data generator has more than one user-defined *tag scheme*.
+
+# AvailabilityZone
+
+AvailabilityZone MUST adhere to the following requirements:
+
+* AvailabilityZone MUST be of type String.
+* AvailabilityZone MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* AvailabilityZone MUST be null when a [*charge*](#glossary:charge) is not specific to an *availability zone*.
+
+# BilledCost
+
+BilledCost MUST adhere to the following requirements:
+
+* BilledCost MUST be of type Decimal.
+* BilledCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* BilledCost MUST NOT be null.
+* BilledCost MUST be denominated in the BillingCurrency.
+* BilledCost MUST reflect all applicable pricing adjustments, including but not limited to *negotiated discounts*, *commitment discounts*, and other applicable discount programs.
+* BilledCost MUST NOT include any portion of a [*covered charge*](#glossary:covered-charge) that is offset by a [*covering charge*](#glossary:covering-charge).
+* BilledCost MUST be 0 for *charges* that are fully *covered* by one or more *covering charges*.
+* BilledCost MUST reflect amounts as invoiced by the [InvoiceIssuerName](#datasets.costandusage.invoiceissuername), not estimated or inferred values.
+* BilledCost MUST be 0 for *charges* generated by entities that are not responsible or authorized for invoicing, to avoid double-counting when merging multiple [*dataset instances*](#glossary:dataset-instance).
+* The sum of BilledCost for a given [InvoiceId](#datasets.costandusage.invoiceid) and InvoiceIssuerName MUST NOT differ from the payable amount provided on the corresponding invoice by more than the [Rounding Variance Tolerance](#appendix.roundingvariancetolerance) when the corresponding invoice has been issued.
+* The sum of BilledCost MAY differ from preliminary or estimated invoiced amounts when the corresponding invoice has not yet been issued.
+
+# BillingAccountId
+
+BillingAccountId MUST adhere to the following requirements:
+
+* BillingAccountId MUST be of type String.
+* BillingAccountId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* BillingAccountId MUST NOT be null.
+* BillingAccountId MUST be a unique identifier within an [*invoice issuer*](#glossary:invoice-issuer).
+* BillingAccountId SHOULD be a fully-qualified identifier.
+
+# BillingAccountName
+
+BillingAccountName MUST adhere to the following requirements:
+
+* BillingAccountName MUST be of type String.
+* BillingAccountName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* BillingAccountName MUST NOT be null when the [*invoice issuer*](#glossary:invoice-issuer) supports assigning a display name for the *billing account*.
+
+# BillingAccountType
+
+BillingAccountType MUST adhere to the following requirements:
+
+* BillingAccountType MUST be of type String.
+* BillingAccountType MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* BillingAccountType MUST adhere to the following nullability requirements:
+  * BillingAccountType MUST be null when [BillingAccountId](#datasets.costandusage.billingaccountid) is null.
+  * BillingAccountType MUST NOT be null when BillingAccountId is not null.
+* BillingAccountType MUST be a consistent, readable display value.
+
+# BillingCurrency
+
+BillingCurrency MUST adhere to the following requirements:
+
+* BillingCurrency MUST be of type String.
+* BillingCurrency MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* BillingCurrency MUST conform to [CurrencyFormat](#attributes.currencyformat) requirements.
+* BillingCurrency MUST NOT be null.
+* BillingCurrency MUST match the currency used in the invoice generated by the [*invoice issuer*](#glossary:invoice-issuer).
+* BillingCurrency MUST be expressed in [*national currency*](#glossary:national-currency) (e.g., USD, EUR).
+
+# BillingPeriodEnd
+
+BillingPeriodEnd MUST adhere to the following requirements:
+
+* BillingPeriodEnd MUST be of type Date/Time.
+* BillingPeriodEnd MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* BillingPeriodEnd MUST NOT be null.
+* BillingPeriodEnd MUST be the *exclusive end bound* of the *billing period*.
+
+# BillingPeriodStart
+
+BillingPeriodStart MUST adhere to the following requirements:
+
+* BillingPeriodStart MUST be of type Date/Time.
+* BillingPeriodStart MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* BillingPeriodStart MUST NOT be null.
+* BillingPeriodStart MUST be the *inclusive start bound* of the *billing period*.
+
+# CapacityReservationId
+
+CapacityReservationId MUST adhere to the following requirements:
+
+* CapacityReservationId MUST be of type String.
+* CapacityReservationId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* CapacityReservationId MUST adhere to the following nullability requirements:
+  * CapacityReservationId MUST be null when a *charge* is not related to a *capacity reservation*.
+  * CapacityReservationId MUST NOT be null when a *charge* represents the unused portion of a *capacity reservation*.
+  * CapacityReservationId SHOULD NOT be null when a *charge* is related to a capacity reservation.
+* When CapacityReservationId is not null, CapacityReservationId MUST adhere to the following requirements:
+  * CapacityReservationId MUST be a unique identifier within the service provider.
+  * CapacityReservationId SHOULD be a fully-qualified identifier.
+
+# CapacityReservationStatus
+
+CapacityReservationStatus MUST adhere to the following requirements:
+
+* CapacityReservationStatus MUST be of type String.
+* CapacityReservationStatus MUST adhere to the following nullability requirements:
+  * CapacityReservationStatus MUST be null when CapacityReservationId is null.
+  * CapacityReservationStatus MUST NOT be null when CapacityReservationId is not null and [ChargeCategory](#datasets.costandusage.chargecategory) is "Usage".
+* When CapacityReservationStatus is not null, CapacityReservationStatus MUST adhere to the following requirements:
+  * CapacityReservationStatus MUST be one of the allowed values.
+  * CapacityReservationStatus MUST be "Unused" when the *charge* represents the unused portion of a *capacity reservation*.
+  * CapacityReservationStatus MUST be "Used" when the *charge* represents the used portion of a *capacity reservation*.
+
+# ChargeCategory
+
+ChargeCategory MUST adhere to the following requirements:
+
+* ChargeCategory MUST be of type String.
+* ChargeCategory MUST NOT be null.
+* ChargeCategory MUST be one of the allowed values.
+* ChargeCategory MUST be "Usage" when the *charge* represents consumption of a service or resource.
+* ChargeCategory MUST be "Purchase" when the *charge* represents acquisition of a service, resource, or *commitment*.
+* ChargeCategory MUST be "Tax" when the *charge* represents taxes levied by the relevant authorities.
+* ChargeCategory MUST be "Credit" when the *charge* represents a financial incentive or allowance unrelated to other charges.
+* ChargeCategory MUST be "Adjustment" when the *charge* represents a billing modification that does not fall into other ChargeCategories.
+
+# ChargeClass
+
+ChargeClass MUST adhere to the following requirements:
+
+* ChargeClass MUST be of type String.
+* ChargeClass MUST adhere to the following nullability requirements:
+  * ChargeClass MUST be null when the *charge* does not represent a correction to a previously *closed billing period*.
+  * ChargeClass MUST NOT be null when the *charge* represents a correction to a previously *closed billing period*.
+* ChargeClass MUST be "Correction" when ChargeClass is not null.
+
+# ChargeDescription
+
+ChargeDescription MUST adhere to the following requirements:
+
+* ChargeDescription MUST be of type String.
+* ChargeDescription MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ChargeDescription SHOULD NOT be null.
+* ChargeDescription maximum length SHOULD be provided in the corresponding FOCUS Metadata Schema.
+
+# ChargeFrequency
+
+ChargeFrequency MUST adhere to the following requirements:
+
+* ChargeFrequency MUST be of type String.
+* ChargeFrequency MUST NOT be null.
+* ChargeFrequency MUST be one of the allowed values.
+* ChargeFrequency MUST NOT be "Usage-Based" when [ChargeCategory](#datasets.costandusage.chargecategory) is "Purchase".
+
+# ChargePeriodEnd
+
+ChargePeriodEnd MUST adhere to the following requirements:
+
+* ChargePeriodEnd MUST be of type Date/Time.
+* ChargePeriodEnd MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* ChargePeriodEnd MUST NOT be null.
+* ChargePeriodEnd MUST be the *exclusive end bound* of the effective period of the *charge*.
+
+# ChargePeriodStart
+
+ChargePeriodStart MUST adhere to the following requirements:
+
+* ChargePeriodStart MUST be of type Date/Time.
+* ChargePeriodStart MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* ChargePeriodStart MUST NOT be null.
+* ChargePeriodStart MUST be the *inclusive start bound* of the effective period of the *charge*.
+
+# CommitmentDiscountCategory
+
+CommitmentDiscountCategory MUST adhere to the following requirements:
+
+* CommitmentDiscountCategory MUST be of type String.
+* CommitmentDiscountCategory MUST adhere to the following nullability requirements:
+  * CommitmentDiscountCategory MUST be null when [CommitmentDiscountId](#datasets.costandusage.commitmentdiscountid) is null.
+  * CommitmentDiscountCategory MUST NOT be null when CommitmentDiscountId is not null.
+* CommitmentDiscountCategory MUST be one of the allowed values.
+
+# CommitmentDiscountId
+
+CommitmentDiscountId MUST adhere to the following requirements:
+
+* CommitmentDiscountId MUST be of type String.
+* CommitmentDiscountId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* CommitmentDiscountId MUST adhere to the following nullability requirements:
+  * CommitmentDiscountId MUST be null when a [*charge*](#glossary:charge) is not related to a *commitment discount*.
+  * CommitmentDiscountId MUST NOT be null when a *charge* is related to a *commitment discount*.
+* When CommitmentDiscountId is not null, CommitmentDiscountId MUST adhere to the following requirements:
+  * CommitmentDiscountId MUST be a unique identifier within the service provider.
+  * CommitmentDiscountId MUST be equal to [ResourceId](#datasets.costandusage.resourceid) when [ChargeCategory](#datasets.costandusage.chargecategory) is "Purchase" and the *charge* represents a purchase of that *commitment discount*.
+  * CommitmentDiscountId MUST be equal to ResourceId when ChargeCategory is "Usage" and the *charge* represents an unused portion of that *commitment discount*.
+  * CommitmentDiscountId SHOULD be a fully-qualified identifier.
+
+# CommitmentDiscountName
+
+CommitmentDiscountName MUST adhere to the following requirements:
+
+* CommitmentDiscountName MUST be of type String.
+* CommitmentDiscountName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* CommitmentDiscountName MUST adhere to the following nullability requirements:
+  * CommitmentDiscountName MUST be null when [CommitmentDiscountId](#datasets.costandusage.commitmentdiscountid) is null.
+  * When CommitmentDiscountId is not null, CommitmentDiscountName MUST adhere to the following requirements:
+    * CommitmentDiscountName MUST NOT be null when a display name can be assigned to a *commitment discount*.
+    * CommitmentDiscountName MAY be null when a display name cannot be assigned to a *commitment discount*.
+
+# CommitmentDiscountQuantity
+
+CommitmentDiscountQuantity MUST adhere to the following requirements:
+
+* CommitmentDiscountQuantity MUST be of type Decimal.
+* CommitmentDiscountQuantity MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* CommitmentDiscountQuantity MUST adhere to the following nullability requirements:
+  * CommitmentDiscountQuantity MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * When ChargeCategory is "Usage" or "Purchase" and CommitmentDiscountId is not null, CommitmentDiscountQuantity MUST adhere to the following requirements:
+    * CommitmentDiscountQuantity MUST NOT be null when [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+    * CommitmentDiscountQuantity MAY be null when ChargeClass is "Correction".
+  * CommitmentDiscountQuantity MUST be null in all other cases.
+* When CommitmentDiscountQuantity is not null and ChargeCategory is "Purchase", CommitmentDiscountQuantity MUST adhere to the following requirements:
+  * CommitmentDiscountQuantity MUST be the quantity of CommitmentDiscountUnit, paid fully or partially upfront, that is eligible for consumption over the *commitment discount's* *term* when [ChargeFrequency](#datasets.costandusage.chargefrequency) is "One-Time".
+  * CommitmentDiscountQuantity MUST be the quantity of CommitmentDiscountUnit that is eligible for consumption for each *charge period* that corresponds with the purchase when ChargeFrequency is "Recurring".
+* When CommitmentDiscountQuantity is not null and ChargeCategory is "Usage", CommitmentDiscountQuantity MUST adhere to the following requirements:
+  * CommitmentDiscountQuantity MUST be the metered quantity of CommitmentDiscountUnit that is consumed in a given *charge period* when [CommitmentDiscountStatus](#datasets.costandusage.commitmentdiscountstatus) is "Used".
+  * CommitmentDiscountQuantity MUST be the remaining, unused quantity of CommitmentDiscountUnit in a given *charge period* when CommitmentDiscountStatus is "Unused".
+
+# CommitmentDiscountStatus
+
+CommitmentDiscountStatus MUST adhere to the following requirements:
+
+* CommitmentDiscountStatus MUST be of type String.
+* CommitmentDiscountStatus MUST adhere to the following nullability requirements:
+  * CommitmentDiscountStatus MUST be null when [CommitmentDiscountId](#datasets.costandusage.commitmentdiscountid) is null.
+  * CommitmentDiscountStatus MUST NOT be null when CommitmentDiscountId is not null and [ChargeCategory](#datasets.costandusage.chargecategory) is "Usage".
+* CommitmentDiscountStatus MUST be one of the allowed values.
+* CommitmentDiscountStatus MUST be "Used" when the *charge* utilizes a specific amount of a given CommitmentDiscountId.
+* CommitmentDiscountStatus MUST be "Unused" when the *charge* represents the unused portion of the given CommitmentDiscountId.
+
+# CommitmentDiscountType
+
+CommitmentDiscountType MUST adhere to the following requirements:
+
+* CommitmentDiscountType MUST be of type String.
+* CommitmentDiscountType MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* CommitmentDiscountType MUST adhere to the following nullability requirements:
+  * CommitmentDiscountType MUST be null when [CommitmentDiscountId](#datasets.costandusage.commitmentdiscountid) is null.
+  * CommitmentDiscountType MUST NOT be null when CommitmentDiscountId is not null.
+
+# CommitmentDiscountUnit
+
+CommitmentDiscountUnit MUST adhere to the following requirements:
+
+* CommitmentDiscountUnit MUST be of type String.
+* CommitmentDiscountUnit MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* CommitmentDiscountUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.
+* CommitmentDiscountUnit MUST adhere to the following nullability requirements:
+  * CommitmentDiscountUnit MUST be null when CommitmentDiscountQuantity is null.
+  * CommitmentDiscountUnit MUST NOT be null when CommitmentDiscountQuantity is not null.
+* When CommitmentDiscountUnit is not null, CommitmentDiscountUnit MUST adhere to the following requirements:
+  * CommitmentDiscountUnit MUST remain consistent over time for a given CommitmentDiscountId.
+  * CommitmentDiscountUnit MUST represent the unit used to measure the *commitment discount*.
+  * When accounting for [*commitment discount flexibility*](#glossary:commitment-discount-flexibility), the CommitmentDiscountUnit value SHOULD reflect this consideration.
+
+# CommitmentProgramEligibilityDetails
+
+CommitmentProgramEligibilityDetails MUST adhere to the following requirements:
+
+* CommitmentProgramEligibilityDetails MUST be of type JSON Object (serialized as a String where necessary).
+* CommitmentProgramEligibilityDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* CommitmentProgramEligibilityDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.
+* CommitmentProgramEligibilityDetails MUST NOT be null when a charge is eligible for a [*commitment program*](#glossary:commitment-program), regardless of whether a [*commitment*](#glossary:commitment) was actually applied to the charge.
+* CommitmentProgramEligibilityDetails MUST NOT reflect restrictions (e.g., transient account configurations, quotas) that might temporarily prevent purchase or participation in a *commitment program*.
+* CommitmentProgramEligibilityDetails MUST include all publicly available *commitment programs* for which the usage is eligible.
+* CommitmentProgramEligibilityDetails MAY include negotiated *commitment programs* when the usage is eligible and the program is not broadly applicable across the service provider's service catalog.
+* CommitmentProgramEligibilityDetails MUST NOT include data related to *commitment* [*periods*](#glossary:period) or payment options.
+* CommitmentProgramEligibilityDetails MUST conform to [CommitmentProgramEligibilityDetailsObject](#datasets.costandusage.commitmentprogrameligibilitydetails.commitmentprogrameligibilitydetailsobject) requirements when CommitmentProgramEligibilityDetails is not null.
+
+# CommitmentProgramEligibilityDetailsObject
+
+CommitmentProgramEligibilityDetailsObject MUST adhere to the following requirements:
+
+* CommitmentProgramEligibilityDetailsObject MUST conform to the [CommitmentProgramEligibilityDetailsObjectSchema](#schemas.costandusage.commitmentprogrameligibilitydetailsobjectschema) JSON Schema.
+* CommitmentProgramEligibilityDetailsObject.CommitmentPrograms[\*].ProgramType MUST correspond to a *commitment program* type supported by the service provider.
+* CommitmentProgramEligibilityDetailsObject.CommitmentPrograms[\*].ProgramType MUST match [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) for one object in CommitmentProgramEligibilityDetailsObject.CommitmentPrograms when CommitmentDiscountType is not null.
+* CommitmentProgramEligibilityDetailsObject.CommitmentPrograms[\*].ProgramType SHOULD correspond to terminology disclosed by the service provider in public documentation.
+
+# ConsumedQuantity
+
+ConsumedQuantity MUST adhere to the following requirements:
+
+* ConsumedQuantity MUST be of type Decimal.
+* ConsumedQuantity MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* ConsumedQuantity MUST adhere to the following nullability requirements:
+  * ConsumedQuantity MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * ConsumedQuantity MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is not "Usage", or when ChargeCategory is "Usage" and [CommitmentDiscountStatus](#datasets.costandusage.commitmentdiscountstatus) is "Unused".
+  * When ChargeCategory is "Usage" and CommitmentDiscountStatus is not "Unused", ConsumedQuantity MUST adhere to the following requirements:
+    * ConsumedQuantity MUST NOT be null when [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+    * ConsumedQuantity MAY be null when ChargeClass is "Correction".
+
+# ConsumedUnit
+
+ConsumedUnit MUST adhere to the following requirements:
+
+* ConsumedUnit MUST be of type String.
+* ConsumedUnit MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ConsumedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.
+* ConsumedUnit MUST adhere to the following nullability requirements:
+  * ConsumedUnit MUST be null when ConsumedQuantity is null.
+  * ConsumedUnit MUST NOT be null when ConsumedQuantity is not null.
+
+# ContractApplied
+
+ContractApplied MUST adhere to the following requirements:
+
+* ContractApplied MUST be of type JSON Object (serialized as a String where necessary).
+* ContractApplied MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ContractApplied MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.
+* ContractApplied MUST NOT be null when one or more *contract commitments* are applied to the *charge*.
+* ContractApplied MUST conform to [ContractAppliedObject](#datasets.costandusage.contractapplied.contractappliedobject) requirements when ContractApplied is not null.
+
+# ContractAppliedObject
+
+ContractAppliedObject MUST adhere to the following requirements:
+
+* ContractAppliedObject MUST conform to the [ContractAppliedObjectSchema](#schemas.costandusage.contractappliedobjectschema) JSON Schema.
+* ContractAppliedObject.Elements[\*].ContractId MUST be a unique identifier within the service provider.
+* ContractAppliedObject.Elements[\*].ContractId SHOULD be a fully-qualified identifier.
+* ContractAppliedObject.Elements[\*].ContractCommitmentId MUST be a unique identifier within the service provider.
+* ContractAppliedObject.Elements[\*].ContractCommitmentId SHOULD be a fully-qualified identifier.
+* ContractAppliedObject.Elements[\*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[\*].ContractId.
+* ContractAppliedObject.Elements[\*].ContractCommitmentId MUST match [ResourceId](#datasets.costandusage.resourceid) when [ChargeCategory](#datasets.costandusage.chargecategory) is "Purchase" and the *charge* represents a purchase of that *contract commitment*.
+* ContractAppliedObject.Elements[\*].ContractCommitmentId MUST match ResourceId when ChargeCategory is "Usage" and the *charge* represents an unused portion of that *contract commitment*.
+* ContractAppliedObject.Elements[\*].ContractCommitmentId MAY match ContractAppliedObject.Elements[\*].ContractId.
+* ContractAppliedObject.Elements[\*].ContractCommitmentAppliedCost MUST be denominated in the [BillingCurrency](#datasets.costandusage.billingcurrency).
+* ContractAppliedObject.Elements[\*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[\*].ContractCommitmentAppliedUnit.
+* ContractAppliedObject.Elements[\*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.
+
+# ContractedCost
+
+ContractedCost MUST adhere to the following requirements:
+
+* ContractedCost MUST be of type Decimal.
+* ContractedCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* ContractedCost MUST NOT be null.
+* ContractedCost MUST be denominated in the BillingCurrency.
+* When [ContractedUnitPrice](#datasets.costandusage.contractedunitprice) is null, ContractedCost MUST adhere to the following requirements:
+  * ContractedCost of a [*charge*](#glossary:charge) calculated based on other *charges* (e.g., when the [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax") MUST be calculated based on the ContractedCost of those related *charges*.
+  * ContractedCost of a *charge* unrelated to other *charges* (e.g., when the ChargeCategory is "Credit") MUST be equal to the [BilledCost](#datasets.costandusage.billedcost).
+* ContractedCost MUST equal the product of ContractedUnitPrice and PricingQuantity when ContractedUnitPrice is not null and PricingQuantity is not null.
+
+# ContractedUnitPrice
+
+ContractedUnitPrice MUST adhere to the following requirements:
+
+* ContractedUnitPrice MUST be of type Decimal.
+* ContractedUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* ContractedUnitPrice MUST adhere to the following nullability requirements:
+  * ContractedUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * ContractedUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * ContractedUnitPrice MUST NOT be null when SkuPriceId is not null.
+  * ContractedUnitPrice MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * ContractedUnitPrice MAY be null in all other cases.
+* When ContractedUnitPrice is not null, ContractedUnitPrice MUST adhere to the following requirements:
+  * ContractedUnitPrice MUST be a non-negative decimal value.
+  * ContractedUnitPrice MUST be denominated in the BillingCurrency.
+
+# EffectiveCost
+
+EffectiveCost MUST adhere to the following requirements:
+
+* EffectiveCost MUST be of type Decimal.
+* EffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* EffectiveCost MUST NOT be null.
+* EffectiveCost MUST be denominated in the BillingCurrency.
+* EffectiveCost MUST reflect all applicable pricing adjustments, including but not limited to *negotiated discounts*, *commitment discounts*, and other applicable discount programs.
+* EffectiveCost MUST equal BilledCost when [ChargeCategory](#datasets.costandusage.chargecategory) is "Usage" and the *charge* is not *covered* by other eligible *charges*.
+* EffectiveCost MUST equal BilledCost when ChargeCategory is "Purchase" and the *charge* is neither intended to cover other eligible *charges* nor *covered* by other eligible *charges*.
+* EffectiveCost MUST equal BilledCost when ChargeCategory is "Tax" or "Credit".
+* EffectiveCost MAY differ from BilledCost when ChargeCategory is "Adjustment".
+* EffectiveCost MUST include any portion of the BilledCost of [*covering*](#glossary:covering-charge) purchase *charges* (i.e., ChargeCategory is "Purchase") that is applied to this *charge*.
+* EffectiveCost MUST be 0 when ChargeCategory is "Purchase" and the purchase is intended to cover related eligible *charges*. This requirement applies even when the *covered charges* originate from different [CostAndUsage](#datasets.costandusage) [*dataset instances*](#glossary:dataset-instance), possibly from a different [ServiceProviderName](#datasets.costandusage.serviceprovidername).
+* EffectiveCost MUST be 0 for *charges* generated by entities that do not originate the cost and usage data, to avoid double-counting when merging multiple *dataset instances*.
+* The sum of EffectiveCost across all related *covering* and *covered charges* MUST equal the sum of BilledCost across the same set of *charges*, within the [*charge period*](#glossary:chargeperiod) of the *covering charges*, when both the *covering* and *covered charges* are present in the *dataset instance*.
+* The sum of EffectiveCost for a given [*billing period*](#glossary:billing-period) MAY differ from the sum of BilledCost when *covered* and *covering charges* span multiple *billing periods* or [*billing accounts*](#glossary:billing-account), or when only one side of a covering relationship is present in the *dataset instance*.
+
+# HostProviderName
+
+HostProviderName MUST adhere to the following requirements:
+
+* HostProviderName MUST be of type String.
+* HostProviderName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* HostProviderName MUST adhere to the following nullability requirements:
+  * HostProviderName MAY be NULL when the associated [ServiceName](#datasets.costandusage.servicename) does not involve deployment on any underlying infrastructure (e.g., professional services, software licenses).
+  * HostProviderName MAY be NULL when the information about the entity providing the underlying infrastructure cannot be uniquely determined (e.g., when the [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax" or "Adjustment").
+  * HostProviderName MUST NOT be null in all other cases.
+* When HostProviderName is not null, HostProviderName values MUST adhere to the following requirements:
+  * HostProviderName MUST reflect the name of the host provider when explicitly selected by the customer.
+  * HostProviderName MUST reflect the name of the host provider when the service provider exposes the underlying hosting provider.
+  * HostProviderName MUST match [ServiceProviderName](#datasets.costandusage.serviceprovidername) in all other cases.
+
+# InvoiceDetailId
+
+InvoiceDetailId MUST adhere to the following requirements:
+
+* InvoiceDetailId MUST be of type String.
+* InvoiceDetailId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* InvoiceDetailId MUST adhere to the following nullability requirements:
+  * InvoiceDetailId MUST be null when the charge is not associated either with an invoice or with a pre-generated provisional invoice.
+  * InvoiceDetailId MUST NOT be null when the charge is associated with either an issued invoice or a pre-generated provisional invoice.
+* InvoiceDetailId MAY be generated prior to an invoice being issued.
+* InvoiceDetailId MUST uniquely identify a specific record within a given [InvoiceId](#datasets.invoicedetail.invoiceid).
+
+# InvoiceId
+
+InvoiceId MUST adhere to the following requirements:
+
+* InvoiceId MUST be of type String.
+* InvoiceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* InvoiceId MUST adhere to the following nullability requirements:
+  * InvoiceId MUST be null when the *charge* is not associated either with an invoice or with a pre-generated provisional invoice.
+  * InvoiceId MUST NOT be null when the *charge* is associated with either an issued invoice or a pre-generated provisional invoice.
+* InvoiceId MAY be generated prior to an invoice being issued.
+* InvoiceId MUST be associated with the related *charge* and BillingAccountId when a pre-generated invoice or provisional invoice exists.
+
+# InvoiceIssuerName
+
+InvoiceIssuerName MUST adhere to the following requirements:
+
+* InvoiceIssuerName MUST be of type String.
+* InvoiceIssuerName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* InvoiceIssuerName MUST NOT be null.
+* InvoiceIssuerName MUST represent the entity that issues invoices.
+
+# ListCost
+
+ListCost MUST adhere to the following requirements:
+
+* ListCost MUST be of type Decimal.
+* ListCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* ListCost MUST NOT be null.
+* ListCost MUST be denominated in the BillingCurrency.
+* When [ListUnitPrice](#datasets.costandusage.listunitprice) is null, ListCost MUST adhere to the following requirements:
+  * ListCost of a [*charge*](#glossary:charge) calculated based on other *charges* (e.g., when the [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax") MUST be calculated based on the ListCost of those related *charges*.
+  * ListCost of a *charge* unrelated to other *charges* (e.g., when the ChargeCategory is "Credit") MUST be equal to the [BilledCost](#datasets.costandusage.billedcost).
+* ListCost MUST equal the product of ListUnitPrice and PricingQuantity when ListUnitPrice is not null and PricingQuantity is not null.
+
+# ListUnitPrice
+
+ListUnitPrice MUST adhere to the following requirements:
+
+* ListUnitPrice MUST be of type Decimal.
+* ListUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* ListUnitPrice MUST adhere to the following nullability requirements:
+  * ListUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * ListUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * ListUnitPrice MUST NOT be null when SkuPriceId is not null.
+  * ListUnitPrice MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * ListUnitPrice MAY be null in all other cases.
+* When ListUnitPrice is not null, ListUnitPrice MUST adhere to the following requirements:
+  * ListUnitPrice MUST be a non-negative decimal value.
+  * ListUnitPrice MUST be denominated in the BillingCurrency.
+
+# PricingCategory 
+
+PricingCategory MUST adhere to the following requirements:
+
+* PricingCategory MUST be of type String.
+* PricingCategory MUST adhere to the following nullability requirements:
+  * PricingCategory MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * PricingCategory MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * PricingCategory MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * PricingCategory MAY be null in all other cases.
+* When PricingCategory is not null, PricingCategory MUST adhere to the following requirements:
+  * PricingCategory MUST be one of the allowed values.
+  * PricingCategory MUST be "Standard" when pricing is predetermined at the agreed upon rate for the [billing account](#glossary:billing-account).
+  * PricingCategory MUST be "Committed" when the *charge* is subject to an existing *commitment discount* and is not the purchase of the *commitment discount*.
+  * PricingCategory MUST be "Dynamic" when pricing is determined by the service provider and may change over time, regardless of predetermined agreement pricing.
+  * PricingCategory MUST be "Other" when there is a pricing model but none of the allowed values apply.
+
+# PricingCurrency
+
+PricingCurrency MUST adhere to the following requirements:
+
+* PricingCurrency MUST be of type String.
+* PricingCurrency MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* PricingCurrency MUST conform to [CurrencyFormat](#attributes.currencyformat) requirements.
+* PricingCurrency MUST NOT be null.
+
+# PricingCurrencyContractedUnitPrice
+
+PricingCurrencyContractedUnitPrice MUST adhere to the following requirements:
+
+* PricingCurrencyContractedUnitPrice MUST be of type Decimal.
+* PricingCurrencyContractedUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* PricingCurrencyContractedUnitPrice MUST adhere to the following nullability requirements:
+  * PricingCurrencyContractedUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * PricingCurrencyContractedUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * PricingCurrencyContractedUnitPrice MUST NOT be null when SkuPriceId is not null.
+  * PricingCurrencyContractedUnitPrice MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * PricingCurrencyContractedUnitPrice MAY be null in all other cases.
+* When PricingCurrencyContractedUnitPrice is not null, PricingCurrencyContractedUnitPrice MUST adhere to the following requirements:
+  * PricingCurrencyContractedUnitPrice MUST be a non-negative decimal value.
+  * PricingCurrencyContractedUnitPrice MUST be denominated in the PricingCurrency.
+
+# PricingCurrencyEffectiveCost
+
+PricingCurrencyEffectiveCost MUST adhere to the following requirements:
+
+* PricingCurrencyEffectiveCost MUST be of type Decimal.
+* PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* PricingCurrencyEffectiveCost MUST NOT be null.
+* PricingCurrencyEffectiveCost MUST be denominated in the PricingCurrency.
+* PricingCurrencyEffectiveCost MUST be the PricingCurrency-denominated equivalent of EffectiveCost.
+
+# PricingCurrencyListUnitPrice
+
+PricingCurrencyListUnitPrice MUST adhere to the following requirements:
+
+* PricingCurrencyListUnitPrice MUST be of type Decimal.
+* PricingCurrencyListUnitPrice MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* PricingCurrencyListUnitPrice MUST adhere to the following nullability requirements:
+  * PricingCurrencyListUnitPrice MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * PricingCurrencyListUnitPrice MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * PricingCurrencyListUnitPrice MUST NOT be null when SkuPriceId is not null.
+  * PricingCurrencyListUnitPrice MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * PricingCurrencyListUnitPrice MAY be null in all other cases.
+* When PricingCurrencyListUnitPrice is not null, PricingCurrencyListUnitPrice MUST adhere to the following requirements:
+  * PricingCurrencyListUnitPrice MUST be a non-negative decimal value.
+  * PricingCurrencyListUnitPrice MUST be denominated in the PricingCurrency.
+
+# PricingQuantity
+
+PricingQuantity MUST adhere to the following requirements:
+
+* PricingQuantity MUST be of type Decimal.
+* PricingQuantity MUST conform to [NumericFormat](#attributes.numericformat) requirements.
+* PricingQuantity MUST adhere to the following nullability requirements:
+  * PricingQuantity MUST be null when [SkuPriceId](#datasets.costandusage.skupriceid) is null.
+  * PricingQuantity MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * PricingQuantity MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * PricingQuantity MAY be null in all other cases.
+* Cost metric (e.g., [ContractedCost](#datasets.costandusage.contractedcost)) MUST equal the product of the corresponding unit price (e.g., [ContractedUnitPrice](#datasets.costandusage.contractedunitprice)) and PricingQuantity when the unit price is not null and PricingQuantity is not null.
+
+# PricingUnit
+
+PricingUnit MUST adhere to the following requirements:
+
+* PricingUnit MUST be of type String.
+* PricingUnit MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* PricingUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.
+* PricingUnit MUST adhere to the following nullability requirements:
+  * PricingUnit MUST be null when PricingQuantity is null.
+  * PricingUnit MUST NOT be null when PricingQuantity is not null.
+* When PricingUnit is not null, PricingUnit MUST adhere to the following requirements:
+  * PricingUnit MUST be semantically equal to the corresponding pricing measurement unit provided in service-provider-published [*price list*](#glossary:price-list).
+  * PricingUnit MUST be semantically equal to the corresponding pricing measurement unit provided in invoice, when the invoice includes a pricing measurement unit.
+
+# RegionId
+
+RegionId MUST adhere to the following requirements:
+
+* RegionId MUST be of type String.
+* RegionId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* RegionId MUST adhere to the following nullability requirements:
+  * RegionId MUST NOT be null when a *resource* or *service* is operated in or managed from a distinct region.
+  * RegionId MAY be null when a *resource* or *service* is not operated in or managed from a distinct region.
+
+# RegionName
+
+RegionName MUST adhere to the following requirements:
+
+* RegionName MUST be of type String.
+* RegionName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* RegionName MUST adhere to the following nullability requirements:
+  * RegionName MUST be null when [RegionId](#datasets.costandusage.regionid) is null.
+  * RegionName MUST NOT be null when RegionId is not null.
+
+# ResourceId
+
+ResourceId MUST adhere to the following requirements:
+
+* ResourceId MUST be of type String.
+* ResourceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ResourceId MUST adhere to the following nullability requirements:
+  * ResourceId MUST be null when a [*charge*](#glossary:charge) is not related to a *resource*.
+  * ResourceId MUST NOT be null when a *charge* is related to a *resource*.
+* When ResourceId is not null, ResourceId MUST adhere to the following requirements:
+  * ResourceId MUST be a unique identifier within the service provider.
+  * ResourceId SHOULD be a fully-qualified identifier.
+  * ResourceId MUST be the identifier of the *resource* that received the [*commitment discount*](#glossary:commitment-discount) when [CommitmentDiscountStatus](#datasets.costandusage.commitmentdiscountstatus) is "Used".
+
+# ResourceName
+
+ResourceName MUST adhere to the following requirements:
+
+* ResourceName MUST be of type String.
+* ResourceName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ResourceName MUST adhere to the following nullability requirements:
+  * ResourceName MUST be null when [ResourceId](#datasets.costandusage.resourceid) is null or when the *resource* does not have an assigned display name.
+  * ResourceName MUST NOT be null when ResourceId is not null and the *resource* has an assigned display name.
+* ResourceName MUST NOT duplicate ResourceId when the *resource* is not provisioned interactively or only has a system-generated ResourceId.
+
+# ResourceType
+
+ResourceType MUST adhere to the following requirements:
+
+* ResourceType MUST be of type String.
+* ResourceType MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ResourceType MUST adhere to the following nullability requirements:
+  * ResourceType MUST be null when [ResourceId](#datasets.costandusage.resourceid) is null.
+  * ResourceType MUST NOT be null when ResourceId is not null.
+
+# ServiceCategory
+
+ServiceCategory MUST adhere to the following requirements:
+
+* ServiceCategory MUST be of type String.
+* ServiceCategory MUST NOT be null.
+* ServiceCategory MUST be one of the allowed values.
+
+# ServiceName
+
+ServiceName MUST adhere to the following requirements:
+
+* ServiceName MUST be of type String.
+* ServiceName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ServiceName MUST NOT be null.
+* The relationship between ServiceName and [ServiceCategory](#datasets.costandusage.servicecategory) MUST adhere to the following requirements:
+  * ServiceName MUST have one and only one ServiceCategory that best aligns with its primary purpose, except when no suitable ServiceCategory is available.
+  * ServiceName MUST be associated with the ServiceCategory "Other" when no suitable ServiceCategory is available.
+* The relationship between ServiceName and [ServiceSubcategory](#datasets.costandusage.servicesubcategory) MUST adhere to the following requirements:
+  * ServiceName SHOULD have one and only one ServiceSubcategory that best aligns with its primary purpose, except when no suitable ServiceSubcategory is available.
+  * ServiceName SHOULD be associated with the ServiceSubcategory "Other" when no suitable ServiceSubcategory is available.
+
+# ServiceProviderName
+
+ServiceProviderName MUST adhere to the following requirements:
+
+* ServiceProviderName MUST be of type String.
+* ServiceProviderName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* ServiceProviderName MUST NOT be null.
+
+# ServiceSubcategory
+
+ServiceSubcategory MUST adhere to the following requirements:
+
+* ServiceSubcategory MUST be of type String.
+* ServiceSubcategory MUST NOT be null.
+* ServiceSubcategory MUST be one of the allowed values.
+* ServiceSubcategory MUST have one and only one parent ServiceCategory as specified in the allowed values below.
+
+# SkuId
+
+SkuId MUST adhere to the following requirements:
+
+* SkuId MUST be of type String.
+* SkuId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* SkuId MUST adhere to the following nullability requirements:
+  * SkuId MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * SkuId MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * SkuId MAY be null in all other cases.
+* SkuId for a given *SKU* MUST adhere to the following requirements:
+  * SkuId MUST remain consistent across [*billing accounts*](#glossary:billing-account) or contracts.
+  * SkuId MUST remain consistent across [PricingCategory](#datasets.costandusage.pricingcategory) values.
+  * SkuId MUST remain consistent regardless of any other factors that might impact the price but do not affect the functionality of the *SKU*.
+* SkuId MUST be associated with a given [*resource*](#glossary:resource) or [*service*](#glossary:service) when ChargeCategory is "Usage" or "Purchase".
+* SkuId MAY match [SkuPriceId](#datasets.costandusage.skupriceid).
+
+# SkuMeter
+
+SkuMeter MUST adhere to the following requirements:
+
+* SkuMeter MUST be of type String.
+* SkuMeter MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* SkuMeter MUST adhere to the following nullability requirements:
+  * SkuMeter MUST be null when [SkuId](#datasets.costandusage.skuid) is null.
+  * SkuMeter SHOULD NOT be null when SkuId is not null.
+* SkuMeter SHOULD remain consistent over time for a given SkuId.
+
+# SkuPriceDetails
+
+SkuPriceDetails MUST adhere to the following requirements:
+
+* SkuPriceDetails MUST be of type JSON Object (serialized as a String where necessary).
+* SkuPriceDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* SkuPriceDetails MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.
+* SkuPriceDetails property keys SHOULD conform to [PascalCase](#glossary:pascalcase) format.
+* SkuPriceDetails MUST adhere to the following nullability requirements:
+  * SkuPriceDetails MUST be null when SkuPriceId is null.
+  * SkuPriceDetails MAY be null when SkuPriceId is not null.
+* When SkuPriceDetails is not null, SkuPriceDetails MUST adhere to the following requirements:
+  * SkuPriceDetails MUST be associated with a given SkuPriceId.
+  * SkuPriceDetails MUST include the FOCUS-defined SKU Price property when an equivalent property is included as a custom property.
+  * SkuPriceDetails MUST NOT include properties that are not applicable to the corresponding SkuPriceId.
+  * SkuPriceDetails SHOULD include all FOCUS-defined SKU Price properties listed below that are applicable to the corresponding SkuPriceId.
+  * SkuPriceDetails SHOULD include all custom SKU Price properties that are applicable to the corresponding SkuPriceId when there is no equivalent FOCUS-defined property.
+  * SkuPriceDetails MAY include properties that are already captured in other dedicated columns.
+  * SkuPriceDetails properties for a given SkuPriceId MUST adhere to the following requirements:
+    * Existing SkuPriceDetails properties SHOULD remain consistent over time.
+    * Existing SkuPriceDetails properties SHOULD NOT be removed.
+    * Additional SkuPriceDetails properties MAY be added over time.
+  * Property key SHOULD remain consistent across comparable *SKUs* having that property, and the values for this key SHOULD remain in a consistent format.
+  * Property key MUST begin with the string "x_" unless it is a FOCUS-defined property.
+  * Property value MUST represent the value for a single [PricingUnit](#datasets.costandusage.pricingunit) when the property holds a numeric value.
+* FOCUS-defined SKU Price properties MUST adhere to the following requirements:
+  * Property key MUST match the spelling and casing specified for the FOCUS-defined property.
+  * Property value MUST be of the type specified for that property.
+  * Property value MUST represent the value for a single PricingUnit, denominated in the unit of measure specified for that property when the property holds a numeric value.
+
+# SkuPriceId
+
+SkuPriceId MUST adhere to the following requirements:
+
+* SkuPriceId MUST be of type String.
+* SkuPriceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* SkuPriceId MUST adhere to the following nullability requirements:
+  * SkuPriceId MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is "Tax".
+  * SkuPriceId MUST NOT be null when ChargeCategory is "Usage" or "Purchase" and [ChargeClass](#datasets.costandusage.chargeclass) is not "Correction".
+  * SkuPriceId MAY be null in all other cases.
+* When SkuPriceId is not null, SkuPriceId MUST adhere to the following requirements:
+  * SkuPriceId MUST have one and only one parent [SkuId](#datasets.costandusage.skuid).
+  * SkuPriceId MUST remain consistent over time.
+  * SkuPriceId MUST remain consistent across [*billing accounts*](#glossary:billing-account) or contracts.
+  * SkuPriceId MAY match SkuId.
+  * SkuPriceId MUST be associated with a given [*resource*](#glossary:resource) or [*service*](#glossary:service) when ChargeCategory is "Usage" or "Purchase".
+  * SkuPriceId MUST reference a *SKU Price* in a service-provider-supplied *price list*, enabling the lookup of detailed information about the *SKU Price*.
+  * SkuPriceId MUST be a valid reference to the [ListUnitPrice](#datasets.costandusage.listunitprice) when the service provider publishes unit prices exclusive of discounts.
+  * SkuPriceId MUST be a valid reference to the [ContractedUnitPrice](#datasets.costandusage.contractedunitprice) when the service provider supports negotiated pricing concepts.
+
+# SubAccountId
+
+SubAccountId MUST adhere to the following requirements:
+
+* SubAccountId MUST be of type String.
+* SubAccountId MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* SubAccountId MUST adhere to the following nullability requirements:
+  * SubAccountId MUST be null when a [*charge*](#glossary:charge) is not related to a *sub account*.
+  * SubAccountId MUST NOT be null when a *charge* is related to a *sub account*.
+
+# SubAccountName
+
+SubAccountName MUST adhere to the following requirements:
+
+* SubAccountName MUST be of type String.
+* SubAccountName MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* SubAccountName MUST adhere to the following nullability requirements:
+  * SubAccountName MUST be null when [SubAccountId](#datasets.costandusage.subaccountid) is null.
+  * SubAccountName MUST NOT be null when SubAccountId is not null.
+
+# SubAccountType
+
+SubAccountType MUST adhere to the following requirements:
+
+* SubAccountType MUST be of type String.
+* SubAccountType MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* SubAccountType MUST adhere to the following nullability requirements:
+  * SubAccountType MUST be null when [SubAccountId](#datasets.costandusage.subaccountid) is null.
+  * SubAccountType MUST NOT be null when SubAccountId is not null.
+* SubAccountType MUST be a consistent, readable display value.
+
+# Tags
+
+Tags MUST adhere to the following requirements:
+
+* Tags MUST be of type JSON Object (serialized as a String where necessary).
+* Tags MUST conform to [StringHandling](#attributes.stringhandling) requirements.
+* Tags MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.
+* Tags MAY be null.
+* When Tags is not null, Tags MUST adhere to the following requirements:
+  * Tags MUST include all user-defined and provider-defined tags.
+  * Tags MUST only include finalized tags.
+  * Tags SHOULD include tag keys with corresponding non-null values for a given [*resource*](#glossary:resource).
+  * Tags MAY include tag keys with a null value for a given *resource* depending on the data generator's tag finalization process.
+  * Tag keys that do not support corresponding values, MUST have a corresponding true (boolean) value set.
+  * Tag values MUST match the provided values unless true (boolean) is applied to valueless tags.
+* Provider-defined tags MUST adhere to the following requirements:
+  * Provider-defined tag keys MUST be prefixed with a predetermined, provider-specified tag key prefix that is unique to each corresponding provider-specified [*tag scheme*](#glossary:tag-scheme).
+  * Provider-specified tag key prefixes SHOULD be publicly documented.
+* User-defined tags MUST adhere to the following requirements:
+  * User-defined tag keys in all but one user-defined *tag scheme* MUST include a predetermined, provider-specified tag key prefix that is unique to each corresponding user-defined *tag scheme* when the data generator has more than one user-defined *tag scheme*.
+  * User-defined tag keys MUST NOT include a *tag scheme*-specific prefix when the data generator has only one user-defined *tag scheme*.
+  * Reserved tag key prefixes MUST be prevented from being used as prefixes for any user-defined tag keys within a prefixless user-defined *tag scheme*.
+* Tag finalization documentation MUST adhere to the following requirements:
+  * Tag finalization documentation SHOULD include tag finalization methods and semantics.
+  * Tag finalization documentation SHOULD be accessible to practitioners.
+
+# CostAndUsage (Dataset)
+
+CostAndUsage MUST adhere to the following requirements:
+
+* CostAndUsage MUST be present.
+* CostAndUsage column presence MUST adhere to the following requirements:
+  * CostAndUsage SHOULD include [AllocatedMethodDetails](#datasets.costandusage.allocatedmethoddetails) when the data generator supports data generator-calculated split cost allocation.
+  * CostAndUsage MUST include [AllocatedMethodId](#datasets.costandusage.allocatedmethodid) when the data generator supports data generator-calculated split cost allocation.
+  * CostAndUsage MUST include [AllocatedResourceId](#datasets.costandusage.allocatedresourceid) when the data generator supports data generator-calculated split cost allocation.
+  * CostAndUsage MUST include [AllocatedResourceName](#datasets.costandusage.allocatedresourcename) when the data generator supports data generator-calculated split cost allocation.
+  * CostAndUsage MUST include [AllocatedTags](#datasets.costandusage.allocatedtags) when the data generator supports data generator-calculated split cost allocation.
+  * CostAndUsage SHOULD include [AvailabilityZone](#datasets.costandusage.availabilityzone) when the host provider supports deploying resources or services within an *availability zone*.
+  * CostAndUsage MUST include [BilledCost](#datasets.costandusage.billedcost).
+  * CostAndUsage MUST include [BillingAccountId](#datasets.costandusage.billingaccountid).
+  * CostAndUsage MUST include [BillingAccountName](#datasets.costandusage.billingaccountname).
+  * CostAndUsage MUST include [BillingAccountType](#datasets.costandusage.billingaccounttype) when the [*invoice issuer*](#glossary:invoice-issuer) supports more than one possible BillingAccountType value.
+  * CostAndUsage MUST include [BillingCurrency](#datasets.costandusage.billingcurrency).
+  * CostAndUsage MUST include [BillingPeriodEnd](#datasets.costandusage.billingperiodend).
+  * CostAndUsage MUST include [BillingPeriodStart](#datasets.costandusage.billingperiodstart).
+  * CostAndUsage MUST include [CapacityReservationId](#datasets.costandusage.capacityreservationid) when the service provider supports *capacity reservations*.
+  * CostAndUsage MUST include [CapacityReservationStatus](#datasets.costandusage.capacityreservationstatus) when the service provider supports *capacity reservations*.
+  * CostAndUsage MUST include [ChargeCategory](#datasets.costandusage.chargecategory).
+  * CostAndUsage MUST include [ChargeClass](#datasets.costandusage.chargeclass).
+  * CostAndUsage MUST include [ChargeDescription](#datasets.costandusage.chargedescription).
+  * CostAndUsage SHOULD include [ChargeFrequency](#datasets.costandusage.chargefrequency).
+  * CostAndUsage MUST include [ChargePeriodEnd](#datasets.costandusage.chargeperiodend).
+  * CostAndUsage MUST include [ChargePeriodStart](#datasets.costandusage.chargeperiodstart).
+  * CostAndUsage MUST include [CommitmentDiscountCategory](#datasets.costandusage.commitmentdiscountcategory) when the service provider supports *commitment discounts*.
+  * CostAndUsage MUST include [CommitmentDiscountId](#datasets.costandusage.commitmentdiscountid) when the service provider supports *commitment discounts*.
+  * CostAndUsage MUST include [CommitmentDiscountName](#datasets.costandusage.commitmentdiscountname) when the service provider supports *commitment discounts*.
+  * CostAndUsage MUST include [CommitmentDiscountQuantity](#datasets.costandusage.commitmentdiscountquantity) when the service provider supports *commitment discounts*.
+  * CostAndUsage MUST include [CommitmentDiscountStatus](#datasets.costandusage.commitmentdiscountstatus) when the service provider supports *commitment discounts*.
+  * CostAndUsage MUST include [CommitmentDiscountType](#datasets.costandusage.commitmentdiscounttype) when the service provider supports *commitment discounts*.
+  * CostAndUsage MUST include [CommitmentDiscountUnit](#datasets.costandusage.commitmentdiscountunit) when the service provider supports *commitment discounts*.
+  * CostAndUsage MUST include [CommitmentProgramEligibilityDetails](#datasets.costandusage.commitmentprogrameligibilitydetails) when the service provider supports at least one [*commitment program*](#glossary:commitment-program).
+  * CostAndUsage MUST include [ConsumedQuantity](#datasets.costandusage.consumedquantity) when the service provider supports the measurement of usage.
+  * CostAndUsage MUST include [ConsumedUnit](#datasets.costandusage.consumedunit) when the service provider supports the measurement of usage.
+  * CostAndUsage MUST include [ContractApplied](#datasets.costandusage.contractapplied) when the service provider supports *contract commitments*.
+  * CostAndUsage MUST include [ContractedCost](#datasets.costandusage.contractedcost).
+  * CostAndUsage MUST include [ContractedUnitPrice](#datasets.costandusage.contractedunitprice) when the service provider supports negotiated pricing concepts.
+  * CostAndUsage MUST include [EffectiveCost](#datasets.costandusage.effectivecost).
+  * CostAndUsage MUST include [HostProviderName](#datasets.costandusage.hostprovidername).
+  * CostAndUsage MUST include [InvoiceDetailId](#datasets.costandusage.invoicedetailid) when the invoice issuer supports payable invoices.
+  * CostAndUsage MUST include [InvoiceId](#datasets.costandusage.invoiceid) when the invoice issuer supports payable invoices.
+  * CostAndUsage MUST include [InvoiceIssuerName](#datasets.costandusage.invoiceissuername).
+  * CostAndUsage MUST include [ListCost](#datasets.costandusage.listcost).
+  * CostAndUsage MUST include [ListUnitPrice](#datasets.costandusage.listunitprice) when the service provider publishes unit prices exclusive of discounts.
+  * CostAndUsage MUST include [PricingCategory](#datasets.costandusage.pricingcategory) when the service provider supports more than one pricing category across all [*SKUs*](#glossary:sku).
+  * CostAndUsage MUST include [PricingCurrency](#datasets.costandusage.pricingcurrency) when the service provider supports pricing and billing in different currencies.
+  * CostAndUsage MUST adhere to the following [PricingCurrencyContractedUnitPrice](#datasets.costandusage.pricingcurrencycontractedunitprice) presence requirements:
+    * CostAndUsage MUST include PricingCurrencyContractedUnitPrice when the service provider supports prices in virtual currency and publishes unit prices exclusive of discounts.
+    * CostAndUsage SHOULD include PricingCurrencyContractedUnitPrice when the service provider supports pricing and billing in different currencies and publishes unit prices exclusive of discounts.
+    * CostAndUsage MAY include PricingCurrencyContractedUnitPrice in all other cases.
+  * CostAndUsage MUST adhere to the following [PricingCurrencyEffectiveCost](#datasets.costandusage.pricingcurrencyeffectivecost) presence requirements:
+    * CostAndUsage MUST include PricingCurrencyEffectiveCost when the service provider supports prices in virtual currency and publishes unit prices exclusive of discounts.
+    * CostAndUsage SHOULD include PricingCurrencyEffectiveCost when the service provider supports pricing and billing in different currencies and publishes unit prices exclusive of discounts.
+    * CostAndUsage MAY include PricingCurrencyEffectiveCost in all other cases.
+  * CostAndUsage MUST adhere to the following [PricingCurrencyListUnitPrice](#datasets.costandusage.pricingcurrencylistunitprice) presence requirements:
+    * CostAndUsage MUST include PricingCurrencyListUnitPrice when the service provider supports prices in virtual currency and publishes unit prices exclusive of discounts.
+    * CostAndUsage SHOULD include PricingCurrencyListUnitPrice when the service provider supports pricing and billing in different currencies and publishes unit prices exclusive of discounts.
+    * CostAndUsage MAY include PricingCurrencyListUnitPrice in all other cases.
+  * CostAndUsage MUST include [PricingQuantity](#datasets.costandusage.pricingquantity).
+  * CostAndUsage MUST include [PricingUnit](#datasets.costandusage.pricingunit).
+  * CostAndUsage MUST include [RegionId](#datasets.costandusage.regionid) when the host provider supports deploying resources or services within a region.
+  * CostAndUsage MUST include [RegionName](#datasets.costandusage.regionname) when the host provider supports deploying resources or services within a region.
+  * CostAndUsage MUST include [ResourceId](#datasets.costandusage.resourceid) when the service provider supports billing based on provisioned *resources*.
+  * CostAndUsage MUST include [ResourceName](#datasets.costandusage.resourcename) when the service provider supports billing based on provisioned resources.
+  * CostAndUsage MUST include [ResourceType](#datasets.costandusage.resourcetype) when the service provider supports billing based on provisioned *resources* and supports assigning types to *resources*.
+  * CostAndUsage MUST include [ServiceCategory](#datasets.costandusage.servicecategory).
+  * CostAndUsage MUST include [ServiceName](#datasets.costandusage.servicename).
+  * CostAndUsage MUST include [ServiceProviderName](#datasets.costandusage.serviceprovidername).
+  * CostAndUsage SHOULD include [ServiceSubcategory](#datasets.costandusage.servicesubcategory).
+  * CostAndUsage MUST include [SkuId](#datasets.costandusage.skuid) when the service provider supports unit pricing concepts and publishes price lists, publicly or as part of contracting.
+  * CostAndUsage MUST include [SkuMeter](#datasets.costandusage.skumeter) when the service provider supports unit pricing concepts and publishes [*price lists*](#glossary:price-list), publicly or as part of contracting.
+  * CostAndUsage MUST include [SkuPriceDetails](#datasets.costandusage.skupricedetails) when the service provider supports unit pricing concepts and publishes *price lists*, publicly or as part of contracting.
+  * CostAndUsage MUST include [SkuPriceId](#datasets.costandusage.skupriceid) when the service provider supports unit pricing concepts and publishes *price lists*, publicly or as part of contracting.
+  * CostAndUsage MUST include [SubAccountId](#datasets.costandusage.subaccountid) when the service provider supports a *sub account* construct.
+  * CostAndUsage MUST include [SubAccountName](#datasets.costandusage.subaccountname) when the service provider supports a *sub account* construct.
+  * CostAndUsage MUST include [SubAccountType](#datasets.costandusage.subaccounttype) when the service provider supports more than one possible SubAccountType value.
+  * CostAndUsage MUST include [Tags](#datasets.costandusage.tags) when the data generator supports setting user or provider-defined tags.
+  * CostAndUsage SHOULD include [*custom columns*](#glossary:custom-column) needed to identify all applied discounts when [*FOCUS columns*](#glossary:FOCUS-column) are not sufficient.
+* CostAndUsage MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.
+* CostAndUsage MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.
+* CostAndUsage MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.
+* CostAndUsage MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.
+* CostAndUsage MUST include *charges* representing unused portions of a [*commitment*](#glossary:commitment) when the *commitment* is not fully utilized.
+* CostAndUsage MUST include separate *charges* representing discounted and non-discounted portions when a discount applies to only a portion of the originally incurred *charge*.
+* When the data generator supports data generator-calculated split cost allocation, CostAndUsage MUST adhere to the following requirements:
+  * CostAndUsage MUST have its data generator-calculated split cost allocation method documented and accessible to practitioners.
+  * CostAndUsage SHOULD offer data generator-calculated split cost allocation on an opt-in basis.
+  * CostAndUsage MAY contain records for concepts not related to resource usage, when it aligns with the documented data generator-calculated split cost allocation method.
+  * CostAndUsage MAY contain records for unused or unallocated usage from the *origin charge* as separate *allocated charges*, when it aligns with the documented data generator-calculated split cost allocation method.
+  * CostAndUsage MAY contain *allocated charges* with apportioned costs for unused or unallocated usage, when it aligns with the documented data generator-calculated split cost allocation method.
+* CostAndUsage SHOULD reflect all applied discounts in *charges* they pertain to.
+* CostAndUsage SHOULD NOT represent applied discounts as separate negating or offsetting *charges*.
+* CostAndUsage *FOCUS columns* MUST conform to [DataGeneratorCalculatedSplitCostAllocationHandling](#attributes.datagenerator-calculatedsplitcostallocationhandling) requirements when the data generator supports data generator-calculated split cost allocation.
+* CostAndUsage *FOCUS columns* MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.
+* CostAndUsage *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.
+* CostAndUsage *custom columns* MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.
