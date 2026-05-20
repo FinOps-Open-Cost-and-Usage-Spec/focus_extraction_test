@@ -1,0 +1,101 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/conditions/includesbillingpaymentcurrencydifferences.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Condition",
+    "entity_id": "IncludesBillingPaymentCurrencyDifferences",
+    "entity_name": "Includes Billing and Payment Currency Differences"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Condition",
+      "entity_id": "IncludesBillingPaymentCurrencyDifferences",
+      "entity_name": "Includes Billing and Payment Currency Differences"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "IncludesBillingPaymentCurrencyDifferences MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 7,
+        "line_end": 7
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L007"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to true when the *operating model* supports billing in one currency and payment in another.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 9,
+        "line_end": 9
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L009"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to false when the *operating model* strictly uses the same currency for both billing and payment.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L010"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}
