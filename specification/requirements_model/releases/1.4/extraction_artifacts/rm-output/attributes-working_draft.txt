@@ -39,7 +39,7 @@ Column conforming to CustomColumnHandling attribute MUST adhere to the following
 * *Custom column* representing a national currency SHOULD conform to [CurrencyFormat](#attributes.currencyformat) requirements.
 * *Custom column* representing a measurement unit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.
 
-# DataGeneratorCalculatedSplitCostAllocationJandling
+# DataGeneratorCalculatedSplitCostAllocationHandling
 
 Column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:
 
@@ -47,7 +47,7 @@ Column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribut
 * *FOCUS dataset column* representing a non-summable [*metric*](#glossary:metric) (e.g., unit prices) MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.
 * The sum of *FOCUS dataset column* across *allocated charges* MUST match the *FOCUS dataset column* in the corresponding *origin charge* when the *FOCUS dataset column* represents a summable metric (e.g., costs and quantities).
 
-# DatasetCompleness
+# DatasetCompletness
 
 Dataset conforming to DatasetCompleteness attribute MUST adhere to the following requirements:
 
@@ -98,7 +98,7 @@ Dataset conforming to DeliveryHandling attribute MUST adhere to the following re
   * *FOCUS dataset* delivery mechanism documentation MUST include the mechanism for correlating *dataset artifacts* with the [FOCUS Metadata Schema object](#metadata.schema) when the Metadata is delivered.
   * *FOCUS dataset* delivery mechanism documentation MUST be accessible to practitioners.
 
-# FocusColumnHanlding
+# FocusColumnHandling
 
 Column conforming to FocusColumnHandling attribute MUST adhere to the following requirements:
 
@@ -137,7 +137,7 @@ Column conforming to KeyValueFormat attribute MUST adhere to the following requi
 * Key values in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), or `null`.
 * Key values in *FOCUS dataset column* MUST NOT be objects or arrays.
 
-# Null NullHandling
+# NullHandling
 
 Column conforming to NullHandling attribute MUST adhere to the following requirements:
 
