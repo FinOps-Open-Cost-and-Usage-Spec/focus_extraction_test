@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesMultipleSubAccountTypes MUST evaluate to true when the *operating model* includes more than one possible SubAccountType value.",
+        "MustSatisfy": "IncludesMultipleSubAccountTypes MUST evaluate to true when the *operating model* includes multiple SubAccountTypes.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,8 +65,8 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesMultipleSubAccountTypes MAY evaluate to false when the *operating model* includes only a single SubAccountType value.",
-        "Keyword": "MAY",
+        "MustSatisfy": "IncludesMultipleSubAccountTypes MUST evaluate to false when the *operating model* does not include multiple SubAccountTypes.",
+        "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
         "Dependencies": []
