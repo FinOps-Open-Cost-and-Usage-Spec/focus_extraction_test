@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesRegions MUST evaluate to true when the *operating model* supports deploying resources or services within distinct geographic regions.",
+        "MustSatisfy": "IncludesRegions MUST evaluate to true when the *operating model* includes deploying resources or services within a region.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesRegions MUST evaluate to false when the *operating model* does not support region-based deployment.",
+        "MustSatisfy": "IncludesRegions MUST evaluate to false when the *operating model* does not include deploying resources or services within a region.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
