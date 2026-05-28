@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Sub Accounts > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesSubAccounts MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesSubAccounts MUST evaluate to true when the *operating model* supports the use of sub accounts under a main billing account.\"",
-    "  L010: \"IncludesSubAccounts MUST evaluate to false when the *operating model* does not support a sub account construct.\""
+    "  L009: \"IncludesSubAccounts MUST evaluate to true when the *operating model* includes a sub account construct.\"",
+    "  L010: \"IncludesSubAccounts MUST evaluate to false when the *operating model* does not include a sub account construct.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesSubAccounts MUST evaluate to true when the *operating model* supports the use of sub accounts under a main billing account.",
+                "text": "IncludesSubAccounts MUST evaluate to true when the *operating model* includes a sub account construct.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Sub Accounts",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesSubAccounts MUST evaluate to false when the *operating model* does not support a sub account construct.",
+                "text": "IncludesSubAccounts MUST evaluate to false when the *operating model* does not include a sub account construct.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Sub Accounts",
