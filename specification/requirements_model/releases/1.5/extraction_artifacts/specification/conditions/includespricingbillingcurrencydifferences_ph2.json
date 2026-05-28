@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Pricing-Billing Currency Differences > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesPricingBillingCurrencyDifferences MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesPricingBillingCurrencyDifferences MUST evaluate to true when the *operating model* supports pricing in one currency and billing in another.\"",
-    "  L010: \"IncludesPricingBillingCurrencyDifferences MUST evaluate to false when the *operating model* strictly uses the same currency for pricing and billing.\""
+    "  L009: \"IncludesPricingBillingCurrencyDifferences MUST evaluate to true when the *operating model* includes pricing and billing in different currencies.\"",
+    "  L010: \"IncludesPricingBillingCurrencyDifferences MUST evaluate to false when the *operating model* does not include pricing and billing in different currencies.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesPricingBillingCurrencyDifferences MUST evaluate to true when the *operating model* supports pricing in one currency and billing in another.",
+                "text": "IncludesPricingBillingCurrencyDifferences MUST evaluate to true when the *operating model* includes pricing and billing in different currencies.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Pricing-Billing Currency Differences",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesPricingBillingCurrencyDifferences MUST evaluate to false when the *operating model* strictly uses the same currency for pricing and billing.",
+                "text": "IncludesPricingBillingCurrencyDifferences MUST evaluate to false when the *operating model* does not include pricing and billing in different currencies.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Pricing-Billing Currency Differences",
