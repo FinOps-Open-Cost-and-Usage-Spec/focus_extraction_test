@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesAvailabilityZones MUST evaluate to true when the *operating model* includes the ability to deploy resources or services within an availability zone.",
+      "text": "IncludesAvailabilityZones MUST evaluate to true when the *operating model* includes deploying resources or services within an availability zone.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesAvailabilityZones MUST evaluate to false when the *operating model* does not support availability zone placement.",
+      "text": "IncludesAvailabilityZones MUST evaluate to false when the *operating model* does not include deploying resources or services within an availability zone.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
