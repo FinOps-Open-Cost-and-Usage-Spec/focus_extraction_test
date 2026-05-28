@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Resource Type Assignment > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesResourceTypeAssignment MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* allows categorizing resources by type.\"",
-    "  L010: \"IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not support resource typing.\""
+    "  L009: \"IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* includes categorizing resources by type.\"",
+    "  L010: \"IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not include categorizing resources by type.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* allows categorizing resources by type.",
+                "text": "IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* includes categorizing resources by type.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Resource Type Assignment",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not support resource typing.",
+                "text": "IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not include categorizing resources by type.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Resource Type Assignment",
