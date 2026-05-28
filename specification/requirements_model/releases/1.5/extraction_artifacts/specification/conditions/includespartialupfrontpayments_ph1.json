@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* offers a \"Partial Upfront\" payment model for commitments.",
+      "text": "IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* includes a partial upfront payment model for *contract commitments*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* strictly uses \"All Upfront\" or \"No Upfront\" payment models.",
+      "text": "IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* does not include a partial upfront payment model for *contract commitments*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
