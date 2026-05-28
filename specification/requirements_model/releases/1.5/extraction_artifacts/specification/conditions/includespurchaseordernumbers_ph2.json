@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Purchase Order Numbers > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesPurchaseOrderNumbers MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* supports or captures customer input of purchase order (PO) numbers.\"",
-    "  L010: \"IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not support or capture purchase order numbers.\""
+    "  L009: \"IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* includes purchase order numbers.\"",
+    "  L010: \"IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not include purchase order numbers.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -58,6 +58,7 @@
             "text": "IncludesPurchaseOrderNumbers MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
+              "Includes Purchase Order Numbers",
               "Requirements"
             ],
             "block": {
@@ -77,9 +78,10 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* supports or captures customer input of purchase order (PO) numbers.",
+                "text": "IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* includes purchase order numbers.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Includes Purchase Order Numbers",
                   "Requirements"
                 ],
                 "block": {
@@ -100,9 +102,10 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not support or capture purchase order numbers.",
+                "text": "IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not include purchase order numbers.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Includes Purchase Order Numbers",
                   "Requirements"
                 ],
                 "block": {
