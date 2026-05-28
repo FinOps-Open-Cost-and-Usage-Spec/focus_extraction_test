@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPayableInvoices MUST evaluate to true when the *operating model* generates formal payable invoices.",
+        "MustSatisfy": "IncludesPayableInvoices MUST evaluate to true when the *operating model* includes payable invoices.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPayableInvoices MUST evaluate to false when the *operating model* does not generate formal payable invoices.",
+        "MustSatisfy": "IncludesPayableInvoices MUST evaluate to false when the *operating model* does not include payable invoices.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
