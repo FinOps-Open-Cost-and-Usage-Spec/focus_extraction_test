@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* allows categorizing resources by type.",
+        "MustSatisfy": "IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* includes categorizing resources by type.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not support resource typing.",
+        "MustSatisfy": "IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not include categorizing resources by type.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
