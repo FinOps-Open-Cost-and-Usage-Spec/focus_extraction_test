@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesTags MUST evaluate to true when the *operating model* contains tags, whether they are provider-defined, user-assigned, or generated via metadata enrichment processes.",
+      "text": "IncludesTags MUST evaluate to true when the *operating model* includes *tags*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesTags MUST evaluate to false when the *operating model* contains no tag metadata.",
+      "text": "IncludesTags MUST evaluate to false when the *operating model* does not include *tags*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
