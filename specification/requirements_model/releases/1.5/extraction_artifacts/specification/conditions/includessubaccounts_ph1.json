@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesSubAccounts MUST evaluate to true when the *operating model* supports the use of sub accounts under a main billing account.",
+      "text": "IncludesSubAccounts MUST evaluate to true when the *operating model* includes a sub account construct.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesSubAccounts MUST evaluate to false when the *operating model* does not support a sub account construct.",
+      "text": "IncludesSubAccounts MUST evaluate to false when the *operating model* does not include a sub account construct.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
