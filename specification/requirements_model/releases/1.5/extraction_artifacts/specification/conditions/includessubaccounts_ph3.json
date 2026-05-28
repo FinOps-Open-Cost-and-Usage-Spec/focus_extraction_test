@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesSubAccounts MUST evaluate to true when the *operating model* supports the use of sub accounts under a main billing account.",
+        "MustSatisfy": "IncludesSubAccounts MUST evaluate to true when the *operating model* includes a sub account construct.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesSubAccounts MUST evaluate to false when the *operating model* does not support a sub account construct.",
+        "MustSatisfy": "IncludesSubAccounts MUST evaluate to false when the *operating model* does not include a sub account construct.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
