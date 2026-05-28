@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesMultipleBillingAccountTypes MUST evaluate to true when the *operating model* includes more than one possible BillingAccountType value.",
+      "text": "IncludesMultipleBillingAccountTypes MUST evaluate to true when the *operating model* includes multiple BillingAccountTypes.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,8 +70,8 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesMultipleBillingAccountTypes MAY evaluate to false when the *operating model* includes only a single BillingAccountType value.",
-      "keyword": "MAY",
+      "text": "IncludesMultipleBillingAccountTypes MUST evaluate to false when the *operating model* does not include multiple BillingAccountTypes.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Includes Multiple Billing Account Types",
