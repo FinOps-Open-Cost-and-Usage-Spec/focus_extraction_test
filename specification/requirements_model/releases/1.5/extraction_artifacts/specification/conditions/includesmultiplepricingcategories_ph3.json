@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* supports more than one pricing category (e.g., Standard, Dynamic, Committed).",
+        "MustSatisfy": "IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* includes multiple pricing categories.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,8 +65,8 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesMultiplePricingCategories MAY evaluate to false when the *operating model* supports only a single pricing category.",
-        "Keyword": "MAY",
+        "MustSatisfy": "IncludesMultiplePricingCategories MUST evaluate to false when the *operating model* does not include multiple pricing categories.",
+        "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
         "Dependencies": []
