@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesCapacityReservations MUST evaluate to true when the *operating model* contains a mechanism to reserve capacity.",
+        "MustSatisfy": "IncludesCapacityReservations MUST evaluate to true when the *operating model* includes *capacity reservations*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesCapacityReservations MUST evaluate to false when the *operating model* lacks any commercial or technical construct for reserving capacity.",
+        "MustSatisfy": "IncludesCapacityReservations MUST evaluate to false when the *operating model* does not include *capacity reservations*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
