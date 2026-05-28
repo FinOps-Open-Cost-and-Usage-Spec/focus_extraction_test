@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* supports or captures customer input of purchase order (PO) numbers.",
+        "MustSatisfy": "IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* includes purchase order numbers.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not support or capture purchase order numbers.",
+        "MustSatisfy": "IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not include purchase order numbers.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
