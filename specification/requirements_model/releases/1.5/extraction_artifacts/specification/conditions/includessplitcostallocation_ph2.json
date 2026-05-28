@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Split Cost Allocation > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesSplitCostAllocation MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesSplitCostAllocation MUST evaluate to true when the *operating model* contains a mechanism to distribute shared costs across distinct resources, tags, or accounts.\"",
-    "  L010: \"IncludesSplitCostAllocation MUST evaluate to false when the *operating model* lacks any native mechanism for cost or usage apportionment.\""
+    "  L009: \"IncludesSplitCostAllocation MUST evaluate to true when the *operating model* includes *split cost allocation*.\"",
+    "  L010: \"IncludesSplitCostAllocation MUST evaluate to false when the *operating model* does not include *split cost allocation*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesSplitCostAllocation MUST evaluate to true when the *operating model* contains a mechanism to distribute shared costs across distinct resources, tags, or accounts.",
+                "text": "IncludesSplitCostAllocation MUST evaluate to true when the *operating model* includes *split cost allocation*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Split Cost Allocation",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesSplitCostAllocation MUST evaluate to false when the *operating model* lacks any native mechanism for cost or usage apportionment.",
+                "text": "IncludesSplitCostAllocation MUST evaluate to false when the *operating model* does not include *split cost allocation*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Split Cost Allocation",
