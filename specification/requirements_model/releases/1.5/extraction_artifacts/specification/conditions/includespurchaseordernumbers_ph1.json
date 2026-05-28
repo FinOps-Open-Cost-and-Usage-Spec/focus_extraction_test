@@ -24,6 +24,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Purchase Order Numbers",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* supports or captures customer input of purchase order (PO) numbers.",
+      "text": "IncludesPurchaseOrderNumbers MUST evaluate to true when the *operating model* includes purchase order numbers.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Purchase Order Numbers",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not support or capture purchase order numbers.",
+      "text": "IncludesPurchaseOrderNumbers MUST evaluate to false when the *operating model* does not include purchase order numbers.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Purchase Order Numbers",
         "Requirements"
       ],
       "block": {
