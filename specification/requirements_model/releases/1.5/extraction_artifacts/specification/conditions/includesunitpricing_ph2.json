@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Unit Pricing > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesUnitPricing MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesUnitPricing MUST evaluate to true when the *operating model* utilizes a per-unit billing mechanic.\"",
-    "  L010: \"IncludesUnitPricing MUST evaluate to false when the *operating model* strictly utilizes dynamic, flat-rate, or purely tier-based billing without a distinct per-unit rate.\""
+    "  L009: \"IncludesUnitPricing MUST evaluate to true when the *operating model* includes *unit pricing*.\"",
+    "  L010: \"IncludesUnitPricing MUST evaluate to false when the *operating model* does not include *unit pricing*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesUnitPricing MUST evaluate to true when the *operating model* utilizes a per-unit billing mechanic.",
+                "text": "IncludesUnitPricing MUST evaluate to true when the *operating model* includes *unit pricing*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Unit Pricing",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesUnitPricing MUST evaluate to false when the *operating model* strictly utilizes dynamic, flat-rate, or purely tier-based billing without a distinct per-unit rate.",
+                "text": "IncludesUnitPricing MUST evaluate to false when the *operating model* does not include *unit pricing*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Unit Pricing",
