@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Multiple Pricing Categories > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesMultiplePricingCategories MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* supports more than one pricing category (e.g., Standard, Dynamic, Committed).\"",
-    "  L010: \"IncludesMultiplePricingCategories MAY evaluate to false when the *operating model* supports only a single pricing category.\""
+    "  L009: \"IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* includes multiple pricing categories.\"",
+    "  L010: \"IncludesMultiplePricingCategories MUST evaluate to false when the *operating model* does not include multiple pricing categories.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -33,8 +33,7 @@
     "max_indent_level": 0,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 2,
-      "MAY": 1
+      "MUST": 3
     },
     "lead_ins": [
       {
@@ -79,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* supports more than one pricing category (e.g., Standard, Dynamic, Committed).",
+                "text": "IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* includes multiple pricing categories.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Multiple Pricing Categories",
@@ -103,8 +102,8 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesMultiplePricingCategories MAY evaluate to false when the *operating model* supports only a single pricing category.",
-                "keyword": "MAY",
+                "text": "IncludesMultiplePricingCategories MUST evaluate to false when the *operating model* does not include multiple pricing categories.",
+                "keyword": "MUST",
                 "section_path": [
                   "Includes Multiple Pricing Categories",
                   "Requirements"
