@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesSplitCostAllocation MUST evaluate to true when the *operating model* contains a mechanism to distribute shared costs across distinct resources, tags, or accounts.",
+      "text": "IncludesSplitCostAllocation MUST evaluate to true when the *operating model* includes *split cost allocation*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesSplitCostAllocation MUST evaluate to false when the *operating model* lacks any native mechanism for cost or usage apportionment.",
+      "text": "IncludesSplitCostAllocation MUST evaluate to false when the *operating model* does not include *split cost allocation*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
