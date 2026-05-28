@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesUsageMeasurement MUST evaluate to true when the *operating model* measures and reports resource or service usage.",
+        "MustSatisfy": "IncludesUsageMeasurement MUST evaluate to true when the *operating model* includes the measurement of *resource* or *service* usage.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesUsageMeasurement MUST evaluate to false when the *operating model* does not measure or report usage.",
+        "MustSatisfy": "IncludesUsageMeasurement MUST evaluate to false when the *operating model* does not include the measurement of *resource* or *service* usage.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
