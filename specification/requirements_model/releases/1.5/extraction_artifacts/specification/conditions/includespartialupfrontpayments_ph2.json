@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Partial Upfront Payments > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesPartialUpfrontPayments MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* offers a \\\"Partial Upfront\\\" payment model for commitments.\"",
-    "  L010: \"IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* strictly uses \\\"All Upfront\\\" or \\\"No Upfront\\\" payment models.\""
+    "  L009: \"IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* includes a partial upfront payment model for *contract commitments*.\"",
+    "  L010: \"IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* does not include a partial upfront payment model for *contract commitments*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* offers a \"Partial Upfront\" payment model for commitments.",
+                "text": "IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* includes a partial upfront payment model for *contract commitments*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Partial Upfront Payments",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* strictly uses \"All Upfront\" or \"No Upfront\" payment models.",
+                "text": "IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* does not include a partial upfront payment model for *contract commitments*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Partial Upfront Payments",
