@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Commitment Discounts > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesCommitmentDiscounts MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes contract commitments that provide discounted pricing on preselected SKUs in exchange for specific spend or usage goals.\"",
-    "  L010: \"IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include any commitment discounts.\""
+    "  L009: \"IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes *commitment discounts*.\"",
+    "  L010: \"IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include *commitment discounts*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes contract commitments that provide discounted pricing on preselected SKUs in exchange for specific spend or usage goals.",
+                "text": "IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes *commitment discounts*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Commitment Discounts",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include any commitment discounts.",
+                "text": "IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include *commitment discounts*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Commitment Discounts",
