@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes contract commitments that provide discounted pricing on preselected SKUs in exchange for specific spend or usage goals.",
+        "MustSatisfy": "IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes *commitment discounts*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include any commitment discounts.",
+        "MustSatisfy": "IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include *commitment discounts*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
