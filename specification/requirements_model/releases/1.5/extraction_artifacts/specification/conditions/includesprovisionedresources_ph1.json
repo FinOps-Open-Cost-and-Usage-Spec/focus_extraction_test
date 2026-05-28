@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesProvisionedResources MUST evaluate to true when the *operating model* identifies and tracks individual provisioned resources.",
+      "text": "IncludesProvisionedResources MUST evaluate to true when the *operating model* includes provisioned resources.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesProvisionedResources MUST evaluate to false when the *operating model* does not track individual provisioned resources.",
+      "text": "IncludesProvisionedResources MUST evaluate to false when the *operating model* does not include provisioned resources.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
