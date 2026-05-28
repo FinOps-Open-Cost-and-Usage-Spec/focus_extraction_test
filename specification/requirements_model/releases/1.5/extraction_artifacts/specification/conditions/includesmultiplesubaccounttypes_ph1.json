@@ -24,6 +24,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Multiple Sub Account Types",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesMultipleSubAccountTypes MUST evaluate to true when the *operating model* includes more than one possible SubAccountType value.",
+      "text": "IncludesMultipleSubAccountTypes MUST evaluate to true when the *operating model* includes multiple SubAccountTypes.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Multiple Sub Account Types",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesMultipleSubAccountTypes MAY evaluate to false when the *operating model* includes only a single SubAccountType value.",
-      "keyword": "MAY",
+      "text": "IncludesMultipleSubAccountTypes MUST evaluate to false when the *operating model* does not include multiple SubAccountTypes.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Multiple Sub Account Types",
         "Requirements"
       ],
       "block": {
