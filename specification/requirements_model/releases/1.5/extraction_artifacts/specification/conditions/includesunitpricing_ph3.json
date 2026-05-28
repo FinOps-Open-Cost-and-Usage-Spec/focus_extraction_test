@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesUnitPricing MUST evaluate to true when the *operating model* utilizes a per-unit billing mechanic.",
+        "MustSatisfy": "IncludesUnitPricing MUST evaluate to true when the *operating model* includes *unit pricing*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesUnitPricing MUST evaluate to false when the *operating model* strictly utilizes dynamic, flat-rate, or purely tier-based billing without a distinct per-unit rate.",
+        "MustSatisfy": "IncludesUnitPricing MUST evaluate to false when the *operating model* does not include *unit pricing*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
