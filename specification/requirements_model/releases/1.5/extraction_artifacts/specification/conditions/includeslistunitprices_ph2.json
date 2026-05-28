@@ -17,30 +17,29 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 4
+    "atoms_in_scope_count": 3
   },
   "0_outline_root": "ROOT: Includes List Unit Prices > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesListUnitPrices MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesListUnitPrices MUST evaluate to false when [IncludesUnitPricing](#conditions.includesunitpricing) evaluates to false.\"",
-    "  L010: \"IncludesListUnitPrices MUST evaluate to true when the *operating model* provides predefined \\\"retail\\\" or standard unit rates (e.g., a standard price catalog or baseline rate card), even when those prices are restricted to authenticated users or private customer portals.\"",
-    "  L011: \"IncludesListUnitPrices MUST evaluate to false when the *operating model* lacks baseline unit prices altogether (e.g., all pricing is entirely custom-quoted without a standard starting rate).\""
+    "  L009: \"IncludesListUnitPrices MUST evaluate to true when [IncludesUnitPricing](#conditions.includesunitpricing) is true and the *operating model* includes standard, non-discounted unit prices.\"",
+    "  L010: \"IncludesListUnitPrices MUST evaluate to false when [IncludesUnitPricing](#conditions.includesunitpricing) is false or the *operating model* does not include standard, non-discounted unit prices.\""
   ],
   "0_outline_summary": {
-    "node_count": 4,
-    "leaf_count": 3,
+    "node_count": 3,
+    "leaf_count": 2,
     "lead_in_count": 1,
     "max_depth": 1,
     "max_indent_level": 0,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 4
+      "MUST": 3
     },
     "lead_ins": [
       {
         "ref": "L007",
         "text_preview": "IncludesListUnitPrices MUST adhere to the following requirements:",
-        "children": 3
+        "children": 2
       }
     ]
   },
@@ -79,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesListUnitPrices MUST evaluate to false when [IncludesUnitPricing](#conditions.includesunitpricing) evaluates to false.",
+                "text": "IncludesListUnitPrices MUST evaluate to true when [IncludesUnitPricing](#conditions.includesunitpricing) is true and the *operating model* includes standard, non-discounted unit prices.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes List Unit Prices",
@@ -103,31 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesListUnitPrices MUST evaluate to true when the *operating model* provides predefined \"retail\" or standard unit rates (e.g., a standard price catalog or baseline rate card), even when those prices are restricted to authenticated users or private customer portals.",
-                "keyword": "MUST",
-                "section_path": [
-                  "Includes List Unit Prices",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": false
-                }
-              },
-              "children": []
-            },
-            {
-              "node_id": "R004",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R004",
-                "order": 4,
-                "ref": "L011",
-                "text": "IncludesListUnitPrices MUST evaluate to false when the *operating model* lacks baseline unit prices altogether (e.g., all pricing is entirely custom-quoted without a standard starting rate).",
+                "text": "IncludesListUnitPrices MUST evaluate to false when [IncludesUnitPricing](#conditions.includesunitpricing) is false or the *operating model* does not include standard, non-discounted unit prices.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes List Unit Prices",
