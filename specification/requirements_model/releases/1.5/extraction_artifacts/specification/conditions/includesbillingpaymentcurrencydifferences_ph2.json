@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Billing and Payment Currency Differences > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesBillingPaymentCurrencyDifferences MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesBillingPaymentCurrencyDifferences MUST evaluate to true when the *operating model* supports billing in one currency and payment in another.\"",
-    "  L010: \"IncludesBillingPaymentCurrencyDifferences MUST evaluate to false when the *operating model* strictly uses the same currency for both billing and payment.\""
+    "  L009: \"IncludesBillingPaymentCurrencyDifferences MUST evaluate to true when the *operating model* includes billing and payment in different currencies.\"",
+    "  L010: \"IncludesBillingPaymentCurrencyDifferences MUST evaluate to false when the *operating model* does not include billing and payment in different currencies.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -58,6 +58,7 @@
             "text": "IncludesBillingPaymentCurrencyDifferences MUST adhere to the following requirements:",
             "keyword": "MUST",
             "section_path": [
+              "Includes Billing and Payment Currency Differences",
               "Requirements"
             ],
             "block": {
@@ -77,9 +78,10 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to true when the *operating model* supports billing in one currency and payment in another.",
+                "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to true when the *operating model* includes billing and payment in different currencies.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Includes Billing and Payment Currency Differences",
                   "Requirements"
                 ],
                 "block": {
@@ -100,9 +102,10 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to false when the *operating model* strictly uses the same currency for both billing and payment.",
+                "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to false when the *operating model* does not include billing and payment in different currencies.",
                 "keyword": "MUST",
                 "section_path": [
+                  "Includes Billing and Payment Currency Differences",
                   "Requirements"
                 ],
                 "block": {
