@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesListUnitPrices MUST evaluate to false when [IncludesUnitPricing](#conditions.includesunitpricing) evaluates to false.",
+      "text": "IncludesListUnitPrices MUST evaluate to true when [IncludesUnitPricing](#conditions.includesunitpricing) is true and the *operating model* includes standard, non-discounted unit prices.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesListUnitPrices MUST evaluate to true when the *operating model* provides predefined \"retail\" or standard unit rates (e.g., a standard price catalog or baseline rate card), even when those prices are restricted to authenticated users or private customer portals.",
+      "text": "IncludesListUnitPrices MUST evaluate to false when [IncludesUnitPricing](#conditions.includesunitpricing) is false or the *operating model* does not include standard, non-discounted unit prices.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -91,31 +91,6 @@
       },
       "_alignment_status": "confirmed",
       "ref": "L010"
-    },
-    {
-      "temp_id": "R004",
-      "order": 4,
-      "text": "IncludesListUnitPrices MUST evaluate to false when the *operating model* lacks baseline unit prices altogether (e.g., all pricing is entirely custom-quoted without a standard starting rate).",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Includes List Unit Prices",
-        "Requirements"
-      ],
-      "block": {
-        "block_type": "list_item",
-        "indent_level": 0,
-        "bullet": "*"
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 11,
-        "line_end": 11
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L011"
     }
   ],
   "warnings": [],
