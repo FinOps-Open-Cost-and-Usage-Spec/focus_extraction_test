@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesProvisionedResources MUST evaluate to true when the *operating model* identifies and tracks individual provisioned resources.",
+        "MustSatisfy": "IncludesProvisionedResources MUST evaluate to true when the *operating model* includes provisioned resources.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesProvisionedResources MUST evaluate to false when the *operating model* does not track individual provisioned resources.",
+        "MustSatisfy": "IncludesProvisionedResources MUST evaluate to false when the *operating model* does not include provisioned resources.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
