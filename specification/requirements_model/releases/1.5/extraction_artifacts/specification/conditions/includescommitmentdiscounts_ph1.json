@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes contract commitments that provide discounted pricing on preselected SKUs in exchange for specific spend or usage goals.",
+      "text": "IncludesCommitmentDiscounts MUST evaluate to true when the *operating model* includes *commitment discounts*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include any commitment discounts.",
+      "text": "IncludesCommitmentDiscounts MUST evaluate to false when the *operating model* does not include *commitment discounts*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
