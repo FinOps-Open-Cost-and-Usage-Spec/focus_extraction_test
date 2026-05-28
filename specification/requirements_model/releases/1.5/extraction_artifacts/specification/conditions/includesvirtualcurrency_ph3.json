@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesVirtualCurrency MUST evaluate to true when the *operating model* allows pricing or billing in a non-fiat virtual currency.",
+        "MustSatisfy": "IncludesVirtualCurrency MUST evaluate to true when the *operating model* includes prices in *virtual currency*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesVirtualCurrency MUST evaluate to false when the *operating model* uses only fiat currencies.",
+        "MustSatisfy": "IncludesVirtualCurrency MUST evaluate to false when the *operating model* does not include prices in *virtual currency*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
