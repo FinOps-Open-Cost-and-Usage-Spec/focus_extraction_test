@@ -22,8 +22,7 @@
         "Condition": {},
         "Dependencies": [
           "CON-IncludesListUnitPrices-N-001-C",
-          "CON-IncludesListUnitPrices-N-002-C",
-          "CON-IncludesListUnitPrices-N-003-C"
+          "CON-IncludesListUnitPrices-N-002-C"
         ]
       }
     },
@@ -43,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesListUnitPrices MUST evaluate to false when IncludesUnitPricing evaluates to false.",
+        "MustSatisfy": "IncludesListUnitPrices MUST evaluate to true when IncludesUnitPricing is true and the *operating model* includes standard, non-discounted unit prices.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -66,30 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesListUnitPrices MUST evaluate to true when the *operating model* provides predefined \"retail\" or standard unit rates (e.g., a standard price catalog or baseline rate card), even when those prices are restricted to authenticated users or private customer portals.",
-        "Keyword": "MUST",
-        "Requirement": {},
-        "Condition": {},
-        "Dependencies": []
-      }
-    },
-    "CON-IncludesListUnitPrices-N-003-C": {
-      "Function": "Validation",
-      "Reference": "IncludesListUnitPrices",
-      "EntityType": "Condition",
-      "EntityName": "Includes List Unit Prices",
-      "EntityId": "IncludesListUnitPrices",
-      "Notes": "",
-      "ModelVersionIntroduced": "1.5",
-      "Status": "Active",
-      "ApplicabilityCriteria": [],
-      "Type": "Dynamic",
-      "Order": 30,
-      "DatasetType": "CON",
-      "DatasetId": "",
-      "DatasetName": "",
-      "ValidationCriteria": {
-        "MustSatisfy": "IncludesListUnitPrices MUST evaluate to false when the *operating model* lacks baseline unit prices altogether (e.g., all pricing is entirely custom-quoted without a standard starting rate).",
+        "MustSatisfy": "IncludesListUnitPrices MUST evaluate to false when IncludesUnitPricing is false or the *operating model* does not include standard, non-discounted unit prices.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
