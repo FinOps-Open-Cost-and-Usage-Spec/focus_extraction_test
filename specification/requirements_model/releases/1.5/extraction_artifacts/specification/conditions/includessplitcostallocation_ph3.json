@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesSplitCostAllocation MUST evaluate to true when the *operating model* contains a mechanism to distribute shared costs across distinct resources, tags, or accounts.",
+        "MustSatisfy": "IncludesSplitCostAllocation MUST evaluate to true when the *operating model* includes *split cost allocation*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesSplitCostAllocation MUST evaluate to false when the *operating model* lacks any native mechanism for cost or usage apportionment.",
+        "MustSatisfy": "IncludesSplitCostAllocation MUST evaluate to false when the *operating model* does not include *split cost allocation*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
