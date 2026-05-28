@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesAvailabilityZones MUST evaluate to true when the *operating model* includes the ability to deploy resources or services within an availability zone.",
+        "MustSatisfy": "IncludesAvailabilityZones MUST evaluate to true when the *operating model* includes deploying resources or services within an availability zone.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesAvailabilityZones MUST evaluate to false when the *operating model* does not support availability zone placement.",
+        "MustSatisfy": "IncludesAvailabilityZones MUST evaluate to false when the *operating model* does not include deploying resources or services within an availability zone.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
