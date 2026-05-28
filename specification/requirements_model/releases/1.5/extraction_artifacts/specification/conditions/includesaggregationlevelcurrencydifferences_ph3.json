@@ -19,7 +19,7 @@
         "MustSatisfy": "IncludesAggregationLevelCurrencyDifferences MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": [
           "CON-IncludesAggregationLevelCurrencyDifferences-N-001-C",
           "CON-IncludesAggregationLevelCurrencyDifferences-N-002-C"
@@ -42,10 +42,10 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to true when the *operating model* represents billing currency and payment currency at different aggregation levels on payable invoices.",
+        "MustSatisfy": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to true when the *operating model* includes the representation of billing currency and payment currency at different aggregation levels on payable invoices.",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": []
       }
     },
@@ -65,10 +65,10 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to false when the *operating model* represents billing currency and payment currency at the exact same aggregation level, or does not support currency differences.",
+        "MustSatisfy": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to false when the *operating model* does not include the representation of billing currency and payment currency at different aggregation levels on payable invoices.",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": []
       }
     }
