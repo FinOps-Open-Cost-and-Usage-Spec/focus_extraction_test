@@ -24,6 +24,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Aggregation Level Currency Differences",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to true when the *operating model* represents billing currency and payment currency at different aggregation levels on payable invoices.",
+      "text": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to true when the *operating model* includes the representation of billing currency and payment currency at different aggregation levels on payable invoices.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Aggregation Level Currency Differences",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to false when the *operating model* represents billing currency and payment currency at the exact same aggregation level, or does not support currency differences.",
+      "text": "IncludesAggregationLevelCurrencyDifferences MUST evaluate to false when the *operating model* does not include the representation of billing currency and payment currency at different aggregation levels on payable invoices.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Aggregation Level Currency Differences",
         "Requirements"
       ],
       "block": {
