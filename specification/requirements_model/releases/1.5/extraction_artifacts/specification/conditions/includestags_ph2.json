@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Tags > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesTags MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesTags MUST evaluate to true when the *operating model* contains tags, whether they are provider-defined, user-assigned, or generated via metadata enrichment processes.\"",
-    "  L010: \"IncludesTags MUST evaluate to false when the *operating model* contains no tag metadata.\""
+    "  L009: \"IncludesTags MUST evaluate to true when the *operating model* includes *tags*.\"",
+    "  L010: \"IncludesTags MUST evaluate to false when the *operating model* does not include *tags*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesTags MUST evaluate to true when the *operating model* contains tags, whether they are provider-defined, user-assigned, or generated via metadata enrichment processes.",
+                "text": "IncludesTags MUST evaluate to true when the *operating model* includes *tags*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Tags",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesTags MUST evaluate to false when the *operating model* contains no tag metadata.",
+                "text": "IncludesTags MUST evaluate to false when the *operating model* does not include *tags*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Tags",
