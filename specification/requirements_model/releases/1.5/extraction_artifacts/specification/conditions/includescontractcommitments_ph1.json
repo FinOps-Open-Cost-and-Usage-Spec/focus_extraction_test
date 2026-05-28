@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesContractCommitments MUST evaluate to true when the *operating model* includes formal contract commitments.",
+      "text": "IncludesContractCommitments MUST evaluate to true when the *operating model* includes *contract commitments*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesContractCommitments MUST evaluate to false when the *operating model* does not support contract commitments.",
+      "text": "IncludesContractCommitments MUST evaluate to false when the *operating model* does not include *contract commitments*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
