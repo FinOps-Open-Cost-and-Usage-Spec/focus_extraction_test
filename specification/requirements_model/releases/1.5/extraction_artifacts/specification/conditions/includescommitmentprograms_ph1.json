@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes one or more programs where a customer commits to a level of usage or spend in exchange for reduced rates.",
+      "text": "IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes *commitment programs*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include any commitment-based pricing or discount programs.",
+      "text": "IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include *commitment programs*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
