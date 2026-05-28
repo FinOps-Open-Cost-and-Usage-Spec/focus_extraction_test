@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* allows categorizing resources by type.",
+      "text": "IncludesResourceTypeAssignment MUST evaluate to true when the *operating model* includes categorizing resources by type.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not support resource typing.",
+      "text": "IncludesResourceTypeAssignment MUST evaluate to false when the *operating model* does not include categorizing resources by type.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
