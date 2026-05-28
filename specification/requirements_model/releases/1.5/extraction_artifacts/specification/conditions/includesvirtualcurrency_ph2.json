@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Virtual Currency > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesVirtualCurrency MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesVirtualCurrency MUST evaluate to true when the *operating model* allows pricing or billing in a non-fiat virtual currency.\"",
-    "  L010: \"IncludesVirtualCurrency MUST evaluate to false when the *operating model* uses only fiat currencies.\""
+    "  L009: \"IncludesVirtualCurrency MUST evaluate to true when the *operating model* includes prices in *virtual currency*.\"",
+    "  L010: \"IncludesVirtualCurrency MUST evaluate to false when the *operating model* does not include prices in *virtual currency*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesVirtualCurrency MUST evaluate to true when the *operating model* allows pricing or billing in a non-fiat virtual currency.",
+                "text": "IncludesVirtualCurrency MUST evaluate to true when the *operating model* includes prices in *virtual currency*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Virtual Currency",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesVirtualCurrency MUST evaluate to false when the *operating model* uses only fiat currencies.",
+                "text": "IncludesVirtualCurrency MUST evaluate to false when the *operating model* does not include prices in *virtual currency*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Virtual Currency",
