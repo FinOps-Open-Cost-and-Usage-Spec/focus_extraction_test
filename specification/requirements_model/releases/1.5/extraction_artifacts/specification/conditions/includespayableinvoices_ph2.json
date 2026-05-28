@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Payable Invoices > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesPayableInvoices MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesPayableInvoices MUST evaluate to true when the *operating model* generates formal payable invoices.\"",
-    "  L010: \"IncludesPayableInvoices MUST evaluate to false when the *operating model* does not generate formal payable invoices.\""
+    "  L009: \"IncludesPayableInvoices MUST evaluate to true when the *operating model* includes payable invoices.\"",
+    "  L010: \"IncludesPayableInvoices MUST evaluate to false when the *operating model* does not include payable invoices.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesPayableInvoices MUST evaluate to true when the *operating model* generates formal payable invoices.",
+                "text": "IncludesPayableInvoices MUST evaluate to true when the *operating model* includes payable invoices.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Payable Invoices",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesPayableInvoices MUST evaluate to false when the *operating model* does not generate formal payable invoices.",
+                "text": "IncludesPayableInvoices MUST evaluate to false when the *operating model* does not include payable invoices.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Payable Invoices",
