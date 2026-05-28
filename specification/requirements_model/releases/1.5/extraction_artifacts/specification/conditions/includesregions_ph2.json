@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Regions > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesRegions MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesRegions MUST evaluate to true when the *operating model* supports deploying resources or services within distinct geographic regions.\"",
-    "  L010: \"IncludesRegions MUST evaluate to false when the *operating model* does not support region-based deployment.\""
+    "  L009: \"IncludesRegions MUST evaluate to true when the *operating model* includes deploying resources or services within a region.\"",
+    "  L010: \"IncludesRegions MUST evaluate to false when the *operating model* does not include deploying resources or services within a region.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesRegions MUST evaluate to true when the *operating model* supports deploying resources or services within distinct geographic regions.",
+                "text": "IncludesRegions MUST evaluate to true when the *operating model* includes deploying resources or services within a region.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Regions",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesRegions MUST evaluate to false when the *operating model* does not support region-based deployment.",
+                "text": "IncludesRegions MUST evaluate to false when the *operating model* does not include deploying resources or services within a region.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Regions",
