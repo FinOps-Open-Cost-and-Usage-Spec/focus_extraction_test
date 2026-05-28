@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes one or more programs where a customer commits to a level of usage or spend in exchange for reduced rates.",
+        "MustSatisfy": "IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes *commitment programs*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include any commitment-based pricing or discount programs.",
+        "MustSatisfy": "IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include *commitment programs*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
