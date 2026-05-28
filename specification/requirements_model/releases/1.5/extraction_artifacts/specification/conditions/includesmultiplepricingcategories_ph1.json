@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* supports more than one pricing category (e.g., Standard, Dynamic, Committed).",
+      "text": "IncludesMultiplePricingCategories MUST evaluate to true when the *operating model* includes multiple pricing categories.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,8 +70,8 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesMultiplePricingCategories MAY evaluate to false when the *operating model* supports only a single pricing category.",
-      "keyword": "MAY",
+      "text": "IncludesMultiplePricingCategories MUST evaluate to false when the *operating model* does not include multiple pricing categories.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Includes Multiple Pricing Categories",
