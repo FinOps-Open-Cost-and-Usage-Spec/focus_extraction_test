@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Commitment Programs > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesCommitmentPrograms MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes one or more programs where a customer commits to a level of usage or spend in exchange for reduced rates.\"",
-    "  L010: \"IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include any commitment-based pricing or discount programs.\""
+    "  L009: \"IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes *commitment programs*.\"",
+    "  L010: \"IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include *commitment programs*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes one or more programs where a customer commits to a level of usage or spend in exchange for reduced rates.",
+                "text": "IncludesCommitmentPrograms MUST evaluate to true when the *operating model* includes *commitment programs*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Commitment Programs",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include any commitment-based pricing or discount programs.",
+                "text": "IncludesCommitmentPrograms MUST evaluate to false when the *operating model* does not include *commitment programs*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Commitment Programs",
