@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesUnitPricing MUST evaluate to true when the *operating model* utilizes a per-unit billing mechanic.",
+      "text": "IncludesUnitPricing MUST evaluate to true when the *operating model* includes *unit pricing*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesUnitPricing MUST evaluate to false when the *operating model* strictly utilizes dynamic, flat-rate, or purely tier-based billing without a distinct per-unit rate.",
+      "text": "IncludesUnitPricing MUST evaluate to false when the *operating model* does not include *unit pricing*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
