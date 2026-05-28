@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPricingBillingCurrencyDifferences MUST evaluate to true when the *operating model* supports pricing in one currency and billing in another.",
+        "MustSatisfy": "IncludesPricingBillingCurrencyDifferences MUST evaluate to true when the *operating model* includes pricing and billing in different currencies.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPricingBillingCurrencyDifferences MUST evaluate to false when the *operating model* strictly uses the same currency for pricing and billing.",
+        "MustSatisfy": "IncludesPricingBillingCurrencyDifferences MUST evaluate to false when the *operating model* does not include pricing and billing in different currencies.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
