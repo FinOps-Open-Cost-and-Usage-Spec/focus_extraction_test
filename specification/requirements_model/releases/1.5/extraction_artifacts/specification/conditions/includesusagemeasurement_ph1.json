@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesUsageMeasurement MUST evaluate to true when the *operating model* measures and reports resource or service usage.",
+      "text": "IncludesUsageMeasurement MUST evaluate to true when the *operating model* includes the measurement of [*resource*](#glossary:resource) or [*service*](#glossary:service) usage.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesUsageMeasurement MUST evaluate to false when the *operating model* does not measure or report usage.",
+      "text": "IncludesUsageMeasurement MUST evaluate to false when the *operating model* does not include the measurement of *resource* or *service* usage.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
