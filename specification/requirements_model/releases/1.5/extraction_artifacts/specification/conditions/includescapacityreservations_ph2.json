@@ -22,8 +22,8 @@
   "0_outline_root": "ROOT: Includes Capacity Reservations > Requirements",
   "0_outline_lines": [
     "L007: \"IncludesCapacityReservations MUST adhere to the following requirements:\"",
-    "  L009: \"IncludesCapacityReservations MUST evaluate to true when the *operating model* contains a mechanism to reserve capacity.\"",
-    "  L010: \"IncludesCapacityReservations MUST evaluate to false when the *operating model* lacks any commercial or technical construct for reserving capacity.\""
+    "  L009: \"IncludesCapacityReservations MUST evaluate to true when the *operating model* includes *capacity reservations*.\"",
+    "  L010: \"IncludesCapacityReservations MUST evaluate to false when the *operating model* does not include *capacity reservations*.\""
   ],
   "0_outline_summary": {
     "node_count": 3,
@@ -78,7 +78,7 @@
                 "temp_id": "R002",
                 "order": 2,
                 "ref": "L009",
-                "text": "IncludesCapacityReservations MUST evaluate to true when the *operating model* contains a mechanism to reserve capacity.",
+                "text": "IncludesCapacityReservations MUST evaluate to true when the *operating model* includes *capacity reservations*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Capacity Reservations",
@@ -102,7 +102,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L010",
-                "text": "IncludesCapacityReservations MUST evaluate to false when the *operating model* lacks any commercial or technical construct for reserving capacity.",
+                "text": "IncludesCapacityReservations MUST evaluate to false when the *operating model* does not include *capacity reservations*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Includes Capacity Reservations",
