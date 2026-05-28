@@ -45,7 +45,7 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesNegotiatedPricing MUST evaluate to true when the *operating model* includes negotiated pricing concepts, such as custom rate cards or negotiated discounts.",
+      "text": "IncludesNegotiatedPricing MUST evaluate to true when the *operating model* includes negotiated pricing concepts.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesNegotiatedPricing MUST evaluate to false when the *operating model* operates strictly on standard pricing without the capability for negotiated rates.",
+      "text": "IncludesNegotiatedPricing MUST evaluate to false when the *operating model* does not include negotiated pricing concepts.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
