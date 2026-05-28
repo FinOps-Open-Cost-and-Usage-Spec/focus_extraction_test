@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* offers a \"Partial Upfront\" payment model for commitments.",
+        "MustSatisfy": "IncludesPartialUpfrontPayments MUST evaluate to true when the *operating model* includes a partial upfront payment model for *contract commitments*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* strictly uses \"All Upfront\" or \"No Upfront\" payment models.",
+        "MustSatisfy": "IncludesPartialUpfrontPayments MUST evaluate to false when the *operating model* does not include a partial upfront payment model for *contract commitments*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
