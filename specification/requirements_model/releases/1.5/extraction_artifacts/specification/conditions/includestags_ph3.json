@@ -42,7 +42,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesTags MUST evaluate to true when the *operating model* contains tags, whether they are provider-defined, user-assigned, or generated via metadata enrichment processes.",
+        "MustSatisfy": "IncludesTags MUST evaluate to true when the *operating model* includes *tags*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
@@ -65,7 +65,7 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "IncludesTags MUST evaluate to false when the *operating model* contains no tag metadata.",
+        "MustSatisfy": "IncludesTags MUST evaluate to false when the *operating model* does not include *tags*.",
         "Keyword": "MUST",
         "Requirement": {},
         "Condition": {},
