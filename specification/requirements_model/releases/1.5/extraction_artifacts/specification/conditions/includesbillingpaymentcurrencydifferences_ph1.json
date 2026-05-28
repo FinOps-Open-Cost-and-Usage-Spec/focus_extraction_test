@@ -24,6 +24,7 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Billing and Payment Currency Differences",
         "Requirements"
       ],
       "block": {
@@ -44,10 +45,11 @@
     {
       "temp_id": "R002",
       "order": 2,
-      "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to true when the *operating model* supports billing in one currency and payment in another.",
+      "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to true when the *operating model* includes billing and payment in different currencies.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Billing and Payment Currency Differences",
         "Requirements"
       ],
       "block": {
@@ -68,10 +70,11 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to false when the *operating model* strictly uses the same currency for both billing and payment.",
+      "text": "IncludesBillingPaymentCurrencyDifferences MUST evaluate to false when the *operating model* does not include billing and payment in different currencies.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
+        "Includes Billing and Payment Currency Differences",
         "Requirements"
       ],
       "block": {
