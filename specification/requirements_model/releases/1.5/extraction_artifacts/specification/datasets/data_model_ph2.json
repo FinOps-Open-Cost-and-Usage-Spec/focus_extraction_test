@@ -23,9 +23,9 @@
   "0_outline_lines": [
     "L018: \"DataModel MUST adhere to the following requirements:\"",
     "  L020: \"DataModel MUST include [CostAndUsage](#datasets.costandusage).\"",
-    "  L021: \"DataModel MUST include [BillingPeriod](#datasets.billingperiod) when the invoice issuer supports payable invoices.\"",
-    "  L022: \"DataModel MUST include [ContractCommitment](#datasets.contractcommitment) when the service provider supports [*contract commitments*](#glossary:contract-commitment).\"",
-    "  L023: \"DataModel MUST include [InvoiceDetail](#datasets.invoicedetail) when the invoice issuer supports payable invoices.\""
+    "  L021: \"DataModel MUST include [BillingPeriod](#datasets.billingperiod) when the [*operating model*](#glossary:operating-model) [includes payable invoices](#conditions.includespayableinvoices).\"",
+    "  L022: \"DataModel MUST include [ContractCommitment](#datasets.contractcommitment) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).\"",
+    "  L023: \"DataModel MUST include [InvoiceDetail](#datasets.invoicedetail) when the *operating model* [includes payable invoices](#conditions.includespayableinvoices).\""
   ],
   "0_outline_summary": {
     "node_count": 5,
@@ -104,7 +104,7 @@
                 "temp_id": "R003",
                 "order": 3,
                 "ref": "L021",
-                "text": "DataModel MUST include [BillingPeriod](#datasets.billingperiod) when the invoice issuer supports payable invoices.",
+                "text": "DataModel MUST include [BillingPeriod](#datasets.billingperiod) when the [*operating model*](#glossary:operating-model) [includes payable invoices](#conditions.includespayableinvoices).",
                 "keyword": "MUST",
                 "section_path": [
                   "Data Model",
@@ -128,7 +128,7 @@
                 "temp_id": "R004",
                 "order": 4,
                 "ref": "L022",
-                "text": "DataModel MUST include [ContractCommitment](#datasets.contractcommitment) when the service provider supports [*contract commitments*](#glossary:contract-commitment).",
+                "text": "DataModel MUST include [ContractCommitment](#datasets.contractcommitment) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).",
                 "keyword": "MUST",
                 "section_path": [
                   "Data Model",
@@ -152,7 +152,7 @@
                 "temp_id": "R005",
                 "order": 5,
                 "ref": "L023",
-                "text": "DataModel MUST include [InvoiceDetail](#datasets.invoicedetail) when the invoice issuer supports payable invoices.",
+                "text": "DataModel MUST include [InvoiceDetail](#datasets.invoicedetail) when the *operating model* [includes payable invoices](#conditions.includespayableinvoices).",
                 "keyword": "MUST",
                 "section_path": [
                   "Data Model",
