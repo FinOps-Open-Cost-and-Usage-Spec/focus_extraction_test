@@ -70,7 +70,7 @@
     {
       "temp_id": "R003",
       "order": 3,
-      "text": "DataModel MUST include [BillingPeriod](#datasets.billingperiod) when the invoice issuer supports payable invoices.",
+      "text": "DataModel MUST include [BillingPeriod](#datasets.billingperiod) when the [*operating model*](#glossary:operating-model) [includes payable invoices](#conditions.includespayableinvoices).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -95,7 +95,7 @@
     {
       "temp_id": "R004",
       "order": 4,
-      "text": "DataModel MUST include [ContractCommitment](#datasets.contractcommitment) when the service provider supports [*contract commitments*](#glossary:contract-commitment).",
+      "text": "DataModel MUST include [ContractCommitment](#datasets.contractcommitment) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -120,7 +120,7 @@
     {
       "temp_id": "R005",
       "order": 5,
-      "text": "DataModel MUST include [InvoiceDetail](#datasets.invoicedetail) when the invoice issuer supports payable invoices.",
+      "text": "DataModel MUST include [InvoiceDetail](#datasets.invoicedetail) when the *operating model* [includes payable invoices](#conditions.includespayableinvoices).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
