@@ -19,7 +19,7 @@
         "MustSatisfy": "DataModel MUST adhere to the following requirements:",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": [
           "DM-DataModel-M-001-M",
           "DM-DataModel-M-002-C",
@@ -47,7 +47,7 @@
         "MustSatisfy": "DataModel MUST include CostAndUsage.",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": []
       }
     },
@@ -67,10 +67,10 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "DataModel MUST include BillingPeriod when the invoice issuer supports payable invoices.",
+        "MustSatisfy": "DataModel MUST include BillingPeriod when the *operating model* includes payable invoices.",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": []
       }
     },
@@ -90,10 +90,10 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "DataModel MUST include ContractCommitment when the service provider supports *contract commitments*.",
+        "MustSatisfy": "DataModel MUST include ContractCommitment when the *operating model* includes contract commitments.",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": []
       }
     },
@@ -113,10 +113,10 @@
       "DatasetId": "",
       "DatasetName": "",
       "ValidationCriteria": {
-        "MustSatisfy": "DataModel MUST include InvoiceDetail when the invoice issuer supports payable invoices.",
+        "MustSatisfy": "DataModel MUST include InvoiceDetail when the *operating model* includes payable invoices.",
         "Keyword": "MUST",
         "Requirement": {},
-        "Condition": [],
+        "Condition": {},
         "Dependencies": []
       }
     }
