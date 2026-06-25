@@ -17,7 +17,7 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 9
+    "atoms_in_scope_count": 6
   },
   "0_outline_root": "ROOT: Allocated Service Name > Requirements",
   "0_outline_lines": [
@@ -26,36 +26,28 @@
     "  L010: \"AllocatedServiceName MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
     "  L011: \"AllocatedServiceName MUST adhere to the following nullability requirements:\"",
     "    L012: \"AllocatedServiceName MUST be null when [AllocatedResourceId](#datasets.costandusage.allocatedresourceid) is null.\"",
-    "    L013: \"AllocatedServiceName MUST NOT be null when AllocatedResourceId is not null.\"",
-    "  L014: \"When AllocatedServiceName is not null, the relationship between AllocatedServiceName and [AllocatedServiceCategory](#datasets.costandusage.allocatedservicecategory) MUST adhere to the following requirements:\"",
-    "    L015: \"AllocatedServiceName MUST have one and only one AllocatedServiceCategory that best aligns with its primary purpose, except when no suitable AllocatedServiceCategory is available.\"",
-    "    L016: \"AllocatedServiceName MUST be associated with the AllocatedServiceCategory \\\"Other\\\" when no suitable AllocatedServiceCategory is available.\""
+    "    L013: \"AllocatedServiceName MUST NOT be null when AllocatedResourceId is not null.\""
   ],
   "0_outline_summary": {
-    "node_count": 9,
-    "leaf_count": 6,
-    "lead_in_count": 3,
+    "node_count": 6,
+    "leaf_count": 4,
+    "lead_in_count": 2,
     "max_depth": 2,
     "max_indent_level": 1,
     "root_children_count": 1,
     "keyword_distribution": {
-      "MUST": 8,
+      "MUST": 5,
       "MUST NOT": 1
     },
     "lead_ins": [
       {
         "ref": "L007",
         "text_preview": "AllocatedServiceName MUST adhere to the following requirements:",
-        "children": 4
+        "children": 3
       },
       {
         "ref": "L011",
         "text_preview": "AllocatedServiceName MUST adhere to the following nullability requirements:",
-        "children": 2
-      },
-      {
-        "ref": "L014",
-        "text_preview": "When AllocatedServiceName is not null, the relationship between AllocatedServiceName and [AllocatedServiceCategory](#da…",
         "children": 2
       }
     ]
@@ -192,79 +184,6 @@
                     "ref": "L013",
                     "text": "AllocatedServiceName MUST NOT be null when AllocatedResourceId is not null.",
                     "keyword": "MUST NOT",
-                    "section_path": [
-                      "Allocated Service Name",
-                      "Requirements"
-                    ],
-                    "block": {
-                      "block_type": "list_item",
-                      "indent_level": 1,
-                      "bullet": "*"
-                    },
-                    "lead_in": {
-                      "ends_with_colon": false
-                    }
-                  },
-                  "children": []
-                }
-              ]
-            },
-            {
-              "node_id": "R007",
-              "kind": "atom",
-              "atom": {
-                "temp_id": "R007",
-                "order": 7,
-                "ref": "L014",
-                "text": "When AllocatedServiceName is not null, the relationship between AllocatedServiceName and [AllocatedServiceCategory](#datasets.costandusage.allocatedservicecategory) MUST adhere to the following requirements:",
-                "keyword": "MUST",
-                "section_path": [
-                  "Allocated Service Name",
-                  "Requirements"
-                ],
-                "block": {
-                  "block_type": "list_item",
-                  "indent_level": 0,
-                  "bullet": "*"
-                },
-                "lead_in": {
-                  "ends_with_colon": true
-                }
-              },
-              "children": [
-                {
-                  "node_id": "R008",
-                  "kind": "atom",
-                  "atom": {
-                    "temp_id": "R008",
-                    "order": 8,
-                    "ref": "L015",
-                    "text": "AllocatedServiceName MUST have one and only one AllocatedServiceCategory that best aligns with its primary purpose, except when no suitable AllocatedServiceCategory is available.",
-                    "keyword": "MUST",
-                    "section_path": [
-                      "Allocated Service Name",
-                      "Requirements"
-                    ],
-                    "block": {
-                      "block_type": "list_item",
-                      "indent_level": 1,
-                      "bullet": "*"
-                    },
-                    "lead_in": {
-                      "ends_with_colon": false
-                    }
-                  },
-                  "children": []
-                },
-                {
-                  "node_id": "R009",
-                  "kind": "atom",
-                  "atom": {
-                    "temp_id": "R009",
-                    "order": 9,
-                    "ref": "L016",
-                    "text": "AllocatedServiceName MUST be associated with the AllocatedServiceCategory \"Other\" when no suitable AllocatedServiceCategory is available.",
-                    "keyword": "MUST",
                     "section_path": [
                       "Allocated Service Name",
                       "Requirements"
