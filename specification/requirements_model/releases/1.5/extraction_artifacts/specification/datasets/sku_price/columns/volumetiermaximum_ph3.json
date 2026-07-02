@@ -1,0 +1,222 @@
+{
+  "ModelRules": {
+    "SKP-VolumeTierMaximum-C-000-M": {
+      "Function": "Composite",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-VolumeTierMaximum-C-001-M",
+          "SKP-VolumeTierMaximum-C-002-M",
+          "SKP-VolumeTierMaximum-C-005-C"
+        ]
+      }
+    },
+    "SKP-VolumeTierMaximum-C-001-M": {
+      "Function": "Type",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST be of type Decimal.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-VolumeTierMaximum-C-002-M": {
+      "Function": "Composite",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST adhere to the following nullability requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-VolumeTierMaximum-C-003-C",
+          "SKP-VolumeTierMaximum-C-004-C"
+        ]
+      }
+    },
+    "SKP-VolumeTierMaximum-C-003-C": {
+      "Function": "Nullability",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 30,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST be null when there is no upper limit for the pricing tier.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-VolumeTierMaximum-C-004-C": {
+      "Function": "Nullability",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 40,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST NOT be null when a subsequent, higher-volume pricing tier exists for the same offering.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-VolumeTierMaximum-C-005-C": {
+      "Function": "Composite",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 50,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "When VolumeTierMaximum is not null, VolumeTierMaximum MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-VolumeTierMaximum-C-006-M",
+          "SKP-VolumeTierMaximum-C-007-M",
+          "SKP-VolumeTierMaximum-C-008-M"
+        ]
+      }
+    },
+    "SKP-VolumeTierMaximum-C-006-M": {
+      "Function": "Validation",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 60,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST represent a quantity denominated in the PricingUnit.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-VolumeTierMaximum-C-007-M": {
+      "Function": "Validation",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 70,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST be strictly greater than VolumeTierMinimum.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-VolumeTierMaximum-C-008-M": {
+      "Function": "Validation",
+      "Reference": "VolumeTierMaximum",
+      "EntityType": "Column",
+      "EntityName": "Volume Tier Maximum",
+      "EntityId": "VolumeTierMaximum",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 80,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "VolumeTierMaximum MUST be the exclusive upper bound of the volume-based pricing tier.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}
