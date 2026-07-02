@@ -1,0 +1,124 @@
+{
+  "ModelRules": {
+    "SKP-SkuPriceEffectiveStart-C-000-M": {
+      "Function": "Composite",
+      "Reference": "SkuPriceEffectiveStart",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective Start",
+      "EntityId": "SkuPriceEffectiveStart",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveStart MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-SkuPriceEffectiveStart-C-001-M",
+          "SKP-SkuPriceEffectiveStart-C-002-M",
+          "SKP-SkuPriceEffectiveStart-C-003-C",
+          "SKP-SkuPriceEffectiveStart-C-004-C"
+        ]
+      }
+    },
+    "SKP-SkuPriceEffectiveStart-C-001-M": {
+      "Function": "Type",
+      "Reference": "SkuPriceEffectiveStart",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective Start",
+      "EntityId": "SkuPriceEffectiveStart",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveStart MUST be of type Date/Time.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-SkuPriceEffectiveStart-C-002-M": {
+      "Function": "Format",
+      "Reference": "SkuPriceEffectiveStart",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective Start",
+      "EntityId": "SkuPriceEffectiveStart",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveStart MUST conform to DateTimeFormat requirements (e.g., UTC).",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-SkuPriceEffectiveStart-C-003-C": {
+      "Function": "Nullability",
+      "Reference": "SkuPriceEffectiveStart",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective Start",
+      "EntityId": "SkuPriceEffectiveStart",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 30,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveStart MAY be null when the *service provider* does not specify the date from which the unit price became applicable.",
+        "Keyword": "MAY",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-SkuPriceEffectiveStart-C-004-C": {
+      "Function": "Validation",
+      "Reference": "SkuPriceEffectiveStart",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective Start",
+      "EntityId": "SkuPriceEffectiveStart",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 40,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "When SkuPriceEffectiveStart is not null, SkuPriceEffectiveStart MUST represent the exact timestamp designated by the *service provider* from which the unit price is applicable.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}
