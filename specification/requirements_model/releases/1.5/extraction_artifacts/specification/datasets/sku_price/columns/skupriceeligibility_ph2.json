@@ -1,0 +1,442 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/sku_price/columns/skupriceeligibility.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "SkuPriceEligibility",
+    "entity_name": "SKU Price Eligibility"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 14
+  },
+  "0_outline_root": "ROOT: SKU Price Eligibility > Requirements",
+  "0_outline_lines": [
+    "L009: \"SkuPriceEligibility MUST adhere to the following requirements:\"",
+    "  L011: \"SkuPriceEligibility MUST be of type JSON Object (serialized as a String where necessary).\"",
+    "  L012: \"SkuPriceEligibility MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L013: \"SkuPriceEligibility MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.\"",
+    "  L014: \"SkuPriceEligibility MUST conform to [SkuPriceEligibilityObject](#datasets.skuprice.skupriceeligibility.skupriceeligibilityobject) requirements.\"",
+    "  L015: \"SkuPriceEligibility MUST NOT be null.\"",
+    "L025: \"SkuPriceEligibilityObject MUST adhere to the following requirements:\"",
+    "  L027: \"SkuPriceEligibilityObject MUST conform to the [SkuPriceEligibilityObjectSchema](#schemas.skuprice.skupriceeligibilityobjectschema) JSON Schema.\"",
+    "  L028: \"SkuPriceEligibilityObject.IsGlobalScope MUST be `true` when the *SKU Price* applies to all entities without restriction (e.g., a standard public list price).\"",
+    "  L029: \"SkuPriceEligibilityObject.IsComplexScope MUST be `true` when the *SKU Price's* eligibility logic exceeds schema capabilities.\"",
+    "  L030: \"SkuPriceEligibilityObject.Inclusions[*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).\"",
+    "  L031: \"SkuPriceEligibilityObject.Exclusions[*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).\"",
+    "  L032: \"SkuPriceEligibilityObject.Inclusions[*].Values MUST contain only the single string \\\"*\\\" when the wildcard is present.\"",
+    "  L033: \"SkuPriceEligibilityObject.Exclusions[*].Values MUST contain only the single string \\\"*\\\" when the wildcard is present.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 14,
+    "leaf_count": 12,
+    "lead_in_count": 2,
+    "max_depth": 1,
+    "max_indent_level": 0,
+    "root_children_count": 2,
+    "keyword_distribution": {
+      "MUST": 11,
+      "MUST NOT": 1,
+      "SHOULD": 2
+    },
+    "lead_ins": [
+      {
+        "ref": "L009",
+        "text_preview": "SkuPriceEligibility MUST adhere to the following requirements:",
+        "children": 5
+      },
+      {
+        "ref": "L025",
+        "text_preview": "SkuPriceEligibilityObject MUST adhere to the following requirements:",
+        "children": 7
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L009",
+            "text": "SkuPriceEligibility MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "SKU Price Eligibility",
+              "Requirements",
+              "Column Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L011",
+                "text": "SkuPriceEligibility MUST be of type JSON Object (serialized as a String where necessary).",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L012",
+                "text": "SkuPriceEligibility MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L013",
+                "text": "SkuPriceEligibility MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L014",
+                "text": "SkuPriceEligibility MUST conform to [SkuPriceEligibilityObject](#datasets.skuprice.skupriceeligibility.skupriceeligibilityobject) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R006",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R006",
+                "order": 6,
+                "ref": "L015",
+                "text": "SkuPriceEligibility MUST NOT be null.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "Requirements",
+                  "Column Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "node_id": "R007",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R007",
+            "order": 7,
+            "ref": "L025",
+            "text": "SkuPriceEligibilityObject MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "SKU Price Eligibility",
+              "SKU Price Eligibility Object",
+              "Object Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R008",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R008",
+                "order": 8,
+                "ref": "L027",
+                "text": "SkuPriceEligibilityObject MUST conform to the [SkuPriceEligibilityObjectSchema](#schemas.skuprice.skupriceeligibilityobjectschema) JSON Schema.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "SKU Price Eligibility Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R009",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R009",
+                "order": 9,
+                "ref": "L028",
+                "text": "SkuPriceEligibilityObject.IsGlobalScope MUST be `true` when the *SKU Price* applies to all entities without restriction (e.g., a standard public list price).",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "SKU Price Eligibility Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R010",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R010",
+                "order": 10,
+                "ref": "L029",
+                "text": "SkuPriceEligibilityObject.IsComplexScope MUST be `true` when the *SKU Price's* eligibility logic exceeds schema capabilities.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "SKU Price Eligibility Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R011",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R011",
+                "order": 11,
+                "ref": "L030",
+                "text": "SkuPriceEligibilityObject.Inclusions[*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "SKU Price Eligibility Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R012",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R012",
+                "order": 12,
+                "ref": "L031",
+                "text": "SkuPriceEligibilityObject.Exclusions[*].Dimension SHOULD represent a column in [Cost and Usage](#datasets.costandusage).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "SKU Price Eligibility Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R013",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R013",
+                "order": 13,
+                "ref": "L032",
+                "text": "SkuPriceEligibilityObject.Inclusions[*].Values MUST contain only the single string \"*\" when the wildcard is present.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "SKU Price Eligibility Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R014",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R014",
+                "order": 14,
+                "ref": "L033",
+                "text": "SkuPriceEligibilityObject.Exclusions[*].Values MUST contain only the single string \"*\" when the wildcard is present.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price Eligibility",
+                  "SKU Price Eligibility Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": [
+      {
+        "code": "SECTION_CHANGED_WITH_OPEN_LEADIN",
+        "at": {
+          "temp_id": "R007",
+          "order": 7
+        },
+        "text": "Section changed while a lead-in was open; stacks were reset."
+      }
+    ]
+  }
+}
