@@ -24,7 +24,6 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -39,6 +38,7 @@
         "line_start": 7,
         "line_end": 7
       },
+      "_alignment_status": "confirmed",
       "ref": "L007"
     },
     {
@@ -48,7 +48,6 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -63,6 +62,7 @@
         "line_start": 9,
         "line_end": 9
       },
+      "_alignment_status": "confirmed",
       "ref": "L009"
     },
     {
@@ -72,7 +72,6 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -87,6 +86,7 @@
         "line_start": 10,
         "line_end": 10
       },
+      "_alignment_status": "confirmed",
       "ref": "L010"
     },
     {
@@ -96,7 +96,6 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -111,6 +110,7 @@
         "line_start": 11,
         "line_end": 11
       },
+      "_alignment_status": "confirmed",
       "ref": "L011"
     },
     {
@@ -120,7 +120,6 @@
       "keyword": "MUST NOT",
       "role": "requirement",
       "section_path": [
-        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -135,6 +134,7 @@
         "line_start": 12,
         "line_end": 12
       },
+      "_alignment_status": "confirmed",
       "ref": "L012"
     },
     {
@@ -144,7 +144,6 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -159,6 +158,7 @@
         "line_start": 13,
         "line_end": 13
       },
+      "_alignment_status": "confirmed",
       "ref": "L013"
     },
     {
@@ -168,7 +168,6 @@
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
-        "Billing Currency",
         "Requirements"
       ],
       "block": {
@@ -183,6 +182,7 @@
         "line_start": 14,
         "line_end": 14
       },
+      "_alignment_status": "confirmed",
       "ref": "L014"
     }
   ],

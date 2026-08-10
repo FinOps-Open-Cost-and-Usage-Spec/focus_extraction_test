@@ -39,6 +39,7 @@
         "line_start": 7,
         "line_end": 7
       },
+      "_alignment_status": "confirmed",
       "ref": "L007"
     },
     {
@@ -63,6 +64,7 @@
         "line_start": 9,
         "line_end": 9
       },
+      "_alignment_status": "confirmed",
       "ref": "L009"
     },
     {
@@ -87,6 +89,7 @@
         "line_start": 10,
         "line_end": 10
       },
+      "_alignment_status": "confirmed",
       "ref": "L010"
     },
     {
@@ -111,6 +114,7 @@
         "line_start": 11,
         "line_end": 11
       },
+      "_alignment_status": "confirmed",
       "ref": "L011"
     },
     {
@@ -135,15 +139,72 @@
         "line_start": 12,
         "line_end": 12
       },
+      "_alignment_status": "confirmed",
       "ref": "L012"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "BillingPeriodStatus MUST NOT transition from \"Closed\" to \"Open\" unless explicitly requested or approved by the customer.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Billing Period Status",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 13,
+        "line_end": 13
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L013"
     }
   ],
   "warnings": [],
   "structural": {
-    "lead_ins": [],
+    "lead_ins": [
+      {
+        "text": "While the transition from \"Open\" to \"Closed\" typically signifies the end of a billing cycle, in scenarios such as the following, it may be necessary to provide corrections to closed billing periods:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [
+          "Implementation Context"
+        ],
+        "block": {
+          "block_type": "paragraph",
+          "indent_level": 0,
+          "bullet": null
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 17,
+          "line_end": 17
+        },
+        "ref": "LI017",
+        "next_normative_refs": []
+      }
+    ],
     "index": {
-      "by_section_path": {},
-      "by_line": {}
+      "by_section_path": {
+        "Implementation Context": [
+          "LI017"
+        ]
+      },
+      "by_line": {
+        "17": [
+          "LI017"
+        ]
+      }
     }
   }
 }

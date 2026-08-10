@@ -1,0 +1,261 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/sku_price/columns/skuid.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "SkuId",
+    "entity_name": "SKU ID"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 8
+  },
+  "0_outline_root": "ROOT: SKU ID > Requirements",
+  "0_outline_lines": [
+    "L020: \"SkuId MUST adhere to the following requirements:\"",
+    "  L022: \"SkuId MUST be of type String.\"",
+    "  L023: \"SkuId MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L024: \"SkuId MUST NOT be null.\"",
+    "  L025: \"SkuId for a given *SKU* MUST adhere to the following requirements:\"",
+    "    L026: \"SkuId MUST remain consistent across contracts or billing agreements.\"",
+    "    L027: \"SkuId MUST remain consistent regardless of any other factors that might impact the price but do not affect the functionality of the *SKU*.\"",
+    "    L028: \"SkuId SHOULD be consistent across pricing variations of a good or service.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 8,
+    "leaf_count": 6,
+    "lead_in_count": 2,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 6,
+      "MUST NOT": 1,
+      "SHOULD": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L020",
+        "text_preview": "SkuId MUST adhere to the following requirements:",
+        "children": 4
+      },
+      {
+        "ref": "L025",
+        "text_preview": "SkuId for a given *SKU* MUST adhere to the following requirements:",
+        "children": 3
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L020",
+            "text": "SkuId MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L022",
+                "text": "SkuId MUST be of type String.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L023",
+                "text": "SkuId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L024",
+                "text": "SkuId MUST NOT be null.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L025",
+                "text": "SkuId for a given *SKU* MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L026",
+                    "text": "SkuId MUST remain consistent across contracts or billing agreements.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R007",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R007",
+                    "order": 7,
+                    "ref": "L027",
+                    "text": "SkuId MUST remain consistent regardless of any other factors that might impact the price but do not affect the functionality of the *SKU*.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R008",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R008",
+                    "order": 8,
+                    "ref": "L028",
+                    "text": "SkuId SHOULD be consistent across pricing variations of a good or service.",
+                    "keyword": "SHOULD",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

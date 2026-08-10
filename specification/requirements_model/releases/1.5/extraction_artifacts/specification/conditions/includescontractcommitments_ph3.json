@@ -1,0 +1,76 @@
+{
+  "ModelRules": {
+    "CON-IncludesContractCommitments-N-000-M": {
+      "Function": "Composite",
+      "Reference": "IncludesContractCommitments",
+      "EntityType": "Condition",
+      "EntityName": "Includes Contract Commitments",
+      "EntityId": "IncludesContractCommitments",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "CON",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "IncludesContractCommitments MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "CON-IncludesContractCommitments-N-001-C",
+          "CON-IncludesContractCommitments-N-002-C"
+        ]
+      }
+    },
+    "CON-IncludesContractCommitments-N-001-C": {
+      "Function": "Validation",
+      "Reference": "IncludesContractCommitments",
+      "EntityType": "Condition",
+      "EntityName": "Includes Contract Commitments",
+      "EntityId": "IncludesContractCommitments",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 10,
+      "DatasetType": "CON",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "IncludesContractCommitments MUST evaluate to true when the *operating model* includes *contract commitments*.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "CON-IncludesContractCommitments-N-002-C": {
+      "Function": "Validation",
+      "Reference": "IncludesContractCommitments",
+      "EntityType": "Condition",
+      "EntityName": "Includes Contract Commitments",
+      "EntityId": "IncludesContractCommitments",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 20,
+      "DatasetType": "CON",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "IncludesContractCommitments MUST evaluate to false when the *operating model* does not include *contract commitments*.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}

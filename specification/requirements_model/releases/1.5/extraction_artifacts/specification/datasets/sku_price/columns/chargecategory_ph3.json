@@ -1,0 +1,148 @@
+{
+  "ModelRules": {
+    "SKP-ChargeCategory-C-000-M": {
+      "Function": "Composite",
+      "Reference": "ChargeCategory",
+      "EntityType": "Column",
+      "EntityName": "Charge Category",
+      "EntityId": "ChargeCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "ChargeCategory MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-ChargeCategory-C-001-M",
+          "SKP-ChargeCategory-C-002-M",
+          "SKP-ChargeCategory-C-003-M",
+          "SKP-ChargeCategory-C-004-C",
+          "SKP-ChargeCategory-C-005-C"
+        ]
+      }
+    },
+    "SKP-ChargeCategory-C-001-M": {
+      "Function": "Type",
+      "Reference": "ChargeCategory",
+      "EntityType": "Column",
+      "EntityName": "Charge Category",
+      "EntityId": "ChargeCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "ChargeCategory MUST be of type String.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-ChargeCategory-C-002-M": {
+      "Function": "Nullability",
+      "Reference": "ChargeCategory",
+      "EntityType": "Column",
+      "EntityName": "Charge Category",
+      "EntityId": "ChargeCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "ChargeCategory MUST NOT be null.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-ChargeCategory-C-003-M": {
+      "Function": "Validation",
+      "Reference": "ChargeCategory",
+      "EntityType": "Column",
+      "EntityName": "Charge Category",
+      "EntityId": "ChargeCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 30,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "ChargeCategory MUST be one of the allowed values.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-ChargeCategory-C-004-C": {
+      "Function": "Validation",
+      "Reference": "ChargeCategory",
+      "EntityType": "Column",
+      "EntityName": "Charge Category",
+      "EntityId": "ChargeCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 40,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "ChargeCategory MUST be \"Usage\" when the *SKU Price* represents the rate for consumption of a service or resource.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-ChargeCategory-C-005-C": {
+      "Function": "Validation",
+      "Reference": "ChargeCategory",
+      "EntityType": "Column",
+      "EntityName": "Charge Category",
+      "EntityId": "ChargeCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 50,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "ChargeCategory MUST be \"Purchase\" when the *SKU Price* represents a fee for the acquisition of a service, resource, or *commitment*.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}

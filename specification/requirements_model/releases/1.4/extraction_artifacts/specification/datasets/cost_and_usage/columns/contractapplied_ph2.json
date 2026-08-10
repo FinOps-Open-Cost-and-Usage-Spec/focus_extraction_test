@@ -17,7 +17,7 @@
       "Dataset Requirements",
       "Attribute Requirements"
     ],
-    "atoms_in_scope_count": 18
+    "atoms_in_scope_count": 19
   },
   "0_outline_root": "ROOT: Contract Applied > Requirements",
   "0_outline_lines": [
@@ -29,26 +29,27 @@
     "  L015: \"ContractApplied MUST conform to [ContractAppliedObject](#datasets.costandusage.contractapplied.contractappliedobject) requirements when ContractApplied is not null.\"",
     "L025: \"ContractAppliedObject MUST adhere to the following requirements:\"",
     "  L027: \"ContractAppliedObject MUST conform to the [ContractAppliedObjectSchema](#schemas.datasets.costandusage.contractappliedobjectschema) JSON Schema.\"",
-    "  L028: \"ContractAppliedObject.Elements[\\\\*].ContractId MUST be a unique identifier within the service provider.\"",
-    "  L029: \"ContractAppliedObject.Elements[\\\\*].ContractId SHOULD be a fully-qualified identifier.\"",
-    "  L030: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentId MUST be a unique identifier within the service provider.\"",
-    "  L031: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentId SHOULD be a fully-qualified identifier.\"",
-    "  L032: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[\\\\*].ContractId.\"",
-    "  L033: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \\\"Purchase\\\".\"",
-    "  L034: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[\\\\*].ContractId.\"",
-    "  L035: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentAppliedCost MUST be denominated in the BillingCurrency.\"",
-    "  L036: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[\\\\*].ContractCommitmentAppliedUnit.\"",
-    "  L037: \"ContractAppliedObject.Elements[\\\\*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.\""
+    "  L028: \"ContractAppliedObject.Elements[*].ContractId MUST be a unique identifier within the service provider.\"",
+    "  L029: \"ContractAppliedObject.Elements[*].ContractId SHOULD be a fully-qualified identifier.\"",
+    "  L030: \"ContractAppliedObject.Elements[*].ContractCommitmentId MUST be a unique identifier within the service provider.\"",
+    "  L031: \"ContractAppliedObject.Elements[*].ContractCommitmentId SHOULD be a fully-qualified identifier.\"",
+    "  L032: \"ContractAppliedObject.Elements[*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[*].ContractId.\"",
+    "  L033: \"ContractAppliedObject.Elements[*].ContractCommitmentId MUST be equal to [ResourceId](#datasets.costandusage.resourceid) when [ChargeCategory](#datasets.costandusage.chargecategory) is \\\"Purchase\\\" and the *charge* represents a purchase of that *contract commitment*.\"",
+    "  L034: \"ContractAppliedObject.Elements[*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \\\"Usage\\\" and the *charge* represents an unused portion of that *contract commitment*.\"",
+    "  L035: \"ContractAppliedObject.Elements[*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[*].ContractId.\"",
+    "  L036: \"ContractAppliedObject.Elements[*].ContractCommitmentAppliedCost MUST be denominated in the [BillingCurrency](#datasets.costandusage.billingcurrency).\"",
+    "  L037: \"ContractAppliedObject.Elements[*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit.\"",
+    "  L038: \"ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.\""
   ],
   "0_outline_summary": {
-    "node_count": 18,
-    "leaf_count": 16,
+    "node_count": 19,
+    "leaf_count": 17,
     "lead_in_count": 2,
     "max_depth": 1,
     "max_indent_level": 0,
     "root_children_count": 2,
     "keyword_distribution": {
-      "MUST": 13,
+      "MUST": 14,
       "MUST NOT": 1,
       "SHOULD": 3,
       "MAY": 1
@@ -62,7 +63,7 @@
       {
         "ref": "L025",
         "text_preview": "ContractAppliedObject MUST adhere to the following requirements:",
-        "children": 11
+        "children": 12
       }
     ]
   },
@@ -278,7 +279,7 @@
                 "temp_id": "R009",
                 "order": 9,
                 "ref": "L028",
-                "text": "ContractAppliedObject.Elements[\\*].ContractId MUST be a unique identifier within the service provider.",
+                "text": "ContractAppliedObject.Elements[*].ContractId MUST be a unique identifier within the service provider.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Applied",
@@ -303,7 +304,7 @@
                 "temp_id": "R010",
                 "order": 10,
                 "ref": "L029",
-                "text": "ContractAppliedObject.Elements[\\*].ContractId SHOULD be a fully-qualified identifier.",
+                "text": "ContractAppliedObject.Elements[*].ContractId SHOULD be a fully-qualified identifier.",
                 "keyword": "SHOULD",
                 "section_path": [
                   "Contract Applied",
@@ -328,7 +329,7 @@
                 "temp_id": "R011",
                 "order": 11,
                 "ref": "L030",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST be a unique identifier within the service provider.",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be a unique identifier within the service provider.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Applied",
@@ -353,7 +354,7 @@
                 "temp_id": "R012",
                 "order": 12,
                 "ref": "L031",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId SHOULD be a fully-qualified identifier.",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentId SHOULD be a fully-qualified identifier.",
                 "keyword": "SHOULD",
                 "section_path": [
                   "Contract Applied",
@@ -378,7 +379,7 @@
                 "temp_id": "R013",
                 "order": 13,
                 "ref": "L032",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[\\*].ContractId.",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[*].ContractId.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Applied",
@@ -403,7 +404,7 @@
                 "temp_id": "R014",
                 "order": 14,
                 "ref": "L033",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \"Purchase\".",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be equal to [ResourceId](#datasets.costandusage.resourceid) when [ChargeCategory](#datasets.costandusage.chargecategory) is \"Purchase\" and the *charge* represents a purchase of that *contract commitment*.",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Applied",
@@ -428,8 +429,8 @@
                 "temp_id": "R015",
                 "order": 15,
                 "ref": "L034",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[\\*].ContractId.",
-                "keyword": "MAY",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \"Usage\" and the *charge* represents an unused portion of that *contract commitment*.",
+                "keyword": "MUST",
                 "section_path": [
                   "Contract Applied",
                   "Contract Applied Object",
@@ -453,8 +454,8 @@
                 "temp_id": "R016",
                 "order": 16,
                 "ref": "L035",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedCost MUST be denominated in the BillingCurrency.",
-                "keyword": "MUST",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[*].ContractId.",
+                "keyword": "MAY",
                 "section_path": [
                   "Contract Applied",
                   "Contract Applied Object",
@@ -478,7 +479,7 @@
                 "temp_id": "R017",
                 "order": 17,
                 "ref": "L036",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedUnit.",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedCost MUST be denominated in the [BillingCurrency](#datasets.costandusage.billingcurrency).",
                 "keyword": "MUST",
                 "section_path": [
                   "Contract Applied",
@@ -503,7 +504,32 @@
                 "temp_id": "R018",
                 "order": 18,
                 "ref": "L037",
-                "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Contract Applied",
+                  "Contract Applied Object",
+                  "Object Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R019",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R019",
+                "order": 19,
+                "ref": "L038",
+                "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
                 "keyword": "SHOULD",
                 "section_path": [
                   "Contract Applied",

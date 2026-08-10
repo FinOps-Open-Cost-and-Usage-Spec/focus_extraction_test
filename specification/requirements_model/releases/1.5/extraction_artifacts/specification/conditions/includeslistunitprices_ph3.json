@@ -1,0 +1,76 @@
+{
+  "ModelRules": {
+    "CON-IncludesListUnitPrices-N-000-M": {
+      "Function": "Composite",
+      "Reference": "IncludesListUnitPrices",
+      "EntityType": "Condition",
+      "EntityName": "Includes List Unit Prices",
+      "EntityId": "IncludesListUnitPrices",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "CON",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "IncludesListUnitPrices MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "CON-IncludesListUnitPrices-N-001-C",
+          "CON-IncludesListUnitPrices-N-002-C"
+        ]
+      }
+    },
+    "CON-IncludesListUnitPrices-N-001-C": {
+      "Function": "Validation",
+      "Reference": "IncludesListUnitPrices",
+      "EntityType": "Condition",
+      "EntityName": "Includes List Unit Prices",
+      "EntityId": "IncludesListUnitPrices",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 10,
+      "DatasetType": "CON",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "IncludesListUnitPrices MUST evaluate to true when IncludesUnitPricing is true and the *operating model* includes standard, non-discounted unit prices.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "CON-IncludesListUnitPrices-N-002-C": {
+      "Function": "Validation",
+      "Reference": "IncludesListUnitPrices",
+      "EntityType": "Condition",
+      "EntityName": "Includes List Unit Prices",
+      "EntityId": "IncludesListUnitPrices",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 20,
+      "DatasetType": "CON",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "IncludesListUnitPrices MUST evaluate to false when IncludesUnitPricing is false or the *operating model* does not include standard, non-discounted unit prices.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}

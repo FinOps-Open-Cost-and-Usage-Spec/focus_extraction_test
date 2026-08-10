@@ -1,0 +1,198 @@
+{
+  "ModelRules": {
+    "CAU-PrincipalId-C-000-M": {
+      "Function": "Composite",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "PrincipalId MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "CAU-PrincipalId-C-001-M",
+          "CAU-PrincipalId-C-002-M",
+          "CAU-PrincipalId-C-003-M",
+          "CAU-PrincipalId-C-006-C"
+        ]
+      }
+    },
+    "CAU-PrincipalId-C-001-M": {
+      "Function": "Type",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "PrincipalId MUST be of type String.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-PrincipalId-C-002-M": {
+      "Function": "Format",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "PrincipalId MUST conform to StringHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-PrincipalId-C-003-M": {
+      "Function": "Composite",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 30,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "PrincipalId MUST adhere to the following nullability requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "CAU-PrincipalId-C-004-C",
+          "CAU-PrincipalId-C-005-C"
+        ]
+      }
+    },
+    "CAU-PrincipalId-C-004-C": {
+      "Function": "Nullability",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 40,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "PrincipalId MUST be null when a *charge* is not attributed to a *principal* by the service provider.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-PrincipalId-C-005-C": {
+      "Function": "Nullability",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 50,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "PrincipalId MUST NOT be null when a *charge* is attributed to a *principal* by the service provider.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-PrincipalId-C-006-C": {
+      "Function": "Composite",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 60,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "When PrincipalId is not null, PrincipalId MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "CAU-PrincipalId-C-007-M"
+        ]
+      }
+    },
+    "CAU-PrincipalId-C-007-M": {
+      "Function": "Validation",
+      "Reference": "PrincipalId",
+      "EntityType": "Column",
+      "EntityName": "Principal ID",
+      "EntityId": "PrincipalId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 70,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "PrincipalId MUST be a unique identifier within the context of the service provider.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    }
+  }
+}

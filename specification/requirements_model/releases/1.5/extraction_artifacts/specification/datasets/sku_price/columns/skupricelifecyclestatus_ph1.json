@@ -1,0 +1,293 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/sku_price/columns/skupricelifecyclestatus.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "SkuPriceLifecycleStatus",
+    "entity_name": "SKU Price Lifecycle Status"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "SkuPriceLifecycleStatus",
+      "entity_name": "SKU Price Lifecycle Status"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "SkuPriceLifecycleStatus MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 7,
+        "line_end": 7
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L007"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "SkuPriceLifecycleStatus MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 9,
+        "line_end": 9
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L009"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "SkuPriceLifecycleStatus MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L010"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "SkuPriceLifecycleStatus MUST NOT be null.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L011"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "SkuPriceLifecycleStatus MUST be one of the allowed values.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 12,
+        "line_end": 12
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L012"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "SkuPriceLifecycleStatus MUST be \"Active\" when the *SKU Price* is currently effective and available for use or purchase.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 13,
+        "line_end": 13
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L013"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "SkuPriceLifecycleStatus MUST be \"Preview\" when the *SKU Price* applies to an offering in a pre-release, beta, or early access state.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 14,
+        "line_end": 14
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L014"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "SkuPriceLifecycleStatus MUST be \"Deprecated\" when the *SKU Price* is still valid for existing deployments but is slated for retirement or no longer available for new consumption.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 15,
+        "line_end": 15
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L015"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "SkuPriceLifecycleStatus MUST be \"Inactive\" when the *SKU Price* is temporarily suspended or disabled but not permanently retired.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 16,
+        "line_end": 16
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L016"
+    },
+    {
+      "temp_id": "R010",
+      "order": 10,
+      "text": "SkuPriceLifecycleStatus MUST be \"Archived\" when the *SKU Price* is permanently retired, superseded, or no longer effective.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 17,
+        "line_end": 17
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L017"
+    },
+    {
+      "temp_id": "R011",
+      "order": 11,
+      "text": "SkuPriceLifecycleStatus MUST be \"Other\" when there is a lifecycle state but none of the allowed values apply.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 18,
+        "line_end": 18
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L018"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}

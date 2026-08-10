@@ -1,0 +1,221 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/sku_price/columns/skuid.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "SkuId",
+    "entity_name": "SKU ID"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "SkuId",
+      "entity_name": "SKU ID"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "SkuId MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 20,
+        "line_end": 20
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L020"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "SkuId MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 22,
+        "line_end": 22
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L022"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "SkuId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 23,
+        "line_end": 23
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L023"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "SkuId MUST NOT be null.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 24,
+        "line_end": 24
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L024"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "SkuId for a given *SKU* MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 25,
+        "line_end": 25
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L025"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "SkuId MUST remain consistent across contracts or billing agreements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 26,
+        "line_end": 26
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L026"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "SkuId MUST remain consistent regardless of any other factors that might impact the price but do not affect the functionality of the *SKU*.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 27,
+        "line_end": 27
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L027"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "SkuId SHOULD be consistent across pricing variations of a good or service.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 28,
+        "line_end": 28
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L028"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}

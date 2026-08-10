@@ -1,0 +1,290 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/sku_price/columns/volumetiermaximum.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "VolumeTierMaximum",
+    "entity_name": "Volume Tier Maximum"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 9
+  },
+  "0_outline_root": "ROOT: Volume Tier Maximum > Requirements",
+  "0_outline_lines": [
+    "L009: \"VolumeTierMaximum MUST adhere to the following requirements:\"",
+    "  L011: \"VolumeTierMaximum MUST be of type Decimal.\"",
+    "  L012: \"VolumeTierMaximum MUST adhere to the following nullability requirements:\"",
+    "    L013: \"VolumeTierMaximum MUST be null when there is no upper limit for the pricing tier.\"",
+    "    L014: \"VolumeTierMaximum MUST NOT be null when a subsequent, higher-volume pricing tier exists for the same offering.\"",
+    "  L015: \"When VolumeTierMaximum is not null, VolumeTierMaximum MUST adhere to the following requirements:\"",
+    "    L016: \"VolumeTierMaximum MUST represent a quantity denominated in the [PricingUnit](#datasets.skuprice.pricingunit).\"",
+    "    L017: \"VolumeTierMaximum MUST be strictly greater than [VolumeTierMinimum](#datasets.skuprice.volumetierminimum).\"",
+    "    L018: \"VolumeTierMaximum MUST be the exclusive upper bound of the volume-based pricing tier.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 9,
+    "leaf_count": 6,
+    "lead_in_count": 3,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 8,
+      "MUST NOT": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L009",
+        "text_preview": "VolumeTierMaximum MUST adhere to the following requirements:",
+        "children": 3
+      },
+      {
+        "ref": "L012",
+        "text_preview": "VolumeTierMaximum MUST adhere to the following nullability requirements:",
+        "children": 2
+      },
+      {
+        "ref": "L015",
+        "text_preview": "When VolumeTierMaximum is not null, VolumeTierMaximum MUST adhere to the following requirements:",
+        "children": 3
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L009",
+            "text": "VolumeTierMaximum MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L011",
+                "text": "VolumeTierMaximum MUST be of type Decimal.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L012",
+                "text": "VolumeTierMaximum MUST adhere to the following nullability requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R004",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R004",
+                    "order": 4,
+                    "ref": "L013",
+                    "text": "VolumeTierMaximum MUST be null when there is no upper limit for the pricing tier.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L014",
+                    "text": "VolumeTierMaximum MUST NOT be null when a subsequent, higher-volume pricing tier exists for the same offering.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "R006",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R006",
+                "order": 6,
+                "ref": "L015",
+                "text": "When VolumeTierMaximum is not null, VolumeTierMaximum MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R007",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R007",
+                    "order": 7,
+                    "ref": "L016",
+                    "text": "VolumeTierMaximum MUST represent a quantity denominated in the [PricingUnit](#datasets.skuprice.pricingunit).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R008",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R008",
+                    "order": 8,
+                    "ref": "L017",
+                    "text": "VolumeTierMaximum MUST be strictly greater than [VolumeTierMinimum](#datasets.skuprice.volumetierminimum).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R009",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R009",
+                    "order": 9,
+                    "ref": "L018",
+                    "text": "VolumeTierMaximum MUST be the exclusive upper bound of the volume-based pricing tier.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

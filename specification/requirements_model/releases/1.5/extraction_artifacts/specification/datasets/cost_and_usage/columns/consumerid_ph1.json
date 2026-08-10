@@ -1,0 +1,254 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/consumerid.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "ConsumerId",
+    "entity_name": "Consumer ID"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "ConsumerId",
+      "entity_name": "Consumer ID"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "ConsumerId MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 13,
+        "line_end": 13
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L013"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "ConsumerId MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 15,
+        "line_end": 15
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L015"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "ConsumerId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 16,
+        "line_end": 16
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L016"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "ConsumerId MUST adhere to the following nullability requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 17,
+        "line_end": 17
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L017"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "ConsumerId MUST be null when a [*charge*](#glossary:charge) is not attributed to a specific *consumer* by the service provider.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 18,
+        "line_end": 18
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L018"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "ConsumerId MUST NOT be null when a *charge* is attributed to a specific *consumer* by the service provider.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 19,
+        "line_end": 19
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L019"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "When ConsumerId is not null, ConsumerId MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 20,
+        "line_end": 20
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L020"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "ConsumerId MUST be a unique identifier within the context of the service provider.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 21,
+        "line_end": 21
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L021"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "ConsumerId MUST NOT contain plain-text personally identifiable information (PII) if the service provider supplies an alternative opaque identifier.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Consumer ID",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 22,
+        "line_end": 22
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L022"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}

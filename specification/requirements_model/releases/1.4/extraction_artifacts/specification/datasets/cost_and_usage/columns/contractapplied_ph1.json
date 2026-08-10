@@ -233,7 +233,7 @@
     {
       "temp_id": "R009",
       "order": 9,
-      "text": "ContractAppliedObject.Elements[\\*].ContractId MUST be a unique identifier within the service provider.",
+      "text": "ContractAppliedObject.Elements[*].ContractId MUST be a unique identifier within the service provider.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -259,7 +259,7 @@
     {
       "temp_id": "R010",
       "order": 10,
-      "text": "ContractAppliedObject.Elements[\\*].ContractId SHOULD be a fully-qualified identifier.",
+      "text": "ContractAppliedObject.Elements[*].ContractId SHOULD be a fully-qualified identifier.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -285,7 +285,7 @@
     {
       "temp_id": "R011",
       "order": 11,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST be a unique identifier within the service provider.",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be a unique identifier within the service provider.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -311,7 +311,7 @@
     {
       "temp_id": "R012",
       "order": 12,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId SHOULD be a fully-qualified identifier.",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId SHOULD be a fully-qualified identifier.",
       "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
@@ -337,7 +337,7 @@
     {
       "temp_id": "R013",
       "order": 13,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[\\*].ContractId.",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST have one and only one parent ContractAppliedObject.Elements[*].ContractId.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -363,7 +363,7 @@
     {
       "temp_id": "R014",
       "order": 14,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \"Purchase\".",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be equal to [ResourceId](#datasets.costandusage.resourceid) when [ChargeCategory](#datasets.costandusage.chargecategory) is \"Purchase\" and the *charge* represents a purchase of that *contract commitment*.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -389,8 +389,8 @@
     {
       "temp_id": "R015",
       "order": 15,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[\\*].ContractId.",
-      "keyword": "MAY",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MUST be equal to ResourceId when ChargeCategory is \"Usage\" and the *charge* represents an unused portion of that *contract commitment*.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -415,8 +415,8 @@
     {
       "temp_id": "R016",
       "order": 16,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedCost MUST be denominated in the BillingCurrency.",
-      "keyword": "MUST",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentId MAY be equal to ContractAppliedObject.Elements[*].ContractId.",
+      "keyword": "MAY",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -441,7 +441,7 @@
     {
       "temp_id": "R017",
       "order": 17,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedUnit.",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedCost MUST be denominated in the [BillingCurrency](#datasets.costandusage.billingcurrency).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -467,8 +467,8 @@
     {
       "temp_id": "R018",
       "order": 18,
-      "text": "ContractAppliedObject.Elements[\\*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
-      "keyword": "SHOULD",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedQuantity MUST be denominated in the ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit.",
+      "keyword": "MUST",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
@@ -493,107 +493,40 @@
     {
       "temp_id": "R019",
       "order": 19,
-      "text": "Must be present if Quantity and Unit are not provided.",
-      "keyword": "MUST",
+      "text": "ContractAppliedObject.Elements[*].ContractCommitmentAppliedUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
+      "keyword": "SHOULD",
       "role": "requirement",
       "section_path": [
         "Contract Applied",
-        "Schema Structure",
-        "Elements Object"
+        "Contract Applied Object",
+        "Object Requirements"
       ],
       "block": {
-        "block_type": "paragraph",
+        "block_type": "list_item",
         "indent_level": 0,
-        "bullet": null
+        "bullet": "*"
       },
       "lead_in": {
         "ends_with_colon": false
       },
       "provenance": {
-        "line_start": 57,
-        "line_end": 57
+        "line_start": 38,
+        "line_end": 38
       },
       "_alignment_status": "confirmed",
-      "ref": "L057"
-    },
-    {
-      "temp_id": "R020",
-      "order": 20,
-      "text": "Must be present if Cost is not provided.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Contract Applied",
-        "Schema Structure",
-        "Elements Object"
-      ],
-      "block": {
-        "block_type": "paragraph",
-        "indent_level": 0,
-        "bullet": null
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 58,
-        "line_end": 58
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L058"
-    },
-    {
-      "temp_id": "R021",
-      "order": 21,
-      "text": "Must be present if Contract Commitment Applied Quantity is provided.",
-      "keyword": "MUST",
-      "role": "requirement",
-      "section_path": [
-        "Contract Applied",
-        "Schema Structure",
-        "Elements Object"
-      ],
-      "block": {
-        "block_type": "paragraph",
-        "indent_level": 0,
-        "bullet": null
-      },
-      "lead_in": {
-        "ends_with_colon": false
-      },
-      "provenance": {
-        "line_start": 59,
-        "line_end": 59
-      },
-      "_alignment_status": "confirmed",
-      "ref": "L059"
+      "ref": "L038"
     }
   ],
   "warnings": [
     {
       "code": "W_ENTITY_MULTIPLE_TYPES",
-      "message": "More than one entity type was detected in the document.",
+      "severity": "LOW",
+      "message": "Multiple entity types were explicitly identified in the document.",
       "details": {
-        "entity_types_detected": [
+        "entity_types": [
           "Column",
           "Object"
-        ]
-      },
-      "text": "(document-level)"
-    },
-    {
-      "code": "W_ENTITY_FALLBACK_APPLIED",
-      "severity": "LOW",
-      "message": "Canonical entity was assigned by deterministic fallback precedence because multiple entities were detected.",
-      "details": {
-        "precedence": [
-          "Column",
-          "Dataset",
-          "Attribute"
         ],
-        "selected_entity_type": "Column",
-        "selected_entity_id": "ContractApplied",
-        "selected_entity_name": "Contract Applied",
         "entities_found_count": 2
       },
       "text": "(document-level)"

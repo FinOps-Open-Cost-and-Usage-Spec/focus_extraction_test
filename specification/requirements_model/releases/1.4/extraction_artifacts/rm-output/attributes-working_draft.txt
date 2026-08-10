@@ -1,0 +1,205 @@
+# CorrectionHandling
+
+Dataset conforming to CorrectionHandling attribute MUST adhere to the following requirements:
+
+* *FOCUS dataset* MUST have its styles for representing corrections in *dataset artifacts* documented and accessible to practitioners (including whether Replacement, Delta, or Ledger style is used and under which conditions each style applies).
+* *FOCUS dataset* MUST represent a complete snapshot of data for the affected [*delivery scope*](#glossary:delivery-scope) when using [Replacement correction style](#attributes.correctionhandling.overview.correctionstyles.replacementcorrections).
+* *FOCUS dataset* MUST include additive records representing corrections within the same *delivery scope* when using [Delta correction style](#attributes.correctionhandling.overview.correctionstyles.deltacorrections).
+* *FOCUS dataset* MUST include explicit reversal and re-entry additive records representing corrections within the same *delivery scope* when using [Ledger correction style](#attributes.correctionhandling.overview.correctionstyles.ledgercorrections).
+
+# CurrencyFormat
+
+Column conforming to CurrencyFormat attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST conform to [ISO 4217:2015](https://www.iso.org/standard/64758.html) standard.
+* *FOCUS dataset column* MUST use the three-letter alphabetic code defined in ISO 4217:2015 (e.g., USD, EUR).
+
+# CustomColumnHandling
+
+Column conforming to CustomColumnHandling attribute MUST adhere to the following requirements:
+
+* *Custom column* MUST adhere to the following Column ID naming requirements:
+  * *Custom column* MUST include the `x_` prefix in the Column ID to identify it as an external *custom column* and to distinguish it from *FOCUS columns* to avoid conflicts in future releases.
+  * *Custom column* SHOULD use [*Pascal case*](#glossary:pascalcase) in the portion of the Column ID following the required `x_` prefix.
+  * *Custom column* SHOULD use only alphanumeric characters in the portion of the Column ID following the required `x_` prefix.
+  * *Custom column* SHOULD NOT include special characters other than the underscore in the required `x_` prefix.
+
+  * *Custom column* SHOULD NOT use abbreviations other than `Id` in the Column ID.
+  * *Custom column* SHOULD NOT use acronyms other than `Sku` in the Column ID.
+  * *Custom column* SHOULD NOT exceed 50 characters in the Column ID to accommodate column length restrictions of various data repositories.
+  * *Custom column* SHOULD include the `Id` suffix in the Column ID when the *custom column* represents an identifier.
+  * *Custom column* SHOULD include the `Name` suffix in the Column ID when the *custom column* represents a name.
+* *Custom column* SHOULD conform to [DataGeneratorCalculatedSplitCostAllocationHandling](#attributes.datagenerator-calculatedsplitcostallocationhandling) requirements when the data generator supports data generator-calculated split cost allocation.
+* *Custom column* SHOULD conform to [NullHandling](#attributes.nullhandling) requirements.
+* *Custom column* containing date/time values SHOULD conform to [DateTimeFormat](#attributes.date/timeformat) requirements.
+* *Custom column* containing JSON objects MUST have its object schema documented by the data generator and accessible to practitioners.
+* *Custom column* containing numeric values MUST contain a single numeric value.
+* *Custom column* containing numeric values SHOULD conform to [NumericFormat](#attributes.numericformat) requirements.
+* *Custom column* containing string values SHOULD conform to [StringHandling](#attributes.stringhandling) requirements.
+* *Custom column* representing a national currency SHOULD conform to [CurrencyFormat](#attributes.currencyformat) requirements.
+* *Custom column* representing a measurement unit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.
+
+# DataGeneratorCalculatedSplitCostAllocationHandling
+
+Column conforming to DataGeneratorCalculatedSplitCostAllocationHandling attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) representing a dimension MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.
+* *FOCUS dataset column* representing a non-summable [*metric*](#glossary:metric) (e.g., unit prices) MUST match the corresponding value in the *origin charge* when present in an *allocated charge*.
+* The sum of *FOCUS dataset column* across *allocated charges* MUST match the *FOCUS dataset column* in the corresponding *origin charge* when the *FOCUS dataset column* represents a summable metric (e.g., costs and quantities).
+
+# DatasetCompletness
+
+Dataset conforming to DatasetCompleteness attribute MUST adhere to the following requirements:
+
+* *FOCUS dataset* MUST adhere to the following *custom column* presence requirements:
+  * *FOCUS dataset* MUST include *custom columns* (e.g., `x_ChargeSubType`) needed to support [*invoice reconciliation*](#glossary:invoice-reconciliation) when the [*invoice issuer*](#glossary:invoice-issuer) supports payable invoices, and when *FOCUS columns* are not sufficient.
+  * *FOCUS dataset* MUST include *custom columns* corresponding to [*native dataset*](#glossary:native-dataset) columns, except those explicitly listed as exclusions with justification in publicly-available documentation, provided those excluded columns are unrelated to *invoice reconciliation*.
+  * *FOCUS dataset* MUST have all included *custom columns* documented in publicly-available documentation, including description, purpose, and relationship to *native dataset* columns.
+  * *FOCUS dataset* SHOULD include *custom columns* that enable correlation between *FOCUS dataset* records and *native dataset* records (e.g., native [*charge*](#glossary:charge) identifiers), even when they meet the criteria for exclusion.
+  * *FOCUS dataset* SHOULD exclude *custom columns* that duplicate information already captured in *FOCUS columns*, except during a transitional period as defined in publicly-available documentation, to enable migration without breaking changes.
+* *FOCUS dataset* MUST retain the fidelity of corresponding *native dataset* values within *custom columns* without lossy transformations (e.g., rounding or truncation).
+* *FOCUS dataset* MUST NOT alter the aggregated values of summable [*metrics*](#glossary:metric) (e.g., costs and quantities) due to the inclusion of *custom columns*.
+* *FOCUS dataset* SHOULD sort all *FOCUS columns* alphabetically first, then all *custom columns* alphabetically second.
+
+# DatasetConfiguration
+
+Dataset conforming to DatasetConfiguration attribute MUST adhere to the following requirements:
+
+* *FOCUS dataset* MUST be configurable to include only a user-defined selection of columns.
+* *FOCUS dataset* MUST adhere to all column-level specifications defined in the FOCUS schema, regardless of the user's chosen configuration (e.g., column selection).
+* *FOCUS dataset* MAY offer a default column set.
+* *FOCUS dataset* default column set MUST include all applicable [*FOCUS columns*](#glossary:FOCUS-column) when a default column set is offered.
+
+# DateTimeFormat
+
+Column conforming to DateTimeFormat attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST be expressed in UTC (Coordinated Universal Time) to avoid ambiguity and ensure consistency across different time zones.
+* *FOCUS dataset column* MUST conform to the ISO 8601 standard, which provides a globally recognized format for representing dates and times (see [ISO 8601-1:2019](https://www.iso.org/standard/70907.html) governing document for details).
+* When *FOCUS dataset column* represents a specific moment in time, it MUST adhere to the following requirements:
+  * *FOCUS dataset column* MUST use the extended ISO 8601 format with UTC offset (`YYYY-MM-DDTHH:mm:ssZ`).
+  * *FOCUS dataset column* MUST include both the date and time components, separated with the letter `T`.
+  * *FOCUS dataset column* MUST use two-digit hours (`HH`), minutes (`mm`), and seconds (`ss`).
+  * *FOCUS dataset column* MUST end with the ISO 8601 UTC designator `Z`.
+
+# DeliveryHandling
+
+Dataset conforming to DeliveryHandling attribute MUST adhere to the following requirements:
+
+* *FOCUS dataset* MUST NOT require practitioners to deduplicate records within or across delivered dataset artifacts.
+* When using Overwrite delivery mechanism, *FOCUS dataset* MUST adhere to the following additional requirements:
+  * *FOCUS dataset* MUST represent a complete snapshot for a given [*delivery scope*](#glossary:delivery-scope).
+  * *FOCUS dataset* MUST supersede all previously delivered *dataset artifacts* for the same *delivery scope*.
+* *FOCUS dataset* MUST preserve all previously delivered *dataset artifacts* when using Append delivery mechanism.
+* *FOCUS dataset* SHOULD have delivered *dataset artifacts* accompanied by corresponding [FOCUS Metadata](#metadata).
+* *FOCUS dataset* delivery mechanism documentation MUST adhere to the following requirements:
+  * *FOCUS dataset* delivery mechanism documentation MUST include the delivery mechanism used (Overwrite or Append).
+  * *FOCUS dataset* delivery mechanism documentation MUST include the conditions under which each delivery mechanism applies when more than one delivery mechanism is used.
+  * *FOCUS dataset* delivery mechanism documentation MUST include the mechanism for correlating *dataset artifacts* with the [FOCUS Metadata Schema object](#metadata.schema) when the Metadata is delivered.
+  * *FOCUS dataset* delivery mechanism documentation MUST be accessible to practitioners.
+
+# FocusColumnHandling
+
+Column conforming to FocusColumnHandling attribute MUST adhere to the following requirements:
+
+* [*FOCUS column*](#glossary:FOCUS-column) MUST use a Display Name consistent with the Column ID, with spaces inserted between words (e.g., Column ID `BillingAccountName` and Display Name `Billing Account Name`, Column ID `BillingAccountId` and Display Name `Billing Account ID`).
+* *FOCUS column* MUST use [*Pascal case*](#glossary:pascalcase) in the Column ID.
+* *FOCUS column* MUST use only alphanumeric characters in the Column ID.
+* *FOCUS column* MUST NOT include special characters in the Column ID.
+* *FOCUS column* MUST NOT use abbreviations other than `Id` in the Column ID.
+* *FOCUS column* SHOULD NOT use acronyms other than `Sku` in the Column ID.
+* *FOCUS column* SHOULD NOT exceed 50 characters in the Column ID to accommodate column length restrictions of various data repositories.
+* *FOCUS column* representing an identifier MUST include the `Id` suffix in the Column ID.
+* *FOCUS column* representing a name MUST include the `Name` suffix in the Column ID.
+* *FOCUS column* representing a product offering that incurred a charge MUST include `Sku` in the Column ID.
+* *FOCUS column* that includes the `Category` suffix in the Column ID and is not null MUST contain one of the FOCUS-defined allowed values.
+
+# JsonObjectFormat
+
+Column conforming to JsonObjectFormat attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST contain a serialized JSON string, consistent with the [ECMA 404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf) definition of an object.
+* *FOCUS dataset column* MUST conform to all requirements of the corresponding column definition, which may specify or restrict the shape or contents of the object.
+* Object in *FOCUS dataset column* SHOULD NOT exceed 3 levels of nesting.
+* Key in Object in *FOCUS dataset column* MUST be unique.
+* Key value in Object in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), array, object, or `null`.
+* Object in array in *FOCUS dataset column* MUST adhere to the following requirements:
+  * Object in array in *FOCUS dataset column* MUST be of a consistent type.
+  * Object in array in *FOCUS dataset column* MUST NOT be repeated.
+  * Object in array in *FOCUS dataset column* MUST NOT be null.
+
+# KeyValueFormat
+
+Column conforming to KeyValueFormat attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST be a serialized JSON string, consistent with the [ECMA 404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf) definition of an object.
+* Keys in *FOCUS dataset column* MUST be unique within the object.
+* Key values in *FOCUS dataset column* MUST be of type number, string, boolean (`true` or `false`), or `null`.
+* Key values in *FOCUS dataset column* MUST NOT be objects or arrays.
+
+# NullHandling
+
+Column conforming to NullHandling attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST use `null` for absent values when the *FOCUS dataset column* is defined as nullable.
+* *FOCUS dataset column* MUST NOT contain empty strings or placeholder strings (e.g., `Not Applicable`) for absent values when the *FOCUS dataset column* contains string values.
+* *FOCUS dataset column* MUST NOT contain placeholder numeric values (e.g., `0`) for absent values when the *FOCUS dataset column* contains numeric values.
+
+# NumericFormat
+
+Column conforming to NumericFormat attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST contain a single numeric value.
+* *FOCUS dataset column* MUST have values of type integer, decimal, or scientific notation.
+* *FOCUS dataset column* MUST contain values that, when not null, conform to one of the allowed Data Types defined in the table below.
+* *FOCUS dataset column* MUST contain values that, when not null, conform to one of the allowed precision levels (and scale, where applicable) defined in the table below.
+* *FOCUS dataset column* MUST NOT use mathematical symbols, functions, or operators, except for a negative sign (-) to indicate a negative value or a negative exponent in scientific notation.
+* *FOCUS dataset column* MUST NOT include additional characters or qualifiers (e.g., currency symbols, units of measure).
+* *FOCUS dataset column* MUST NOT contain commas or punctuation marks, except for a single decimal point when required for a decimal value.
+* *FOCUS dataset column* MUST use a negative sign (-) to indicate a negative value.
+* *FOCUS dataset column* MUST NOT include a positive sign (+) for a positive value.
+* When *FOCUS dataset column* contains numeric values expressed in scientific notation, it MUST adhere to the following requirements:
+  * *FOCUS dataset column* MUST use E notation "mEn", where m is a real number and n is an integer exponent.
+  * *FOCUS dataset column* MUST use a negative sign (-) to indicate a negative exponent.
+  * *FOCUS dataset column* MUST NOT include a positive sign (+) for a positive exponent.
+
+# StringHandling
+
+Column conforming to StringHandling attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST preserve the original casing of string values.
+* *FOCUS dataset column* MUST preserve the original spacing of string values.
+* *FOCUS dataset column* MUST preserve other relevant consistency factors as specified by the data generator or end-user.
+* *FOCUS dataset column* MUST remain consistent across all [*billing periods*](#glossary:billing-period) when the *FOCUS dataset column* contains immutable string values (e.g., resource identifier, region identifier).
+* When *FOCUS dataset column* contains mutable string values (e.g., resource name, region name), it MUST adhere to the following requirements:
+  * *FOCUS dataset column* MUST reflect the altered value in all records pertaining to a period after the change.
+  * *FOCUS dataset column* MUST reflect the string value as it existed prior to the change in all records pertaining to a period prior to the change when the record does not represent a correction to a previously closed billing period.
+  * *FOCUS dataset column* MAY reflect the altered value in records pertaining to a period prior to the change when the record represents a correction to a previously closed billing period.
+* When *FOCUS dataset column* contains not-nullable string values, it MUST adhere to the following requirements:
+  * *FOCUS dataset column* SHOULD NOT contain empty strings.
+  * *FOCUS dataset column* SHOULD NOT contain strings consisting solely of whitespace characters.
+
+# UnitFormat
+
+Column conforming to UnitFormat attribute MUST adhere to the following requirements:
+
+* [*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST adhere to the following [base unit](#attributes.unitformat.definitions.baseunit) requirements:
+  * *FOCUS dataset column* MUST include at least one base unit.
+  * *FOCUS dataset column* MUST use one of the allowed data size unit abbreviations listed below for data size base units.
+  * *FOCUS dataset column* MUST use the allowed data size unit abbreviations in the same form for both singular and plural units.
+  * *FOCUS dataset column* MUST use the allowed abbreviation for exabit, exabyte, exbibit, or exbibyte when representing values exceeding 10^18.
+  * *FOCUS dataset column* MUST use the allowed abbreviation for bit or byte when representing values smaller than one byte.
+  * *FOCUS dataset column* MUST use one of the allowed time-based unit names listed below for time-based base units.
+  * *FOCUS dataset column* SHOULD use one of the recommended count-based unit names listed below for count-based base units.
+  * *FOCUS dataset column* SHOULD use capitalized nouns for base units that do not correspond to any of the allowed base unit names listed below.
+  * *FOCUS dataset column* MAY include a count-based base unit that is not listed as one of the allowed values.
+* *FOCUS dataset column* MAY include a [unit quantity](#attributes.unitformat.definitions.unitquantity) expressed as a positive integer.
+* *FOCUS dataset column* expressing a [compound unit](#attributes.unitformat.definitions.compoundunit) MUST use a hyphen (`-`) to separate base units (e.g., `GB-Hours`).
+* *FOCUS dataset column* expressing a compound unit SHOULD use the `<singular-base-unit>-<plural-base-unit>` format (e.g., `GB-Hours`, `MB-Days`, `Request-Tokens`).
+* *FOCUS dataset column* expressing a [ratio unit](#attributes.unitformat.definitions.ratiounit) MUST use a slash (`/`) to separate the numerator and denominator (e.g., `GB/Hour` to signify gigabytes per hour).
+* *FOCUS dataset column* expressing a ratio unit MAY include a [denominator quantity](#attributes.unitformat.definitions.denominatorquantity) expressed as a positive integer.
+* *FOCUS dataset column* expressing a ratio unit and including a denominator quantity SHOULD use the `<plural-units>/<denominator-quantity> <plural-time-units>` format (e.g., `Units/3 Months`).
+* *FOCUS dataset column* expressing a ratio unit with a compound unit numerator SHOULD use the `<compound-unit>/<singular-time-unit>` format (e.g., `Core-Hours/Day`).
+* *FOCUS dataset column* expressing a ratio unit with a time denominator SHOULD use the `<plural-units>/<singular-time-unit>` format (e.g., `GB/Hour`, `PB/Day`).
+* *FOCUS dataset column* expressing a [simple unit](#attributes.unitformat.definitions.simpleunit) SHOULD use the `<plural-units>` format (e.g., `GB`, `Seconds`).
+* *FOCUS dataset column* including a unit quantity SHOULD use the `<unit-quantity> <plural-units>` format (e.g., `1000 Tokens`, `1000 Characters`).

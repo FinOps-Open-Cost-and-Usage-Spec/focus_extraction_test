@@ -1,0 +1,206 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/pricingcurrencyeffectivecost.md",
+    "version": "1.2"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "PricingCurrencyEffectiveCost",
+    "entity_name": "Pricing Currency Effective Cost"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 6
+  },
+  "0_outline_root": "ROOT: Pricing Currency Effective Cost > Requirements",
+  "0_outline_lines": [
+    "L007: \"PricingCurrencyEffectiveCost MUST adhere to the following requirements:\"",
+    "  L009: \"PricingCurrencyEffectiveCost MUST be of type Decimal.\"",
+    "  L010: \"PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.\"",
+    "  L011: \"PricingCurrencyEffectiveCost MUST NOT be null.\"",
+    "  L012: \"PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.\"",
+    "  L013: \"PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).\""
+  ],
+  "0_outline_summary": {
+    "node_count": 6,
+    "leaf_count": 5,
+    "lead_in_count": 1,
+    "max_depth": 1,
+    "max_indent_level": 0,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 5,
+      "MUST NOT": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L007",
+        "text_preview": "PricingCurrencyEffectiveCost MUST adhere to the following requirements:",
+        "children": 5
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L007",
+            "text": "PricingCurrencyEffectiveCost MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L009",
+                "text": "PricingCurrencyEffectiveCost MUST be of type Decimal.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L010",
+                "text": "PricingCurrencyEffectiveCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L011",
+                "text": "PricingCurrencyEffectiveCost MUST NOT be null.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L012",
+                "text": "PricingCurrencyEffectiveCost MUST be 0 in the event of prepaid purchases or purchases that are applicable to previous usage.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R006",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R006",
+                "order": 6,
+                "ref": "L013",
+                "text": "PricingCurrencyEffectiveCost MUST be denominated in the [PricingCurrency](#datasets.costandusage.pricingcurrency).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

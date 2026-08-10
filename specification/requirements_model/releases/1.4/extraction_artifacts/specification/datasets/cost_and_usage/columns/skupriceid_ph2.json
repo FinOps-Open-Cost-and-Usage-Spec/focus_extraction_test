@@ -1,0 +1,475 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/skupriceid.md",
+    "version": "unknown"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "SkuPriceId",
+    "entity_name": "SKU Price ID"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 16
+  },
+  "0_outline_root": "ROOT: SKU Price ID > Requirements",
+  "0_outline_lines": [
+    "L009: \"SkuPriceId MUST adhere to the following requirements:\"",
+    "  L011: \"SkuPriceId MUST be of type String.\"",
+    "  L012: \"SkuPriceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L013: \"SkuPriceId MUST adhere to the following nullability requirements:\"",
+    "    L014: \"SkuPriceId MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is \\\"Tax\\\".\"",
+    "    L015: \"SkuPriceId MUST NOT be null when ChargeCategory is \\\"Usage\\\" or \\\"Purchase\\\" and [ChargeClass](#datasets.costandusage.chargeclass) is not \\\"Correction\\\".\"",
+    "    L016: \"SkuPriceId MAY be null in all other cases.\"",
+    "  L017: \"When SkuPriceId is not null, SkuPriceId MUST adhere to the following requirements:\"",
+    "    L018: \"SkuPriceId MUST have one and only one parent [SkuId](#datasets.costandusage.skuid).\"",
+    "    L019: \"SkuPriceId MUST remain consistent over time.\"",
+    "    L020: \"SkuPriceId MUST remain consistent across [*billing accounts*](#glossary:billing-account) or contracts.\"",
+    "    L021: \"SkuPriceId MAY equal SkuId.\"",
+    "    L022: \"SkuPriceId MUST be associated with a given [*resource*](#glossary:resource) or [*service*](#glossary:service) when ChargeCategory is \\\"Usage\\\" or \\\"Purchase\\\".\"",
+    "    L023: \"SkuPriceId MUST reference a *SKU Price* in a service-provider-supplied *price list*, enabling the lookup of detailed information about the *SKU Price*.\"",
+    "    L024: \"SkuPriceId MUST support the lookup of the [ListUnitPrice](#datasets.costandusage.listunitprice) when the service provider publishes unit prices exclusive of discounts.\"",
+    "    L025: \"SkuPriceId MUST support the verification of the given [ContractedUnitPrice](#datasets.costandusage.contractedunitprice) when the service provider supports negotiated pricing concepts.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 16,
+    "leaf_count": 13,
+    "lead_in_count": 3,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 13,
+      "MUST NOT": 1,
+      "MAY": 2
+    },
+    "lead_ins": [
+      {
+        "ref": "L009",
+        "text_preview": "SkuPriceId MUST adhere to the following requirements:",
+        "children": 4
+      },
+      {
+        "ref": "L013",
+        "text_preview": "SkuPriceId MUST adhere to the following nullability requirements:",
+        "children": 3
+      },
+      {
+        "ref": "L017",
+        "text_preview": "When SkuPriceId is not null, SkuPriceId MUST adhere to the following requirements:",
+        "children": 8
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L009",
+            "text": "SkuPriceId MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "SKU Price ID",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L011",
+                "text": "SkuPriceId MUST be of type String.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L012",
+                "text": "SkuPriceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L013",
+                "text": "SkuPriceId MUST adhere to the following nullability requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L014",
+                    "text": "SkuPriceId MUST be null when [ChargeCategory](#datasets.costandusage.chargecategory) is \"Tax\".",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L015",
+                    "text": "SkuPriceId MUST NOT be null when ChargeCategory is \"Usage\" or \"Purchase\" and [ChargeClass](#datasets.costandusage.chargeclass) is not \"Correction\".",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R007",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R007",
+                    "order": 7,
+                    "ref": "L016",
+                    "text": "SkuPriceId MAY be null in all other cases.",
+                    "keyword": "MAY",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "R008",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R008",
+                "order": 8,
+                "ref": "L017",
+                "text": "When SkuPriceId is not null, SkuPriceId MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R009",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R009",
+                    "order": 9,
+                    "ref": "L018",
+                    "text": "SkuPriceId MUST have one and only one parent [SkuId](#datasets.costandusage.skuid).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R010",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R010",
+                    "order": 10,
+                    "ref": "L019",
+                    "text": "SkuPriceId MUST remain consistent over time.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R011",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R011",
+                    "order": 11,
+                    "ref": "L020",
+                    "text": "SkuPriceId MUST remain consistent across [*billing accounts*](#glossary:billing-account) or contracts.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R012",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R012",
+                    "order": 12,
+                    "ref": "L021",
+                    "text": "SkuPriceId MAY equal SkuId.",
+                    "keyword": "MAY",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R013",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R013",
+                    "order": 13,
+                    "ref": "L022",
+                    "text": "SkuPriceId MUST be associated with a given [*resource*](#glossary:resource) or [*service*](#glossary:service) when ChargeCategory is \"Usage\" or \"Purchase\".",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R014",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R014",
+                    "order": 14,
+                    "ref": "L023",
+                    "text": "SkuPriceId MUST reference a *SKU Price* in a service-provider-supplied *price list*, enabling the lookup of detailed information about the *SKU Price*.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R015",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R015",
+                    "order": 15,
+                    "ref": "L024",
+                    "text": "SkuPriceId MUST support the lookup of the [ListUnitPrice](#datasets.costandusage.listunitprice) when the service provider publishes unit prices exclusive of discounts.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R016",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R016",
+                    "order": 16,
+                    "ref": "L025",
+                    "text": "SkuPriceId MUST support the verification of the given [ContractedUnitPrice](#datasets.costandusage.contractedunitprice) when the service provider supports negotiated pricing concepts.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

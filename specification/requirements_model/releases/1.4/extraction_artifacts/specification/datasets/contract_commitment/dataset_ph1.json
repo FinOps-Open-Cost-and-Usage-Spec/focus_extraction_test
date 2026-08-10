@@ -39,6 +39,7 @@
         "line_start": 53,
         "line_end": 53
       },
+      "_alignment_status": "confirmed",
       "ref": "L053"
     },
     {
@@ -63,6 +64,7 @@
         "line_start": 55,
         "line_end": 55
       },
+      "_alignment_status": "confirmed",
       "ref": "L055"
     },
     {
@@ -87,6 +89,7 @@
         "line_start": 56,
         "line_end": 56
       },
+      "_alignment_status": "confirmed",
       "ref": "L056"
     },
     {
@@ -111,6 +114,7 @@
         "line_start": 57,
         "line_end": 57
       },
+      "_alignment_status": "confirmed",
       "ref": "L057"
     },
     {
@@ -135,6 +139,7 @@
         "line_start": 58,
         "line_end": 58
       },
+      "_alignment_status": "confirmed",
       "ref": "L058"
     },
     {
@@ -159,6 +164,7 @@
         "line_start": 59,
         "line_end": 59
       },
+      "_alignment_status": "confirmed",
       "ref": "L059"
     },
     {
@@ -183,6 +189,7 @@
         "line_start": 60,
         "line_end": 60
       },
+      "_alignment_status": "confirmed",
       "ref": "L060"
     },
     {
@@ -207,6 +214,7 @@
         "line_start": 61,
         "line_end": 61
       },
+      "_alignment_status": "confirmed",
       "ref": "L061"
     },
     {
@@ -231,6 +239,7 @@
         "line_start": 62,
         "line_end": 62
       },
+      "_alignment_status": "confirmed",
       "ref": "L062"
     },
     {
@@ -255,6 +264,7 @@
         "line_start": 63,
         "line_end": 63
       },
+      "_alignment_status": "confirmed",
       "ref": "L063"
     },
     {
@@ -279,6 +289,7 @@
         "line_start": 64,
         "line_end": 64
       },
+      "_alignment_status": "confirmed",
       "ref": "L064"
     },
     {
@@ -303,6 +314,7 @@
         "line_start": 65,
         "line_end": 65
       },
+      "_alignment_status": "confirmed",
       "ref": "L065"
     },
     {
@@ -327,6 +339,7 @@
         "line_start": 66,
         "line_end": 66
       },
+      "_alignment_status": "confirmed",
       "ref": "L066"
     },
     {
@@ -351,6 +364,7 @@
         "line_start": 67,
         "line_end": 67
       },
+      "_alignment_status": "confirmed",
       "ref": "L067"
     },
     {
@@ -375,6 +389,7 @@
         "line_start": 68,
         "line_end": 68
       },
+      "_alignment_status": "confirmed",
       "ref": "L068"
     },
     {
@@ -399,6 +414,7 @@
         "line_start": 69,
         "line_end": 69
       },
+      "_alignment_status": "confirmed",
       "ref": "L069"
     },
     {
@@ -423,6 +439,7 @@
         "line_start": 70,
         "line_end": 70
       },
+      "_alignment_status": "confirmed",
       "ref": "L070"
     },
     {
@@ -447,6 +464,7 @@
         "line_start": 71,
         "line_end": 71
       },
+      "_alignment_status": "confirmed",
       "ref": "L071"
     },
     {
@@ -471,6 +489,7 @@
         "line_start": 72,
         "line_end": 72
       },
+      "_alignment_status": "confirmed",
       "ref": "L072"
     },
     {
@@ -495,12 +514,13 @@
         "line_start": 73,
         "line_end": 73
       },
+      "_alignment_status": "confirmed",
       "ref": "L073"
     },
     {
       "temp_id": "R021",
       "order": 21,
-      "text": "ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) if the service provider offers \"Partial Upfront\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).",
+      "text": "ContractCommitment MUST include [ContractCommitmentPaymentUpfrontPercentage](#datasets.contractcommitment.contractcommitmentpaymentupfrontpercentage) when the service provider offers \"Partial Upfront\" [payment models](#datasets.contractcommitment.contractcommitmentpaymentmodel).",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -519,6 +539,7 @@
         "line_start": 74,
         "line_end": 74
       },
+      "_alignment_status": "confirmed",
       "ref": "L074"
     },
     {
@@ -543,6 +564,7 @@
         "line_start": 75,
         "line_end": 75
       },
+      "_alignment_status": "confirmed",
       "ref": "L075"
     },
     {
@@ -567,6 +589,7 @@
         "line_start": 76,
         "line_end": 76
       },
+      "_alignment_status": "confirmed",
       "ref": "L076"
     },
     {
@@ -591,6 +614,7 @@
         "line_start": 77,
         "line_end": 77
       },
+      "_alignment_status": "confirmed",
       "ref": "L077"
     },
     {
@@ -615,6 +639,7 @@
         "line_start": 78,
         "line_end": 78
       },
+      "_alignment_status": "confirmed",
       "ref": "L078"
     },
     {
@@ -639,6 +664,7 @@
         "line_start": 79,
         "line_end": 79
       },
+      "_alignment_status": "confirmed",
       "ref": "L079"
     },
     {
@@ -663,6 +689,7 @@
         "line_start": 80,
         "line_end": 80
       },
+      "_alignment_status": "confirmed",
       "ref": "L080"
     },
     {
@@ -687,6 +714,7 @@
         "line_start": 81,
         "line_end": 81
       },
+      "_alignment_status": "confirmed",
       "ref": "L081"
     },
     {
@@ -711,6 +739,7 @@
         "line_start": 82,
         "line_end": 82
       },
+      "_alignment_status": "confirmed",
       "ref": "L082"
     },
     {
@@ -735,6 +764,7 @@
         "line_start": 83,
         "line_end": 83
       },
+      "_alignment_status": "confirmed",
       "ref": "L083"
     },
     {
@@ -759,6 +789,7 @@
         "line_start": 84,
         "line_end": 84
       },
+      "_alignment_status": "confirmed",
       "ref": "L084"
     },
     {
@@ -783,6 +814,7 @@
         "line_start": 85,
         "line_end": 85
       },
+      "_alignment_status": "confirmed",
       "ref": "L085"
     },
     {
@@ -807,12 +839,13 @@
         "line_start": 86,
         "line_end": 86
       },
+      "_alignment_status": "confirmed",
       "ref": "L086"
     },
     {
       "temp_id": "R034",
       "order": 34,
-      "text": "ContractCommitment MUST conform to [ColumnHandling](#attributes.columnhandling) requirements.",
+      "text": "ContractCommitment MUST conform to [CorrectionHandling](#attributes.correctionhandling) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -831,12 +864,13 @@
         "line_start": 87,
         "line_end": 87
       },
+      "_alignment_status": "confirmed",
       "ref": "L087"
     },
     {
       "temp_id": "R035",
       "order": 35,
-      "text": "ContractCommitment MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "text": "ContractCommitment MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
       "keyword": "MUST",
       "role": "requirement",
       "section_path": [
@@ -855,6 +889,7 @@
         "line_start": 88,
         "line_end": 88
       },
+      "_alignment_status": "confirmed",
       "ref": "L088"
     },
     {
@@ -879,7 +914,108 @@
         "line_start": 89,
         "line_end": 89
       },
+      "_alignment_status": "confirmed",
       "ref": "L089"
+    },
+    {
+      "temp_id": "R037",
+      "order": 37,
+      "text": "ContractCommitment MUST conform to [DeliveryHandling](#attributes.deliveryhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 90,
+        "line_end": 90
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L090"
+    },
+    {
+      "temp_id": "R038",
+      "order": 38,
+      "text": "ContractCommitment [*FOCUS columns*](#glossary:FOCUS-column) MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 91,
+        "line_end": 91
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L091"
+    },
+    {
+      "temp_id": "R039",
+      "order": 39,
+      "text": "ContractCommitment *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 92,
+        "line_end": 92
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L092"
+    },
+    {
+      "temp_id": "R040",
+      "order": 40,
+      "text": "ContractCommitment [*custom columns*](#glossary:custom-column) MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Contract Commitment",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 93,
+        "line_end": 93
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L093"
     }
   ],
   "warnings": [],
