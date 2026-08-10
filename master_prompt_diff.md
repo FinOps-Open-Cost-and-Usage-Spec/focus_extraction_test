@@ -1,3 +1,5 @@
+Write a complete Python script. Do not explain. Only output the final code.
+
 Create a script that reads the file `diff_command.md` from the root of the repository `focus_extraction_test` and generates diff output files for one section at a time.
 
 ### Repositories
