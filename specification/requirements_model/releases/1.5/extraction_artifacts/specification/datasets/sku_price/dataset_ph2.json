@@ -1,0 +1,994 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/sku_price/dataset.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Dataset",
+    "entity_id": "SkuPrice",
+    "entity_name": "SKU Price"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 37
+  },
+  "0_outline_root": "ROOT: SKU Price > Requirements",
+  "0_outline_lines": [
+    "L052: \"SkuPrice MUST adhere to the following requirements:\"",
+    "  L054: \"SkuPrice column presence MUST adhere to the following requirements:\"",
+    "    L055: \"SkuPrice MUST include [ChargeCategory](#datasets.skuprice.chargecategory).\"",
+    "    L056: \"SkuPrice MUST include [ChargeFrequency](#datasets.skuprice.chargefrequency) when the *operating model* [includes multiple charge frequencies](#conditions.includesmultiplechargefrequencies).\"",
+    "    L057: \"SkuPrice MUST include [ContractCommitmentDurationType](#datasets.skuprice.contractcommitmentdurationtype) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).\"",
+    "    L058: \"SkuPrice MUST include [ContractCommitmentPaymentModel](#datasets.skuprice.contractcommitmentpaymentmodel) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).\"",
+    "    L059: \"SkuPrice MUST include [ContractId](#datasets.skuprice.contractid) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).\"",
+    "    L060: \"SkuPrice MUST include [PricingCurrency](#datasets.skuprice.pricingcurrency).\"",
+    "    L061: \"SkuPrice MUST include [PricingCurrencyCategory](#datasets.skuprice.pricingcurrencycategory).\"",
+    "    L062: \"SkuPrice MUST include [PricingRegionId](#datasets.skuprice.pricingregionid) when the *operating model* [includes regions](#conditions.includesregions).\"",
+    "    L063: \"SkuPrice MUST include [PricingServiceName](#datasets.skuprice.pricingservicename).\"",
+    "    L064: \"SkuPrice MUST include [PricingUnit](#datasets.skuprice.pricingunit).\"",
+    "    L065: \"SkuPrice MUST include [ServiceProviderName](#datasets.skuprice.serviceprovidername).\"",
+    "    L066: \"SkuPrice MUST include [SkuId](#datasets.skuprice.skuid).\"",
+    "    L067: \"SkuPrice MUST include [SkuPriceCreated](#datasets.skuprice.skupricecreated).\"",
+    "    L068: \"SkuPrice MUST include [SkuPriceDescription](#datasets.skuprice.skupricedescription).\"",
+    "    L069: \"SkuPrice MUST include [SkuPriceEffectiveEnd](#datasets.skuprice.skupriceeffectiveend).\"",
+    "    L070: \"SkuPrice MUST include [SkuPriceEffectiveStart](#datasets.skuprice.skupriceeffectivestart).\"",
+    "    L071: \"SkuPrice MUST include [SkuPriceEligibility](#datasets.skuprice.skupriceeligibility).\"",
+    "    L072: \"SkuPrice MUST include [SkuPriceId](#datasets.skuprice.skupriceid).\"",
+    "    L073: \"SkuPrice MUST include [SkuPriceLastUpdated](#datasets.skuprice.skupricelastupdated).\"",
+    "    L074: \"SkuPrice MUST include [SkuPriceLifecycleStatus](#datasets.skuprice.skupricelifecyclestatus).\"",
+    "    L075: \"SkuPrice MUST include [UnitPrice](#datasets.skuprice.unitprice).\"",
+    "    L076: \"SkuPrice MUST include [UnitPriceCategory](#datasets.skuprice.unitpricecategory).\"",
+    "    L077: \"SkuPrice MUST include [VolumeTierMaximum](#datasets.skuprice.volumetiermaximum) when the *operating model* [includes volume tier pricing](#conditions.includesvolumetierpricing).\"",
+    "    L078: \"SkuPrice MUST include [VolumeTierMinimum](#datasets.skuprice.volumetierminimum) when the *operating model* [includes volume tier pricing](#conditions.includesvolumetierpricing).\"",
+    "    L079: \"SkuPrice MUST include [VolumeTierName](#datasets.skuprice.volumetiername) when the *operating model* [includes volume tier pricing](#conditions.includesvolumetierpricing).\"",
+    "    L080: \"SkuPrice SHOULD include [*custom columns*](#glossary:custom-column) needed to identify specific rate card routing logic when [*FOCUS columns*](#glossary:FOCUS-column) are not sufficient.\"",
+    "  L081: \"SkuPrice MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.\"",
+    "  L082: \"SkuPrice MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.\"",
+    "  L083: \"SkuPrice MUST maintain row uniqueness across the composite key of ServiceProviderName, SkuPriceId, ContractId, VolumeTierMinimum, SkuPriceEffectiveStart, PricingCurrency, and UnitPriceCategory.\"",
+    "  L084: \"SkuPrice MUST treat two records with a null value in the same composite-key member as equal in that member when evaluating row uniqueness.\"",
+    "  L085: \"SkuPrice MUST NOT contain records whose validity periods, defined by SkuPriceEffectiveStart and SkuPriceEffectiveEnd, overlap for the same combination of ServiceProviderName, SkuPriceId, ContractId, VolumeTierMinimum, PricingCurrency, and UnitPriceCategory.\"",
+    "  L086: \"SkuPrice MUST contain at least one record for every [SkuPriceId](#datasets.skuprice.skupriceid) referenced in the [CostAndUsage](#datasets.costandusage) dataset.\"",
+    "  L087: \"SkuPrice *FOCUS columns* MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.\"",
+    "  L088: \"SkuPrice *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.\"",
+    "  L089: \"SkuPrice *custom columns* MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 37,
+    "leaf_count": 35,
+    "lead_in_count": 2,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 35,
+      "SHOULD": 1,
+      "MUST NOT": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L052",
+        "text_preview": "SkuPrice MUST adhere to the following requirements:",
+        "children": 10
+      },
+      {
+        "ref": "L054",
+        "text_preview": "SkuPrice column presence MUST adhere to the following requirements:",
+        "children": 26
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L052",
+            "text": "SkuPrice MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "SKU Price",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L054",
+                "text": "SkuPrice column presence MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R003",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R003",
+                    "order": 3,
+                    "ref": "L055",
+                    "text": "SkuPrice MUST include [ChargeCategory](#datasets.skuprice.chargecategory).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R004",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R004",
+                    "order": 4,
+                    "ref": "L056",
+                    "text": "SkuPrice MUST include [ChargeFrequency](#datasets.skuprice.chargefrequency) when the *operating model* [includes multiple charge frequencies](#conditions.includesmultiplechargefrequencies).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L057",
+                    "text": "SkuPrice MUST include [ContractCommitmentDurationType](#datasets.skuprice.contractcommitmentdurationtype) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L058",
+                    "text": "SkuPrice MUST include [ContractCommitmentPaymentModel](#datasets.skuprice.contractcommitmentpaymentmodel) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R007",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R007",
+                    "order": 7,
+                    "ref": "L059",
+                    "text": "SkuPrice MUST include [ContractId](#datasets.skuprice.contractid) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R008",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R008",
+                    "order": 8,
+                    "ref": "L060",
+                    "text": "SkuPrice MUST include [PricingCurrency](#datasets.skuprice.pricingcurrency).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R009",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R009",
+                    "order": 9,
+                    "ref": "L061",
+                    "text": "SkuPrice MUST include [PricingCurrencyCategory](#datasets.skuprice.pricingcurrencycategory).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R010",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R010",
+                    "order": 10,
+                    "ref": "L062",
+                    "text": "SkuPrice MUST include [PricingRegionId](#datasets.skuprice.pricingregionid) when the *operating model* [includes regions](#conditions.includesregions).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R011",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R011",
+                    "order": 11,
+                    "ref": "L063",
+                    "text": "SkuPrice MUST include [PricingServiceName](#datasets.skuprice.pricingservicename).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R012",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R012",
+                    "order": 12,
+                    "ref": "L064",
+                    "text": "SkuPrice MUST include [PricingUnit](#datasets.skuprice.pricingunit).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R013",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R013",
+                    "order": 13,
+                    "ref": "L065",
+                    "text": "SkuPrice MUST include [ServiceProviderName](#datasets.skuprice.serviceprovidername).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R014",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R014",
+                    "order": 14,
+                    "ref": "L066",
+                    "text": "SkuPrice MUST include [SkuId](#datasets.skuprice.skuid).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R015",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R015",
+                    "order": 15,
+                    "ref": "L067",
+                    "text": "SkuPrice MUST include [SkuPriceCreated](#datasets.skuprice.skupricecreated).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R016",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R016",
+                    "order": 16,
+                    "ref": "L068",
+                    "text": "SkuPrice MUST include [SkuPriceDescription](#datasets.skuprice.skupricedescription).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R017",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R017",
+                    "order": 17,
+                    "ref": "L069",
+                    "text": "SkuPrice MUST include [SkuPriceEffectiveEnd](#datasets.skuprice.skupriceeffectiveend).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R018",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R018",
+                    "order": 18,
+                    "ref": "L070",
+                    "text": "SkuPrice MUST include [SkuPriceEffectiveStart](#datasets.skuprice.skupriceeffectivestart).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R019",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R019",
+                    "order": 19,
+                    "ref": "L071",
+                    "text": "SkuPrice MUST include [SkuPriceEligibility](#datasets.skuprice.skupriceeligibility).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R020",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R020",
+                    "order": 20,
+                    "ref": "L072",
+                    "text": "SkuPrice MUST include [SkuPriceId](#datasets.skuprice.skupriceid).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R021",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R021",
+                    "order": 21,
+                    "ref": "L073",
+                    "text": "SkuPrice MUST include [SkuPriceLastUpdated](#datasets.skuprice.skupricelastupdated).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R022",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R022",
+                    "order": 22,
+                    "ref": "L074",
+                    "text": "SkuPrice MUST include [SkuPriceLifecycleStatus](#datasets.skuprice.skupricelifecyclestatus).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R023",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R023",
+                    "order": 23,
+                    "ref": "L075",
+                    "text": "SkuPrice MUST include [UnitPrice](#datasets.skuprice.unitprice).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R024",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R024",
+                    "order": 24,
+                    "ref": "L076",
+                    "text": "SkuPrice MUST include [UnitPriceCategory](#datasets.skuprice.unitpricecategory).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R025",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R025",
+                    "order": 25,
+                    "ref": "L077",
+                    "text": "SkuPrice MUST include [VolumeTierMaximum](#datasets.skuprice.volumetiermaximum) when the *operating model* [includes volume tier pricing](#conditions.includesvolumetierpricing).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R026",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R026",
+                    "order": 26,
+                    "ref": "L078",
+                    "text": "SkuPrice MUST include [VolumeTierMinimum](#datasets.skuprice.volumetierminimum) when the *operating model* [includes volume tier pricing](#conditions.includesvolumetierpricing).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R027",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R027",
+                    "order": 27,
+                    "ref": "L079",
+                    "text": "SkuPrice MUST include [VolumeTierName](#datasets.skuprice.volumetiername) when the *operating model* [includes volume tier pricing](#conditions.includesvolumetierpricing).",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R028",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R028",
+                    "order": 28,
+                    "ref": "L080",
+                    "text": "SkuPrice SHOULD include [*custom columns*](#glossary:custom-column) needed to identify specific rate card routing logic when [*FOCUS columns*](#glossary:FOCUS-column) are not sufficient.",
+                    "keyword": "SHOULD",
+                    "section_path": [
+                      "SKU Price",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "R029",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R029",
+                "order": 29,
+                "ref": "L081",
+                "text": "SkuPrice MUST conform to [DatasetCompleteness](#attributes.datasetcompleteness) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R030",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R030",
+                "order": 30,
+                "ref": "L082",
+                "text": "SkuPrice MUST conform to [DatasetConfiguration](#attributes.datasetconfiguration) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R031",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R031",
+                "order": 31,
+                "ref": "L083",
+                "text": "SkuPrice MUST maintain row uniqueness across the composite key of ServiceProviderName, SkuPriceId, ContractId, VolumeTierMinimum, SkuPriceEffectiveStart, PricingCurrency, and UnitPriceCategory.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R032",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R032",
+                "order": 32,
+                "ref": "L084",
+                "text": "SkuPrice MUST treat two records with a null value in the same composite-key member as equal in that member when evaluating row uniqueness.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R033",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R033",
+                "order": 33,
+                "ref": "L085",
+                "text": "SkuPrice MUST NOT contain records whose validity periods, defined by SkuPriceEffectiveStart and SkuPriceEffectiveEnd, overlap for the same combination of ServiceProviderName, SkuPriceId, ContractId, VolumeTierMinimum, PricingCurrency, and UnitPriceCategory.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R034",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R034",
+                "order": 34,
+                "ref": "L086",
+                "text": "SkuPrice MUST contain at least one record for every [SkuPriceId](#datasets.skuprice.skupriceid) referenced in the [CostAndUsage](#datasets.costandusage) dataset.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R035",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R035",
+                "order": 35,
+                "ref": "L087",
+                "text": "SkuPrice *FOCUS columns* MUST conform to [FocusColumnHandling](#attributes.focuscolumnhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R036",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R036",
+                "order": 36,
+                "ref": "L088",
+                "text": "SkuPrice *FOCUS columns* MUST conform to [NullHandling](#attributes.nullhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R037",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R037",
+                "order": 37,
+                "ref": "L089",
+                "text": "SkuPrice *custom columns* MUST conform to [CustomColumnHandling](#attributes.customcolumnhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "SKU Price",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

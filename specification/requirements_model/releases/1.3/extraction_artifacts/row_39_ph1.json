@@ -1,0 +1,1044 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/allocatedmethoddetails.md",
+    "version": "1.3"
+  },
+  "entity": null,
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "AllocatedMethodDetails",
+      "entity_name": "Allocated Method Details"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "AllocatedMethodDetails MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      },
+      "ref": "L011"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "AllocatedMethodDetails MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 12,
+        "line_end": 12
+      },
+      "ref": "L012"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 13,
+        "line_end": 13
+      },
+      "ref": "L013"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "AllocatedMethodDetails MUST be null when a charge is not related to a data generator-calculated split cost allocation.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 15,
+        "line_end": 15
+      },
+      "ref": "L015"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "AllocatedMethodDetails SHOULD NOT be null when a charge is related to a data generator-calculated split cost allocation.",
+      "keyword": "SHOULD NOT",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 16,
+        "line_end": 16
+      },
+      "ref": "L016"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "AllocatedMethodDetails MUST conform to [AllocatedMethodDetailsObject](#datasets.costandusage.allocatedmethoddetails.allocatedmethoddetailsobject) requirements when AllocatedMethodDetails is not null.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 17,
+        "line_end": 17
+      },
+      "ref": "L017"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "AllocatedMethodDetailsObject MUST have a top-level property key \"Elements\".",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 39,
+        "line_end": 39
+      },
+      "ref": "L039"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "AllocatedMethodDetailsObject MAY contain additional data generator-defined top-level property keys, in addition to AllocatedMethodDetailsObject.Elements.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 40,
+        "line_end": 40
+      },
+      "ref": "L040"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "AllocatedMethodDetailsObject MUST have property keys that begin with the string \"x_\" unless it is the top-level property key \"Elements\".",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 41,
+        "line_end": 41
+      },
+      "ref": "L041"
+    },
+    {
+      "temp_id": "R010",
+      "order": 10,
+      "text": "AllocatedMethodDetailsObject.Elements MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 42,
+        "line_end": 42
+      },
+      "ref": "L042"
+    },
+    {
+      "temp_id": "R011",
+      "order": 11,
+      "text": "AllocatedMethodDetailsObject.Elements MUST be of type Array.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 43,
+        "line_end": 43
+      },
+      "ref": "L043"
+    },
+    {
+      "temp_id": "R012",
+      "order": 12,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST be of type JSON object.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 44,
+        "line_end": 44
+      },
+      "ref": "L044"
+    },
+    {
+      "temp_id": "R013",
+      "order": 13,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST conform to [KeyValueFormat](#attributes.key-valueformat) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 45,
+        "line_end": 45
+      },
+      "ref": "L045"
+    },
+    {
+      "temp_id": "R014",
+      "order": 14,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*] MAY contain data generator-defined allocation properties.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 46,
+        "line_end": 46
+      },
+      "ref": "L046"
+    },
+    {
+      "temp_id": "R015",
+      "order": 15,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST have property keys that begin with the string \"x_\" unless it is a FOCUS-defined allocation property.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 47,
+        "line_end": 47
+      },
+      "ref": "L047"
+    },
+    {
+      "temp_id": "R016",
+      "order": 16,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST be present inside each AllocatedMethodDetailsObject.Elements object.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 49,
+        "line_end": 49
+      },
+      "ref": "L049"
+    },
+    {
+      "temp_id": "R017",
+      "order": 17,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST be of type Decimal.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 50,
+        "line_end": 50
+      },
+      "ref": "L050"
+    },
+    {
+      "temp_id": "R018",
+      "order": 18,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 51,
+        "line_end": 51
+      },
+      "ref": "L051"
+    },
+    {
+      "temp_id": "R019",
+      "order": 19,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST represent the allocated charge's percentage of the origin charge.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 52,
+        "line_end": 52
+      },
+      "ref": "L052"
+    },
+    {
+      "temp_id": "R020",
+      "order": 20,
+      "text": "Values for all AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio properties across all allocated charges related to a single origin charge MUST sum up to 1 (100%).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 53,
+        "line_end": 53
+      },
+      "ref": "L053"
+    },
+    {
+      "temp_id": "R021",
+      "order": 21,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST be present inside an AllocatedMethodDetailsObject.Elements object if AllocatedMethodDetailsObject.Elements[*].UsageQuantity allocation property is present in that AllocatedMethodDetailsObject.Elements object",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 55,
+        "line_end": 55
+      },
+      "ref": "L055"
+    },
+    {
+      "temp_id": "R022",
+      "order": 22,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MAY be present inside an AllocatedMethodDetailsObject.Elements object if AllocatedMethodDetailsObject.Elements[*].UsageQuantity allocation property is not present in that AllocatedMethodDetailsObject.Elements object",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 56,
+        "line_end": 56
+      },
+      "ref": "L056"
+    },
+    {
+      "temp_id": "R023",
+      "order": 23,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST be of type String.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 57,
+        "line_end": 57
+      },
+      "ref": "L057"
+    },
+    {
+      "temp_id": "R024",
+      "order": 24,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST conform to StringHandling requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 58,
+        "line_end": 58
+      },
+      "ref": "L058"
+    },
+    {
+      "temp_id": "R025",
+      "order": 25,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit SHOULD conform to [UnitFormat](#attributes.unitformat) requirements.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 59,
+        "line_end": 59
+      },
+      "ref": "L059"
+    },
+    {
+      "temp_id": "R026",
+      "order": 26,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST represent the unit or component of data generator's documented [AllocationMethod](#datasets.costandusage.allocatedmethodid) which was used to determine the AllocatedMethodDetailsObject.Elements[*].AllocatedRatio value.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 2,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 60,
+        "line_end": 60
+      },
+      "ref": "L060"
+    },
+    {
+      "temp_id": "R027",
+      "order": 27,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity MUST be present inside an AllocatedMethodDetailsObject.Elements object if AllocatedMethodDetailsObject.Elements[*].UsageUnit allocation property is present in that AllocatedMethodDetailsObject.Elements object",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 62,
+        "line_end": 62
+      },
+      "ref": "L062"
+    },
+    {
+      "temp_id": "R028",
+      "order": 28,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity MUST be of type Decimal.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 63,
+        "line_end": 63
+      },
+      "ref": "L063"
+    },
+    {
+      "temp_id": "R029",
+      "order": 29,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 64,
+        "line_end": 64
+      },
+      "ref": "L064"
+    },
+    {
+      "temp_id": "R030",
+      "order": 30,
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity SHOULD capture the quantity or volume of the AllocatedMethodDetailsObject.Elements[\\*].UsageUnit measured by the data generator that was used to determine the AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio value.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Allocated Method Details",
+        "Allocated Method Details Object",
+        "Object Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 65,
+        "line_end": 65
+      },
+      "ref": "L065"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "AllocatedMethodDetails MUST conform to [JsonObjectFormat](#attributes.jsonobjectformat) requirements.",
+      "details": {
+        "ref": "L013",
+        "temp_id": "R003",
+        "order": 3,
+        "indent_level": 0,
+        "section_path": [
+          "Allocated Method Details",
+          "Requirements"
+        ],
+        "next_ref": "L015",
+        "next_temp_id": "R004",
+        "next_order": 4,
+        "next_indent_level": 1
+      }
+    },
+    {
+      "code": "W_ORPHAN_COLON",
+      "severity": "LOW",
+      "message": "Line ends with colon (:) but no child list items were detected.",
+      "text": "AllocatedMethodDetailsObject.Elements MUST adhere to the following requirements:",
+      "details": {
+        "ref": "L042",
+        "temp_id": "R010",
+        "order": 10,
+        "indent_level": 1,
+        "section_path": [
+          "Allocated Method Details",
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "next_ref": "L043",
+        "next_temp_id": "R011",
+        "next_order": 11,
+        "next_indent_level": 1
+      }
+    },
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "AllocatedMethodDetailsObject.Elements[\\*] MUST be of type JSON object.",
+      "details": {
+        "ref": "L044",
+        "temp_id": "R012",
+        "order": 12,
+        "indent_level": 1,
+        "section_path": [
+          "Allocated Method Details",
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "next_ref": "L045",
+        "next_temp_id": "R013",
+        "next_order": 13,
+        "next_indent_level": 2
+      }
+    },
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio MUST be of type Decimal.",
+      "details": {
+        "ref": "L050",
+        "temp_id": "R017",
+        "order": 17,
+        "indent_level": 1,
+        "section_path": [
+          "Allocated Method Details",
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "next_ref": "L051",
+        "next_temp_id": "R018",
+        "next_order": 18,
+        "next_indent_level": 2
+      }
+    },
+    {
+      "code": "W_NORMATIVE_PARENT_WITHOUT_LEADIN",
+      "severity": "MEDIUM",
+      "message": "Normative list item has children but is not a lead-in (missing trailing colon). Nesting may be ambiguous.",
+      "text": "AllocatedMethodDetailsObject.Elements[\\*].UsageUnit MUST be of type String.",
+      "details": {
+        "ref": "L057",
+        "temp_id": "R023",
+        "order": 23,
+        "indent_level": 1,
+        "section_path": [
+          "Allocated Method Details",
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "next_ref": "L058",
+        "next_temp_id": "R024",
+        "next_order": 24,
+        "next_indent_level": 2
+      }
+    }
+  ],
+  "structural": {
+    "lead_ins": [
+      {
+        "text": "The AllocatedMethodDetails column adheres to the following requirements:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [
+          "Requirements"
+        ],
+        "block": {
+          "block_type": "paragraph",
+          "indent_level": 0,
+          "bullet": null
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 9,
+          "line_end": 9
+        },
+        "ref": "LI009",
+        "next_normative_refs": [
+          "L011",
+          "L012",
+          "L013",
+          "L017",
+          "L062",
+          "L063",
+          "L064",
+          "L065"
+        ]
+      },
+      {
+        "text": "The AllocatedMethodDetailsObject adheres to the following requirements:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "block": {
+          "block_type": "paragraph",
+          "indent_level": 0,
+          "bullet": null
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 33,
+          "line_end": 33
+        },
+        "ref": "LI033",
+        "next_normative_refs": [
+          "L062",
+          "L063",
+          "L064",
+          "L065"
+        ]
+      },
+      {
+        "text": "The AllocatedMethodDetailsObject.Elements[\\*].AllocatedRatio property key adheres to the following requirements:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "block": {
+          "block_type": "list_item",
+          "indent_level": 1,
+          "bullet": "*"
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 44,
+          "line_end": 44
+        },
+        "ref": "LI044",
+        "next_normative_refs": [
+          "L045",
+          "L046",
+          "L047",
+          "L049"
+        ]
+      },
+      {
+        "text": "The AllocatedMethodDetailsObject.Elements[\\*].UsageUnit property key adheres to the following requirements:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "block": {
+          "block_type": "list_item",
+          "indent_level": 1,
+          "bullet": "*"
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 50,
+          "line_end": 50
+        },
+        "ref": "LI050",
+        "next_normative_refs": [
+          "L051",
+          "L052",
+          "L053",
+          "L055",
+          "L056"
+        ]
+      },
+      {
+        "text": "The AllocatedMethodDetailsObject.Elements[\\*].UsageQuantity property key adheres to the following requirements:",
+        "class": "requirements_list_intro",
+        "confidence": "high",
+        "section_path": [
+          "Allocated Method Details Object",
+          "Object Requirements"
+        ],
+        "block": {
+          "block_type": "list_item",
+          "indent_level": 1,
+          "bullet": "*"
+        },
+        "lead_in": {
+          "ends_with_colon": true
+        },
+        "provenance": {
+          "line_start": 57,
+          "line_end": 57
+        },
+        "ref": "LI057",
+        "next_normative_refs": [
+          "L058",
+          "L059",
+          "L060"
+        ]
+      }
+    ],
+    "index": {
+      "by_section_path": {
+        "Requirements": [
+          "LI009"
+        ],
+        "Allocated Method Details Object > Object Requirements": [
+          "LI033",
+          "LI044",
+          "LI050",
+          "LI057"
+        ]
+      },
+      "by_line": {
+        "9": [
+          "LI009"
+        ],
+        "33": [
+          "LI033"
+        ],
+        "44": [
+          "LI044"
+        ],
+        "50": [
+          "LI050"
+        ],
+        "57": [
+          "LI057"
+        ]
+      }
+    }
+  }
+}

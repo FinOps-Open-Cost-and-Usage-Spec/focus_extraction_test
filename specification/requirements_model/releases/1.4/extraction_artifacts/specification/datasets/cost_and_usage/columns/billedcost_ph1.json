@@ -1,0 +1,329 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/billedcost.md",
+    "version": "0.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "BilledCost",
+    "entity_name": "Billed Cost"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "BilledCost",
+      "entity_name": "Billed Cost"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "BilledCost MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L011"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "BilledCost MUST be of type Decimal.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 13,
+        "line_end": 13
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L013"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "BilledCost MUST conform to [NumericFormat](#attributes.numericformat) requirements.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 14,
+        "line_end": 14
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L014"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "BilledCost MUST NOT be null.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 15,
+        "line_end": 15
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L015"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "BilledCost MUST be denominated in the BillingCurrency.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 16,
+        "line_end": 16
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L016"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "BilledCost MUST reflect all applicable pricing adjustments, including but not limited to *negotiated discounts*, *commitment discounts*, and other applicable discount programs.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 17,
+        "line_end": 17
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L017"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "BilledCost MUST NOT include any portion of a [*covered charge*](#glossary:covered-charge) that is offset by a [*covering charge*](#glossary:covering-charge).",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 18,
+        "line_end": 18
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L018"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "BilledCost MUST be 0 for *charges* that are fully *covered* by one or more *covering charges*.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 19,
+        "line_end": 19
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L019"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "BilledCost MUST reflect amounts as invoiced by the [InvoiceIssuerName](#datasets.costandusage.invoiceissuername), not estimated or inferred values.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 20,
+        "line_end": 20
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L020"
+    },
+    {
+      "temp_id": "R010",
+      "order": 10,
+      "text": "BilledCost MUST be 0 for *charges* generated by entities that are not responsible or authorized for invoicing, to avoid double-counting when merging multiple datasets.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 21,
+        "line_end": 21
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L021"
+    },
+    {
+      "temp_id": "R011",
+      "order": 11,
+      "text": "The sum of BilledCost for a given [InvoiceId](#datasets.costandusage.invoiceid) and InvoiceIssuerName MUST NOT differ from the payable amount provided on the corresponding invoice by more than the [Rounding Variance Tolerance](#appendix.roundingvariancetolerance) when the corresponding invoice has been issued.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 22,
+        "line_end": 22
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L022"
+    },
+    {
+      "temp_id": "R012",
+      "order": 12,
+      "text": "The sum of BilledCost MAY differ from preliminary or estimated invoiced amounts when the corresponding invoice has not yet been issued.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Billed Cost",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 23,
+        "line_end": 23
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L023"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}

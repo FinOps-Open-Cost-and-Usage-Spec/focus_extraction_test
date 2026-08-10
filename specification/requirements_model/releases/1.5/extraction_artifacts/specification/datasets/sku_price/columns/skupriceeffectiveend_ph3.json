@@ -1,0 +1,198 @@
+{
+  "ModelRules": {
+    "SKP-SkuPriceEffectiveEnd-C-000-M": {
+      "Function": "Composite",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveEnd MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-SkuPriceEffectiveEnd-C-001-M",
+          "SKP-SkuPriceEffectiveEnd-C-002-M",
+          "SKP-SkuPriceEffectiveEnd-C-003-M",
+          "SKP-SkuPriceEffectiveEnd-C-006-C"
+        ]
+      }
+    },
+    "SKP-SkuPriceEffectiveEnd-C-001-M": {
+      "Function": "Type",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveEnd MUST be of type Date/Time.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-SkuPriceEffectiveEnd-C-002-M": {
+      "Function": "Format",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveEnd MUST conform to DateTimeFormat requirements (e.g., UTC).",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-SkuPriceEffectiveEnd-C-003-M": {
+      "Function": "Composite",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 30,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveEnd MUST adhere to the following nullability requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-SkuPriceEffectiveEnd-C-004-C",
+          "SKP-SkuPriceEffectiveEnd-C-005-C"
+        ]
+      }
+    },
+    "SKP-SkuPriceEffectiveEnd-C-004-C": {
+      "Function": "Nullability",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 40,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveEnd MUST be null when the unit price is currently active and does not have a defined expiration or deprecation timestamp.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-SkuPriceEffectiveEnd-C-005-C": {
+      "Function": "Nullability",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 50,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveEnd MUST NOT be null when the unit price has expired, been superseded, or has a scheduled termination timestamp.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-SkuPriceEffectiveEnd-C-006-C": {
+      "Function": "Composite",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 60,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "When SkuPriceEffectiveEnd is not null, SkuPriceEffectiveEnd MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-SkuPriceEffectiveEnd-C-007-M"
+        ]
+      }
+    },
+    "SKP-SkuPriceEffectiveEnd-C-007-M": {
+      "Function": "Validation",
+      "Reference": "SkuPriceEffectiveEnd",
+      "EntityType": "Column",
+      "EntityName": "SKU Price Effective End",
+      "EntityId": "SkuPriceEffectiveEnd",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 70,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "SkuPriceEffectiveEnd MUST be chronologically greater than SkuPriceEffectiveStart.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "ModelRules": {
+    "ATT-NullHandling-C-000-M": {
+      "Function": "Validation",
+      "Reference": "NullHandling",
+      "EntityType": "Attribute",
+      "EntityName": "Null Handling",
+      "EntityId": "NullHandling",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "Column conforming to NullHandling attribute MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "ATT-NullHandling-C-001-C",
+          "ATT-NullHandling-C-002-C",
+          "ATT-NullHandling-C-003-C"
+        ]
+      }
+    },
+    "ATT-NullHandling-C-001-C": {
+      "Function": "Validation",
+      "Reference": "NullHandling",
+      "EntityType": "Attribute",
+      "EntityName": "Null Handling",
+      "EntityId": "NullHandling",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 10,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "*FOCUS dataset column* MUST use `null` for absent values when the *FOCUS dataset column* is defined as nullable.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "ATT-NullHandling-C-002-C": {
+      "Function": "Validation",
+      "Reference": "NullHandling",
+      "EntityType": "Attribute",
+      "EntityName": "Null Handling",
+      "EntityId": "NullHandling",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 20,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "*FOCUS dataset column* MUST NOT contain empty strings or placeholder strings (e.g., `Not Applicable`) for absent values when the *FOCUS dataset column* contains string values.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "ATT-NullHandling-C-003-C": {
+      "Function": "Validation",
+      "Reference": "NullHandling",
+      "EntityType": "Attribute",
+      "EntityName": "Null Handling",
+      "EntityId": "NullHandling",
+      "Notes": "",
+      "ModelVersionIntroduced": "0.5",
+      "Status": "Active",
+      "ModelVersionRemoved": "",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 30,
+      "DatasetType": "ATT",
+      "DatasetId": "",
+      "DatasetName": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "*FOCUS dataset column* MUST NOT contain placeholder numeric values (e.g., `0`) for absent values when the *FOCUS dataset column* contains numeric values.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    }
+  }
+}

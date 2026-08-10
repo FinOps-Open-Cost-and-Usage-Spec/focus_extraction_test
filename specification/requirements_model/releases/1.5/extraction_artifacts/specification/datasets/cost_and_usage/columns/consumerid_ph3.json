@@ -1,0 +1,222 @@
+{
+  "ModelRules": {
+    "CAU-ConsumerId-C-000-M": {
+      "Function": "Composite",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "CAU-ConsumerId-C-001-M",
+          "CAU-ConsumerId-C-002-M",
+          "CAU-ConsumerId-C-003-M",
+          "CAU-ConsumerId-C-006-C"
+        ]
+      }
+    },
+    "CAU-ConsumerId-C-001-M": {
+      "Function": "Type",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST be of type String.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-ConsumerId-C-002-M": {
+      "Function": "Format",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST conform to StringHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-ConsumerId-C-003-M": {
+      "Function": "Composite",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 30,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST adhere to the following nullability requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "CAU-ConsumerId-C-004-C",
+          "CAU-ConsumerId-C-005-C"
+        ]
+      }
+    },
+    "CAU-ConsumerId-C-004-C": {
+      "Function": "Nullability",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 40,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST be null when a *charge* is not attributed to a specific *consumer* by the service provider.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-ConsumerId-C-005-C": {
+      "Function": "Nullability",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 50,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST NOT be null when a *charge* is attributed to a specific *consumer* by the service provider.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-ConsumerId-C-006-C": {
+      "Function": "Composite",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 60,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "When ConsumerId is not null, ConsumerId MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": [
+          "CAU-ConsumerId-C-007-M",
+          "CAU-ConsumerId-C-008-C"
+        ]
+      }
+    },
+    "CAU-ConsumerId-C-007-M": {
+      "Function": "Validation",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 70,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST be a unique identifier within the context of the service provider.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    },
+    "CAU-ConsumerId-C-008-C": {
+      "Function": "Validation",
+      "Reference": "ConsumerId",
+      "EntityType": "Column",
+      "EntityName": "Consumer ID",
+      "EntityId": "ConsumerId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 80,
+      "DatasetType": "CAU",
+      "DatasetId": "CostAndUsage",
+      "DatasetName": "Cost and Usage",
+      "ValidationCriteria": {
+        "MustSatisfy": "ConsumerId MUST NOT contain plain-text personally identifiable information (PII) if the service provider supplies an alternative opaque identifier.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": [],
+        "Dependencies": []
+      }
+    }
+  }
+}

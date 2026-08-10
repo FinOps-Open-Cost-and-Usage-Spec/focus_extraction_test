@@ -1,0 +1,173 @@
+{
+  "ModelRules": {
+    "SKP-PricingRegionId-C-000-M": {
+      "Function": "Composite",
+      "Reference": "PricingRegionId",
+      "EntityType": "Column",
+      "EntityName": "Pricing Region ID",
+      "EntityId": "PricingRegionId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "PricingRegionId MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-PricingRegionId-C-001-M",
+          "SKP-PricingRegionId-C-002-M",
+          "SKP-PricingRegionId-C-003-C",
+          "SKP-PricingRegionId-C-004-M"
+        ]
+      }
+    },
+    "SKP-PricingRegionId-C-001-M": {
+      "Function": "Type",
+      "Reference": "PricingRegionId",
+      "EntityType": "Column",
+      "EntityName": "Pricing Region ID",
+      "EntityId": "PricingRegionId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "PricingRegionId MUST be of type String.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-PricingRegionId-C-002-M": {
+      "Function": "Format",
+      "Reference": "PricingRegionId",
+      "EntityType": "Column",
+      "EntityName": "Pricing Region ID",
+      "EntityId": "PricingRegionId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "PricingRegionId MUST conform to StringHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-PricingRegionId-C-003-C": {
+      "Function": "Validation",
+      "Reference": "PricingRegionId",
+      "EntityType": "Column",
+      "EntityName": "Pricing Region ID",
+      "EntityId": "PricingRegionId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 30,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "PricingRegionId MUST represent the geographic boundary or regional construct explicitly defined by the *service provider* for the unit price, even if this represents a global or macro-region scope.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-PricingRegionId-C-004-M": {
+      "Function": "Composite",
+      "Reference": "PricingRegionId",
+      "EntityType": "Column",
+      "EntityName": "Pricing Region ID",
+      "EntityId": "PricingRegionId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 40,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "PricingRegionId MUST adhere to the following nullability requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-PricingRegionId-C-005-C",
+          "SKP-PricingRegionId-C-006-C"
+        ]
+      }
+    },
+    "SKP-PricingRegionId-C-005-C": {
+      "Function": "Nullability",
+      "Reference": "PricingRegionId",
+      "EntityType": "Column",
+      "EntityName": "Pricing Region ID",
+      "EntityId": "PricingRegionId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 50,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "PricingRegionId MUST NOT be null when the unit price is specific to a distinct region.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-PricingRegionId-C-006-C": {
+      "Function": "Nullability",
+      "Reference": "PricingRegionId",
+      "EntityType": "Column",
+      "EntityName": "Pricing Region ID",
+      "EntityId": "PricingRegionId",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 60,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "PricingRegionId MAY be null when the unit price applies globally or is not regionally scoped.",
+        "Keyword": "MAY",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}

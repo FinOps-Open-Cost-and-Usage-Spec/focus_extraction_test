@@ -1,0 +1,506 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/attributes/column_handling.md",
+    "version": "0.5"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "ColumnHandling",
+    "entity_name": "Column Handling"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Attribute",
+      "entity_id": "ColumnHandling",
+      "entity_name": "Column Handling"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "All columns defined in the FOCUS specification MUST follow the naming and ordering requirements listed below.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 18,
+        "line_end": 18
+      },
+      "ref": "L018"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "All columns defined by FOCUS MUST follow the following rules:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 36,
+        "line_end": 36
+      },
+      "ref": "L036"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "Column IDs MUST use [Pascal case](#glossary:pascalcase).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 37,
+        "line_end": 37
+      },
+      "ref": "L037"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "Column IDs MUST NOT use abbreviations.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 38,
+        "line_end": 38
+      },
+      "ref": "L038"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "Column IDs MUST be alphanumeric with no special characters.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 39,
+        "line_end": 39
+      },
+      "ref": "L039"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "Column IDs SHOULD NOT use acronyms.",
+      "keyword": "SHOULD NOT",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 40,
+        "line_end": 40
+      },
+      "ref": "L040"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "Column IDs SHOULD NOT exceed 50 characters to accommodate column length restrictions of various data repositories.",
+      "keyword": "SHOULD NOT",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 41,
+        "line_end": 41
+      },
+      "ref": "L041"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "Columns that have an ID and a Name MUST have the `Id` or `Name` suffix in the Column ID.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 42,
+        "line_end": 42
+      },
+      "ref": "L042"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "Column display names MUST be consistent with their Column IDs, with spaces inserted between words (e.g., Column ID \"BillingAccountName\" and display name \"Billing Account Name\").",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 43,
+        "line_end": 43
+      },
+      "ref": "L043"
+    },
+    {
+      "temp_id": "R010",
+      "order": 10,
+      "text": "Columns with the `Category` suffix MUST be normalized.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 44,
+        "line_end": 44
+      },
+      "ref": "L044"
+    },
+    {
+      "temp_id": "R011",
+      "order": 11,
+      "text": "Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 45,
+        "line_end": 45
+      },
+      "ref": "L045"
+    },
+    {
+      "temp_id": "R012",
+      "order": 12,
+      "text": "Custom columns MUST be prefixed with a consistent `x_` prefix to identify them as external, custom columns and distinguish them from FOCUS columns to avoid conflicts in future releases.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 46,
+        "line_end": 46
+      },
+      "ref": "L046"
+    },
+    {
+      "temp_id": "R013",
+      "order": 13,
+      "text": "Custom columns SHOULD follow the same rules listed above for FOCUS columns.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Names"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 1,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 47,
+        "line_end": 47
+      },
+      "ref": "L047"
+    },
+    {
+      "temp_id": "R014",
+      "order": 14,
+      "text": "All FOCUS columns SHOULD be first in the provided dataset.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Order"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 51,
+        "line_end": 51
+      },
+      "ref": "L051"
+    },
+    {
+      "temp_id": "R015",
+      "order": 15,
+      "text": "Custom columns SHOULD be listed after all FOCUS columns and SHOULD NOT be intermixed.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Order"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 52,
+        "line_end": 52
+      },
+      "ref": "L052"
+    },
+    {
+      "temp_id": "R016",
+      "order": 16,
+      "text": "Custom columns SHOULD be listed after all FOCUS columns and SHOULD NOT be intermixed.",
+      "keyword": "SHOULD NOT",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Order"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 49,
+        "line_end": 49
+      },
+      "ref": "L049"
+    },
+    {
+      "temp_id": "R017",
+      "order": 17,
+      "text": "Columns MAY be sorted alphabetically, but custom columns SHOULD be after all FOCUS columns.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Order"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 53,
+        "line_end": 53
+      },
+      "ref": "L053"
+    },
+    {
+      "temp_id": "R018",
+      "order": 18,
+      "text": "Columns MAY be sorted alphabetically, but custom columns SHOULD be after all FOCUS columns.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Column Handling",
+        "Requirements",
+        "Column Order"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 50,
+        "line_end": 50
+      },
+      "ref": "L050"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "W_MULTIPLE_BCP14_IN_BLOCK",
+      "message": "More than one BCP-14 keyword occurrence found in the same source sentence/block.",
+      "details": {
+        "line": 49,
+        "text": "Custom columns SHOULD be listed after all FOCUS columns and SHOULD NOT be intermixed.",
+        "total_occurrences": 2,
+        "unique_keywords": [
+          "SHOULD",
+          "SHOULD NOT"
+        ]
+      },
+      "text": "(document-level)"
+    },
+    {
+      "code": "W_MULTIPLE_BCP14_IN_BLOCK",
+      "message": "More than one BCP-14 keyword occurrence found in the same source sentence/block.",
+      "details": {
+        "line": 50,
+        "text": "Columns MAY be sorted alphabetically, but custom columns SHOULD be after all FOCUS columns.",
+        "total_occurrences": 2,
+        "unique_keywords": [
+          "MAY",
+          "SHOULD"
+        ]
+      },
+      "text": "(document-level)"
+    }
+  ],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}

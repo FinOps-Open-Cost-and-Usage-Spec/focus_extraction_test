@@ -1,0 +1,594 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/attributes/unit_format.md",
+    "version": "unknown"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "UnitFormat",
+    "entity_name": "Unit Format"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 21
+  },
+  "0_outline_root": "ROOT: Unit Format > Requirements",
+  "0_outline_lines": [
+    "L007: \"Column conforming to UnitFormat attribute MUST adhere to the following requirements:\"",
+    "  L009: \"[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST adhere to the following [base unit](#attributes.unitformat.definitions.baseunit) requirements:\"",
+    "    L010: \"*FOCUS dataset column* MUST include at least one base unit.\"",
+    "    L011: \"*FOCUS dataset column* MUST use one of the allowed data size unit abbreviations listed below for data size base units.\"",
+    "    L012: \"*FOCUS dataset column* MUST use the allowed data size unit abbreviations in the same form for both singular and plural units.\"",
+    "    L013: \"*FOCUS dataset column* MUST use the allowed abbreviation for exabit, exabyte, exbibit, or exbibyte when representing values exceeding 10^18.\"",
+    "    L014: \"*FOCUS dataset column* MUST use the allowed abbreviation for bit or byte when representing values smaller than one byte.\"",
+    "    L015: \"*FOCUS dataset column* MUST use one of the allowed time-based unit names listed below for time-based base units.\"",
+    "    L016: \"*FOCUS dataset column* SHOULD use one of the recommended count-based unit names listed below for count-based base units.\"",
+    "    L017: \"*FOCUS dataset column* SHOULD use capitalized nouns for base units that do not correspond to any of the allowed base unit names listed below.\"",
+    "    L018: \"*FOCUS dataset column* MAY include a count-based base unit that is not listed as one of the allowed values.\"",
+    "  L019: \"*FOCUS dataset column* MAY include a [unit quantity](#attributes.unitformat.definitions.unitquantity) expressed as a positive integer.\"",
+    "  L020: \"*FOCUS dataset column* expressing a [compound unit](#attributes.unitformat.definitions.compoundunit) MUST use a hyphen (`-`) to separate base units (e.g., `GB-Hours`).\"",
+    "  L021: \"*FOCUS dataset column* expressing a compound unit SHOULD use the `<singular-base-unit>-<plural-base-unit>` format (e.g., `GB-Hours`, `MB-Days`, `Request-Tokens`).\"",
+    "  L022: \"*FOCUS dataset column* expressing a [ratio unit](#attributes.unitformat.definitions.ratiounit) MUST use a slash (`/`) to separate the numerator and denominator (e.g., `GB/Hour` to signify gigabytes per hour).\"",
+    "  L023: \"*FOCUS dataset column* expressing a ratio unit MAY include a [denominator quantity](#attributes.unitformat.definitions.denominatorquantity) expressed as a positive integer.\"",
+    "  L024: \"*FOCUS dataset column* expressing a ratio unit and including a denominator quantity SHOULD use the `<plural-units>/<denominator-quantity> <plural-time-units>` format (e.g., `Units/3 Months`).\"",
+    "  L025: \"*FOCUS dataset column* expressing a ratio unit with a compound unit numerator SHOULD use the `<compound-unit>/<singular-time-unit>` format (e.g., `Core-Hours/Day`).\"",
+    "  L026: \"*FOCUS dataset column* expressing a ratio unit with a time denominator SHOULD use the `<plural-units>/<singular-time-unit>` format (e.g., `GB/Hour`, `PB/Day`).\"",
+    "  L027: \"*FOCUS dataset column* expressing a [simple unit](#attributes.unitformat.definitions.simpleunit) SHOULD use the `<plural-units>` format (e.g., `GB`, `Seconds`).\"",
+    "  L028: \"*FOCUS dataset column* including a unit quantity SHOULD use the `<unit-quantity> <plural-units>` format (e.g., `1000 Tokens`, `1000 Characters`).\""
+  ],
+  "0_outline_summary": {
+    "node_count": 21,
+    "leaf_count": 19,
+    "lead_in_count": 2,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 10,
+      "SHOULD": 8,
+      "MAY": 3
+    },
+    "lead_ins": [
+      {
+        "ref": "L007",
+        "text_preview": "Column conforming to UnitFormat attribute MUST adhere to the following requirements:",
+        "children": 11
+      },
+      {
+        "ref": "L009",
+        "text_preview": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST adhere to the following [base unit](#attributes.unitforma…",
+        "children": 9
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L007",
+            "text": "Column conforming to UnitFormat attribute MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Unit Format",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L009",
+                "text": "[*FOCUS dataset column*](#glossary:FOCUS-dataset-column) MUST adhere to the following [base unit](#attributes.unitformat.definitions.baseunit) requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R003",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R003",
+                    "order": 3,
+                    "ref": "L010",
+                    "text": "*FOCUS dataset column* MUST include at least one base unit.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R004",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R004",
+                    "order": 4,
+                    "ref": "L011",
+                    "text": "*FOCUS dataset column* MUST use one of the allowed data size unit abbreviations listed below for data size base units.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L012",
+                    "text": "*FOCUS dataset column* MUST use the allowed data size unit abbreviations in the same form for both singular and plural units.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L013",
+                    "text": "*FOCUS dataset column* MUST use the allowed abbreviation for exabit, exabyte, exbibit, or exbibyte when representing values exceeding 10^18.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R007",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R007",
+                    "order": 7,
+                    "ref": "L014",
+                    "text": "*FOCUS dataset column* MUST use the allowed abbreviation for bit or byte when representing values smaller than one byte.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R008",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R008",
+                    "order": 8,
+                    "ref": "L015",
+                    "text": "*FOCUS dataset column* MUST use one of the allowed time-based unit names listed below for time-based base units.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R009",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R009",
+                    "order": 9,
+                    "ref": "L016",
+                    "text": "*FOCUS dataset column* SHOULD use one of the recommended count-based unit names listed below for count-based base units.",
+                    "keyword": "SHOULD",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R010",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R010",
+                    "order": 10,
+                    "ref": "L017",
+                    "text": "*FOCUS dataset column* SHOULD use capitalized nouns for base units that do not correspond to any of the allowed base unit names listed below.",
+                    "keyword": "SHOULD",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R011",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R011",
+                    "order": 11,
+                    "ref": "L018",
+                    "text": "*FOCUS dataset column* MAY include a count-based base unit that is not listed as one of the allowed values.",
+                    "keyword": "MAY",
+                    "section_path": [
+                      "Unit Format",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "R012",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R012",
+                "order": 12,
+                "ref": "L019",
+                "text": "*FOCUS dataset column* MAY include a [unit quantity](#attributes.unitformat.definitions.unitquantity) expressed as a positive integer.",
+                "keyword": "MAY",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R013",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R013",
+                "order": 13,
+                "ref": "L020",
+                "text": "*FOCUS dataset column* expressing a [compound unit](#attributes.unitformat.definitions.compoundunit) MUST use a hyphen (`-`) to separate base units (e.g., `GB-Hours`).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R014",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R014",
+                "order": 14,
+                "ref": "L021",
+                "text": "*FOCUS dataset column* expressing a compound unit SHOULD use the `<singular-base-unit>-<plural-base-unit>` format (e.g., `GB-Hours`, `MB-Days`, `Request-Tokens`).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R015",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R015",
+                "order": 15,
+                "ref": "L022",
+                "text": "*FOCUS dataset column* expressing a [ratio unit](#attributes.unitformat.definitions.ratiounit) MUST use a slash (`/`) to separate the numerator and denominator (e.g., `GB/Hour` to signify gigabytes per hour).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R016",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R016",
+                "order": 16,
+                "ref": "L023",
+                "text": "*FOCUS dataset column* expressing a ratio unit MAY include a [denominator quantity](#attributes.unitformat.definitions.denominatorquantity) expressed as a positive integer.",
+                "keyword": "MAY",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R017",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R017",
+                "order": 17,
+                "ref": "L024",
+                "text": "*FOCUS dataset column* expressing a ratio unit and including a denominator quantity SHOULD use the `<plural-units>/<denominator-quantity> <plural-time-units>` format (e.g., `Units/3 Months`).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R018",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R018",
+                "order": 18,
+                "ref": "L025",
+                "text": "*FOCUS dataset column* expressing a ratio unit with a compound unit numerator SHOULD use the `<compound-unit>/<singular-time-unit>` format (e.g., `Core-Hours/Day`).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R019",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R019",
+                "order": 19,
+                "ref": "L026",
+                "text": "*FOCUS dataset column* expressing a ratio unit with a time denominator SHOULD use the `<plural-units>/<singular-time-unit>` format (e.g., `GB/Hour`, `PB/Day`).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R020",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R020",
+                "order": 20,
+                "ref": "L027",
+                "text": "*FOCUS dataset column* expressing a [simple unit](#attributes.unitformat.definitions.simpleunit) SHOULD use the `<plural-units>` format (e.g., `GB`, `Seconds`).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R021",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R021",
+                "order": 21,
+                "ref": "L028",
+                "text": "*FOCUS dataset column* including a unit quantity SHOULD use the `<unit-quantity> <plural-units>` format (e.g., `1000 Tokens`, `1000 Characters`).",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Unit Format",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

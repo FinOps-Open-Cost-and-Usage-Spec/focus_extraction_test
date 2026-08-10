@@ -1,0 +1,299 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/consumerid.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "ConsumerId",
+    "entity_name": "Consumer ID"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 9
+  },
+  "0_outline_root": "ROOT: Consumer ID > Requirements",
+  "0_outline_lines": [
+    "L013: \"ConsumerId MUST adhere to the following requirements:\"",
+    "  L015: \"ConsumerId MUST be of type String.\"",
+    "  L016: \"ConsumerId MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L017: \"ConsumerId MUST adhere to the following nullability requirements:\"",
+    "    L018: \"ConsumerId MUST be null when a [*charge*](#glossary:charge) is not attributed to a specific *consumer* by the service provider.\"",
+    "    L019: \"ConsumerId MUST NOT be null when a *charge* is attributed to a specific *consumer* by the service provider.\"",
+    "  L020: \"When ConsumerId is not null, ConsumerId MUST adhere to the following requirements:\"",
+    "    L021: \"ConsumerId MUST be a unique identifier within the context of the service provider.\"",
+    "    L022: \"ConsumerId MUST NOT contain plain-text personally identifiable information (PII) if the service provider supplies an alternative opaque identifier.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 9,
+    "leaf_count": 6,
+    "lead_in_count": 3,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 7,
+      "MUST NOT": 2
+    },
+    "lead_ins": [
+      {
+        "ref": "L013",
+        "text_preview": "ConsumerId MUST adhere to the following requirements:",
+        "children": 4
+      },
+      {
+        "ref": "L017",
+        "text_preview": "ConsumerId MUST adhere to the following nullability requirements:",
+        "children": 2
+      },
+      {
+        "ref": "L020",
+        "text_preview": "When ConsumerId is not null, ConsumerId MUST adhere to the following requirements:",
+        "children": 2
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L013",
+            "text": "ConsumerId MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Consumer ID",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L015",
+                "text": "ConsumerId MUST be of type String.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Consumer ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L016",
+                "text": "ConsumerId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Consumer ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L017",
+                "text": "ConsumerId MUST adhere to the following nullability requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Consumer ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L018",
+                    "text": "ConsumerId MUST be null when a [*charge*](#glossary:charge) is not attributed to a specific *consumer* by the service provider.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Consumer ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L019",
+                    "text": "ConsumerId MUST NOT be null when a *charge* is attributed to a specific *consumer* by the service provider.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Consumer ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "R007",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R007",
+                "order": 7,
+                "ref": "L020",
+                "text": "When ConsumerId is not null, ConsumerId MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Consumer ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R008",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R008",
+                    "order": 8,
+                    "ref": "L021",
+                    "text": "ConsumerId MUST be a unique identifier within the context of the service provider.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Consumer ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R009",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R009",
+                    "order": 9,
+                    "ref": "L022",
+                    "text": "ConsumerId MUST NOT contain plain-text personally identifiable information (PII) if the service provider supplies an alternative opaque identifier.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Consumer ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

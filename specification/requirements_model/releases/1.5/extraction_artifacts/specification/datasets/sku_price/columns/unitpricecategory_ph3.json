@@ -1,0 +1,196 @@
+{
+  "ModelRules": {
+    "SKP-UnitPriceCategory-C-000-M": {
+      "Function": "Composite",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 0,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST adhere to the following requirements:",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": [
+          "SKP-UnitPriceCategory-C-001-M",
+          "SKP-UnitPriceCategory-C-002-M",
+          "SKP-UnitPriceCategory-C-003-M",
+          "SKP-UnitPriceCategory-C-004-M",
+          "SKP-UnitPriceCategory-C-005-C",
+          "SKP-UnitPriceCategory-C-006-C",
+          "SKP-UnitPriceCategory-C-007-C"
+        ]
+      }
+    },
+    "SKP-UnitPriceCategory-C-001-M": {
+      "Function": "Type",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 10,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST be of type String.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-UnitPriceCategory-C-002-M": {
+      "Function": "Format",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 20,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST conform to StringHandling requirements.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-UnitPriceCategory-C-003-M": {
+      "Function": "Nullability",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 30,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST NOT be null.",
+        "Keyword": "MUST NOT",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-UnitPriceCategory-C-004-M": {
+      "Function": "Validation",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Static",
+      "Order": 40,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST be one of the allowed values.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-UnitPriceCategory-C-005-C": {
+      "Function": "Validation",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 50,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST be \"List\" when the unit price is the standard, current public rate offered by the service provider.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-UnitPriceCategory-C-006-C": {
+      "Function": "Validation",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 60,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST be \"Fixed List\" when the unit price is a standard public rate that has been locked or frozen for a specific agreement or timeframe.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    },
+    "SKP-UnitPriceCategory-C-007-C": {
+      "Function": "Validation",
+      "Reference": "UnitPriceCategory",
+      "EntityType": "Column",
+      "EntityName": "Unit Price Category",
+      "EntityId": "UnitPriceCategory",
+      "Notes": "",
+      "ModelVersionIntroduced": "1.5",
+      "Status": "Active",
+      "ApplicabilityCriteria": [],
+      "Type": "Dynamic",
+      "Order": 70,
+      "DatasetType": "SKP",
+      "DatasetId": "SkuPrice",
+      "DatasetName": "SKU Price",
+      "ValidationCriteria": {
+        "MustSatisfy": "UnitPriceCategory MUST be \"Contracted\" when the unit price is a negotiated or custom rate specific to a billing account or agreement.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+      }
+    }
+  }
+}

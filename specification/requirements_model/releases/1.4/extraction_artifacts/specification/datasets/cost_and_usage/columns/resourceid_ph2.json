@@ -1,0 +1,315 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/cost_and_usage/columns/resourceid.md",
+    "version": "0.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "ResourceId",
+    "entity_name": "Resource ID"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 10
+  },
+  "0_outline_root": "ROOT: Resource ID > Requirements",
+  "0_outline_lines": [
+    "L007: \"ResourceId MUST adhere to the following requirements:\"",
+    "  L009: \"ResourceId MUST be of type String.\"",
+    "  L010: \"ResourceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L011: \"ResourceId MUST adhere to the following nullability requirements:\"",
+    "    L012: \"ResourceId MUST be null when a [*charge*](#glossary:charge) is not related to a *resource*.\"",
+    "    L013: \"ResourceId MUST NOT be null when a *charge* is related to a *resource*.\"",
+    "  L014: \"When ResourceId is not null, ResourceId MUST adhere to the following requirements:\"",
+    "    L015: \"ResourceId MUST be a unique identifier within the service provider.\"",
+    "    L016: \"ResourceId SHOULD be a fully-qualified identifier.\"",
+    "    L017: \"ResourceId MUST be the identifier of the *resource* that received the [*commitment discount*](#glossary:commitment-discount) when [CommitmentDiscountStatus](#datasets.costandusage.commitmentdiscountstatus) is \\\"Used\\\".\""
+  ],
+  "0_outline_summary": {
+    "node_count": 10,
+    "leaf_count": 7,
+    "lead_in_count": 3,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 8,
+      "MUST NOT": 1,
+      "SHOULD": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L007",
+        "text_preview": "ResourceId MUST adhere to the following requirements:",
+        "children": 4
+      },
+      {
+        "ref": "L011",
+        "text_preview": "ResourceId MUST adhere to the following nullability requirements:",
+        "children": 2
+      },
+      {
+        "ref": "L014",
+        "text_preview": "When ResourceId is not null, ResourceId MUST adhere to the following requirements:",
+        "children": 3
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L007",
+            "text": "ResourceId MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L009",
+                "text": "ResourceId MUST be of type String.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L010",
+                "text": "ResourceId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L011",
+                "text": "ResourceId MUST adhere to the following nullability requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R005",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R005",
+                    "order": 5,
+                    "ref": "L012",
+                    "text": "ResourceId MUST be null when a [*charge*](#glossary:charge) is not related to a *resource*.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L013",
+                    "text": "ResourceId MUST NOT be null when a *charge* is related to a *resource*.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "R007",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R007",
+                "order": 7,
+                "ref": "L014",
+                "text": "When ResourceId is not null, ResourceId MUST adhere to the following requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R008",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R008",
+                    "order": 8,
+                    "ref": "L015",
+                    "text": "ResourceId MUST be a unique identifier within the service provider.",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R009",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R009",
+                    "order": 9,
+                    "ref": "L016",
+                    "text": "ResourceId SHOULD be a fully-qualified identifier.",
+                    "keyword": "SHOULD",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R010",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R010",
+                    "order": 10,
+                    "ref": "L017",
+                    "text": "ResourceId MUST be the identifier of the *resource* that received the [*commitment discount*](#glossary:commitment-discount) when [CommitmentDiscountStatus](#datasets.costandusage.commitmentdiscountstatus) is \"Used\".",
+                    "keyword": "MUST",
+                    "section_path": [
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

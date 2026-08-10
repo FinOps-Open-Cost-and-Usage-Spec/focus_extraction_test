@@ -1,0 +1,408 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/attributes/column_handling.md",
+    "version": "0.5"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "ColumnHandling",
+    "entity_name": "Column Handling"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 13
+  },
+  "0_outline_root": "ROOT: Column Handling > Requirements",
+  "0_outline_lines": [
+    "L034: \"All columns defined by FOCUS MUST follow the following rules:\"",
+    "  L035: \"Column IDs MUST use [Pascal case](#glossary:pascalcase).\"",
+    "  L036: \"Column IDs MUST NOT use abbreviations.\"",
+    "  L037: \"Column IDs MUST be alphanumeric with no special characters.\"",
+    "  L038: \"Column IDs SHOULD NOT use acronyms.\"",
+    "  L039: \"Column IDs SHOULD NOT exceed 50 characters to accommodate column length restrictions of various data repositories.\"",
+    "  L040: \"Columns that have an ID and a Name MUST have the `Id` or `Name` suffix in the Column ID.\"",
+    "  L041: \"Column display names MUST be consistent with their Column IDs, with spaces inserted between words (e.g., Column ID \\\"BillingAccountName\\\" and display name \\\"Billing Account Name\\\").\"",
+    "  L042: \"Columns with the `Category` suffix MUST be normalized.\"",
+    "L043: \"Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:\"",
+    "  L044: \"Custom columns MUST be prefixed with a consistent `x_` prefix to identify them as external, custom columns and distinguish them from FOCUS columns to avoid conflicts in future releases.\"",
+    "  L045: \"Custom columns SHOULD follow the same rules listed above for FOCUS columns.\"",
+    "  L046: \"Custom columns MUST be documented, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 13,
+    "leaf_count": 11,
+    "lead_in_count": 2,
+    "max_depth": 1,
+    "max_indent_level": 1,
+    "root_children_count": 2,
+    "keyword_distribution": {
+      "MUST": 9,
+      "MUST NOT": 1,
+      "SHOULD NOT": 2,
+      "SHOULD": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L034",
+        "text_preview": "All columns defined by FOCUS MUST follow the following rules:",
+        "children": 8
+      },
+      {
+        "ref": "L043",
+        "text_preview": "Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST fo…",
+        "children": 3
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R002",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R002",
+            "order": 2,
+            "ref": "L034",
+            "text": "All columns defined by FOCUS MUST follow the following rules:",
+            "keyword": "MUST",
+            "section_path": [
+              "Column Handling",
+              "Requirements",
+              "Column Names"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L035",
+                "text": "Column IDs MUST use [Pascal case](#glossary:pascalcase).",
+                "keyword": "MUST",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L036",
+                "text": "Column IDs MUST NOT use abbreviations.",
+                "keyword": "MUST NOT",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L037",
+                "text": "Column IDs MUST be alphanumeric with no special characters.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R006",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R006",
+                "order": 6,
+                "ref": "L038",
+                "text": "Column IDs SHOULD NOT use acronyms.",
+                "keyword": "SHOULD NOT",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R007",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R007",
+                "order": 7,
+                "ref": "L039",
+                "text": "Column IDs SHOULD NOT exceed 50 characters to accommodate column length restrictions of various data repositories.",
+                "keyword": "SHOULD NOT",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R008",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R008",
+                "order": 8,
+                "ref": "L040",
+                "text": "Columns that have an ID and a Name MUST have the `Id` or `Name` suffix in the Column ID.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R009",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R009",
+                "order": 9,
+                "ref": "L041",
+                "text": "Column display names MUST be consistent with their Column IDs, with spaces inserted between words (e.g., Column ID \"BillingAccountName\" and display name \"Billing Account Name\").",
+                "keyword": "MUST",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R010",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R010",
+                "order": 10,
+                "ref": "L042",
+                "text": "Columns with the `Category` suffix MUST be normalized.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "node_id": "R011",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R011",
+            "order": 11,
+            "ref": "L043",
+            "text": "Custom (e.g., service-provider-defined) columns that are not defined by FOCUS but included in a *FOCUS dataset* MUST follow the following rules:",
+            "keyword": "MUST",
+            "section_path": [
+              "Column Handling",
+              "Requirements",
+              "Column Names"
+            ],
+            "block": {
+              "block_type": "list_item",
+              "indent_level": 0,
+              "bullet": "*"
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R012",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R012",
+                "order": 12,
+                "ref": "L044",
+                "text": "Custom columns MUST be prefixed with a consistent `x_` prefix to identify them as external, custom columns and distinguish them from FOCUS columns to avoid conflicts in future releases.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R013",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R013",
+                "order": 13,
+                "ref": "L045",
+                "text": "Custom columns SHOULD follow the same rules listed above for FOCUS columns.",
+                "keyword": "SHOULD",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R014",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R014",
+                "order": 14,
+                "ref": "L046",
+                "text": "Custom columns MUST be documented, including description, purpose, and relationship to [*native dataset*](#glossary:native-dataset) columns.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Column Handling",
+                  "Requirements",
+                  "Column Names"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 1,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

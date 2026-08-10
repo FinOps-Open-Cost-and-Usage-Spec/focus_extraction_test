@@ -1,0 +1,244 @@
+{
+  "phase": 2,
+  "source": {
+    "path": "specification/datasets/sku_price/columns/pricingregionid.md",
+    "version": "1.5"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "PricingRegionId",
+    "entity_name": "Pricing Region ID"
+  },
+  "requirements_scope": {
+    "section_names_allowed": [
+      "Requirements",
+      "Column Requirements",
+      "Object Requirements",
+      "Dataset Requirements",
+      "Attribute Requirements"
+    ],
+    "atoms_in_scope_count": 7
+  },
+  "0_outline_root": "ROOT: Pricing Region ID > Requirements",
+  "0_outline_lines": [
+    "L007: \"PricingRegionId MUST adhere to the following requirements:\"",
+    "  L009: \"PricingRegionId MUST be of type String.\"",
+    "  L010: \"PricingRegionId MUST conform to [StringHandling](#attributes.stringhandling) requirements.\"",
+    "  L011: \"PricingRegionId MUST represent the geographic boundary or regional construct explicitly defined by the *service provider* for the unit price, even if this represents a global or macro-region scope.\"",
+    "  L012: \"PricingRegionId MUST adhere to the following nullability requirements:\"",
+    "    L013: \"PricingRegionId MUST NOT be null when the unit price is specific to a distinct region.\"",
+    "    L014: \"PricingRegionId MAY be null when the unit price applies globally or is not regionally scoped.\""
+  ],
+  "0_outline_summary": {
+    "node_count": 7,
+    "leaf_count": 5,
+    "lead_in_count": 2,
+    "max_depth": 2,
+    "max_indent_level": 1,
+    "root_children_count": 1,
+    "keyword_distribution": {
+      "MUST": 5,
+      "MUST NOT": 1,
+      "MAY": 1
+    },
+    "lead_ins": [
+      {
+        "ref": "L007",
+        "text_preview": "PricingRegionId MUST adhere to the following requirements:",
+        "children": 4
+      },
+      {
+        "ref": "L012",
+        "text_preview": "PricingRegionId MUST adhere to the following nullability requirements:",
+        "children": 2
+      }
+    ]
+  },
+  "structure": {
+    "root": {
+      "node_id": "R000",
+      "kind": "root",
+      "children": [
+        {
+          "node_id": "R001",
+          "kind": "atom",
+          "atom": {
+            "temp_id": "R001",
+            "order": 1,
+            "ref": "L007",
+            "text": "PricingRegionId MUST adhere to the following requirements:",
+            "keyword": "MUST",
+            "section_path": [
+              "Pricing Region ID",
+              "Requirements"
+            ],
+            "block": {
+              "block_type": "paragraph",
+              "indent_level": 0,
+              "bullet": null
+            },
+            "lead_in": {
+              "ends_with_colon": true
+            }
+          },
+          "children": [
+            {
+              "node_id": "R002",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R002",
+                "order": 2,
+                "ref": "L009",
+                "text": "PricingRegionId MUST be of type String.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Pricing Region ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R003",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R003",
+                "order": 3,
+                "ref": "L010",
+                "text": "PricingRegionId MUST conform to [StringHandling](#attributes.stringhandling) requirements.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Pricing Region ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R004",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R004",
+                "order": 4,
+                "ref": "L011",
+                "text": "PricingRegionId MUST represent the geographic boundary or regional construct explicitly defined by the *service provider* for the unit price, even if this represents a global or macro-region scope.",
+                "keyword": "MUST",
+                "section_path": [
+                  "Pricing Region ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": false
+                }
+              },
+              "children": []
+            },
+            {
+              "node_id": "R005",
+              "kind": "atom",
+              "atom": {
+                "temp_id": "R005",
+                "order": 5,
+                "ref": "L012",
+                "text": "PricingRegionId MUST adhere to the following nullability requirements:",
+                "keyword": "MUST",
+                "section_path": [
+                  "Pricing Region ID",
+                  "Requirements"
+                ],
+                "block": {
+                  "block_type": "list_item",
+                  "indent_level": 0,
+                  "bullet": "*"
+                },
+                "lead_in": {
+                  "ends_with_colon": true
+                }
+              },
+              "children": [
+                {
+                  "node_id": "R006",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R006",
+                    "order": 6,
+                    "ref": "L013",
+                    "text": "PricingRegionId MUST NOT be null when the unit price is specific to a distinct region.",
+                    "keyword": "MUST NOT",
+                    "section_path": [
+                      "Pricing Region ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "node_id": "R007",
+                  "kind": "atom",
+                  "atom": {
+                    "temp_id": "R007",
+                    "order": 7,
+                    "ref": "L014",
+                    "text": "PricingRegionId MAY be null when the unit price applies globally or is not regionally scoped.",
+                    "keyword": "MAY",
+                    "section_path": [
+                      "Pricing Region ID",
+                      "Requirements"
+                    ],
+                    "block": {
+                      "block_type": "list_item",
+                      "indent_level": 1,
+                      "bullet": "*"
+                    },
+                    "lead_in": {
+                      "ends_with_colon": false
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "debug": {
+    "ruleset": "ph2_tree_v1",
+    "parenting_signals": [
+      "section_path_boundary",
+      "lead_in_colon",
+      "indent_level"
+    ],
+    "warnings": []
+  }
+}

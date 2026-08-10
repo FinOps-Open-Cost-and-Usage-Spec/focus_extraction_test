@@ -1,0 +1,144 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/contract_commitment/columns/contractcommitmentperiodstart.md",
+    "version": "1.3"
+  },
+  "entity": {
+    "entity_type": "Column",
+    "entity_id": "ContractCommitmentPeriodStart",
+    "entity_name": "Contract Commitment Period Start"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Column",
+      "entity_id": "ContractCommitmentPeriodStart",
+      "entity_name": "Contract Commitment Period Start"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "The ContractCommitmentPeriodStart column MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "section_path": [
+        "Contract Commitment Period Start",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 6,
+        "line_end": 6
+      }
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "ContractCommitmentPeriodStart MUST be of type Date/Time.",
+      "keyword": "MUST",
+      "section_path": [
+        "Contract Commitment Period Start",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 8,
+        "line_end": 8
+      }
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "ContractCommitmentPeriodStart MUST conform to [DateTimeFormat](#attributes.date/timeformat) requirements.",
+      "keyword": "MUST",
+      "section_path": [
+        "Contract Commitment Period Start",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 9,
+        "line_end": 9
+      }
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "ContractCommitmentPeriodStart MUST NOT be null.",
+      "keyword": "MUST NOT",
+      "section_path": [
+        "Contract Commitment Period Start",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 10,
+        "line_end": 10
+      }
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "ContractCommitmentPeriodStart MUST be the *inclusive start bound* of the effective period of the *contract commitment*.",
+      "keyword": "MUST",
+      "section_path": [
+        "Contract Commitment Period Start",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 11,
+        "line_end": 11
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "W_ENTITY_NAME_CONFLICT",
+      "message": "Both a specific entity name heading and a Display Name heading are present for the same entity type.",
+      "details": {
+        "entity_type": "Column",
+        "name_heading_expected": "## Column Name",
+        "name_heading_present": true,
+        "display_name_heading_expected": "## Display Name",
+        "display_name_heading_present": true
+      }
+    }
+  ]
+}

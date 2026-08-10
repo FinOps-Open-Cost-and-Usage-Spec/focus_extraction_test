@@ -1,0 +1,254 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/attributes/dataset_completeness.md",
+    "version": "1.4"
+  },
+  "entity": {
+    "entity_type": "Attribute",
+    "entity_id": "DatasetCompleteness",
+    "entity_name": "Dataset Completeness"
+  },
+  "entities_found": [
+    {
+      "entity_type": "Attribute",
+      "entity_id": "DatasetCompleteness",
+      "entity_name": "Dataset Completeness"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "*FOCUS dataset* MUST include [*custom columns*](#glossary:custom-column) corresponding to *native dataset* columns that materially support analysis or reporting scenarios and do not duplicate information already captured in FOCUS columns.",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 21,
+        "line_end": 21
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L021"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "*FOCUS dataset* MUST NOT alter the aggregated values of summable [*metrics*](#glossary:metric) (e.g., costs and quantities) when custom columns are introduced.",
+      "keyword": "MUST NOT",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 22,
+        "line_end": 22
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L022"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "*FOCUS dataset* SHOULD include custom columns that enable correlation between *FOCUS dataset* records and *native dataset* records (e.g., native [*charge*](#glossary:charge) identifiers).",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 23,
+        "line_end": 23
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L023"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "*FOCUS dataset* SHOULD NOT include custom columns that duplicate information already captured in FOCUS columns.",
+      "keyword": "SHOULD NOT",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 24,
+        "line_end": 24
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L024"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "*FOCUS dataset* MAY omit *native dataset* columns that do not support any analysis or reporting scenarios.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 25,
+        "line_end": 25
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L025"
+    },
+    {
+      "temp_id": "R006",
+      "order": 6,
+      "text": "*FOCUS dataset* MAY preserve custom columns for a limited time even after one or more equivalent FOCUS columns are newly introduced, to enable migration without breaking changes.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 26,
+        "line_end": 26
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L026"
+    },
+    {
+      "temp_id": "R007",
+      "order": 7,
+      "text": "*FOCUS dataset* SHOULD ensure custom columns accurately represent the corresponding values from the *native dataset*.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 27,
+        "line_end": 27
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L027"
+    },
+    {
+      "temp_id": "R008",
+      "order": 8,
+      "text": "*FOCUS dataset* SHOULD order all *FOCUS columns* before any *custom columns*.",
+      "keyword": "SHOULD",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 28,
+        "line_end": 28
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L028"
+    },
+    {
+      "temp_id": "R009",
+      "order": 9,
+      "text": "*FOCUS dataset* MAY sort *FOCUS columns* alphabetically first, then list *custom columns* alphabetically second.",
+      "keyword": "MAY",
+      "role": "requirement",
+      "section_path": [
+        "Dataset Completeness",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 29,
+        "line_end": 29
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L029"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}

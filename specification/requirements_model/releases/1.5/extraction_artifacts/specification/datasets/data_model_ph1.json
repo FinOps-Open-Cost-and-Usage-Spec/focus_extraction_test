@@ -1,0 +1,154 @@
+{
+  "phase": 1,
+  "source": {
+    "path": "specification/datasets/data_model.md",
+    "version": "0.5"
+  },
+  "entity": {
+    "entity_type": "DataModel",
+    "entity_id": "DataModel",
+    "entity_name": "Data Model"
+  },
+  "entities_found": [
+    {
+      "entity_type": "DataModel",
+      "entity_id": "DataModel",
+      "entity_name": "Data Model"
+    }
+  ],
+  "atoms": [
+    {
+      "temp_id": "R001",
+      "order": 1,
+      "text": "DataModel MUST adhere to the following requirements:",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Data Model",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "paragraph",
+        "indent_level": 0,
+        "bullet": null
+      },
+      "lead_in": {
+        "ends_with_colon": true
+      },
+      "provenance": {
+        "line_start": 18,
+        "line_end": 18
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L018"
+    },
+    {
+      "temp_id": "R002",
+      "order": 2,
+      "text": "DataModel MUST include [CostAndUsage](#datasets.costandusage).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Data Model",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 20,
+        "line_end": 20
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L020"
+    },
+    {
+      "temp_id": "R003",
+      "order": 3,
+      "text": "DataModel MUST include [BillingPeriod](#datasets.billingperiod) when the [*operating model*](#glossary:operating-model) [includes payable invoices](#conditions.includespayableinvoices).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Data Model",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 21,
+        "line_end": 21
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L021"
+    },
+    {
+      "temp_id": "R004",
+      "order": 4,
+      "text": "DataModel MUST include [ContractCommitment](#datasets.contractcommitment) when the *operating model* [includes contract commitments](#conditions.includescontractcommitments).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Data Model",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 22,
+        "line_end": 22
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L022"
+    },
+    {
+      "temp_id": "R005",
+      "order": 5,
+      "text": "DataModel MUST include [InvoiceDetail](#datasets.invoicedetail) when the *operating model* [includes payable invoices](#conditions.includespayableinvoices).",
+      "keyword": "MUST",
+      "role": "requirement",
+      "section_path": [
+        "Data Model",
+        "Requirements"
+      ],
+      "block": {
+        "block_type": "list_item",
+        "indent_level": 0,
+        "bullet": "*"
+      },
+      "lead_in": {
+        "ends_with_colon": false
+      },
+      "provenance": {
+        "line_start": 23,
+        "line_end": 23
+      },
+      "_alignment_status": "confirmed",
+      "ref": "L023"
+    }
+  ],
+  "warnings": [],
+  "structural": {
+    "lead_ins": [],
+    "index": {
+      "by_section_path": {},
+      "by_line": {}
+    }
+  }
+}
